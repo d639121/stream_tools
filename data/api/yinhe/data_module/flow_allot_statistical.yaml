@@ -1,0 +1,39 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 数据-数据统计-流量分配统计
+
+config:
+  valueable:
+    organizationId: 1001
+
+query_flow_allot:
+
+    desc: 【数据/数据统计/流量分配统计】查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningAlloc/count/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      totalItem: totalItem
+    check:
+      status: 0
+      msg: success
+
+export_flow_allot:
+
+    desc: 【数据/数据统计/流量分配统计】导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningAlloc/count/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+    shared:
+    check:
+      no_check

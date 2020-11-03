@@ -1,0 +1,36 @@
+2020-10-29 16:02:00,379 - root - INFO : ************** 当前运行环境: Fat *************
+2020-10-29 16:02:00,379 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-29 16:02:00,379 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-29 16:02:00,379 - root - INFO : 请求方法: [- POST -]
+2020-10-29 16:02:00,379 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-29 16:02:00,379 - root - INFO : 请求正文: {'account': 't0312814888', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-29 16:02:00,616 - root - INFO : 响应消息: {'traceId': '17511bbff0204a5aa468a80cd2537a73', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19865505, 'mobile': '', 'account': '', 'nickname': '拥挤的鳐鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77b61a0712f1fa15f04426ab7c5864'}}
+2020-10-29 16:02:00,616 - root - INFO : 提取变量: [ pttoken: 0x77b61a0712f1fa15f04426ab7c5864 ]
+2020-10-29 16:02:00,617 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-29 16:02:00,617 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-29 16:02:00,617 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-29 16:02:00,751 - root - INFO : 凭证获取成功并写入 /common/config.txt 配置文件中
+2020-10-29 16:02:00,751 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-29 16:02:00,824 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-29 16:02:11,058 - root - ERROR : Error: 数据库连接时发生错误, 信息: (2003, "Can't connect to MySQL server on 'rm-uf63c1mgv7c7b80a4.mysql.rds.aliyuncs.com' (timed out)")
+Traceback (most recent call last):
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 571, in connect
+    **kwargs)
+  File "D:\Program Files\Python\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\Program Files\Python\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\WorkZoom\apiFlowAutoTest\common\config_db.py", line 23, in connect_db
+    self.db = pymysql.connect(host=self.host, port=int(self.port), user=self.user, password=self.password)
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 619, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'rm-uf63c1mgv7c7b80a4.mysql.rds.aliyuncs.com' (timed out)")

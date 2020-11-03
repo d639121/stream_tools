@@ -1,0 +1,30 @@
+config:
+  valueable:
+    organizationId: 1001
+
+customer_LeaningRepeat_list:
+
+    desc: 【银河/流量/入库记录查询】查询
+    parameterize:
+      websiteLinkId: websiteLinkId
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningRepeat/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      websiteId: $<websiteLinkId>
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+      repeatId: id
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'enterWay': 10"

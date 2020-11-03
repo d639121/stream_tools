@@ -1,0 +1,46 @@
+2020-09-01 16:21:10,246 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 16:21:10,246 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 16:21:10,246 - root - INFO : 请求方法: [- POST -]
+2020-09-01 16:21:10,246 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 16:21:10,247 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 16:21:10,393 - root - INFO : 响应消息: {'traceId': 'ab8128230aca4d23b06f7a8525e5ea52', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x776d930712f125335924b9eb0b506b'}}
+2020-09-01 16:21:10,394 - root - INFO : 提取变量: [ pttoken: 0x776d930712f125335924b9eb0b506b ]
+2020-09-01 16:21:10,394 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 16:21:10,394 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 16:21:10,394 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 16:21:10,401 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_doc
+2020-09-01 16:21:10,401 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_doc
+2020-09-01 16:21:10,401 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 16:21:10,402 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 16:21:10,502 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 16:21:10,502 - root - INFO : 请求方法: [- POST -]
+2020-09-01 16:21:10,502 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=1089a5cbdb2c7338797d45ee83d68e23', 'token': '0x776d930712f125335924b9eb0b506b', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 16:21:10,502 - root - INFO : 请求正文: b'--1089a5cbdb2c7338797d45ee83d68e23\r\nContent-Disposition: form-data; name="file"; filename="import_doc.doc"\r\nContent-Type: application/msword\r\n\r\n\r\n--1089a5cbdb2c7338797d45ee83d68e23--\r\n'
+2020-09-01 16:21:10,807 - root - INFO : 响应消息: {'traceId': '86eb6b454ddc4d12afe177139f83a4de', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 16:21:10,807 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 16:21:10,807 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 16:21:10,807 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 16:21:10,808 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_csv
+2020-09-01 16:21:10,808 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_csv
+2020-09-01 16:21:10,808 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 16:21:10,808 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 16:21:10,809 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 16:21:10,809 - root - INFO : 请求方法: [- POST -]
+2020-09-01 16:21:10,809 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=0b4b0e7f480a36a274efc1bacbaa0586', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 16:21:10,809 - root - INFO : 请求正文: b'--0b4b0e7f480a36a274efc1bacbaa0586\r\nContent-Disposition: form-data; name="file"; filename="import_csv.csv"\r\nContent-Type: application/vnd.ms-excel\r\n\r\n\r\n--0b4b0e7f480a36a274efc1bacbaa0586--\r\n'
+2020-09-01 16:21:11,003 - root - INFO : 响应消息: {'traceId': 'fe84fc85f52b43489f47861aa2deb684', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 16:21:11,003 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 16:21:11,003 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 16:21:11,003 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 16:21:11,005 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 16:21:11,005 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 16:21:11,005 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 16:21:11,005 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 16:21:11,005 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 16:21:11,005 - root - INFO : 请求方法: [- POST -]
+2020-09-01 16:21:11,005 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=9418b99ba867d794f092a43f88f34e5a', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 16:21:11,005 - root - INFO : 请求正文: b'--9418b99ba867d794f092a43f88f34e5a\r\nContent-Disposition: form-data; name="file"; filename="import_excel.xlsx"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n\r\n\r\n--9418b99ba867d794f092a43f88f34e5a--\r\n'
+2020-09-01 16:21:11,188 - root - INFO : 响应消息: {'traceId': '4984c4cfd6cf423c8eaf9a96b2d0e44c', 'status': '999999011', 'msg': '文件解析失败，该文件无法解析。', 'data': {}}
+2020-09-01 16:21:11,188 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999011]
+2020-09-01 16:21:11,188 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件解析失败，该文件无法解析。]
+2020-09-01 16:21:11,188 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

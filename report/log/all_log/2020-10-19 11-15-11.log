@@ -1,0 +1,19 @@
+2020-10-19 11:15:18,497 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-19 11:15:18,497 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-19 11:15:18,497 - root - INFO : 请求方法: [- POST -]
+2020-10-19 11:15:18,497 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-19 11:15:18,498 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-19 11:15:18,652 - root - INFO : 响应消息: {'traceId': 'fc9b370652b7487d839bbfd393306557', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77e1b00712f10d0d71545cc9ee5033'}}
+2020-10-19 11:15:18,654 - root - INFO : 提取变量: [ pttoken: 0x77e1b00712f10d0d71545cc9ee5033 ]
+2020-10-19 11:15:18,654 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-19 11:15:18,654 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-19 11:15:18,654 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-19 11:15:18,724 - root - INFO : 描述信息: 【银河/广告/广告创意】录入单个消费记录
+2020-10-19 11:15:18,724 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/save
+2020-10-19 11:15:18,724 - root - INFO : 请求方法: [- POST -]
+2020-10-19 11:15:18,725 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77e1b00712f10d0d71545cc9ee5033'}
+2020-10-19 11:15:18,725 - root - INFO : 请求正文: {'noExposure': 100, 'noClicks': 100, 'cost': 10000, 'rebates': 1, 'costDate': '1603036800000', 'creativityId': '113559'}
+2020-10-19 11:15:18,924 - root - INFO : 响应消息: {'traceId': '57f8d887f02c41b9a4f04db794b59d81', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-19 11:15:18,924 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-19 11:15:18,924 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-19 11:15:18,925 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

@@ -1,0 +1,27 @@
+config:
+  valueable:
+    organizationId: 1001
+    
+orders_page_list:
+
+    desc: 【银河/工具/落地页工具】商品管理数据查询
+    parameterize:
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/order_manager/page-list
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "courseSource": "",
+        "isCreateWorksheet": "",
+        "goodsName": "",
+        "nickName": "",
+        "payNo": "",
+        "pageNo": 1,
+        "pageSize": 20
+      }
+    shared:
+    check:
+      status: 0
+      msg: success

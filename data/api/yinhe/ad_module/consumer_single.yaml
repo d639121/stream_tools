@@ -1,0 +1,42 @@
+config:
+  valueable:
+    organizationId: 1001
+
+import_consumer_single:
+
+    desc: 【银河/广告/广告创意】录入单个消费记录
+    parameterize:
+      creativityId: creativityId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      noExposure: 100
+      noClicks: 100
+      cost: 10000
+      rebates: 1
+      costDate: $<gatherTimeStart>
+      creativityId: $<creativityId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+import_consumer_batch:
+
+    desc: 【银河/广告/广告创意】批量导入广告消费数据
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/countDay/importing
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      type: 1
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: 导入成功

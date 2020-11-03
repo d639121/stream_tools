@@ -1,0 +1,30 @@
+2020-09-02 14:58:47,505 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-02 14:58:47,506 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-02 14:58:47,506 - root - INFO : 请求方法: [- POST -]
+2020-09-02 14:58:47,506 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-02 14:58:47,533 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-02 14:58:47,673 - root - INFO : 响应消息: {'traceId': '8e40155759744537a842be52f7f819b5', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x778ead0712f125396d84707979e0eb'}}
+2020-09-02 14:58:47,674 - root - INFO : 提取变量: [ pttoken: 0x778ead0712f125396d84707979e0eb ]
+2020-09-02 14:58:47,674 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-02 14:58:47,675 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-02 14:58:47,675 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-02 14:58:47,683 - root - INFO : 当前运行Case: test_flow_cost_mgt_export_all
+2020-09-02 14:58:47,683 - root - INFO : 正在执行Function: test_flow_cost_mgt_export_all
+2020-09-02 14:58:47,683 - root - INFO : 正在执行Function: flow_cost_mgt_export
+2020-09-02 14:58:47,684 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导出
+2020-09-02 14:58:47,684 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/export
+2020-09-02 14:58:47,684 - root - INFO : 请求方法: [- POST -]
+2020-09-02 14:58:47,684 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x778ead0712f125396d84707979e0eb', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-02 14:58:47,684 - root - INFO : 请求正文: {}
+2020-09-02 14:58:48,015 - root - INFO : This Api Has No Check!
+2020-09-02 14:58:48,015 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-02 14:58:48,024 - root - INFO : 当前运行Case: test_flow_cost_mgt_export_eligible
+2020-09-02 14:58:48,024 - root - INFO : 正在执行Function: test_flow_cost_mgt_export_eligible
+2020-09-02 14:58:48,024 - root - INFO : 正在执行Function: flow_cost_mgt_export
+2020-09-02 14:58:48,024 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导出
+2020-09-02 14:58:48,024 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/export
+2020-09-02 14:58:48,024 - root - INFO : 请求方法: [- POST -]
+2020-09-02 14:58:48,024 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x778ead0712f125396d84707979e0eb', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-02 14:58:48,024 - root - INFO : 请求正文: {'startCostMonth': 1598889600000, 'endCostMonth': 1601481599999}
+2020-09-02 14:58:48,209 - root - INFO : This Api Has No Check!
+2020-09-02 14:58:48,209 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

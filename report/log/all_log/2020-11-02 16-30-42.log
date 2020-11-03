@@ -1,0 +1,14 @@
+2020-11-03 08:54:58,210 - root - INFO : 正在执行Function: program_inf_save
+2020-11-03 08:54:58,614 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-11-03 08:54:58,647 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-11-03 08:54:58,648 - root - INFO : 请求方法: [- POST -]
+2020-11-03 08:54:58,649 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 08:54:58,652 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划44632649', 'subjectId': '', 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-11-03 08:55:00,415 - root - INFO : 响应消息: {'traceId': '8316ad8059b7422ea1847fc03f97469c', 'status': '999999992', 'msg': '请求参数错误。', 'data': {}}
+2020-11-03 08:55:00,416 - root - INFO : 正在执行Function: program_page_list
+2020-11-03 08:55:00,428 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-11-03 08:55:00,428 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-11-03 08:55:00,428 - root - INFO : 请求方法: [- POST -]
+2020-11-03 08:55:00,428 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 08:55:00,429 - root - INFO : 请求正文: {'name': '自动化计划44632649', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-11-03 08:55:00,655 - root - INFO : 响应消息: {'traceId': 'c43d10776ac24d29bf6f2a03c520f5dd', 'status': '0', 'msg': 'success', 'data': {'totalItem': 0, 'list': []}}

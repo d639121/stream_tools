@@ -1,0 +1,53 @@
+2020-10-21 17:19:28,807 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 17:19:28,808 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 17:19:28,808 - root - INFO : 请求方法: [- POST -]
+2020-10-21 17:19:28,808 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 17:19:28,808 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 17:19:29,023 - root - INFO : 响应消息: {'traceId': '1f62ffeb09c84676b5d0108c8b94b41a', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77cdd10712f1253e62647baa7370b7'}}
+2020-10-21 17:19:29,024 - root - INFO : 提取变量: [ pttoken: 0x77cdd10712f1253e62647baa7370b7 ]
+2020-10-21 17:19:29,024 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 17:19:29,025 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 17:19:29,025 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 17:19:46,029 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 17:19:46,029 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 17:19:46,030 - root - INFO : 请求方法: [- POST -]
+2020-10-21 17:19:46,030 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 17:19:46,030 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 17:19:46,259 - root - INFO : 响应消息: {'traceId': 'f36361845aa744fd950a9e53ec9afed6', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77dc500712f1253790f4f46847c74d'}}
+2020-10-21 17:19:46,260 - root - INFO : 提取变量: [ pttoken: 0x77dc500712f1253790f4f46847c74d ]
+2020-10-21 17:19:46,262 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 17:19:46,262 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 17:19:46,262 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 17:19:46,262 - root - INFO : 正在执行Function: program_info_save
+2020-10-21 17:19:46,263 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-10-21 17:19:46,263 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-10-21 17:19:46,264 - root - INFO : 请求方法: [- POST -]
+2020-10-21 17:19:46,264 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77dc500712f1253790f4f46847c74d'}
+2020-10-21 17:19:46,264 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划69140532', 'subjectId': '280', 'subjectName': 'Python', 'isTest': 0, 'putMode': 3, 'type': 1, 'gatherType': 3, 'allocInstType': 3, 'channelName': '微信'}
+2020-10-21 17:19:46,766 - root - INFO : 响应消息: {'traceId': 'eccb78e70ce248c3bdd19aadcb2806cf', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-21 17:19:46,767 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 17:19:46,767 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 17:19:46,767 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 17:19:46,767 - root - INFO : 正在执行Function: program_pageList
+2020-10-21 17:19:46,768 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-10-21 17:19:46,768 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-10-21 17:19:46,768 - root - INFO : 请求方法: [- POST -]
+2020-10-21 17:19:46,768 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77dc500712f1253790f4f46847c74d'}
+2020-10-21 17:19:46,768 - root - INFO : 请求正文: {'name': '自动化计划69140532', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 3}
+2020-10-21 17:19:47,315 - root - INFO : 响应消息: {'traceId': 'd7b11ccb7a164cb788afc3f097375344', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 14282, 'oldProgramId': None, 'no': 'W1000000389446589', 'name': '自动化计划69140532', 'type': 1, 'programName': None, 'subjectName': 'Python', 'subjectId': 280, 'channelName': '微信', 'channelId': 6, 'isImport': None, 'position': None, 'keyword': None, 'areaId': None, 'areaName': None, 'remark': None, 'isNeedCaptch': None, 'state': None, 'adMainId': None, 'channelAgencyAccountId': None, 'accountCode': None, 'adMainAccount': None, 'thirdUrl': None, 'allocInstType': 3, 'receiveDeptId': None, 'receiveDeptIdChain': None, 'isHide': 0, 'isTest': 0, 'creatorDeptId': 8009, 'creatorName': '日常的阿魏', 'createTime': 1603271987000, 'putMode': 3, 'updateState': 1}]}}
+2020-10-21 17:19:47,315 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-10-21 17:19:47,316 - root - INFO : 提取变量: [ putMode: 3 ]
+2020-10-21 17:19:47,316 - root - INFO : 提取变量: [ adName: 自动化计划69140532 ]
+2020-10-21 17:19:47,316 - root - INFO : 提取变量: [ adId: 14282 ]
+2020-10-21 17:19:47,317 - root - INFO : 提取变量: [ type: 1 ]
+2020-10-21 17:19:47,317 - root - INFO : 提取变量: [ subjectId: 280 ]
+2020-10-21 17:19:47,317 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 17:19:47,317 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 17:19:47,317 - root - INFO : 校验类型: [-in]  结果: [Passed]  预期: [name]
+2020-10-21 17:19:47,318 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 17:19:47,318 - root - INFO : 描述信息: 查询企业微信载体信息
+2020-10-21 17:19:47,318 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/carrier
+2020-10-21 17:19:47,320 - root - INFO : 请求方法: [- POST -]
+2020-10-21 17:19:47,321 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77dc500712f1253790f4f46847c74d'}
+2020-10-21 17:19:47,321 - root - INFO : 请求正文: {'vectorType': 3, 'subjectId': '280', 'programId': '14282', 'isEnterpriseWx': 1, 'gatherType': 3, 'vector': '别皱眉'}
+2020-10-21 17:19:47,622 - root - INFO : 响应消息: {'traceId': 'dd5e4e0696ed493aa1d3cde370c8a634', 'status': '0', 'msg': 'success', 'data': {'list': None}}

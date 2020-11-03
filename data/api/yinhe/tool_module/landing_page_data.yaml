@@ -1,0 +1,142 @@
+# @Time  : 2020/08/06 16:41
+# @Author: Jones
+# @Desc  : 落地页数据
+config:
+  valueable:
+    organizationId: 1001
+
+list_creativity:
+
+    desc: 【银河/工具/落地页工具/落地页数据】落地页数据查询
+    parameterize:
+     websiteId: websiteId
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "websiteCode": "",
+        "creativityCode": "",
+        "adNo": "",
+        "isTest": "",
+        "channelCode": "",
+        "subjectId": "",
+        "putMode": "",
+        "websiteName": "",
+        "websiteId": $<websiteId>,
+        "submitStartTime": $<todayStartTime>,
+        "submitEndTime": $<todayEndTime>,
+        "pageNo": 1,
+        "pageSize": 10,
+        "websiteType": 1
+      }
+    shared:
+      adNo: adNo
+      websiteCode: websiteCode
+      websiteLinkId: websiteLinkId
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'formSubmitNum': 1"
+        - "'adultNum': 1"
+        - "'orderNum': 1"
+
+list_creativity_NoonedCapath:
+
+    desc: 【银河/工具/落地页工具/落地页数据】落地页数据查询--无支付
+    parameterize:
+     websiteId: websiteId
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "websiteCode": "",
+        "creativityCode": "",
+        "adNo": "",
+        "isTest": "",
+        "channelCode": "",
+        "subjectId": "",
+        "putMode": "",
+        "websiteId": $<websiteId>,
+        "submitStartTime": $<todayStartTime>,
+        "submitEndTime": $<todayEndTime>,
+        "pageNo": 1,
+        "pageSize": 10,
+        "websiteType": 1
+      }
+    shared:
+      adNo: adNo
+      websiteCode: websiteCode
+      websiteLinkId: websiteLinkId
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'formSubmitNum': 1"
+        - "'adultNum': 1"
+
+
+website_stat_queryStatInfo:
+
+    desc: 【银河/工具/落地页工具/落地页数据】查看数据
+    parameterize:
+     adNo: adNo
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+     websiteCode: websiteCode
+     creativityCode: creativityCode
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_stat/queryStatInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      startTime: $<todayStartTime>
+      endTime: $<todayEndTime>
+      adNo: $<adNo>
+      webSiteCode: $<websiteCode>
+      transferType: 0
+      creativityCode: $<creativityCode>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'formNumber': 1"
+        - "'orderNumber': 1"
+
+website_queryStatInfo_NoonedCapath:
+
+    desc: 【银河/工具/落地页工具/落地页数据】查看数据--无支付
+    parameterize:
+     adNo: adNo
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+     websiteCode: websiteCode
+     creativityCode: creativityCode
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_stat/queryStatInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      startTime: $<todayStartTime>
+      endTime: $<todayEndTime>
+      adNo: $<adNo>
+      webSiteCode: $<websiteCode>
+      transferType: 0
+      creativityCode: $<creativityCode>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'formNumber': 1"

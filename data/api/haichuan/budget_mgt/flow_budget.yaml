@@ -1,0 +1,91 @@
+# @Time  : 2020/9/3 16:22:58
+# @Author: Fold
+# @Desc  : 预算管理
+config:
+  valueable:
+    organizationId: 1001
+
+add_flow_budget:
+
+    desc: 【海川/预算管理/流量预算】新增流量预算
+    parameterize:
+    url: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/add?organizationId=8009
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+        "id": "",
+        "costMonth": "2020-10-01",
+        "weekNum": 1,
+        "weekRange": "1-4",
+        "promotionerDeptId": 8009,
+        "subjectId": 277,
+        "putMode": 1,
+        "gatherType": 1,
+        "flowCost": "0.00",
+        "avgCardNum": 1,
+        "monthEntryNum": 1,
+        "monthUnCorrectNum": 1,
+        "monthCorrectNum": 1,
+        "visitorNum": 3,
+        "workDay": 1,
+        "stageCardNum": 3,
+        "flowExpenditure": 0,
+        "customerPrice": 1,
+        "conversionRate": 1,
+        "signUpNum": 3,
+        "performance": 3,
+        "roi": 0,
+        "applyRemark": "",
+        "subjectName": "C",
+        "receiveDeptId": "",
+        "receiveDeptName": "",
+        "promotionerDeptName": "",
+        "subjectIdChain": "258-267-277",
+        "organizationId": 8009
+      }
+    check:
+      res: 100
+      msg: None
+
+qry_flow_budget:
+
+    desc: 【海川/预算管理/流量预算】查询流量预算
+    parameterize:
+    url: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/pageList?organizationId=8009
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+          "pageNow": 1,
+          "pageSize": 20,
+          "auditState": 1,
+          "organizationId": [8009],
+          "deptId": 8009
+      }
+    shared:
+      flow_budget_id: id
+    check:
+      res: 100
+      msg: None
+
+chk_flow_budget:
+
+    desc: 【海川/预算管理/流量预算】审核流量预算
+    parameterize:
+      flow_budget_id: flow_budget_id
+    url: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/audit
+    method: GET
+    header:
+      token: token
+    data:
+      id: $<flow_budget_id>
+      auditFlag: 1
+      organizationId: 8009
+    shared:
+    check:
+      res: 100

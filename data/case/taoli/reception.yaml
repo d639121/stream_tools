@@ -1,0 +1,838 @@
+login_operation:
+
+  - caseid: 1001
+    run: YES
+    desc: 【运营系统】登录运营后台
+    precondition:
+    parameterize:
+    url: https://admin-test.shiguangkey.com/sys/login
+    method: POST
+    header:
+      cookie: $<cookie>
+      content-type: application/x-www-form-urlencoded
+    data:
+      username: admin
+      password: admin1024
+      captcha: operation-case
+    shared:
+    check:
+      code: 0
+
+get_register_code:
+
+  - caseid: 1002
+    run: YES
+    desc: 【运营系统】获取注册验证码
+    precondition:
+    parameterize:
+      phoneNumber: phoneNumber
+      timestamp: timestamp
+    url: https://admin-test.shiguangkey.com/user/set-smscode
+    method: GET
+    header:
+      cookie: $<cookie>
+    data:
+      phone: $<phoneNumber>
+      _: $<timestamp>
+    shared:
+      smsCode: smsCode
+    check:
+      status: 0
+      msg: success
+      data:
+        - smsCode
+
+register_classroom:
+
+  - caseid: 1003
+    run: YES
+    desc: 【电商平台】注册成为学员
+    precondition: get_register_code
+    parameterize:
+      phoneNumber: phoneNumber
+      smsCode: smsCode
+    url: https://open-test.shiguangkey.com/api/udb/login/phone/register
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      phone: $<phoneNumber>
+      code: $<smsCode>
+      password: ISGMyneATSuhkiwz4BURBQ
+    shared:
+      student: token
+      studentUid: uid
+      account: account
+      studentNickname: nickname
+    check:
+      status: 0
+      msg: success
+      data:
+        - nickname
+        - account
+        - token
+
+get_user_info:
+
+  - caseid: 1004
+    run: YES
+    desc: 【教务】获取当前登录用户信息
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/login/getUserInfo
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+    shared:
+      departmentName: deptName
+      # 注意此处因关联后面接口的organId
+      organizationId:  deptId
+      leaderName: nick
+      leaderUid: uid
+      departmentIdChain: deptIdChain
+      tanzkAccount: tanzkAccount
+    check:
+      status: 0
+      msg: success
+      data:
+        - deptName
+        - tanzkAccount
+        - deptIdChain
+
+submit_course:
+
+  - caseid: 1005
+    run: YES
+    desc: 【教务/VIP课程管理/管理课程】发布课程
+    precondition:
+    parameterize:
+      title: title
+      leader: leader
+      referPrice: referPrice
+      timestamp: timestamp
+      floorPrice: floorPrice
+      discountsPrice: discountsPrice
+      organizationId: organizationId
+    url: https://www-test.shiguangkey.com/api/course/submitCourse
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+    data:
+      cateIdFk: 282
+      title: $<title>
+      coverVideo:
+      marketPhone:
+      qqNum:
+      marketWechat:
+      descrption: python测试课程简介
+      cover: file/202005/25/20200525175818284516403.png
+      qqGroups:
+      courseContent: <p>测试课程详情</p>
+      learningGoal: 测试目标
+      suitableCrowds: 测试人群
+      difficultyLevel: 1
+      courseLabel: python
+      courseServicePromise:
+      visibility: 5510
+      originalPrice: $<referPrice>
+      syllabusId:
+      relationPhone: 0
+      courseDepartmentId: $<organizationId>
+      afterSaleDepartmentalChainId: 1001-2001
+      afterDeptId: 2001
+      afterDeptName: VIP教学服务中心
+      ratioStrategySales: 0.1
+      vipRatioAfterSales: 0.05
+      effectiveTime: $<timestamp>
+      ratioAfterSales: 0.15
+      divideType: 5
+      syllabusJson: '[{"nodeName":"testsection1","order":1,"nodeType":2}]'
+      typeDicFk: 5310
+      floorPrice: $<floorPrice>
+      price: $<discountsPrice>
+      learnDuration: 60
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_verify_course:
+
+  - caseid: 1006
+    run: YES
+    desc: 【旧运营系统/运营管理/课程审核】查询待审核课程
+    precondition:
+    parameterize:
+      title: title
+      leaderUid: leaderUid
+    url: https://admin-test-new.shiguangkey.com/api/course/verifyList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      courseTitle: $<title>
+      checkStatus: 1511
+      orgId: ""
+      reviewId: $<leaderUid>
+      pageSize: 10
+      pageIndex: 1
+    shared:
+      courseDrftsId: id
+    check:
+      code: 0
+      msg: OK
+
+verify_course_detail:
+
+  - caseid: 1007
+    run: YES
+    desc: 【旧运营系统/运营管理/课程审核】查看待审核课程详情
+    precondition:
+    parameterize:
+      courseDrftsId: courseDrftsId
+    url: https://admin-test-new.shiguangkey.com/api/course/verifyDraft
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      draftsId: $<courseDrftsId>
+    shared:
+    check:
+      code: 0
+      msg: OK
+
+verify_course:
+
+  - caseid: 1008
+    run: YES
+    desc: 【旧运营系统/运营管理/课程审核】 审核课程
+    precondition:
+    parameterize:
+      courseDrftsId: courseDrftsId
+      tanzkAccount: tanzkAccount
+    url: https://admin-test-new.shiguangkey.com/api/course/verifyCourse
+    method: GET
+    header:
+      x-csrf-token: jTyDkp2rKh49ZkfPLLD6avU1
+      token: $<leader>
+    data:
+      courseDrftsId: $<courseDrftsId>
+      checkStatus: 1512
+      checkDesc: 审核通过
+      operator: $<tanzkAccount>
+    shared:
+    check:
+      code: 0
+      msg: OK
+
+query_by_teacher_forweb:
+
+  - caseid: 1009
+    run: YES
+    desc: 【教务/VIP课程管理/管理课程】查询已审核课程 获取courseId
+    precondition:
+    parameterize:
+      title: title
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/course/queryByTeacherForWeb
+    method: GET
+    header:
+    data:
+      status: 2
+      courseSource: ""
+      attrtag: ""
+      key: $<title>
+      pageIndex: 1
+      pageSize: 10
+      courseType: 5310
+      terminalType: "4"
+      token: $<leader>
+    shared:
+      courseId: id
+    check:
+      status: 0
+      msg: success
+      data:
+        - id
+
+edit_need_enrol:
+
+  - caseid: 1010
+    run: YES
+    desc: 【教务/VIP课程管理/管理课程】设置需要入学接待
+    precondition:
+    parameterize:
+      courseId: courseId
+    url: https://www-test.shiguangkey.com/api/courses/editNeedEnrol
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      courseId: $<courseId>
+      needEnrol: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_course_name:
+
+  - caseid: 1011
+    run: YES
+    desc: 【教务/VIP课程管理/班期管理】查询要新增班期的课程
+    precondition:
+    parameterize:
+      courseId: courseId
+    url: https://www-test.shiguangkey.com/api/syllabus/getLatestSyllabusByCourseId
+    method: GET
+    header:
+      terminaltype: "4"
+      token: $<leader>
+    data:
+      courseId: $<courseId>
+    shared:
+      syllabusId: syllabusId
+      syllabusDetailId: syllabusDetailId
+    check:
+      status: 0
+      msg: success
+      data:
+        - syllabusId
+        - syllabusDetailId
+
+add_class:
+
+  - caseid: 1012
+    run: YES
+    desc: 【教务/VIP课程管理/班期管理】添加班期
+    precondition:
+    parameterize:
+      leader: leader
+      tomorrow: tomorrow
+      courseId: courseId
+      syllabusId: syllabusId
+      syllabusDetailId: syllabusDetailId
+    url: https://www-test.shiguangkey.com/api/teacher/class/addClass
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+    data:
+      courseId: $<courseId>
+      chapterJson: '[{"title":"testsection1","chapterType":0,"startDateStr":"$<tomorrow>","startTimeStr":"20:00","endTimeStr":"22:00","canUpdate":true,"index":1,"DisTitleType":true,"DischapterType":true,"disabled":true,"syllabusDetailId":$<syllabusDetailId>,"syllabusDetailParentId":0,"syllabusDetailParentName":""}]'
+      courseTeacherJson: '[{"userIdFk":"19304749","roleDicFk":"5701"},{"userIdFk":"19304744","roleDicFk":"5702"},{"userIdFk":"19304750","roleDicFk":"5703"},{"userIdFk":"19304741","roleDicFk":"5704"}]'
+      syllabusId: $<syllabusId>
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+add_worksheet:
+
+  - caseid: 1013
+    run: YES
+    desc: 【CRM/工单管理/工单列表】首次提交工单
+    precondition:
+    parameterize:
+      courseId: courseId
+      account: account
+      discountsPrice: discountsPrice
+      departmentIdChain: departmentIdChain
+      transNo: transNo
+      timestamp: timestamp
+      userName: userName
+      phoneNumber: phoneNumber
+      qq: qq
+      leaderUid: leaderUid
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      isLackOfAccount: "0"
+      tanzkAccount: $<account>
+      isKoubei: 0
+      buyType: 1
+      courseType: 6810
+      buyCourseDetails: '[{"courseId":$<courseId>,"sellingPrice":$<discountsPrice>}]'
+      payTypeValue: 1
+      rcvChannelValue: 1
+      rcvChannelValueSub: 34
+      rcvAccount: tanzhouedu@mooncollege.cn
+      transNo: $<transNo>
+      payTime: $<timestamp>
+      belongDeptIdChain: $<departmentIdChain>
+      belongDeptServiceRatio: 0.33
+      loanSubsidizedAmount: 0
+      loanDepositAmount: 0
+      currencyValue: 1
+      shouldPayAmount: $<discountsPrice>
+      paidAmount: $<discountsPrice>
+      vouchers: https://res.shiguangkey.com/file/worksheet/payProof/20200408/15/20200408153408271523387.jpg
+      divideDeptDetails: '[{"followerUid":$<leaderUid>,"deptIdChain":"$<departmentIdChain>","divideAmount":$<discountsPrice>}]'
+      totalPriceSelling: $<discountsPrice>
+      isSuspend: 0
+      useCoupon: 0
+      vipLiveState: 1
+      name: $<userName>
+      mobile: $<phoneNumber>
+      qq: $<qq>
+      followerUid: $<leaderUid>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_workshhet:
+
+  - caseid: 1014
+    run: YES
+    desc: 【CRM/财务管理/财务列表】查询工单
+    precondition:
+    parameterize:
+      qq: qq
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 1
+      state: 91
+      qq: $<qq>
+    shared:
+      worksheetId: id
+      worksheetNo: worksheetNo
+      orderNo: orderNo
+      orderId: orderId
+    check:
+      status: 0
+      msg: success
+      data:
+        - worksheetNo
+        - orderNo
+        - orderId
+
+check_worksheet:
+
+  - caseid: 1015
+    run: YES
+    desc: 【CRM/财务管理/财务列表】财务审核工单
+    precondition:
+    parameterize:
+      worksheetId: worksheetId
+    url: https://work-test.shiguangkey.com/api/worksheet/finance/audit/pass
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      id: $<worksheetId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+
+query_student_entrance:
+
+  - caseid: 1016
+    run: YES
+    desc: 【教务/入学管理/入学接待】查询入学列表指定学员
+    precondition:
+    parameterize:
+      account: account
+      setTime: setTime
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/query
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      courseType: 0
+      account: $<account>
+      status: 0
+      setTime: "$<setTime>"
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_status:
+
+  - caseid: 1017
+    run: YES
+    desc: 【教务/入学管理/入学接待】查询学员信息状态
+    precondition:
+    parameterize:
+      orderId: orderId
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/status/query
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      orderIds: $<orderId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+handled_order:
+
+  - caseid: 1018
+    run: YES
+    desc: 【教务/入学管理/入学接待】入学状态修改
+    precondition:
+    parameterize:
+      orderId: orderId
+    url: https://open-test.shiguangkey.com/api/afterSales/enrol/order/handled
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "orderId":$<orderId>,
+        "status":2
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+make_online_contract:
+
+  - caseid: 1019
+    run: YES
+    desc: 【教务/入学管理/入学接待】预览合同
+    precondition:
+    parameterize:
+      account: account
+      title: title
+      courseId: courseId
+      userName: userName
+      orderId: orderId
+      orderNo: orderNo
+      worksheetId: worksheetId
+      studentUid: studentUid
+      discountsPrice: discountsPrice
+      studentNickname: studentNickname
+    url: https://open-test.shiguangkey.com/api/afterSales/contract/makeOnlineContract
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "contractType":1,
+        "contractTitle":"测试合同007",
+        "courses":[
+        {
+          "courseId":$<courseId>,
+          "courseTitle":"$<title>"
+        }
+        ],
+        "buyCourseListenDays":20,
+        "courseContent":"测试内容007",
+        "contractPresents":[],
+        "postFlag":0,
+        "remarks":[""],
+        "userName":"$<userName>",
+        "userAccount":"$<account>",
+        "orderId":$<orderId>,
+        "orderNo":"$<orderNo>",
+        "operateType":1,
+        "payDetails":[
+        {
+          "payType":1,
+          "totalAmount":$<discountsPrice>
+        }
+        ],
+        "payTypes":[1],
+        "worksheetInfos":[
+        {
+          "worksheetId":$<worksheetId>
+        }
+        ],
+        "packageCourses":[],
+        "duration":17219,
+        "studentUid":$<studentUid>
+      }
+    shared:
+      contractId: id
+    check:
+      status: 0
+      msg: success
+      data:
+        - id
+
+get_contract:
+
+  - caseid: 1020
+    run: YES
+    desc: 【教务/入学管理/入学接待】获取合同
+    precondition:
+    parameterize:
+      contractId: contractId
+    url: https://open-test.shiguangkey.com/api/afterSales/contract/getContract
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      id: $<contractId>
+    shared:
+      modifyTime: modifyTime
+    check:
+      status: 0
+      msg: success
+      data:
+        - modifyTime
+
+send_contract:
+
+  - caseid: 1021
+    run: YES
+    desc: 【教务/入学管理/入学接待】复制链接发送合同
+    precondition:
+    parameterize:
+      contractId: contractId
+    url: https://www-test.shiguangkey.com/api/teacher/contract/send
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      id: $<contractId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_user_course_access:
+
+  - caseid: 1022
+    run: YES
+    desc: 【教务/入学管理/入学接待】获取用户课程权限，获取classId
+    precondition:
+    parameterize:
+      orderId: orderId
+      studentUid: studentUid
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/getUserCourseAccess
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      orderId: $<orderId>
+      userId: $<studentUid>
+    shared:
+      classId: classId
+    check:
+      status: 0
+      msg: success
+      data:
+        - classId
+
+save_course_access:
+
+  - caseid: 1023
+    run: YES
+    desc: 【教务/入学管理/入学接待】点击完成入学接待
+    precondition:
+    parameterize:
+      orderId: orderId
+      studentUid: studentUid
+      courseId: courseId
+      classId: classId
+    url: https://open-test.shiguangkey.com/api/afterSales/permission/saveCourseAccess
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "orderId":$<orderId>,
+        "list":[
+        {
+          "userId":$<studentUid>,
+          "courseId":$<courseId>,
+          "classId":$<classId>,
+          "currentClassId":0
+        }
+        ]
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_permission:
+
+  - caseid: 1024
+    run: YES
+    desc: 【教务/入学管理/入学接待】学员权限
+    precondition:
+    parameterize:
+      orderId: orderId
+      studentUid: studentUid
+      classId: classId
+      courseId: courseId
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/studentPermission
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "orderId":$<orderId>,
+        "list":[
+        {
+          "userId":$<studentUid>,
+          "courseId":$<courseId>,
+          "classId":$<classId>,
+          "currentClassId":0
+        }
+        ]
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+update_student_permission:
+
+  - caseid: 1025
+    run: YES
+    desc: 【教务/入学管理/入学接待】更新学员权限
+    precondition:
+    parameterize:
+      worksheetId: worksheetId
+      orderId: orderId
+    url: https://open-test.shiguangkey.com/api/afterSales/permissionAnomaly/update
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "worksheetIds":[
+          $<worksheetId>
+        ],
+        "orderId":$<orderId>
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+send_sms:
+
+  - caseid: 1026
+    run: NO
+    desc: 【教务/入学管理/入学接待】完成后发送短信
+    precondition:
+    parameterize:
+      studentUid: studentUid
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/sendSms
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      # 关联添加班期里的ID
+      teacherId: "19304741"
+      teacherContact: "346770816"
+      type: 1
+      stuId: $<studentUid>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+qryContractsByUserId:
+
+  - caseid: 1026
+    run: YES
+    desc: 【潭州课堂/我的合同】我的合同列表
+    precondition:
+    parameterize:
+      contractId: contractId
+    url: https://www-test.shiguangkey.com/api/student/contract/qryContractsByUserId
+    method: GET
+    header:
+      token: $<student>
+    data:
+      pageSize: 10
+      pageIndex: 1
+      terminalType: 4
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - contractTitle
+        - userAccount
+
+get_contracts:
+
+  - caseid: 1027
+    run: YES
+    desc: 【潭州课堂/我的合同】点击签订合同，获取合同
+    precondition:
+    parameterize:
+      contractId: contractId
+    url: https://open-test.shiguangkey.com/api/afterSales/contract/getContract
+    method: GET
+    header:
+      token: $<student>
+    data:
+      id: $<contractId>
+    shared:
+      modifyTime: modifyTime
+    check:
+      status: 0
+      msg: success
+      data:
+        - modifyTime
+
+signing_contract:
+
+  - caseid: 1028
+    run: YES
+    desc: 【潭州课堂/我的合同】签订合同
+    precondition:
+    parameterize:
+      userName: userName
+      timestamp: timestamp
+      qq: qq
+      contractId: contractId
+      modifyTime: modifyTime
+      phoneNumber: phoneNumber
+    url: https://www-test.shiguangkey.com/api/student/contract/signingContract
+    method: POST
+    header:
+      token: $<student>
+      content-type: application/json
+    data:
+      {
+        "signingName":"LOUIE",
+        "userName":"LOUIE",
+        "userQq":"$<qq>",
+        "idCard":"320105198304162139",
+        "contactPhone":"13347335633",
+        "modifyTime":$<modifyTime>,
+        "contractId":$<contractId>
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+

@@ -1,0 +1,173 @@
+# @Time  : 2020/8/26 17:32
+# @Author: LOUIE
+# @Desc  : 代理商管理
+config:
+  valueable:
+    organizationId: 1001
+
+
+agent_pageList:
+    desc: 【银河/账户/代理商管理】代理商管理列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+      channelId: 6
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        channelName: 微信
+
+rebate_pageList:
+    desc: 【银河/账户/代理商管理】返点列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+      channelId: 6
+    shared:
+    check:
+      status: 0
+      msg: success
+#      data:
+#        channelName: 微信
+
+export_record:
+    desc: 【银河/账户/代理商管理】导出代理商列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      channelId: 6
+    shared:
+    check:
+      status_code: 200
+
+export_rebate_record:
+    desc: 【银河/账户/代理商管理】导出返点列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      channelId: 6
+      invalidDateBeginDate: 4102329600000
+      invalidDateEndDate: 4102329600000
+    shared:
+    check:
+      status_code: 200
+
+add_rebate:
+   desc: 【银河/账户/代理商管理】新增返点
+   parameterize:
+     tomorrowStartTimestamp: tomorrowStartTimestamp
+     channelAgencyId: channelAgencyId
+   url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/save
+   method: POST
+   header:
+     content-type: application/x-www-form-urlencoded
+     token: token
+     terminaltype: '4'
+   data:
+      rebate: 1.2
+      channelAgencyId: $<channelAgencyId>
+      validDate: $<tomorrowStartTimestamp>
+   shared:
+   check:
+      status: 0
+      msg: success
+
+add_agent:
+    desc: 【银河/账户/代理商管理】新增代理商
+    parameterize:
+      qq: qq
+      RandomChinese: RandomChinese
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      agencyShortName: $<RandomChinese>
+      agencyName: $<RandomChinese>
+      thirdAgencyCode: $<qq>
+      channelId: 6
+      channelName: 微信
+    shared:
+    check:
+      status: 0
+      msg: success
+
+qry_channel_agency:
+    desc: 【银河/账户/代理商管理】查询代理商
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+      agencyShortName: ''
+    shared:
+      channelAgencyId: id
+      agencyCode: agencyCode
+      agencyName: agencyName
+      agencyShortName: agencyShortName
+      channelId: channelId
+      thirdAgencyCode: thirdAgencyCode
+      rebateNum: rebateNum
+    check:
+      status: 0
+      msg: success
+
+qry_channel_agency_rebate:
+    desc: 【银河/账户/代理商管理】查询代理商返点
+    parameterize:
+      agencyCode: agencyCode
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+      agencyCode: $<agencyCode>
+    shared:
+      agencyCode: agencyCode
+      agencyShortName: agencyShortName
+      channelAgencyId: channelAgencyId
+      channelAgencyState: channelAgencyState
+      channelAgencyRebateId: id
+      rebate: rebate
+      remark: remark
+      validDate: validDate
+    check:
+      status: 0
+      msg: success

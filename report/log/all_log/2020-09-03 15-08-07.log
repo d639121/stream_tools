@@ -1,0 +1,10 @@
+2020-09-03 15:08:07,414 - root - INFO : 正在执行Function: flow_cost_mgt_page_list
+2020-09-03 15:08:07,415 - root - INFO : 描述信息: 【预算/流量成本管理/查询】
+2020-09-03 15:08:07,415 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+2020-09-03 15:08:07,415 - root - INFO : 请求方法: [- POST -]
+2020-09-03 15:08:07,415 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 15:08:07,415 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'gatherType': 3, 'startCostMonth': 1601481600000, 'endCostMonth': 1604159999999, 'channelId': 4}
+2020-09-03 15:08:07,660 - root - INFO : 响应消息: {'traceId': 'b5956bcfaea6404cb1c752c3de0be5d9', 'status': '0', 'msg': 'success', 'data': {'list': [], 'totalItem': 0, 'summation': ''}}
+2020-09-03 15:08:07,660 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-03 15:08:07,660 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-03 15:08:07,660 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

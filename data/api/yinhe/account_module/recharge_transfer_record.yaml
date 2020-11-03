@@ -1,0 +1,131 @@
+# @Time  : 2020/8/27 17:26
+# @Author: LOUIE
+# @Desc  : 充值转账记录
+config:
+  valueable:
+    organizationId: 1001
+
+recharge_pageList:
+    desc: 【银河/账户/充值申请记录】充值记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge/pageList
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      recharge_id: id
+    check:
+      status: 0
+      msg: success
+
+transfer_pageList:
+    desc: 【银河/账户/充值申请记录】转账记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/transfer/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      channelId: 3
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        channelName: 哔哩哔哩
+
+principal_received_affirm:
+    desc: 【银河/账户/充值申请记录】负责人到账确认
+    parameterize:
+      recharge_id: recharge_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge/principal-received-affirm
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+        "bookAmount":101,
+        "cashAmount":101,
+        "accountCredentials":"https://res.shiguangkey.com/promotion/2020/10/23/6547b706a1/58d511d26ad69.png",
+        "difference":0,
+        "id":$<recharge_id>
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_recharge_pageList:
+    desc: 【银河/账户/充值申请记录】导出充值记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge/export
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+        "channelId":3,
+        "pageIndex":1,
+        "pageSize":20
+      }
+    shared:
+    check: no_check
+
+export_transfer_pageList:
+    desc: 【银河/账户/充值申请记录】导出转账记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/transfer/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      channelId: 3
+    shared:
+    check:
+      status_code: 200
+
+recharge_refund:
+    desc: 【银河/账户/充值转账记录】充值退款
+    parameterize:
+      recharge_id: recharge_id
+      agencyCode: agencyCode
+      agencyName: agencyName
+      accountCode: accountCode
+      accountName: accountName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/refund/input
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      refundBookAmount: 90
+      refundCashAmount: "90.00"
+      refundReason: "其他"
+      refundCertificateUrl: "https://res.shiguangkey.com/promotion/2020/10/22/b67e4fa6bd/1.png"
+      accountRechargeRecordId: $<recharge_id>
+      channelId: 4
+      channelName: "知乎"
+      agencyCode: $<agencyCode>
+      agencyName: $<agencyName>
+      agencyShortName: $<agencyName>
+      accountCode: $<accountCode>
+      accountName: $<accountName>
+      bookAmount: 200
+      cashAmount: 200
+      fapiaoType: 1
+      rechargeStatus: 1
+      rechargeType: 2
+    shared:
+    check:
+      status: 0
+      msg: success

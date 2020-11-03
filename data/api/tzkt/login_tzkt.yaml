@@ -1,0 +1,55 @@
+# @Time  : 2020/8/19 15:27
+# @Author: LOUIE
+# @Desc  : 登录
+
+register_tzkt:
+
+    desc: 【电商平台】注册成为学员
+    precondition:
+    parameterize:
+      phoneNumber: phoneNumber
+      smsCode: smsCode
+    url: https://open-fat.shiguangkey.com/api/udb/login/phone/register
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      phone: $<phoneNumber>
+      code: $<smsCode>
+      password: 4QrcOUm6Wau+VuBX8g+IPg
+    shared:
+      sttoken: token
+      stUid: uid
+      stAccount: account
+      mobile: mobile
+      stNickname: nickname
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: token
+
+login_tzkt:
+
+    desc: 【电商平台】登录潭州课堂
+    precondition:
+    parameterize:
+      phoneNumber: phoneNumber
+    url: https://open-test.shiguangkey.com/api/udb/login/standard
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+      inviteLinkId: ''
+    data:
+      account: $<phoneNumber>
+      password: 4QrcOUm6Wau+VuBX8g+IPg
+      inviteLinkId:
+      ticketLogin: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: token

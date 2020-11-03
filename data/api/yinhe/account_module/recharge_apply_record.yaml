@@ -1,0 +1,173 @@
+# @Author: LOUIE
+# @Desc  : 充值申请记录
+config:
+  valueable:
+    organizationId: 1001
+
+apply_list:
+
+    desc: 【银河/账户/充值申请记录】充值申请记录列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/pageList
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      applyId: id
+      channelAgencyAccountId: channelAgencyAccountId
+    check:
+      status: 0
+      msg: success
+
+rejected_apply:
+
+    desc: 【银河/账户/充值申请记录】驳回充值申请  # 负责人
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/rejected
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      auditContent: test
+      id: $<applyId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+passed_apply:
+
+    desc: 【银河/账户/充值申请记录】通过充值申请  # 负责人
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/pass
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      id: $<applyId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_record:
+
+    desc: 【银河/账户/充值申请记录】导出充值申请记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      applyEndDate: 1598543999000
+      applyStartDate: 1598284800000
+    shared:
+    check: no_check
+
+updated_apply:
+
+    desc: 【银河/账户/充值申请记录】修改充值申请  # 小伙伴
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      id: $<applyId>
+      applyCashAmount: 102
+    shared:
+    check:
+      status: 0
+      msg: success
+
+processed_apply:
+
+    desc: 【银河/账户/充值申请记录】SOP管理员打款  # SOP管理员
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/process
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      id: $<applyId>
+      bookAmount: 102
+      cashAmount: 102
+      rechargeType: 2
+      channelAgencyAccountId: 10000003
+    shared:
+    check:
+      status: 0
+      msg: success
+
+recharge_confirm:
+
+    desc: 【银河/账户/充值申请记录】小伙伴到账确认  # 小伙伴
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/rechargeConfirm
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      rechargeApplyRecordId: $<applyId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+received_affirm:
+
+    desc: 【银河/账户/充值申请记录】小伙伴到账确认  # 小伙伴
+    parameterize:
+      applyId: applyId
+      channelAgencyAccountId: channelAgencyAccountId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/accountRecharge/apply/received-affirm
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+        "bookAmount":101,
+        "cashAmount":101,
+        "accountCredentials":"https://res.shiguangkey.com/promotion/2020/10/23/6547b706a1/58d511d26ad69.png",
+        "id": $<applyId>,
+        "channelAgencyAccountId": $<channelAgencyAccountId>,
+        "rechargeApplyRecordId": $<applyId>
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+send_email:
+    desc: 【银河/账户/充值申请记录】生成邮件
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge-mail/generate
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      ids: $<applyId>
+    shared:
+    check:
+      status: 0
+      msg: success

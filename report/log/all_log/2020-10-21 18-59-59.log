@@ -1,0 +1,67 @@
+2020-10-21 18:59:59,602 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 18:59:59,603 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 18:59:59,603 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:59:59,603 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 18:59:59,603 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 18:59:59,832 - root - INFO : 响应消息: {'traceId': '98b230bd250b44019c3309cea6faced6', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7786f40712f10d0af6049afb94d4fa'}}
+2020-10-21 18:59:59,833 - root - INFO : 提取变量: [ pttoken: 0x7786f40712f10d0af6049afb94d4fa ]
+2020-10-21 18:59:59,833 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 18:59:59,834 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 18:59:59,834 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 19:00:25,185 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-21 19:00:25,294 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 19:00:25,363 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 19:00:25,393 - root - INFO : 描述信息: 查询企业微信载体信息
+2020-10-21 19:00:25,393 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/search
+2020-10-21 19:00:25,393 - root - INFO : 请求方法: [- POST -]
+2020-10-21 19:00:25,394 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7786f40712f10d0af6049afb94d4fa'}
+2020-10-21 19:00:25,395 - root - INFO : 请求正文: {'carrierName': '别皱眉', 'type': 3}
+2020-10-21 19:00:25,650 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'b345f5b9fb574695a92edbeaf22fab6b', 'data': [{'id': 552, 'carrierName': '别皱眉', 'carrierNo': '别皱眉', 'qrCodeUrl': 'https://open.work.weixin.qq.com/wwopen/userQRCode?vcode=vc42c79008dbbacc02', 'wwUserId': '17444'}]}
+2020-10-21 19:00:25,650 - root - INFO : 提取变量: [ vectorId: 552 ]
+2020-10-21 19:00:25,651 - root - INFO : 提取变量: [ carrierNo: 别皱眉 ]
+2020-10-21 19:00:25,651 - root - INFO : 提取变量: [ vector: 别皱眉 ]
+2020-10-21 19:00:25,651 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 19:00:25,651 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 19:00:25,652 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 19:00:25,714 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】生成二维码，保存(工具使用)
+2020-10-21 19:00:25,714 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-10-21 19:00:25,714 - root - INFO : 请求方法: [- POST -]
+2020-10-21 19:00:25,714 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7786f40712f10d0af6049afb94d4fa'}
+2020-10-21 19:00:25,715 - root - INFO : 请求正文: {'name': '自动化落地页26733821', 'goodsId': '416', 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kgj83rvewqrs6j6', 'isRecommendApp': False, 'submitType': 0, 'wechatReqs': [{'imageUrl': 'https://wework.qpic.cn/wwpic/825733_CZSQHUg-SMCv0u5_1603273871/0', 'wechat': '别皱眉', 'wechatChangeTime': 50, 'creativityId': 0, 'creativityNo': '', 'limitClickNum': 100, 'isWehub': False, 'isCarrier': True, 'carrierId': '552', 'channelNumber': 630}], 'isSmsVerify': 0, 'pageMode': 1, 'websiteType': 2, 'adCreateType': 2, 'websiteWechatType': 2, 'bgColor': '', 'bgImage': '', 'version': '2.5.0', 'compReqs': [{'compJson': '{"id":"kgj7urhze978pok","type":15,"wechatList":[{"imageUrl":"https://wework.qpic.cn/wwpic/825733_CZSQHUg-SMCv0u5_1603273871/0","wechat":"别皱眉","wechatChangeTime":50,"creativityId":0,"creativityNo":"","creativityName":"","limitClickNum":100,"carrierName":"别皱眉","isWehub":false,"isCarrier":true,"channelId":"","carrierId":552,"channelNumber":630,"disabled":false,"deleted":false}],"width":375,"height":160,"backgroundType":2,"background":"","codeWidth":120,"codeLeft":50,"codeTop":50,"y":0}', 'fileIds': [], 'scene': 1, 'type': 15}]}
+2020-10-21 19:00:25,918 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '678ee6442c204345979d1f92a2956b29', 'data': {'code': '1318869752119435266', 'id': 9121}}
+2020-10-21 19:00:25,918 - root - INFO : 提取变量: [ websiteId: 9121 ]
+2020-10-21 19:00:25,919 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 19:00:25,919 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 19:00:25,919 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 19:00:25,919 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】发布落地页
+2020-10-21 19:00:25,920 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-10-21 19:00:25,921 - root - INFO : 请求方法: [- POST -]
+2020-10-21 19:00:25,921 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7786f40712f10d0af6049afb94d4fa'}
+2020-10-21 19:00:25,921 - root - INFO : 请求正文: {'websiteId': '9121'}
+2020-10-21 19:00:26,101 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': 'fcb7cc3e600046ecaa51f274d0f66687', 'data': None}
+2020-10-21 19:00:26,102 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 19:00:26,103 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 19:00:26,104 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】生成链接
+2020-10-21 19:00:26,104 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-10-21 19:00:26,105 - root - INFO : 请求方法: [- POST -]
+2020-10-21 19:00:26,105 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7786f40712f10d0af6049afb94d4fa'}
+2020-10-21 19:00:26,105 - root - INFO : 请求正文: {'websiteId': '9121', 'title': 'kuaishou', 'accountId': 'wx359bdedd5d18907a', 'releaseChannel': 3, 'putPlanNames': ['自动化落地页26733821'], 'domain': 'https://mz-fat.tanzhouedu.com', 'subjectId': 280, 'websiteLinkFollowReq': {'gatherType': 3, 'isTest': 0, 'receiveDeptIdChain': '', 'receiveDeptName': '', 'allocInstType': 3, 'putMode': 1}, 'channelId': 6, 'subject': 'PHP'}
+2020-10-21 19:00:26,286 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '656e7fabc40c4a04a49e3d2b570ad5ad', 'data': [{'putPlanName': None, 'creativityCode': '336853bd4eafc683'}]}
+2020-10-21 19:00:26,286 - root - INFO : 提取变量: [ creativityCode: 336853bd4eafc683 ]
+2020-10-21 19:00:26,286 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 19:00:26,286 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 19:00:26,287 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 19:00:26,287 - root - INFO : 正在执行Function: list_landing_page
+2020-10-21 19:00:26,287 - root - INFO : 描述信息: 【银河/工具/落地页工具】落地页数据查询
+2020-10-21 19:00:26,287 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+2020-10-21 19:00:26,288 - root - INFO : 请求方法: [- POST -]
+2020-10-21 19:00:26,288 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7786f40712f10d0af6049afb94d4fa'}
+2020-10-21 19:00:26,288 - root - INFO : 请求正文: {'websiteCode': '', 'creativityCode': '', 'adNo': '', 'isTest': '', 'channelCode': '', 'subjectId': '', 'putMode': '', 'websiteName': '自动化落地页26733821', 'submitStartTime': '2020-10-21 00:00:00', 'submitEndTime': '2020-10-21 23:59:59', 'pageNo': 1, 'pageSize': 10, 'websiteType': 2}
+2020-10-21 19:00:26,880 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '0016e908cd6b475aa740ffd04b99451a', 'data': {'totalPage': 1, 'rows': [{'websiteLinkId': 8527, 'websiteName': '自动化落地页26733821', 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kgj83rvewqrs6j6', 'adNo': '', 'creativityId': 0, 'putPlanName': '自动化落地页26733821', 'websiteCode': '1318869752119435266', 'websiteId': 9121, 'promoter': '暖和的少女花', 'publishTime': '2020-10-21 19:00:27', 'updatedAt': 1603278027000, 'channel': None, 'subject': 'PHP', 'putMode': 1, 'creativityCode': '336853bd4eafc683', 'creativityStat': {'creativityCode': '336853bd4eafc683', 'pageView': 0, 'uniqueVisitor': 0, 'conversionRate': 0, 'orderNum': 0, 'formSubmitNum': None, 'clickNum': 0, 'adultNum': 0, 'minorNum': 0, 'avgLoadTime': 0, 'downloadNum': 0, 'noCustomerGrown': None, 'noCustomerChild': None, 'cpc': None, 'noLeaningRepeatGrown': None, 'noLeaningRepeatChild': None, 'noLeaning': None}, 'websiteType': 2, 'transferType': 1, 'isTest': 0, 'receiveDeptName': '', 'allocInstType': 3, 'isDisable': 0, 'releaseChannel': 3, 'url': 'https://mz-fat.tanzhouedu.com?s=336853bd4eafc683', 'customerNum': None, 'userId': 637}], 'totalCount': 1, 'pageNo': 1, 'pageSize': 10, 'currentPageSize': 1}}
+2020-10-21 19:00:26,880 - root - INFO : 提取变量: [ adNo:  ]
+2020-10-21 19:00:26,881 - root - INFO : 提取变量: [ websiteCode: 1318869752119435266 ]
+2020-10-21 19:00:26,881 - root - INFO : 提取变量: [ websiteLinkId: 8527 ]
+2020-10-21 19:00:26,881 - root - INFO : 提取变量: [ url: https://mz-fat.tanzhouedu.com?s=336853bd4eafc683 ]
+2020-10-21 19:00:26,882 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 19:00:26,882 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 19:00:26,882 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

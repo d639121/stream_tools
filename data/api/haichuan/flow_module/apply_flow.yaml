@@ -1,0 +1,28 @@
+# @Time  : 2020/8/25 11:18
+# @Author: LOUIE
+# @Desc  : 申请流量
+config:
+  valueable:
+    organizationId: 1001
+    promotionerDeptIdChain: 1001-3003-12504-12505
+
+apply_flow:
+
+    desc: 【海川/流量管理/申请流量】申请流量按钮
+    parameterize:
+      tomorrowStartTimestamp: tomorrowStartTimestamp
+    url: https://ocean-fat.shiguangkey.com/api/crm/stuser/instApplyRecord/applyFlows?organizationId=8009
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      gatherType: 1
+      allocDate: $<tomorrowStartTimestamp>
+      promotionerDeptIdChain: 1001-7904-7905-7908
+      applyNo: 1
+      putMode: 1
+      organizationId: 8009
+    check:
+      res: 100
+      msg: null

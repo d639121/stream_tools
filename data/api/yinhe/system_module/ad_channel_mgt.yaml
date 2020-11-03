@@ -1,0 +1,79 @@
+# @Time  : 2020/8/24 17:02
+# @Author: LOUIE
+# @Desc  : 广告渠道管理
+config:
+  valueable:
+    organizationId: 1001
+
+query_channel:
+    desc: 【系统/广告渠道管理】查询广告渠道
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channel/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      channel_id: id
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: 自动化
+
+add_channel:
+    desc: 【系统/广告渠道管理】新增广告渠道
+    parameterize:
+      channelName: channelName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channel/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      name: $<channelName>
+      types: 1
+      isApiAccess: 1
+      icon: https://res.shiguangkey.com/promotion/2020/9/10/52a1a7ab86/1596285166(1).jpg
+    shared:
+    check:
+      status: 0
+      msg: success
+
+forbid_channel:
+    desc: 【系统/广告渠道管理】禁用/启用广告渠道
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channel/startOrDisabled
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      id: 66
+      state: 2
+    shared:
+    check:
+      status: 0
+      msg: success
+
+edit_channel:
+    desc: 【系统/广告渠道管理】编辑广告渠道
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channel/modify
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      id: 66
+      name: 自动化测试-勿删
+      types: 1
+      isApiAccess: 1
+      icon: https://res.shiguangkey.com/promotion/2020/9/10/52a1a7ab86/1596285166(1).jpg
+    shared:
+    check:
+      status: 0
+      msg: success

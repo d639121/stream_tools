@@ -1,0 +1,575 @@
+listCoursePage:
+
+  - caseid: 1001
+    run: YES
+    desc: 【小咖/班课管理/课程管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/edu/course/listCoursePage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+listCourseTypePage:
+
+  - caseid: 1002
+    run: YES
+    desc: 【小咖/班课管理/班型管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/edu/courseType/listCourseTypePage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listClassesPage:
+
+  - caseid: 1003
+    run: YES
+    desc: 【小咖/班课管理/班期管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/edu/classes/listClassesPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+getIntentionPage:
+
+  - caseid: 1004
+    run: YES
+    desc: 【小咖/班课管理/意向管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/edu/intention/getIntentionPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+listStudentBuyPage1:
+
+  - caseid: 1005
+    run: YES
+    desc: 【小咖/学员管理/分配学员】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/stuadmin/student/listStudentBuyPage
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        data:{
+               pageIndex: 1,
+               pageSize: 20,
+               allotStatus: 0,
+               tag: 1
+        },
+        header:{
+                 client: "outframework",
+                 clientVersion: "1.0.5"
+        }
+      }
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listStudentBuyPage2:
+
+  - caseid: 1006
+    run: YES
+    desc: 【小咖/学员管理/接待学员】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/stuadmin/student/listStudentBuyPage
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        data:{
+               pageIndex: 1,
+               pageSize: 20,
+               allotStatus: 0,
+               tag: 2
+        },
+        header:{
+                 client: "outframework",
+                 clientVersion: "1.0.5"
+        }
+      }
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listStudent:
+
+  - caseid: 1007
+    run: YES
+    desc: 【小咖/学员管理/服务学员】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/stuadmin/studentService/listStudent
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        data:{
+               pageIndex: 1,
+               pageSize: 20,
+               allotStatus: 0
+        },
+        header:{
+                 client: "outframework",
+                 clientVersion: "1.0.5"
+        }
+      }
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listSchedulingShow:
+
+  - caseid: 1008
+    run: YES
+    desc: 【小咖/班主任管理/排班管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/teacher/scheduling/listSchedulingShow
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+      orgId: 1
+      courseTypeId: 1
+      week: 1
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - header
+        - schedulingStatus
+        - userSchedulingList
+
+
+listShiftPage:
+
+  - caseid: 109
+    run: YES
+    desc: 【小咖/班主任管理/班次管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/teacher/shift/listShiftPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listWechatPage:
+
+  - caseid: 1010
+    run: YES
+    desc: 【小咖/班主任管理/微信号管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/teacher/wechat/listWechatPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listTeacherPage:
+
+  - caseid: 1011
+    run: YES
+    desc: 【小咖/班主任管理/班主任列表】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/teacher/teacher/listTeacherPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listOrderPage:
+
+  - caseid: 1012
+    run: YES
+    desc: 【小咖/订单中心/订单管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/order/order/listOrderPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listPayPage:
+
+  - caseid: 1013
+    run: YES
+    desc: 【小咖/订单中心/支付记录】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/order/pay/listPayPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listTeamActivityPage:
+
+  - caseid: 1014
+    run: YES
+    desc: 【小咖/活动管理/拼团活动】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/activity/team/activity/listTeamActivityPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listUserPage:
+
+  - caseid: 1015
+    run: YES
+    desc: 【小咖/用户管理/用户注册】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/user/user/listUserPage
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        data:{
+               pageIndex: 1,
+               pageSize: 20
+        },
+        header:{
+                 client: "outframework",
+                 clientVersion: "1.0.5"
+        }
+      }
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+getFirstTagPage:
+
+  - caseid: 1016
+    run: YES
+    desc: 【小咖/用户管理/用户信息管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/api/user/tagDic/getFirstTagPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+getTagTypeList:
+
+  - caseid: 1017
+    run: YES
+    desc: 【小咖/用户管理/用户信息管理】查询列表中“类型”字段值
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/api/user/tagDic/getTagTypeList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+
+
+listFormPage:
+
+  - caseid: 1018
+    run: YES
+    desc: 【小咖/用户管理/表单管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/api/user/form/listFormPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listRolePage:
+
+  - caseid: 1019
+    run: YES
+    desc: 【小咖/权限管理/角色管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/auth/rbac/role/listRolePage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+getSelfInfo:
+
+  - caseid: 1020
+    run: YES
+    desc: 【小咖/首页】查询当前用户权限信息
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/auth/self/getSelfInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - uid
+        - account
+
+
+
+listOrgPage:
+
+  - caseid: 1021
+    run: YES
+    desc: 【小咖/权限管理/机构管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/auth/rbac/org/listOrgPage
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listCrowdPage:
+
+  - caseid: 1022
+    run: YES
+    desc: 【小咖/权限管理/用户组管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/auth/rbac/crowd/listCrowdPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page
+
+
+listUserPage2:
+
+  - caseid: 1023
+    run: YES
+    desc: 【小咖/权限管理/人员管理】查询列表
+    precondition:
+    parameterize:
+    url: https://scrm-test.tanzhou.cn/api/auth/rbac/user/listUserPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "成功"
+      data:
+        - list
+        - page

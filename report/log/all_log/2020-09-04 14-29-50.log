@@ -1,0 +1,113 @@
+2020-09-04 14:29:50,486 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:50,486 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:50,486 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:50,486 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:50,487 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:50,641 - root - INFO : 响应消息: {'traceId': 'e6949782fd574b2186403434bcdcdbe8', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77a3cc0712f1253fc4247c1b330aae'}}
+2020-09-04 14:29:50,642 - root - INFO : 提取变量: [ pttoken: 0x77a3cc0712f1253fc4247c1b330aae ]
+2020-09-04 14:29:50,642 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:50,642 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:50,642 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:50,658 - root - INFO : 当前运行Case: test_chk_cost_apply_batch_pass
+2020-09-04 14:29:50,658 - root - INFO : 正在执行Function: test_chk_cost_apply_batch_pass
+2020-09-04 14:29:50,659 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:50,659 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:50,659 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:50,659 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:50,660 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:50,807 - root - INFO : 响应消息: {'traceId': 'c8cded518f5f488aa4b90f1802532846', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77a7570712f10d2ca1448aba7a804f'}}
+2020-09-04 14:29:50,807 - root - INFO : 提取变量: [ pttoken: 0x77a7570712f10d2ca1448aba7a804f ]
+2020-09-04 14:29:50,807 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:50,808 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:50,808 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:50,808 - root - INFO : 正在执行Function: add_flow_budget
+2020-09-04 14:29:50,808 - root - INFO : 描述信息: 【海川/预算管理/流量预算】新增流量预算
+2020-09-04 14:29:50,808 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/add?organizationId=8009
+2020-09-04 14:29:50,808 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:50,808 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77a7570712f10d2ca1448aba7a804f', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:50,808 - root - INFO : 请求正文: {'id': '', 'costMonth': '2020-10-01', 'weekNum': 1, 'weekRange': '1-4', 'promotionerDeptId': 8009, 'subjectId': '512', 'putMode': 2, 'gatherType': 1, 'flowCost': '0.00', 'avgCardNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'visitorNum': 3, 'workDay': 1, 'stageCardNum': 3, 'flowExpenditure': 0, 'customerPrice': 1, 'conversionRate': 1, 'signUpNum': 3, 'performance': 3, 'roi': 0, 'applyRemark': '', 'subjectName': 'CAD', 'receiveDeptId': '', 'receiveDeptName': '', 'promotionerDeptName': '', 'subjectIdChain': '261-505-512', 'organizationId': 8009}
+2020-09-04 14:29:51,054 - root - INFO : 响应消息: {'data': None, 'msg': None, 'platform': None, 'res': 100, 'traceId': '61b9fe4f9d5971ac'}
+2020-09-04 14:29:51,055 - root - INFO : 校验类型: [-res], 结果: [Passed], 预期: [100]
+2020-09-04 14:29:51,055 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [None]
+2020-09-04 14:29:51,055 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,055 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:51,055 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:51,055 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:51,055 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,055 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:51,191 - root - INFO : 响应消息: {'traceId': 'a5da324fe5d04dd8b735dd64b9a080f4', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77c7770712f10d20af94ef0864d429'}}
+2020-09-04 14:29:51,191 - root - INFO : 提取变量: [ pttoken: 0x77c7770712f10d20af94ef0864d429 ]
+2020-09-04 14:29:51,191 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:51,191 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:51,192 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,192 - root - INFO : 正在执行Function: qry_flow_budget
+2020-09-04 14:29:51,192 - root - INFO : 描述信息: 【海川/预算管理/流量预算】查询流量预算
+2020-09-04 14:29:51,192 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/pageList?organizationId=8009
+2020-09-04 14:29:51,192 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:51,192 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77c7770712f10d20af94ef0864d429', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,192 - root - INFO : 请求正文: {'pageNow': 1, 'pageSize': 20, 'auditState': 1, 'organizationId': [8009], 'deptId': 8009}
+2020-09-04 14:29:51,460 - root - INFO : 响应消息: {'data': {'extraData': None, 'list': [{'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599200991000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599200991000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 1, 'id': 51, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599200991000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 2, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 512, 'subjectIdChain': '261-505-512', 'subjectName': 'CAD', 'visitorNum': 3, 'weekNum': 1, 'weekRange': '1-4', 'workDay': 1}, {'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599199827000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599199827000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 1, 'id': 47, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599199827000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 2, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 621, 'subjectIdChain': '264-300-621', 'subjectName': '食用菌', 'visitorNum': 3, 'weekNum': 1, 'weekRange': '1-4', 'workDay': 1}, {'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599199742000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599199742000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 1, 'id': 46, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599199742000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 2, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 620, 'subjectIdChain': '264-300-620', 'subjectName': '稻麦主食', 'visitorNum': 3, 'weekNum': 1, 'weekRange': '1-4', 'workDay': 1}, {'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599198895000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599198895000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 2, 'id': 45, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599198895000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 1, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 600, 'subjectIdChain': '258-599-600', 'subjectName': 'J2EE', 'visitorNum': 3, 'weekNum': 1, 'weekRange': '1-4', 'workDay': 1}], 'pageNum': 1, 'pageSize': 20, 'pages': 1, 'sEcho': None, 'size': 4, 'total': 4}, 'msg': None, 'platform': None, 'res': 100, 'traceId': '10da8683fd08c0fa'}
+2020-09-04 14:29:51,461 - root - INFO : 提取变量: [ flow_budget_id: 51 ]
+2020-09-04 14:29:51,461 - root - INFO : 校验类型: [-res], 结果: [Passed], 预期: [100]
+2020-09-04 14:29:51,461 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [None]
+2020-09-04 14:29:51,461 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,461 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:51,462 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:51,462 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:51,462 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,462 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:51,593 - root - INFO : 响应消息: {'traceId': 'bf5f5e74e22745fea321fbd423a92d23', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x772d310712f10d2d8174ea59dcc4e5'}}
+2020-09-04 14:29:51,593 - root - INFO : 提取变量: [ pttoken: 0x772d310712f10d2d8174ea59dcc4e5 ]
+2020-09-04 14:29:51,593 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:51,593 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:51,593 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,593 - root - INFO : 正在执行Function: chk_flow_budget
+2020-09-04 14:29:51,593 - root - INFO : 描述信息: 【海川/预算管理/流量预算】审核流量预算
+2020-09-04 14:29:51,594 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/audit
+2020-09-04 14:29:51,594 - root - INFO : 请求方法: [- GET -]
+2020-09-04 14:29:51,594 - root - INFO : 请求头部: {'token': '0x772d310712f10d2d8174ea59dcc4e5', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,594 - root - INFO : 请求正文: {'id': '51', 'auditFlag': 1, 'organizationId': 8009}
+2020-09-04 14:29:51,810 - root - INFO : 响应消息: {'data': None, 'msg': None, 'platform': None, 'res': 100, 'traceId': '3c5b403ae9498c46'}
+2020-09-04 14:29:51,810 - root - INFO : 校验类型: [-res], 结果: [Passed], 预期: [100]
+2020-09-04 14:29:51,810 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,810 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:51,810 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:51,810 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:51,810 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,810 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:51,948 - root - INFO : 响应消息: {'traceId': '9d60191366de4f829d1bc8f3bab66f92', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77204f0712f1253db254e74ae93058'}}
+2020-09-04 14:29:51,948 - root - INFO : 提取变量: [ pttoken: 0x77204f0712f1253db254e74ae93058 ]
+2020-09-04 14:29:51,949 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:51,949 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:51,949 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:51,949 - root - INFO : 正在执行Function: qry_cost_apply
+2020-09-04 14:29:51,949 - root - INFO : 描述信息: 【预算-投放预算管理-申请记录】查询
+2020-09-04 14:29:51,949 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/pageList
+2020-09-04 14:29:51,949 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:51,949 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77204f0712f1253db254e74ae93058', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:51,949 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'auditState': 3}
+2020-09-04 14:29:52,203 - root - INFO : 响应消息: {'traceId': 'd7ae6b0b900840e3af8fc82b08d045fc', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 51, 'costMonth': 1601481600000, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 512, 'subjectIdChain': '261-505-512', 'subjectName': 'CAD', 'gatherType': 1, 'putMode': 2, 'weekNum': 1, 'workRange': '1-4', 'workDay': 1, 'visitorNum': 3, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'avgCardNum': 1, 'stageCardNum': 3, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'conversionRate': 1.0, 'conversionRateStr': '100.00%', 'signUpNum': 3, 'customerPrice': 1.0, 'performance': 3.0, 'roi': 0.0, 'applyRemark': '', 'auditState': 3, 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'createTime': 1599200991000, 'modifierId': 19861714, 'modifierName': '精彩的鲀鱼', 'modifyTime': 1599200991000}], 'summation': {'id': '', 'costMonth': '', 'promotionerDeptId': '', 'promotionerDeptIdChain': '', 'promotionerDeptName': '', 'receiveDeptId': '', 'receiveDeptIdChain': '', 'receiveDeptName': '', 'subjectId': '', 'subjectIdChain': '', 'subjectName': '', 'gatherType': '', 'putMode': '', 'weekNum': '', 'workRange': '', 'workDay': 1, 'visitorNum': 3, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'avgCardNum': 1, 'stageCardNum': 3, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'conversionRate': 1.0, 'conversionRateStr': '', 'signUpNum': 3, 'customerPrice': 1.0, 'performance': 3.0, 'roi': 0.0, 'applyRemark': '', 'auditState': '', 'creatorId': '', 'creatorName': '', 'creatorDeptId': '', 'creatorDeptIdChain': '', 'createTime': '', 'modifierId': '', 'modifierName': '', 'modifyTime': ''}}}
+2020-09-04 14:29:52,204 - root - INFO : 提取变量: [ budget_id: 51 ]
+2020-09-04 14:29:52,204 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:52,204 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:52,204 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:52,204 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:29:52,204 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:29:52,204 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:52,204 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:52,205 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:29:52,335 - root - INFO : 响应消息: {'traceId': 'aa34c02dcedb4af191ca519751529ee3', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77e0320712f1253f8204c9fa0631fd'}}
+2020-09-04 14:29:52,335 - root - INFO : 提取变量: [ pttoken: 0x77e0320712f1253f8204c9fa0631fd ]
+2020-09-04 14:29:52,335 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:52,335 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:52,335 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:29:52,335 - root - INFO : 正在执行Function: chk_cost_apply
+2020-09-04 14:29:52,335 - root - INFO : 描述信息: 【预算-投放预算管理-申请记录】审核
+2020-09-04 14:29:52,336 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/audit
+2020-09-04 14:29:52,336 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:29:52,336 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77e0320712f1253f8204c9fa0631fd', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:29:52,336 - root - INFO : 请求正文: {'ids': '51', 'auditState': 1}
+2020-09-04 14:29:52,532 - root - INFO : 响应消息: {'traceId': '2551a36733064946ba6487035ade7cce', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-04 14:29:52,532 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:29:52,532 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:29:52,532 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

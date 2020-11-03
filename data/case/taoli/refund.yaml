@@ -1,0 +1,859 @@
+# ****** 退款流程数据 ******
+get_user_info:
+
+  - caseid: 1001
+    run: YES
+    desc: 【教务】获取当前登录用户信息
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/login/getUserInfo
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+    shared:
+      departmentName: deptName
+      organizationId:  deptId
+      leaderName: nick
+      leaderUid: uid
+      departmentIdChain: deptIdChain
+      tanzkAccount: tanzkAccount
+    check:
+      status: 0
+      msg: success
+
+login_operation:
+
+  - caseid: 1002
+    run: YES
+    desc: 【运营系统】登录运营后台
+    precondition:
+    parameterize:
+    url: https://admin-test.shiguangkey.com/sys/login
+    method: POST
+    header:
+      cookie: $<cookie>
+      content-type: application/x-www-form-urlencoded
+    data:
+      username: admin
+      password: admin1024
+      captcha: operation-case
+    shared:
+    check:
+      code: 0
+
+get_register_code:
+
+  - caseid: 1003
+    run: YES
+    desc: 【运营系统】获取注册验证码
+    precondition:
+    parameterize:
+      phoneNumber: phoneNumber
+      timestamp: timestamp
+    url: https://admin-test.shiguangkey.com/user/set-smscode
+    method: GET
+    header:
+      cookie: $<cookie>
+    data:
+      phone: $<phoneNumber>
+      _: $<timestamp>
+    shared:
+      smsCode: smsCode
+    check:
+      status: 0
+      msg: success
+
+register_classroom:
+
+  - caseid: 1004
+    run: YES
+    desc: 【电商平台】注册成为学员
+    precondition: get_register_code
+    parameterize:
+      phoneNumber: phoneNumber
+      smsCode: smsCode
+    url: https://open-test.shiguangkey.com/api/udb/login/phone/register
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      phone: $<phoneNumber>
+      code: $<smsCode>
+      password: ISGMyneATSuhkiwz4BURBQ
+    shared:
+      studentUid: uid
+      student: token
+      account: account
+      studentNickname: nickname
+      mobile: mobile
+    check:
+      status: 0
+      msg: success
+
+
+get_account:
+
+  - caseid: 1005
+    run: YES
+    desc: 【电商平台】获取学员的账号字段
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/user/mine
+    method: GET
+    header:
+      token: $<student>
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+add_worksheet:
+
+  - caseid: 1006
+    run: YES
+    desc: 【CRM/工单管理/工单列表】首次提交工单
+    precondition:
+    parameterize:
+      account: account
+      discountsPrice: discountsPrice
+      departmentIdChain: departmentIdChain
+      transNo: transNo
+      timestamp: timestamp
+      userName: userName
+      phoneNumber: phoneNumber
+      qq: qq
+      leaderUid: leaderUid
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      isLackOfAccount: "0"
+      tanzkAccount: $<account>
+      isKoubei: 1
+      buyType: 4
+      courseType: 6810
+      buyCourseDetails: '[{"courseId":5289,"sellingPrice":$<discountsPrice>}]'
+      payTypeValue: 1
+      rcvChannelValue: 1
+      rcvChannelValueSub: 34
+      rcvAccount: tanzhouedu@mooncollege.cn
+      transNo: $<transNo>
+      payTime: $<timestamp>
+      belongDeptIdChain: 1001-5
+      belongDeptServiceRatio: 0.33
+      loanSubsidizedAmount: 0
+      loanDepositAmount: 0
+      currencyValue: 1
+      shouldPayAmount: $<discountsPrice>
+      paidAmount: $<discountsPrice>
+      vouchers: https://res.shiguangkey.com/file/worksheet/payProof/20200408/15/20200408153408271523387.jpg
+      divideDeptDetails: '[{"followerUid":$<leaderUid>,"deptIdChain":"$<departmentIdChain>","divideAmount":$<discountsPrice>}]'
+      totalPriceSelling: $<discountsPrice>
+      isSuspend: 0
+      useCoupon: 0
+      vipLiveState: 1
+      name: $<userName>
+      mobile: $<phoneNumber>
+      qq: $<qq>
+      followerUid: $<leaderUid>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_workshhet:
+
+  - caseid: 1007
+    run: YES
+    desc: 【CRM/财务管理/财务列表】查询工单
+    precondition:
+    parameterize:
+      qq: qq
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 1
+      state: 91
+      qq: $<qq>
+    shared:
+      worksheetId: id
+      worksheetNo: worksheetNo
+      orderNo: orderNo
+      orderId: orderId
+    check:
+      status: 0
+      msg: success
+
+
+check_worksheet:
+
+  - caseid: 1008
+    run: YES
+    desc: 【CRM/财务管理/财务列表】财务审核工单
+    precondition:
+    parameterize:
+      worksheetId: worksheetId
+    url: https://work-test.shiguangkey.com/api/worksheet/finance/audit/pass
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      id: $<worksheetId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+standardLogin:
+
+  - caseid: 1009.5
+    run: YES
+    desc: 【潭州课堂/登录】登录潭州课堂
+    precondition:
+    parameterize:
+      account: account
+    url: https://open-test.shiguangkey.com/api/udb/login/standard
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      account: $<account>
+      password: ISGMyneATSuhkiwz4BURBQ
+      inviteLinkId:
+    shared:
+      student: token
+    check: no_check
+
+add_after_sales_application_form:
+
+  - caseid: 1009
+    run: YES
+    desc: 【潭州课堂/我的订单】申请售后服务
+    precondition:
+    parameterize:
+      orderId: orderId
+      userName: userName
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/app/addAfterSalesApplicationForm
+    method: POST
+    header:
+      token: $<student>
+      content-type: application/json
+    data:
+      {
+        "orderId":"$<orderId>",
+        "sourceType":2,
+        "userName":"$<userName>",
+        "voucherUrl":"file/202005/27/20200527170819302610163.jpg",
+        "contactContent":"13347335633",
+        "complaintContent":"test content",
+        "contactInformation":4,
+        "studentReasonType":"2,3,4"
+      }
+    shared:
+      complaintTaskId: complaintTaskId
+    check:
+      status: 0
+      msg: success
+
+qry_untreated_complaints:
+
+  - caseid: 1010
+    run: YES
+    desc: 【教务/投诉退款/认领】查询账号account
+    precondition:
+    parameterize:
+      account: account
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/waitDeal/qryUntreatedComplaints
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+          "pageIndex":1,
+          "pageSize":10,
+          "headmasterId":"",
+          "creatorId":"",
+          "complaintReasonType":"",
+          "complaintReasonSubdivide":"",
+          "userType":"1",
+          "userInfoType":"2",
+          "userInfoContent":"$<account>"
+      }
+    shared:
+      complaintTaskNo: complaintTaskNo
+      complaintTime: complaintTime
+    check:
+      status: 0
+      msg: success
+
+distribute_deal_task:
+
+  - caseid: 1011
+    run: YES
+    desc: 【教务/投诉退款/认领】分配处理人
+    precondition:
+    parameterize:
+      leaderUid: leaderUid
+      complaintTaskId: complaintTaskId
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/taskDeal/distributeDealTask
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+          "complaintTaskIds":$<complaintTaskId>,
+          "distributeType":2,
+          "distributeId":"$<leaderUid>",
+          "operateFromPage":1
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+save_deal_detail:
+
+  - caseid: 1012
+    run: YES
+    desc: 【教务/投诉退款/处理】处理订单
+    precondition:
+    parameterize:
+      title: title
+      orderId: orderId
+      orderNo: orderNo
+      account: account
+      userName: userName
+      timestamp: timestamp
+      studentUid: studentUid
+      leaderUid: leaderUid
+      leaderName: leaderName
+      organizationId: organizationId
+      complaintTaskId: complaintTaskId
+      complaintTaskNo: complaintTaskNo
+      complaintTime: complaintTime
+      discountsPrice: discountsPrice
+      departmentName: departmentName
+      studentNickname: studentNickname
+      departmentIdChain: departmentIdChain
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/inDeal/saveDealDetail
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+          "userInfoType":"4",
+          "complaintReasonType0":{
+              "dictCode":15,
+              "dictName":"课程原因",
+              "subDictCode":1501,
+              "subDictName":"课外话题太多",
+              "subLabel":2
+          },
+          "complaintType":"1",
+          "userName":"$<userName>",
+          "complaintChannel":"11",
+          "dealStatus":"1",
+          "followContent":"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",
+          "resolvePlanRemark":"退款",
+          "complaintReasonList":[
+          {
+              "complaintReasonType":15,
+              "complaintReasonSubdivide":1501,
+              "complaintReasonLable":2
+          }
+          ],
+          "followContentPicUrl":"file/1590743582203bff5eddaa661e.jpg",
+          "orderId":$<orderId>,
+          "initValue":{
+              "complaintTaskId":$<complaintTaskId>,
+              "complaintTaskNo":"$<complaintTaskNo>",
+              "userId":$<studentUid>,
+              "orderId":$<orderId>,
+              "orderNo":"$<orderNo>",
+              "orderInfo":{
+                  "orderId":$<orderId>,
+                  "goodsMoney":$<discountsPrice>,
+                  "payableMoney":$<discountsPrice>,
+                  "unpaidMoney":0
+              },
+              "userAccount":"$<account>",
+              "userName":"$<userName>",
+              "userWechatNick":"$<studentNickname>",
+              "userWechat":"",
+              "userPhone":"13347335633",
+              "userQq":null,
+              "complaintType":1,
+              "complaintChannel":11,
+              "complaintContent":"test content",
+              "complaintContentEvidenceUrl":[
+                  "file/202005/27/20200527170819302610163.jpg"
+              ],
+              "complaintTime":$<complaintTime>,
+              "studentStable":0,
+              "bizCateId":74,
+              "goodsType":6810,
+              "goodsId":10414,
+              "goodsName":"python测试80228127",
+              "signUpTime":$<timestamp>,
+              "classId":0,
+              "classPeriod":0,
+              "headmasterId":0,
+              "headmasterNick":"",
+              "mainTeacherId":0,
+              "mainTeacherNick":"",
+              "saleInfos":[
+              {
+                  "saleId":$<leaderUid>,
+                  "saleNick":"$<leaderName>",
+                  "complaintTaskId":null
+              }
+              ],
+              "saleDepts":[
+              {
+                  "saleDeptId":$<organizationId>,
+                  "saleDeptName":"$<departmentName>",
+                  "deptLinkId":"$<departmentIdChain>",
+                  "deptLinkName":"$<departmentName>",
+                  "saleDeptType":1
+              }
+              ],
+              "distributeType":0,
+              "distributeId":$<leaderUid>,
+              "taskDealStatus":2,
+              "dealResultType":0,
+              "userInfoType":4,
+              "userInfoContent":"13347335633",
+              "followContent":"",
+              "followContentPicUrl":[
+
+              ],
+              "lastDealStatus":null,
+              "complaintReasonRemark":"",
+              "complaintChannelUpdateHis":"11",
+              "dealStatus":0,
+              "resultType":0,
+              "resultRemark":"",
+              "leaveStartTime":0,
+              "leaveEntTime":0,
+              "complaintReasonType":0,
+              "complaintReasonSubdivide":0,
+              "complaintReasonLable":0,
+              "studentMessages":[
+
+              ],
+              "studentReasonTypeName":"服务原因/个人原因/经济原因",
+              "orgStubId":1001
+          },
+          "goodsMoney":$<discountsPrice>,
+          "payableMoney":$<discountsPrice>,
+          "unpaidMoney":0,
+          "goodsId":10414,
+          "goodsName":"python测试80228127",
+          "goodsType":6810,
+          "orderNO":"$<orderNO>",
+          "saleInfos":[
+          {
+              "saleId":$<leaderUid>,
+              "saleNick":"$<leaderName>",
+              "complaintTaskId":null
+          }
+          ],
+          "saleDepts":[
+          {
+              "saleDeptId":$<organizationId>,
+              "saleDeptName":"$<departmentName>",
+              "deptLinkId":"$<departmentIdChain>",
+              "deptLinkName":"潭州教育>哆啦A梦测试专属>动漫院",
+              "saleDeptType":1
+          }
+          ],
+          "resultType":"1",
+          "complaintTaskId":$<complaintTaskId>,
+          "userId":$<studentUid>,
+          "complaintReasonSubdivide":0,
+          "complaintReasonLable":0,
+          "complaintReasonType":0
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+qry_sallers_approve_list:
+
+  - caseid: 1013
+    run: YES
+    desc: 【教务/投诉退款/审核】查询待售前售后审核审核单
+    precondition:
+    parameterize:
+      account: account
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qrySallersApproveList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "hideFooter": "1",
+        "hideHeader": "1",
+        "hideMenu": "1",
+        "system": "taoli",
+        "userInfoType": "2",
+        "userInfoContent": "$<account>",
+        "dealTaskUserIdType": "1",
+        "queryDealTimeType": "1",
+        "approveUntreatedUserIdType": "1"
+      }
+    shared:
+      flowMainId: flowMainId
+    check:
+      status: 0
+      msg: success
+
+
+save_saller_approve_result:
+
+  - caseid: 1014
+    run: YES
+    desc: 【教务/投诉退款/审核】待售前售后审核
+    precondition:
+    parameterize:
+      complaintTaskId: complaintTaskId
+      flowMainId: flowMainId
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/saveSallerApproveResult
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "complaintReasonTypeKeys": [0],
+        "approveResultType": 3,
+        "approveOpinion": "同意退款",
+        "complaintReasonList": [
+        {
+          "complaintReasonType":15,
+          "complaintReasonSubdivide":1501,
+          "complaintReasonLable":2
+        }
+        ],
+        "tabIndex": "1",
+        "complaintTaskId": "$<complaintTaskId>",
+        "flowMainId": "$<flowMainId>"
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+
+qry_risk_approve_list:
+
+  - caseid: 1015
+    run: YES
+    desc: 【教务/投诉退款/审核】查询待风控审核单
+    precondition:
+    parameterize:
+      account: account
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qryRiskApproveList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 10
+      tabIndex: 2
+      userInfoType: 2
+      userInfoContent: $<account>
+      dealTaskUserIdType: 1
+      dealTaskUserId:
+      queryDealTimeType: 1
+      dealCountType:
+      approveUntreatedUserIdType: 1
+      approveUntreatedUserId:
+      complaintReasonType:
+      complaintReasonSubdivide:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_dealing_complaint:
+
+  - caseid: 1016
+    run: YES
+    desc: 【教务/投诉退款/审核】查询待风控审核单详情
+    precondition:
+    parameterize:
+      studentUid: studentUid
+      flowMainId: flowMainId
+      complaintTaskId: complaintTaskId
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/inDeal/qryDealingComplaint
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      complaintTaskId: $<complaintTaskId>
+      studentUid: $<studentUid>
+      flowMainId: $<flowMainId>
+      tabIndex: 2
+    shared:
+    check:
+      status: 0
+      msg: success
+
+save_risk_approve_result:
+
+  - caseid: 1017
+    run: YES
+    desc: 【教务/投诉退款/审核】处理待风控审核单
+    precondition:
+    parameterize:
+      complaintTaskId: complaintTaskId
+      flowMainId: flowMainId
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/saveRiskApproveResult
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "complaintReasonTypeKeys": [0],
+        "approveResultType": "3",
+        "accrualPrersale": "0",
+        "accrualAftersale": "100",
+        "approveOpinion": "风控审核同意同意退款",
+        "complaintReasonList": [{"complaintReasonType": "14","complaintReasonSubdivide": "1401","complaintAccrualType": "1","complaintReasonLable": "2"}],
+        "tabIndex": "2",
+        "complaintTaskId": "$<complaintTaskId>",  # 关联点
+        "flowMainId": "$<flowMainId>"
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_pending_refund:
+
+  - caseid: 1018
+    run: YES
+    desc: 【教务/投诉退款/退款】查询待退款单
+    precondition:
+    parameterize:
+      account: account
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/refund/qryPendingRefund
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":10,
+        "queryDealingStatus":"1",
+        "queryDealTimeType":"1",
+        "userType":"1",
+        "approveUserIdType":"1",
+        "userInfoType":"2",
+        "userInfoContent":"$<account>"
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+add_refund_apply:
+
+  - caseid: 1019
+    run: YES
+    desc: 【教务/投诉退款/退款列表】申请退款
+    precondition:
+    parameterize:
+      discountsPrice: discountsPrice
+      departmentIdChain: departmentIdChain
+      worksheetNo: worksheetNo
+      worksheetId: worksheetId
+      orderId: orderId
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/add
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      {
+        "isUnifiedChannel":2,
+        "refundList":'[{"worksheetNo":"$<worksheetNo>","vouchers":"https://res.shiguangkey.com/file/worksheet/payProof/20200408/15/20200408153408271523387.jpg","refundChannelList":[{"refundChannelValue":"1","refundChannelSubValue":"1","amount":$<discountsPrice>}]}]',
+        "remark":"随机退款备注",
+        "refundReasonValue":14,
+        "refundDetailValue":1401,
+        "refundProtocol":"https://res.shiguangkey.com/file/worksheet/refundProof/20200528/14/20200528143546541463771.jpg",
+        "isSuspend":0,
+        "lecturerAreaValue":"1001-5",
+        "refundCourseList":'[{"amount":$<discountsPrice>,"courseId":10414,"studyState":1}]',
+        "refundDivideDeptList":'[{"divideAmount":$<discountsPrice>,"loanSubsidizedAmount":0,"worksheetId":"$<worksheetId>","deptIdChain":"$<departmentIdChain>"}]',
+        "amount":$<discountsPrice>,
+        "interest":0,
+        "submit":1,
+        "orderId": "$<orderId>"
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_refund_apply:
+
+  - caseid: 1020
+    run: YES
+    desc: 【CRM/工单管理/退款申请列表】查询退款单号
+    precondition:
+    parameterize:
+      transNo: transNo
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/pageList
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      transNo: $<transNo>
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      refundId: id
+      refundNo: refundNo
+    check:
+      status: 0
+      msg: success
+
+query_addVouchers:
+
+  - caseid: 1021
+    run: YES
+    desc: 【CRM/财务管理/退款审核列表】查询待财务审核订单
+    precondition:
+    parameterize:
+      refundNo: refundNo
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/finance/pageList
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      refundNo: $<refundNo>
+      pageIndex: 1
+      pageSize: 20
+      state: 91
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_refund_details:
+
+  - caseid: 1022
+    run: YES
+    desc: 【CRM/财务管理/退款审核列表】获取该订单退款详细信息
+    precondition:
+    parameterize:
+      refundId: refundId
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/getDetails
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      id: $<refundId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+check_finance:
+
+  - caseid: 1023
+    run: YES
+    desc: 【CRM/财务管理/退款审核列表】审核该退款单
+    precondition:
+    parameterize:
+      refundId: refundId
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/finance/check
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      auditState: 1
+      refundId: $<refundId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_cashier_addVouchers:
+
+  - caseid: 1024
+    run: YES
+    desc: 【CRM/财务管理/退款出纳列表】查询待出纳打款订单
+    precondition:
+    parameterize:
+      transNo: transNo
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/cashier/pageList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      paymentState: 1
+      transNo: $<transNo>
+      cashieType: 99
+      pageIndex: 1
+      pageSize: 20
+      tabType: 3
+    shared:
+      addVouchersId: id-1
+    check:
+      status: 0
+      msg: success
+
+cashier_addVouchers:
+
+  - caseid: 1025
+    run: YES
+    desc: 【CRM/财务管理/退款出纳列表】审核出纳退款单
+    precondition:
+    parameterize:
+      transNo: transNo
+      addVouchersId: addVouchersId
+      timestamp: timestamp
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/cashier/addVouchers
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      vouchers: https://res.shiguangkey.com/file/worksheet/payProof/20200409/15/20200409151328697651498.jpg
+      transNo: $<transNo>
+      id: $<addVouchersId>
+      operateTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success

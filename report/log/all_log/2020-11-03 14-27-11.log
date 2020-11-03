@@ -1,0 +1,37 @@
+2020-11-03 14:27:26,407 - root - INFO : 正在执行Function: program_inf_save
+2020-11-03 14:27:26,407 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-11-03 14:27:26,407 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-11-03 14:27:26,408 - root - INFO : 请求方法: [- POST -]
+2020-11-03 14:27:26,408 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 14:27:26,408 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划45349355', 'subjectId': '282', 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-11-03 14:27:26,847 - root - INFO : 响应消息: {'traceId': '4c882d694fca4262bd3770ee50263d17', 'status': '0', 'msg': 'success', 'data': {}}
+2020-11-03 14:27:26,848 - root - INFO : 正在执行Function: program_page_list
+2020-11-03 14:27:26,848 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-11-03 14:27:26,848 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-11-03 14:27:26,848 - root - INFO : 请求方法: [- POST -]
+2020-11-03 14:27:26,849 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 14:27:26,849 - root - INFO : 请求正文: {'name': '自动化计划45349355', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-11-03 14:27:27,397 - root - INFO : 响应消息: {'traceId': '8d99729062c04d04ac2109848ecfc0f5', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 14944, 'oldProgramId': None, 'no': '1000000121095256', 'name': '自动化计划45349355', 'type': 1, 'programName': None, 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': None, 'position': None, 'keyword': None, 'areaId': None, 'areaName': None, 'remark': None, 'isNeedCaptch': None, 'state': None, 'adMainId': None, 'channelAgencyAccountId': None, 'accountCode': None, 'adMainAccount': None, 'thirdUrl': None, 'allocInstType': 1, 'receiveDeptId': None, 'receiveDeptIdChain': None, 'isHide': 0, 'isTest': 0, 'creatorDeptId': 8009, 'creatorName': '自动化专用-勿动', 'createTime': 1604384849000, 'putMode': 1, 'updateState': 1}]}}
+2020-11-03 14:27:27,399 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-11-03 14:27:27,399 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-11-03 14:27:27,399 - root - INFO : 提取变量: [ adName: 自动化计划45349355 ]
+2020-11-03 14:27:27,400 - root - INFO : 提取变量: [ adId: 14944 ]
+2020-11-03 14:27:27,400 - root - INFO : 提取变量: [ type: 1 ]
+2020-11-03 14:27:27,400 - root - INFO : 提取变量: [ subjectId: 282 ]
+2020-11-03 14:27:27,401 - root - INFO : 正在执行Function: creativity_sav
+2020-11-03 14:27:27,401 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-11-03 14:27:27,401 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-11-03 14:27:27,401 - root - INFO : 请求方法: [- POST -]
+2020-11-03 14:27:27,401 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 14:27:27,402 - root - INFO : 请求正文: {'name': '自动化创意31758062', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '14944', 'programName': '自动化计划45349355'}
+2020-11-03 14:27:27,704 - root - INFO : 响应消息: {'traceId': 'e034fc92112d4f2d9f37e393ae1e97a5', 'status': '0', 'msg': 'success', 'data': {}}
+2020-11-03 14:27:27,704 - root - INFO : 正在执行Function: creativity_page_list
+2020-11-03 14:27:27,705 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-11-03 14:27:27,705 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-11-03 14:27:27,705 - root - INFO : 请求方法: [- POST -]
+2020-11-03 14:27:27,705 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7795da0712f1fa1e459419eb772639'}
+2020-11-03 14:27:27,706 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '14944', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-11-03 14:27:28,042 - root - INFO : 响应消息: {'traceId': '6cbe865371414657bc038df60f35e5fd', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 114654, 'oldCreativityId': None, 'oldProgramId': None, 'no': '72b245ce2bc740058988b1eb28bf3b0c', 'name': '自动化创意31758062', 'programName': '自动化计划45349355', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': None, 'areaId': None, 'areaName': None, 'creatorName': '自动化专用-勿动', 'createTime': 1604384849000, 'remark': None, 'isNeedCaptch': 1, 'state': 2, 'adMainId': None, 'channelAgencyAccountId': None, 'accountCode': None, 'adMainAccount': None, 'thirdUrl': None, 'allocInstType': 1, 'receiveDeptId': None, 'receiveDeptIdChain': None, 'isHide': 0, 'isTest': 0, 'creatorDeptId': 8009, 'vector': None, 'customerVectorValue': None, 'followerName': None, 'followerTanzkAccount': None, 'putMode': 1, 'receptionistId': None, 'receptionistName': None, 'receptionistTanzkAccount': None, 'receptionistDeptId': None, 'receptionistDeptIdChain': None, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'updateState': 1, 'type': 1, 'programId': 14944, 'promotionTerminal': 1, 'vectorType': None, 'channelQrCode': None, 'channelNumber': None, 'companyWechatId': None, 'vectorId': None, 'vectorName': None}]}}
+2020-11-03 14:27:28,043 - root - INFO : 提取变量: [ creativityId: 114654 ]
+2020-11-03 14:27:28,045 - root - INFO : 提取变量: [ creativityName: 自动化创意31758062 ]
+2020-11-03 14:27:28,045 - root - INFO : 提取变量: [ creativityNo: 72b245ce2bc740058988b1eb28bf3b0c ]

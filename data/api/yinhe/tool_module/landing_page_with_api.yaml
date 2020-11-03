@@ -1,0 +1,257 @@
+# @Time  : 2020/8/10 21:16
+# @Author: LOUIE
+# @Desc  : 新建落地页-API模式
+config:
+  valueable:
+    organizationId: 1001
+    previewUrl: https://pre-huawei-media.shiguangkey.com/kg7pp0orb4a8d6m
+    domain: https://mz-pre.tanzhouedu.com
+    creativityId: 676998
+    creativityNo: Wc7a8d541066b4a0baf521ace7b87da12
+    carrierId: 1143
+    channelNumber: 3253
+
+save_page1:
+    desc: 【工具/落地页工具/新建落地页/API】企业微信模式-保存落地页-不带商品
+    parameterize:
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "name":"$<landingPageName>",
+        "goodsId":null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kdpdvuoffsovz8v",
+        "isRecommendApp":false,
+        "submitType":0,
+        "wechatReqs":[
+        {
+          "imageUrl":"https://wework.qpic.cn/wwpic/457201_0Slb9AdYRvCtbWj_1601023918/0",
+          "wechat":"Jones",
+          "wechatChangeTime":50,
+          "creativityId":0,
+          "creativityNo":"",
+          "limitClickNum":100,
+          "isWehub":false,
+          "isCarrier":true,
+          "carrierId":1143,
+          "channelNumber":3253
+        }
+        ],
+        "isSmsVerify":0,
+        "pageMode":1,
+        "websiteType":2,
+        "adCreateType":2,
+        "websiteWechatType":2,
+        "bgColor":"",
+        "bgImage":"",
+        "version":"2.1.3",
+        "compReqs":[
+        {
+          "compJson":'{"id":"kdpdn6xgz6d6ftk","type":15,"wechatList":[{"imageUrl":"https://wework.qpic.cn/wwpic/457201_0Slb9AdYRvCtbWj_1601023918/0","wechat":"Jones","wechatChangeTime":50,"creativityId":0,"creativityNo":"","creativityName":"","limitClickNum":100,"carrierName":"Jones","isWehub":false,"isCarrier":true,"channelId":"","carrierId":870,"channelNumber":594,"disabled":false,"deleted":false}],"width":375,"height":160,"backgroundType":2,"background":"","codeWidth":120,"codeLeft":50,"codeTop":50,"y":0}',
+                  "fileIds":[
+
+        ],
+          "scene":1,
+          "type":15
+          }
+        ]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+save_page2:
+    desc: 【工具/落地页工具/新建落地页/API】企业微信模式-保存落地页-带商品
+    parameterize:
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "name":"$<landingPageName>",
+        "goodsId":165,
+        "previewUrl":"https://fat-huawei-media.shiguangkey.com/kdpm6sn9qws27du",
+        "isRecommendApp":false,
+        "submitType":0,
+        "wechatReqs":[
+        {
+          "imageUrl":"https://wework.qpic.cn/wwpic/457201_0Slb9AdYRvCtbWj_1601023918/0",
+          "wechat":"Jones",
+          "wechatChangeTime":50,
+          "creativityId":0,
+          "creativityNo":"",
+          "limitClickNum":100,
+          "isWehub":false,
+          "isCarrier":true,
+          "carrierId":1143,
+          "channelNumber":3253
+        }
+        ],
+        "isSmsVerify":0,
+        "pageMode":1,
+        "websiteType":2,
+        "adCreateType":2,
+        "websiteWechatType":2,
+        "bgColor":"",
+        "bgImage":"",
+        "version":"2.1.3",
+        "compReqs":[
+        {
+          "compJson":'{"id":"kdpm1ukuzm9y7gs","type":19,"width":375,"height":70,"isFixed":true,"goodsName":"自动化测试专用商品（小咖）","goodsId":173,"priceText":50,"priceOrigin":199,"priceTextColor":"#FF0363","priceTextSize":28,"tipText":"前100名活动限时价","tipTextColor":"#666666","tipTextSize":11,"buttonText":"立即购买","buttonTextColor":"#FFFFFF","buttonTextSize":18,"buttonBg":"#FF0363","isOneKey":false,"pageMode":1,"pageType":1,"isPopup":false,"y":0}',
+                  "fileIds":[
+
+        ],
+          "scene":1,
+          "type":19
+          },
+        {
+          "compJson":'{"id":"kdpm2bb0ia5w85t","type":15,"wechatList":[{"imageUrl":"https://wework.qpic.cn/wwpic/457201_0Slb9AdYRvCtbWj_1601023918/0","wechat":"Jones","wechatChangeTime":50,"creativityId":0,"creativityNo":"","creativityName":"","limitClickNum":100,"carrierName":"Jones","isWehub":false,"isCarrier":true,"channelId":"","carrierId":870,"channelNumber":594,"disabled":false,"deleted":false}],"width":375,"height":160,"backgroundType":2,"background":"","codeWidth":120,"codeLeft":50,"codeTop":50,"y":0}',
+                  "fileIds":[
+
+        ],
+          "scene":3,
+          "type":15
+          }
+        ]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+save_page3:
+    desc: 【工具/落地页工具/新建落地页/API】一键提交模式-保存落地页
+    parameterize:
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "name":"$<landingPageName>",
+        "goodsId":165,
+        "previewUrl":"https://fat-huawei-media.shiguangkey.com/kdqr01o7kdjm64t",
+        "isRecommendApp":false,
+        "submitType":3,
+        "isSmsVerify":1,
+        "pageMode":1,
+        "websiteType":1,
+        "adCreateType":2,
+        "websiteWechatType":1,
+        "bgColor":"",
+        "bgImage":"",
+        "version":"2.1.3",
+        "compReqs":[
+        {
+          "compJson":'{"id":"kdqqz7py6tvtjhs","type":19,"width":375,"height":70,"isFixed":true,"goodsName":"自动化测试专用商品（小咖）","goodsId":173,"priceText":50,"priceOrigin":199,"priceTextColor":"#FF0363","priceTextSize":28,"tipText":"前100名活动限时价","tipTextColor":"#666666","tipTextSize":11,"buttonText":"立即购买","buttonTextColor":"#FFFFFF","buttonTextSize":18,"buttonBg":"#FF0363","isOneKey":true,"pageMode":1,"pageType":1,"isPopup":false,"y":0}',
+                  "fileIds":[
+
+        ],
+          "scene":1,
+          "type":19
+          },
+        {
+          "compJson":'{"id":"kdqqz7sunmzeza0","type":24,"width":375,"height":257,"goodsName":"自动化测试专用商品（小咖）","goodsId":0,"goodsDesc":"自动化测试专用商品（小咖）","goodsCover":"https://xk-assets.tanzhou.cn/file/edu/courseType/20200422/16/20200422160000300999108.jpg","priceText":50,"priceOrigin":199,"phoneNo":"130XXXXXXXX","payNo":"D000000000000000000","isPay":true,"y":0}',
+                  "fileIds":[
+
+        ],
+          "scene":2,
+          "type":24
+          },
+            {
+              "compJson":'{"id":"kdqqz7suesf0szw","type":13,"width":375,"height":136,"text":"上课须知\n1.本产品为特价活动课程，一经购买，概不退款，请谅解；\n2.课程购买成功后，老师会在24小时以内通过电话、微信或短信的方式联系您，请保持联系方式畅通。","fontSize":12,"fontWeight":"normal","fontStyle":"normal","textDecoration":"none","opacity":100,"textAlign":"left","letterSpacing":0,"lineHeight":2,"placeholder":"请输入文本内容","color":"#999999","y":257}',
+                  "fileIds":[
+
+        ],
+                     "scene":2,
+                     "type":13
+      },
+        {
+          "compJson":'{"id":"kdqqz7suc6uq9j5","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}',
+                  "fileIds":[
+
+      ],
+        "scene":3,
+        "type":3
+      },
+        {
+          "compJson":'{"id":"kdqqz7suy9ju2xa","type":24,"width":375,"height":218,"goodsName":"自动化测试专用商品（小咖）","goodsId":0,"goodsDesc":"自动化测试专用商品（小咖）","goodsCover":"https://xk-assets.tanzhou.cn/file/edu/courseType/20200422/16/20200422160000300999108.jpg","priceText":50,"priceOrigin":199,"phoneNo":"130XXXXXXXX","payNo":"D000000000000000000","y":176}',
+                  "fileIds":[
+
+      ],
+        "scene":3,
+        "type":24
+      },
+        {
+          "compJson":'{"id":"kdqqz7su0wy2opu","type":23,"width":339,"height":71,"buttonHeight":45,"text":"确认支付 ￥50","textColor":"#FFFFFF","textSize":18,"borderColor":"#FF0363","borderWidth":2,"borderRadius":4,"bgColor":"#FF0363","isDownloadApp":false,"isFixed":true,"y":394}',
+                  "fileIds":[
+
+      ],
+        "scene":3,
+        "type":23
+      }
+      ]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+association_creativity_api:
+
+    desc: 【银河/工具/落地页工具】生成链接
+    parameterize:
+      websiteId: websiteId
+      websiteName: websiteName
+      projectName: projectName
+      ideaName: ideaName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "websiteId": $<websiteId>,
+        "title": $<websiteName>,
+        "releaseChannel":3,
+        "channel":"微信",
+        "channelId": 6,
+        "subject": "Python",
+        "subjectId": 282,
+        "putPlanNames":[$<projectName>],
+        "adType":1,
+        "adPlan":$<projectName>,
+        "websiteLinkFollowReq": {
+          "allocInstType": 1,
+          "gatherType": 1,
+          "isTest": ,
+          "putMode": 1,
+          "receiveDeptId": ,
+          "receiveDeptIdChain": "",
+          "receiveDeptName": ""
+        },
+        "accountId": "wx359bdedd5d18907a",
+        "domain": "https://mz-fat.tanzhouedu.com"
+      }
+    shared:
+      creativityCode: creativityCode
+    check:
+      status: 0
+      msg: success
+      data:
+        - creativityCode
+

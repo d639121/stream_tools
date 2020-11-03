@@ -1,0 +1,3797 @@
+('E:\\WorkZoom\\stream_tools\\dist\\stream_tool.exe',
+ True,
+ False,
+ False,
+ None,
+ None,
+ False,
+ False,
+ '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1"><assemblyIdentity name="stream_tool" processorArchitecture="amd64" type="win32" version="1.0.0.0"/><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"/></requestedPrivileges></security></trustInfo><dependency><dependentAssembly><assemblyIdentity language="*" name="Microsoft.Windows.Common-Controls" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" type="win32" version="6.0.0.0"/><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"/></dependentAssembly></dependency><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"><application><supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/><supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/><supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/><supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/><supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/></application></compatibility></assembly>',
+ True,
+ 'stream_tool.pkg',
+ [('PYZ-00.pyz',
+   'E:\\WorkZoom\\stream_tools\\build\\stream_tool\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct', 'd:\\program files\\python\\lib\\struct.pyo', 'PYMODULE'),
+  ('pyimod01_os_path',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt5',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
+   'PYSOURCE'),
+  ('pyi_rth_certifi',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\pyi_rth_certifi.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('stream_tool', 'E:\\WorkZoom\\stream_tools\\stream_tool.py', 'PYSOURCE'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll', 'd:\\program files\\python\\VCRUNTIME140.dll', 'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('python37.dll', 'd:\\program files\\python\\python37.dll', 'BINARY'),
+  ('ucrtbase.dll', 'C:\\Windows\\system32\\ucrtbase.dll', 'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qoffscreen.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qtiff.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('libGLESv2.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qsvg.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qico.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qjpeg.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qicns.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qwebgl.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qgif.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qwindows.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('opengl32sw.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\styles\\qwindowsvistastyle.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qwebp.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qtga.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('d3dcompiler_47.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('libopenblas.NOIJJG62EMASZI6NYURL6JBKM4EVBGM7.gfortran-win_amd64.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\.libs\\libopenblas.NOIJJG62EMASZI6NYURL6JBKM4EVBGM7.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\imageformats\\qwbmp.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('libEGL.dll',
+   'D:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\libEGL.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\platforms\\qminimal.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PyQt5\\Qt\\plugins\\iconengines\\qsvgicon.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('select', 'd:\\program files\\python\\DLLs\\select.pyd', 'EXTENSION'),
+  ('pyexpat', 'd:\\program files\\python\\DLLs\\pyexpat.pyd', 'EXTENSION'),
+  ('_lzma', 'd:\\program files\\python\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2', 'd:\\program files\\python\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('_ssl', 'd:\\program files\\python\\DLLs\\_ssl.pyd', 'EXTENSION'),
+  ('_hashlib', 'd:\\program files\\python\\DLLs\\_hashlib.pyd', 'EXTENSION'),
+  ('unicodedata',
+   'd:\\program files\\python\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_decimal', 'd:\\program files\\python\\DLLs\\_decimal.pyd', 'EXTENSION'),
+  ('_ctypes', 'd:\\program files\\python\\DLLs\\_ctypes.pyd', 'EXTENSION'),
+  ('_queue', 'd:\\program files\\python\\DLLs\\_queue.pyd', 'EXTENSION'),
+  ('_multiprocessing',
+   'd:\\program files\\python\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_socket', 'd:\\program files\\python\\DLLs\\_socket.pyd', 'EXTENSION'),
+  ('PyQt5.QtGui',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\QtGui.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtCore',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\QtCore.pyd',
+   'EXTENSION'),
+  ('PyQt5.sip',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\sip.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('_yaml',
+   'd:\\program files\\python\\lib\\site-packages\\_yaml.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_tests',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\core\\_multiarray_tests.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_umath',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\core\\_multiarray_umath.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg.lapack_lite',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\linalg\\lapack_lite.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.mtrand',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\mtrand.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._sfc64',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_sfc64.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._philox',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_philox.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._pcg64',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_pcg64.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._mt19937',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_mt19937.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.bit_generator',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\bit_generator.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._generator',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_generator.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._bounded_integers',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_bounded_integers.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random._common',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\random\\_common.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.fft._pocketfft_internal',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\fft\\_pocketfft_internal.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg._umath_linalg',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp37-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt5.QtWidgets',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Windows\\system32\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('Qt5Core.dll',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Core.dll',
+   'BINARY'),
+  ('Qt5Gui.dll',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Gui.dll',
+   'BINARY'),
+  ('Qt5DBus.dll',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5DBus.dll',
+   'BINARY'),
+  ('MSVCP140.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\MSVCP140.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('Qt5Svg.dll',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Svg.dll',
+   'BINARY'),
+  ('Qt5WebSockets.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5WebSockets.dll',
+   'BINARY'),
+  ('Qt5Network.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Network.dll',
+   'BINARY'),
+  ('Qt5Quick.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Quick.dll',
+   'BINARY'),
+  ('Qt5Widgets.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Widgets.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'd:\\program files\\python\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'd:\\program files\\python\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('python3.dll', 'd:\\program files\\python\\python3.dll', 'BINARY'),
+  ('MSVCP140_1.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\MSVCP140_1.dll',
+   'BINARY'),
+  ('Qt5QmlModels.dll',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5QmlModels.dll',
+   'BINARY'),
+  ('Qt5Qml.dll',
+   'd:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\Qt5Qml.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'E:\\WorkZoom\\stream_tools\\build\\stream_tool\\base_library.zip',
+   'DATA'),
+  ('faker\\providers\\color\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_lv.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('faker\\providers\\person\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ko_KR\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_sk.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('faker\\providers\\file\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\file\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\lb_LU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lb_LU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_IE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_IE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\credit_card\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\el_CY\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\el_CY\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\bg_BG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\bg_BG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\de_AT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\nl_BE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\nl_BE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\__pycache__\\color.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\__pycache__\\color.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\en_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\python\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\python\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ja.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('faker\\providers\\currency\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tw_GH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tw_GH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ru.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('faker\\providers\\person\\en_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\currency\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tw_GH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tw_GH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_NZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_NZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ar_SA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_SA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_GB\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_de.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('faker\\providers\\address\\ta_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ta_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_JO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_JO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ka_GE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ka_GE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\profile\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\profile\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\de_AT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\user_agent\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\user_agent\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\barcode\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\barcode\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\bs_BA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\bs_BA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\en\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\sk_SK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sk_SK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\geo\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\INSTALLER',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('faker\\providers\\internet\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_uk.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('faker\\providers\\person\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\en_NZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_NZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\python\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\python\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fil_PH\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ar.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('faker\\providers\\company\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\es_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\geo\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\el_CY\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\el_CY\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_SA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_SA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\file\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\file\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('lib2to3\\PatternGrammar.txt',
+   'd:\\program files\\python\\lib\\lib2to3\\PatternGrammar.txt',
+   'DATA'),
+  ('faker\\providers\\person\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\th_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\th_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ar_PS\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_PS\\__init__.py',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\RECORD',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\RECORD',
+   'DATA'),
+  ('faker\\providers\\phone_number\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_AU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_AU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\profile\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\profile\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\fr_QC\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_QC\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_he.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\la\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\la\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ro_RO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ro_RO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\la\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\la\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\geo\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\LICENSE',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\LICENSE',
+   'DATA'),
+  ('faker\\providers\\person\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\es_MX\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_MX\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\lt_LT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\lt_LT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\credit_card\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\he_IL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\he_IL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\fr_QC\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_QC\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_PS\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_PS\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\misc\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\ar_PS\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\ar_PS\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\lv_LV\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lv_LV\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\credit_card\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ne_NP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ne_NP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\credit_card\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\dk_DK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\geo\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\nl_BE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\nl_BE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\profile\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\profile\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tr_TR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tr_TR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\he_IL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\he_IL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ar_JO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ar_JO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\de\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\isbn\\__pycache__\\isbn.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\__pycache__\\isbn.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\ta_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ta_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\tw_GH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\tw_GH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ar_JO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ar_JO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\currency\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\he_IL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\he_IL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_GB\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\isbn\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ka_GE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ka_GE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ar_EG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ar_EG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\currency\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ro_RO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ro_RO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_NZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_NZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\de\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\en_GB\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\geo\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\user_agent\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\user_agent\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\hi_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hi_IN\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_fi.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('faker\\providers\\ssn\\bg_BG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\bg_BG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\sk_SK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sk_SK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\mt_MT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\mt_MT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\isbn\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_zh_TW.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('faker\\providers\\job\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\lt_LT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lt_LT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ca.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('faker\\providers\\isbn\\__pycache__\\rules.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\__pycache__\\rules.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ne_NP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ne_NP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\geo\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\file\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\file\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\es_MX\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es_MX\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ar_AA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_AA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_NZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_NZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\isbn\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_hu.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ar_AA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ar_AA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\lv_LV\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\lv_LV\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\geo\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\el_GR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\el_GR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\profile\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\profile\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\fr_FR\\__init__.py',
+   'DATA'),
+  ('text_unidecode\\data.bin',
+   'd:\\program files\\python\\lib\\site-packages\\text_unidecode\\data.bin',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\he_IL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\he_IL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de_AT\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_en.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ka_GE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ka_GE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\color.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\color.py',
+   'DATA'),
+  ('faker\\providers\\job\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\dk_DK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\dk_DK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\python\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\python\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\en_NZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_NZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\bg_BG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\bg_BG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_GB\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\ka_GE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ka_GE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ar_EG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ar_EG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\ar_AA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ar_AA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hi_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hi_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\et_EE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\et_EE\\__init__.py',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\WHEEL',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\WHEEL',
+   'DATA'),
+  ('faker\\providers\\bank\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\es\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\barcode\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\barcode\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\barcode\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\barcode\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\credit_card\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_it.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('faker\\providers\\internet\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\credit_card\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\et_EE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\et_EE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\de_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\es_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ta_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ta_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\misc\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\misc\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\en_AU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_AU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\credit_card\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\en\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_GB\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\th_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\th_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\hi_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hi_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\de_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ne_NP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ne_NP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ne_NP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ta_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ta_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\uk_UA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\uk_UA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\dk_DK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\dk_DK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\fa_IR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fa_IR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('lib2to3\\Grammar.txt',
+   'd:\\program files\\python\\lib\\lib2to3\\Grammar.txt',
+   'DATA'),
+  ('faker\\providers\\person\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\nl_NL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\nl_NL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\sk_SK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sk_SK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hy_AM\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\hu_HU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\fr_FR\\__init__.py',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\top_level.txt',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('faker\\providers\\isbn\\isbn.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\isbn.py',
+   'DATA'),
+  ('faker\\providers\\internet\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\currency\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\tl_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\tl_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\tr_TR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\th_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\th_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en_NZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\bs_BA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\bs_BA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\he_IL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\bg_BG\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\th_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\th_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\ar_AA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ar_AA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\fr_CH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_CH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\lt_LT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\lv_LV\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\lv_LV\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\currency\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\currency\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_ko.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('faker\\providers\\lorem\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\ro_RO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ro_RO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\bg_BG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\bg_BG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\lt_LT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\lt_LT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\ro_RO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ro_RO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\fr_CH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sk_SK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sk_SK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\en_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\en_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de_AT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_GB\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_GB\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\automotive\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_cs.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('faker\\providers\\ssn\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\tw_GH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\tw_GH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\pt_PT\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_da.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_tr.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('faker\\providers\\automotive\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\en_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\user_agent\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\user_agent\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\pl_PL\\__init__.py',
+   'DATA'),
+  ('lib2to3\\Grammar3.7.6.final.0.pickle',
+   'd:\\program files\\python\\lib\\lib2to3\\Grammar3.7.6.final.0.pickle',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_IE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_IE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_CA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\en_US\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_pl.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('faker\\providers\\internet\\sl_SI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sl_SI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_PS\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('lib2to3\\tests\\data\\README',
+   'd:\\program files\\python\\lib\\lib2to3\\tests\\data\\README',
+   'DATA'),
+  ('faker\\providers\\ssn\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\pt_PT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pt_PT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\fil_PH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\fil_PH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sk_SK\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\tr_TR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\tr_TR\\__init__.py',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'd:\\program files\\python\\lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_gd.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('faker\\providers\\ssn\\mt_MT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\mt_MT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\de_DE\\__init__.py',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.7.6.final.0.pickle',
+   'd:\\program '
+   'files\\python\\lib\\lib2to3\\PatternGrammar3.7.6.final.0.pickle',
+   'DATA'),
+  ('faker\\providers\\phone_number\\es_MX\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\es_MX\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\user_agent\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\user_agent\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\no_NO\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\no_NO\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\geo\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_MX\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_MX\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ar_SA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_SA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\zh_CN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\lb_LU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lb_LU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\geo\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\barcode\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\barcode\\__init__.py',
+   'DATA'),
+  ('importlib_metadata-1.6.0-py3.7.egg-info\\METADATA',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\importlib_metadata-1.6.0.dist-info\\METADATA',
+   'DATA'),
+  ('faker\\providers\\company\\pt_BR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pt_BR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\es\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_es.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_fr.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('faker\\providers\\internet\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ta_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\credit_card\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\credit_card\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\es_ES\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\ar_AA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ar_AA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\ja_JP\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\sk_SK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sk_SK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\de_AT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\bank\\fi_FI\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\fi_FI\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\de_DE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\de_DE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\lv_LV\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\uk_UA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pt_BR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\en\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\en\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_SA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_SA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\isbn\\rules.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\rules.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\hi_IN\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\id_ID\\__init__.py',
+   'DATA'),
+  ('PyQt5\\Qt\\translations\\qtbase_bg.qm',
+   'D:\\program '
+   'files\\python\\lib\\site-packages\\PyQt5\\Qt\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('faker\\providers\\internet\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\no_NO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\geo\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\geo\\de_AT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sv_SE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_DE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_AU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_AU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\id_ID\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\et_EE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\et_EE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\dk_DK\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\dk_DK\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\en_AU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\date_time\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\sl_SI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hu_HU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hu_HU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\lorem\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\nl_BE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\de_AT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\de_AT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\id_ID\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\id_ID\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fr_FR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\es_MX\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\es_MX\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\tl_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\tr_TR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\tr_TR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\job\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\ar_JO\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\ar_JO\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\ko_KR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\ko_KR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\bg_BG\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\bg_BG\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\he_IL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\he_IL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\pl_PL\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\pl_PL\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\phone_number\\ar_PS\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\ar_PS\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\date_time\\hy_AM\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\date_time\\hy_AM\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\it_IT\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\zh_TW\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\zh_TW\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\et_EE\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\et_EE\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\ar_AA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\fa_IR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\phone_number\\it_IT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\phone_number\\it_IT\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\color\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_CA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_CA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\el_GR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\hr_HR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hr_HR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\hi_IN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hi_IN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\th_TH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\bs_BA\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\color\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\color\\ru_RU\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\en_US\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\en_US\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\internet\\bs_BA\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\bs_BA\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\es_MX\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('PyQt5\\Qt\\bin\\qt.conf',
+   'D:\\program files\\python\\lib\\site-packages\\PyQt5\\Qt\\bin\\qt.conf',
+   'DATA'),
+  ('faker\\providers\\lorem\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\bank\\ru_RU\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\bank\\ru_RU\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\cs_CZ\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\isbn\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\isbn\\en_US\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\sv_SE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\sv_SE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\ko_KR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\internet\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\internet\\fil_PH\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\company\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\fi_FI\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\ja_JP\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\ja_JP\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\file\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\file\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\pl_PL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\address\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\hr_HR\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\lorem\\fr_FR\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\lorem\\fr_FR\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\company\\pt_PT\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\company\\pt_PT\\__init__.py',
+   'DATA'),
+  ('Include\\pyconfig.h',
+   'd:\\program files\\python\\Include\\pyconfig.h',
+   'DATA'),
+  ('faker\\providers\\person\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\zh_TW\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\person\\cs_CZ\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\cs_CZ\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\person\\th_TH\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\person\\th_TH\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\job\\zh_CN\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\job\\zh_CN\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\address\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\address\\nl_NL\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\automotive\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\automotive\\en_GB\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('faker\\providers\\ssn\\nl_BE\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\nl_BE\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\ssn\\es_ES\\__init__.py',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\ssn\\es_ES\\__init__.py',
+   'DATA'),
+  ('faker\\providers\\python\\__pycache__\\__init__.cpython-37.pyc',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\faker\\providers\\python\\__pycache__\\__init__.cpython-37.pyc',
+   'DATA'),
+  ('stream_tool.exe.manifest',
+   'E:\\WorkZoom\\stream_tools\\build\\stream_tool\\stream_tool.exe.manifest',
+   'BINARY'),
+  ('pyi-windows-manifest-filename stream_tool.exe.manifest', '', 'OPTION')],
+ [],
+ False,
+ False,
+ 1604393025,
+ [('run.exe',
+   'd:\\program '
+   'files\\python\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'EXECUTABLE')])

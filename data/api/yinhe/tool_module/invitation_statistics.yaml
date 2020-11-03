@@ -1,0 +1,25 @@
+config:
+  valueable:
+    organizationId: 1001
+
+free_statistics:
+
+    desc: 【银河/工具/邀课引流统计】查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/inviteLessonLink/free/statistics
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+      terminaltype: '4'
+      x-dept-id-chain: 1001-2001-4569-4570-4571-4572
+    data:
+      inviteStartTime: $<gatherTimeStart>
+      inviteEndTime: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+    check:
+      status: 0
+      msg: success

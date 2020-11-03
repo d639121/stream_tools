@@ -1,0 +1,31 @@
+config:
+  valueable:
+    organizationId: 1001
+
+goods_page_list:
+
+    desc: 【银河/工具/落地页工具】商品管理数据查询
+    parameterize:
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/goods/page-list
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "isSmallClass": "",
+        "goodsStatus": "",
+        "teachingMethod": "",
+        "courseFlag": "",
+        "pageSize": 20,
+        "pageNo": 1,
+        "goodsName": "",
+        "nickName": "",
+        "courseId": ""
+      }
+    shared:
+    check:
+      status: 0
+      msg: success

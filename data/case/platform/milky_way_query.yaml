@@ -1,0 +1,1472 @@
+getUserInfo:
+
+  - caseid: 1001
+    run: YES
+    desc: 【银河/公共】查询当前系统用户信息
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/login/getUserInfo
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+    shared:
+      departmentName: deptName
+      departmentId:  deptId
+      leaderName: nick
+      leaderUid: uid
+      departmentIdChain: deptIdChain
+      tanzkAccount: tanzkAccount
+    check:
+      status: 0
+      msg: success
+      data:
+        - tanzkAccount
+        - nick
+
+queryCate:
+
+  - caseid: 1002
+    run: YES
+    desc: 【银河/公共】查询所有科目
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/cate/query
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "terminalType":4
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+payCountPageList:
+
+  - caseid: 1003
+    run: YES
+    desc: 【银河/数据/数据统计/广告数据】查询广告数据
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/grgz/count/pay/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      createTimeStart: $<gatherTimeStart>
+      createTimeEnd: $<gatherTimeEnd>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+departmentList:
+
+  - caseid: 1004
+    run: YES
+    desc: 【银河/公共】查询部门列表
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/department/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+daycountAllocPageList:
+
+  - caseid: 1005
+    run: YES
+    desc: 【银河/数据/数据统计/部门分配统计】查询部门分配统计
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/statistics/installoc/daycount/alloc/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+customerLeaningAllocList:
+
+  - caseid: 1006
+    run: YES
+    desc: 【银河/数据/数据统计/流量分配统计】查询流量分配统计
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/customerLeaningAlloc/count/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      {
+        "terminalType":4
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+instorderPageList:
+
+  - caseid: 1007
+    run: YES
+    desc: 【银河/数据/数据统计/部门成单统计】查询部门成单统计
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/statistics/instorder/daycount/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      endDate: 1591459200000
+      startDate: 1591459200000
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+carrier_data:
+
+  - caseid: 1008
+    run: YES
+    desc: 【银河/数据/数据统计/载体数据】查询载体数据
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://meizi-api-test.shiguangkey.com/carrier/carrier_data
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "carrierStatus":1,
+        "startTime":1591632000000,
+        "endTime":1591718399999,
+        "pageNo":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+
+listDepartmentByParentId:
+
+  - caseid: 1009
+    run: YES
+    desc: 【银河/数据/数据统计/团队落地页】查询团队落地页
+    precondition:
+    parameterize:
+      departmentId: departmentId
+    url: https://meizi-api-test.shiguangkey.com/department/listDepartmentByParentId
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      departmentId: $<departmentId>
+      searchType: 2
+      searchContent:
+      adNo:
+      pageNo: 1
+      pageSize: 20
+    shared:
+    check:
+      code: 0
+      msg: success
+
+programPageList:
+
+  - caseid: 1010
+    run: YES
+    desc: 【银河/广告/广告计划】查询广告计划
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/program/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+      gatherType: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+creativityPageList:
+
+  - caseid: 1011
+    run: YES
+    desc: 【银河/广告/广告创意】查询广告创意
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherType: 1
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+officialAccountsList:
+
+  - caseid: 1012
+    run: YES
+    desc: 【银河/广告/公众号管理】查询公众号管理
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/officialAccounts/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+wechatProgramsList:
+
+  - caseid: 1013
+    run: YES
+    desc: 【银河/广告/公众号管理】查询公众号管理
+    precondition:
+    parameterize:
+      gatherTimeEnd: gatherTimeEnd
+      gatherTimeStart: gatherTimeStart
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/third/wechat/program/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      startGatherDate: $<gatherTimeStart>
+      endGatherDate: $<gatherTimeEnd>
+      status: AD_STATUS_NORMAL
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - cashConsume
+        - viewPvAverageCost
+
+puttingPageList:
+
+  - caseid: 1014
+    run: YES
+    desc: 【银河/流量/流量申请记录】查询流量申请记录
+    precondition:
+    parameterize:
+      gatherTimeEnd: gatherTimeEnd
+      gatherTimeStart: gatherTimeStart
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/instApplyRecord/pageList/putting
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      applyDateValue: 3
+    shared:
+    check:
+      status: 0
+      msg: success
+
+instAllocPlanPageList:
+
+  - caseid: 1015
+    run: YES
+    desc: 【银河/流量/分配计划】查询流量分配计划
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/instAllocPlan/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      all: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - subjectName
+        - channelName
+
+customerBelongList:
+
+  - caseid: 1016
+    run: YES
+    desc: 【银河/流量/分配计划】查询流量归属部门
+    precondition:
+    parameterize:
+      departmentId: departmentId
+    url: https://organization-test.shiguangkey.com/api/organization/department/customerBelongList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      id: $<departmentId>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - name
+        - deptIdChain
+
+deptInfo:
+
+  - caseid: 1017
+    run: YES
+    desc: 【银河/流量/分配计划】查询部门信息
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/system/config/deptInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - deptChain
+        - deptName
+
+config:
+
+  - caseid: 1018
+    run: YES
+    desc: 【银河/流量/分配计划】查询部门信息
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/system/config/deptInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - deptChain
+        - deptName
+
+customerLeaningRepeatList:
+
+  - caseid: 1019
+    run: YES
+    desc: 【银河/流量/入库记录查询】入库记录查询
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/customerLeaningRepeat/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+instList:
+
+  - caseid: 1020
+    run: YES
+    desc: 【银河/流量/分配记录查询】到院查询
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/instAllocRecord/instList
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      sourceStartTime: $<gatherTimeStart>
+      sourceEndTime: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+personList:
+
+  - caseid: 1021
+    run: YES
+    desc: 【银河/流量/分配记录查询】到人查询
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/personAllocRecord/personList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      sourceStartTime: $<gatherTimeStart>
+      sourceEndTime: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+customerLeaningDirectAllocPageList:
+
+  - caseid: 1022
+    run: YES
+    desc: 【银河/流量/成单记录查询】成单记录查询
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/customerManage/customerLeaningDirectAllocPageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      isAdult: 1
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+customerPageList:
+
+  - caseid: 1023
+    run: YES
+    desc: 【银河/流量/学员录入】查询学员录入列表
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/pluralistic/customer/pgList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+fileUploadList:
+
+  - caseid: 1024
+    run: YES
+    desc: 【银河/流量/导入流量查询】导入流量查询
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/customerImportBatch/fileUploadList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+getThirdad:
+
+  - caseid: 1025
+    run: YES
+    desc: 【银河/流量/第三方管理列表】第三方管理列表
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/thirdad/get
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      type: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - channelName
+        - adMainAccount
+
+channelAgencyPageList:
+
+  - caseid: 1026
+    run: YES
+    desc: 【银河/流量/代理商管理】代理商管理列表
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/channelAgency/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+channelAgencyAccountPageList:
+
+  - caseid: 1027
+    run: YES
+    desc: 【银河/流量/投放账户管理】投放账户管理列表/账户信息
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/channelAgencyAccount/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+channelAgencyAccountUserPageList:
+
+  - caseid: 1028
+    run: YES
+    desc: 【银河/流量/投放账户管理】投放账户管理列表/使用信息
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/channelAgencyAccountUser/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      invalidDateBeginDate: 4102329600000
+      invalidDateEndDate: 4102329600000
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+accountRechargePageList:
+
+  - caseid: 1029
+    run: YES
+    desc: 【银河/流量/充值申请记录】充值申请记录列表
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/accountRecharge/apply/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      auditStatus: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+rechargePageList:
+
+  - caseid: 1030
+    run: YES
+    desc: 【银河/流量/充值转账记录】充值转账记录列表
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/recharge/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      auditStatus: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+diversionList:
+
+  - caseid: 1031
+    run: YES
+    desc: 【银河/工具/邀课工具/邀课引流管理】邀课引流管理列表
+    precondition:
+    parameterize:
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/inviteLessonLink/diversionList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      tabType: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+freeStatistics:
+
+  - caseid: 1032
+    run: YES
+    desc: 【银河/工具/邀课工具/邀课引流统计】邀课引流统计列表
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/inviteLessonLink/free/statistics
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      inviteStartTime: $<gatherTimeStart>
+      inviteEndTime: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+partTimePageList:
+
+  - caseid: 1033
+    run: YES
+    desc: 【银河/工具/兼职工具】兼职工具列表
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/employee/partTime/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+list_website:
+
+  - caseid: 1034
+    run: YES
+    desc: 【银河/工具/落地页工具/落地页管理】落地页管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/website/list_website
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "releaseChannel":"",
+        "isHide":"0",
+        "name":"",
+        "adCreateType":"",
+        "pageNo":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+      data:
+        - name
+        - userId
+
+list_creativity:
+
+  - caseid: 1035
+    run: YES
+    desc: 【银河/工具/落地页工具/落地页数据】落地页数据列表
+    precondition:
+    parameterize:
+      todayStartTime: todayStartTime
+      todayEndTime: todayEndTime
+    url: https://meizi-api-test.shiguangkey.com/website/list_creativity
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "websiteCode":"",
+        "creativityCode":"",
+        "adNo":"",
+        "isTest":"",
+        "channelCode":"",
+        "subjectId":"",
+        "putMode":"",
+        "websiteName":"",
+        "submitStartTime":"$<todayStartTime>",
+        "submitEndTime":"$<todayEndTime>",
+        "pageNo":1,
+        "pageSize":10,
+        "websiteType":1
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+      data:
+        - websiteLinkId
+        - websiteName
+
+carrierList:
+
+  - caseid: 1036
+    run: YES
+    desc: 【银河/工具/落地页工具/载体管理】载体管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/carrier/list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageNo":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+      data:
+        - carrierName
+        - carrierNo
+
+goodsList:
+
+  - caseid: 1037
+    run: YES
+    desc: 【银河/工具/落地页工具/商品管理】商品管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/goods/page-list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "isSmallClass":"",
+        "goodsStatus":"",
+        "teachingMethod":"",
+        "courseFlag":"",
+        "pageSize":20,
+        "pageNo":1
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+      data:
+        - goodsName
+        - goodsDesc
+
+orderAmount:
+
+  - caseid: 1038
+    run: YES
+    desc: 【银河/工具/落地页工具/订单管理】订单管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/order/sum-amount
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "courseSource":"",
+        "isCreateWorksheet":"",
+        "goodsName":"",
+        "nickName":"",
+        "payNo":""
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+
+orderList:
+
+  - caseid: 1039
+    run: YES
+    desc: 【银河/工具/落地页工具/订单管理】订单管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/order/page-list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "courseSource":"",
+        "isCreateWorksheet":"",
+        "goodsName":"",
+        "nickName":"",
+        "payNo":"",
+        "pageNo":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      code: 0
+      msg: success
+      data:
+        - websiteId
+        - goodsId
+
+listAccount:
+
+  - caseid: 1040
+    run: YES
+    desc: 【银河/工具/落地页工具/订单管理】订单管理列表
+    precondition:
+    parameterize:
+    url: https://meizi-api-test.shiguangkey.com/platform_user/listAccount/all
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      code: 0
+      msg: success
+
+menuList:
+
+  - caseid: 1041
+    run: YES
+    desc: 【银河/数据/仪表盘】查询菜单列表
+    precondition:
+    parameterize:
+    url: https://rbac-test.shiguangkey.com/api/ac/user/menu/list/42
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+arrival:
+
+  - caseid: 1042
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 绑定邀课率
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/rate/arrival
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+china-area-data:
+
+  - caseid: 1043
+    run: YES
+    desc: 【银河/数据/仪表盘】查询城市信息
+    precondition:
+    parameterize:
+    url: https://res.shiguangkey.com/res/code/china-area-data.json
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check: no_check
+
+consumption:
+
+  - caseid: 1044
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-消费数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/consumption
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - monthNoConsumption
+        - costDate
+
+conversion:
+
+  - caseid: 1045
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 课堂转换率
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/rate/class/conversion
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - yesterdayRate
+        - marketRate
+
+cost:
+
+  - caseid: 1046
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-成本数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/cost
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - countDate
+        - currentCost
+
+costRate:
+
+  - caseid: 1047
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-费比数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/costRate
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - countDate
+        - currentCostRate
+
+count:
+
+  - caseid: 1048
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-报名数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/apply/count
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      countDate: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - countDate
+        - dayApplyCount
+
+customer:
+
+  - caseid: 1049
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 人均获客量
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/average/customer
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - averageCustomers
+        - samePeriodRate
+
+customerData:
+
+  - caseid: 1050
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-客资数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/customerData
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - monthNoCustomerGrown
+        - countDate
+
+hourglassData:
+
+  - caseid: 1051
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 首页统计数据-业绩数据
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/hourglass/data
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - friendNum
+        - inClassApplyNum
+
+tradeData:
+
+  - caseid: 1052
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 trade data
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/trade/data
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - sameMonthTrade
+        - totalTrade
+
+predictDays:
+
+  - caseid: 1053
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 余额预估天数
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/balance/predict/days
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - accountBalance
+        - monthTotalRecharge
+
+friend:
+
+  - caseid: 1054
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 好友率
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/rate/friend
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - yesterdayRate
+        - samePeriodRate
+
+invitation:
+
+  - caseid: 1055
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 绑定到课率
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/rate/invitation
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - samePeriodRate
+        - yesterdayRate
+
+incomeRange:
+
+  - caseid: 1056
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 今日排名
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/income/range
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      countDate: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+childRate:
+
+  - caseid: 1057
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 未成年占比
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/child/rate
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - currentRate
+        - samePeriodRate
+
+repeatRate:
+
+  - caseid: 1058
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 repeatRate
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/repeat/rate
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      gatherTime: $<timestamp>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - currentRate
+        - samePeriodRate
+
+trends:
+
+  - caseid: 1059
+    run: YES
+    desc: 【银河/数据/仪表盘】查询 业绩消费费比趋势
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/dashboard/roi/trends
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startTime: $<gatherTimeStart>
+      endTime: $<gatherTimeEnd>
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - countDate
+        - promotionerDeptIdChain
+
+accountData:
+
+  - caseid: 1060
+    run: YES
+    desc: 【银河/数据/数据趋势】查询 数据趋势-账户数据
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/stat/account/data
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startTime: $<gatherTimeStart>
+      endTime: $<gatherTimeEnd>
+      bizType: 1
+      momFlag: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - gatherTime
+        - bookConsume
+
+processtData:
+
+  - caseid: 1061
+    run: YES
+    desc: 【银河/数据/数据趋势】查询 来源时间维度为每天一个间隔
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/stat/cast/process/data/day
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startTime: $<gatherTimeStart>
+      endTime: $<gatherTimeEnd>
+      bizType: 1
+      momFlag: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - gatherTime
+        - clickRate
+
+listByRoleId:
+
+  - caseid: 1062
+    run: YES
+    desc: 【银河/数据/数据趋势】查询 重复率
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/department/listByRoleId
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      roleId: 6,7,20
+      id: 4531
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - deptIdChain
+        - deptNameChain
+
+processMinute:
+
+  - caseid: 1063
+    run: YES
+    desc: 【银河/数据/数据趋势】查询 来源时间维度为每十分钟一个间隔
+    precondition:
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+      departmentIdChain: departmentIdChain
+    url: https://galaxy-api-test.shiguangkey.com/api/galaxy/stat/customer/process/minute
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startTime: $<gatherTimeStart>
+      endTime: $<gatherTimeEnd>
+      promotionerDeptIdChain: $<departmentIdChain>
+      bizType: 1
+      momFlag: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - gatherTime
+        - noLeaningTotal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1164 @@
+2020-09-09 09:05:25,317 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:25,401 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:25,444 - root - INFO : 当前运行Case: test_ad_plan_normal_need
+2020-09-09 09:05:25,444 - root - INFO : 正在执行Function: test_ad_plan_normal_need
+2020-09-09 09:05:25,445 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:25,445 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:25,446 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:25,446 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:25,446 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:25,446 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:25,447 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划06708900', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-09-09 09:05:25,792 - root - INFO : 响应消息: {'traceId': 'ea1a51e2681f493e8ec273c28d88acde', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:25,792 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:25,792 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:25,792 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:25,793 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:25,793 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:25,793 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:25,793 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:25,793 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:25,793 - root - INFO : 请求正文: {'name': '自动化计划06708900', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 1}
+2020-09-09 09:05:26,116 - root - INFO : 响应消息: {'traceId': '2acee99c23a74d77956195738c7525e0', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11560, 'oldProgramId': '', 'no': '1000001438173609', 'name': '自动化计划06708900', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613527000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:26,117 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:26,118 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:26,118 - root - INFO : 提取变量: [ adName: 自动化计划06708900 ]
+2020-09-09 09:05:26,118 - root - INFO : 提取变量: [ adId: 11560 ]
+2020-09-09 09:05:26,118 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:26,118 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:26,119 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:26,119 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:26,119 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:26,119 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:26,119 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:26,119 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:26,119 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:26,119 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:26,119 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:26,119 - root - INFO : 请求正文: {'name': '自动化创意31677332', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11560', 'programName': '自动化计划06708900'}
+2020-09-09 09:05:26,392 - root - INFO : 响应消息: {'traceId': '50f4ee8077484f84aec6511f828024ca', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:26,392 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:26,392 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:26,392 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:26,392 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:26,392 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:26,392 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:26,392 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:26,392 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:26,392 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11560', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:26,727 - root - INFO : 响应消息: {'traceId': 'a66247a33b074ac382384d5b508fda34', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111331, 'oldCreativityId': '', 'oldProgramId': '', 'no': '024c4431adf7428ab220f05112bd7292', 'name': '自动化创意31677332', 'programName': '自动化计划06708900', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613528000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11560, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:26,728 - root - INFO : 提取变量: [ creativityId: 111331 ]
+2020-09-09 09:05:26,728 - root - INFO : 提取变量: [ creativityName: 自动化创意31677332 ]
+2020-09-09 09:05:26,729 - root - INFO : 提取变量: [ creativityNo: 024c4431adf7428ab220f05112bd7292 ]
+2020-09-09 09:05:26,729 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:26,729 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:26,729 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:26,729 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:26,729 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:26,729 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:26,729 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:26,729 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:26,730 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:26,730 - root - INFO : 请求正文: {'name': '自动化落地页48986403', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:27,001 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '2bbfdeaf81f0441ea6d6ce24989f53ac', 'data': {'code': '1303499731889455105', 'id': 6621}}
+2020-09-09 09:05:27,001 - root - INFO : 提取变量: [ websiteId: 6621 ]
+2020-09-09 09:05:27,001 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:27,002 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:27,002 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:27,002 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:27,002 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:27,002 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:27,002 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:27,002 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:27,002 - root - INFO : 请求正文: {'websiteId': '6621'}
+2020-09-09 09:05:27,162 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '5fa93c38045845bc9a547d230b5227a4', 'data': None}
+2020-09-09 09:05:27,162 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:27,162 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:27,162 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:27,211 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:27,212 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:27,212 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:27,212 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:27,212 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:27,212 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11560', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:27,535 - root - INFO : 响应消息: {'traceId': 'db7446c3302f4944a989026e62a7dca7', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111331, 'oldCreativityId': '', 'oldProgramId': '', 'no': '024c4431adf7428ab220f05112bd7292', 'name': '自动化创意31677332', 'programName': '自动化计划06708900', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613528000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11560, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:27,535 - root - INFO : 提取变量: [ creativityId: 111331 ]
+2020-09-09 09:05:27,535 - root - INFO : 提取变量: [ creativityName: 自动化创意31677332 ]
+2020-09-09 09:05:27,536 - root - INFO : 提取变量: [ creativityNo: 024c4431adf7428ab220f05112bd7292 ]
+2020-09-09 09:05:27,536 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:27,536 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:27,536 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:27,536 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:27,536 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:27,536 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:27,537 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:27,537 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:27,537 - root - INFO : 请求正文: {'websiteId': '6621', 'title': '自动化落地页48986403', 'releaseChannel': 3, 'putPlanNames': ['自动化计划06708900'], 'adType': 1, 'adPlan': '自动化计划06708900', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意31677332', 'adNo': '024c4431adf7428ab220f05112bd7292', 'creativityId': '111331'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:27,709 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '88ada9aa074b43d3bec6c6974e0c72f3', 'data': None}
+2020-09-09 09:05:27,967 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:28,011 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:28,033 - root - INFO : 当前运行Case: test_ad_plan_normal_not
+2020-09-09 09:05:28,033 - root - INFO : 正在执行Function: test_ad_plan_normal_not
+2020-09-09 09:05:28,033 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:28,033 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:28,033 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:28,033 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:28,033 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:28,033 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:28,034 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划82074593', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-09-09 09:05:28,235 - root - INFO : 响应消息: {'traceId': 'f9a1d872748d42fa8f09be9f97e87f6f', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:28,235 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:28,235 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:28,235 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:28,235 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:28,235 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:28,236 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:28,236 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:28,236 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:28,236 - root - INFO : 请求正文: {'name': '自动化计划82074593', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 1}
+2020-09-09 09:05:28,543 - root - INFO : 响应消息: {'traceId': 'ff68db390e6043d890df8d49b5801d18', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11561, 'oldProgramId': '', 'no': '1000001663800387', 'name': '自动化计划82074593', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613529000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:28,543 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:28,543 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:28,544 - root - INFO : 提取变量: [ adName: 自动化计划82074593 ]
+2020-09-09 09:05:28,544 - root - INFO : 提取变量: [ adId: 11561 ]
+2020-09-09 09:05:28,544 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:28,544 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:28,544 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:28,544 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:28,544 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:28,545 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:28,545 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:28,545 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:28,545 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:28,545 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:28,545 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:28,545 - root - INFO : 请求正文: {'name': '自动化创意12940721', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11561', 'programName': '自动化计划82074593'}
+2020-09-09 09:05:28,764 - root - INFO : 响应消息: {'traceId': 'd614e0fe15654e2dafaad5ea4a0e91b6', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:28,764 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:28,764 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:28,764 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:28,764 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:28,764 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:28,764 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:28,765 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:28,765 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:28,765 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11561', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:29,087 - root - INFO : 响应消息: {'traceId': '44826864c60f436b8b4c23e5c5ab73d1', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111332, 'oldCreativityId': '', 'oldProgramId': '', 'no': '6254a156552742b59b4d4f7f13c3a31f', 'name': '自动化创意12940721', 'programName': '自动化计划82074593', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613530000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11561, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:29,087 - root - INFO : 提取变量: [ creativityId: 111332 ]
+2020-09-09 09:05:29,087 - root - INFO : 提取变量: [ creativityName: 自动化创意12940721 ]
+2020-09-09 09:05:29,088 - root - INFO : 提取变量: [ creativityNo: 6254a156552742b59b4d4f7f13c3a31f ]
+2020-09-09 09:05:29,088 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:29,088 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:29,088 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:29,088 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:29,088 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:29,088 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:29,088 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:29,089 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:29,089 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:29,089 - root - INFO : 请求正文: {'name': '自动化落地页66474661', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:29,285 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '898c998a0be74c26b2ec3adb8d3dfdf0', 'data': {'code': '1303499741477634050', 'id': 6622}}
+2020-09-09 09:05:29,285 - root - INFO : 提取变量: [ websiteId: 6622 ]
+2020-09-09 09:05:29,285 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:29,285 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:29,285 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:29,285 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:29,286 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:29,286 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:29,286 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:29,286 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:29,286 - root - INFO : 请求正文: {'websiteId': '6622'}
+2020-09-09 09:05:29,464 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': 'b26b20cbeda3494a8060777dd586eff3', 'data': None}
+2020-09-09 09:05:29,464 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:29,464 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:29,464 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:29,505 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:29,505 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:29,505 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:29,505 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:29,505 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:29,506 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11561', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:29,860 - root - INFO : 响应消息: {'traceId': '302b01600a1242b5bb842a649f0e367c', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111332, 'oldCreativityId': '', 'oldProgramId': '', 'no': '6254a156552742b59b4d4f7f13c3a31f', 'name': '自动化创意12940721', 'programName': '自动化计划82074593', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613530000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 1, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11561, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:29,861 - root - INFO : 提取变量: [ creativityId: 111332 ]
+2020-09-09 09:05:29,861 - root - INFO : 提取变量: [ creativityName: 自动化创意12940721 ]
+2020-09-09 09:05:29,861 - root - INFO : 提取变量: [ creativityNo: 6254a156552742b59b4d4f7f13c3a31f ]
+2020-09-09 09:05:29,861 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:29,862 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:29,862 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:29,862 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:29,862 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:29,862 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:29,862 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:29,862 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:29,862 - root - INFO : 请求正文: {'websiteId': '6622', 'title': '自动化落地页66474661', 'releaseChannel': 3, 'putPlanNames': ['自动化计划82074593'], 'adType': 1, 'adPlan': '自动化计划82074593', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意12940721', 'adNo': '6254a156552742b59b4d4f7f13c3a31f', 'creativityId': '111332'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:30,030 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '9f59a77295ad4ed0b34d216704865d68', 'data': None}
+2020-09-09 09:05:30,252 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:30,297 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:30,319 - root - INFO : 当前运行Case: test_manual_xiaoka_need
+2020-09-09 09:05:30,319 - root - INFO : 正在执行Function: test_manual_xiaoka_need
+2020-09-09 09:05:30,319 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:30,319 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:30,319 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:30,319 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:30,319 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:30,319 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:30,319 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划74163359', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 5, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:30,513 - root - INFO : 响应消息: {'traceId': 'a606eb1d2b734bb4ba423a403541f46a', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:30,513 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:30,513 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:30,514 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:30,514 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:30,514 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:30,514 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:30,514 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:30,514 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:30,514 - root - INFO : 请求正文: {'name': '自动化计划74163359', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 5, 'allocInstType': 2}
+2020-09-09 09:05:30,815 - root - INFO : 响应消息: {'traceId': 'ef5e490e251441cfbb514362b22b6e8f', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11562, 'oldProgramId': '', 'no': '1000001677680502', 'name': '自动化计划74163359', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613532000, 'putMode': 5, 'updateState': 1}]}}
+2020-09-09 09:05:30,816 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:30,816 - root - INFO : 提取变量: [ putMode: 5 ]
+2020-09-09 09:05:30,816 - root - INFO : 提取变量: [ adName: 自动化计划74163359 ]
+2020-09-09 09:05:30,816 - root - INFO : 提取变量: [ adId: 11562 ]
+2020-09-09 09:05:30,816 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:30,817 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:30,817 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:30,817 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:30,817 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:30,817 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:30,817 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:30,817 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:30,817 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:30,817 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:30,817 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:30,818 - root - INFO : 请求正文: {'name': '自动化创意08384225', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '5', 'channelId': '6', 'programId': '11562', 'programName': '自动化计划74163359'}
+2020-09-09 09:05:31,028 - root - INFO : 响应消息: {'traceId': '6c533e021a90453a8bc31faab48cf247', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:31,028 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:31,028 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:31,028 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:31,028 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:31,028 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:31,029 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:31,029 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:31,029 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:31,029 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11562', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:31,354 - root - INFO : 响应消息: {'traceId': '911bd01e75704c61a1706e93444508ff', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111333, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'a1a1af929e2e46dc9e68a30a9c916abd', 'name': '自动化创意08384225', 'programName': '自动化计划74163359', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613532000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 5, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11562, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:31,355 - root - INFO : 提取变量: [ creativityId: 111333 ]
+2020-09-09 09:05:31,355 - root - INFO : 提取变量: [ creativityName: 自动化创意08384225 ]
+2020-09-09 09:05:31,355 - root - INFO : 提取变量: [ creativityNo: a1a1af929e2e46dc9e68a30a9c916abd ]
+2020-09-09 09:05:31,355 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:31,355 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:31,356 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:31,356 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:31,356 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:31,356 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:31,356 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:31,356 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:31,356 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:31,356 - root - INFO : 请求正文: {'name': '自动化落地页49814866', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:31,560 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '0878745d990e4f9dac70de8de88939c7', 'data': {'code': '1303499751007092738', 'id': 6623}}
+2020-09-09 09:05:31,560 - root - INFO : 提取变量: [ websiteId: 6623 ]
+2020-09-09 09:05:31,560 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:31,560 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:31,561 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:31,561 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:31,561 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:31,561 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:31,561 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:31,561 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:31,561 - root - INFO : 请求正文: {'websiteId': '6623'}
+2020-09-09 09:05:31,750 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': 'b742a931a1584d4d939a87703b06cca8', 'data': None}
+2020-09-09 09:05:31,750 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:31,750 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:31,750 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:31,791 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:31,791 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:31,791 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:31,791 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:31,791 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:31,791 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11562', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:32,120 - root - INFO : 响应消息: {'traceId': '1f2b95cad6c64e5dbe7c1d229818a652', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111333, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'a1a1af929e2e46dc9e68a30a9c916abd', 'name': '自动化创意08384225', 'programName': '自动化计划74163359', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613532000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 5, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11562, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:32,120 - root - INFO : 提取变量: [ creativityId: 111333 ]
+2020-09-09 09:05:32,121 - root - INFO : 提取变量: [ creativityName: 自动化创意08384225 ]
+2020-09-09 09:05:32,121 - root - INFO : 提取变量: [ creativityNo: a1a1af929e2e46dc9e68a30a9c916abd ]
+2020-09-09 09:05:32,121 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:32,121 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:32,121 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:32,121 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:32,121 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:32,122 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:32,122 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:32,122 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:32,122 - root - INFO : 请求正文: {'websiteId': '6623', 'title': '自动化落地页49814866', 'releaseChannel': 3, 'putPlanNames': ['自动化计划74163359'], 'adType': 1, 'adPlan': '自动化计划74163359', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意08384225', 'adNo': 'a1a1af929e2e46dc9e68a30a9c916abd', 'creativityId': '111333'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:32,297 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '36055110bc30417ab24e75808df65a55', 'data': None}
+2020-09-09 09:05:32,539 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:32,583 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:32,605 - root - INFO : 当前运行Case: test_manual_xiaoka_not
+2020-09-09 09:05:32,606 - root - INFO : 正在执行Function: test_manual_xiaoka_not
+2020-09-09 09:05:32,606 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:32,606 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:32,606 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:32,606 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:32,606 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:32,606 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:32,606 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划15301031', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 5, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:32,814 - root - INFO : 响应消息: {'traceId': '44fb0051bb6a490c9a70d4f27843e5c2', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:32,815 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:32,815 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:32,815 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:32,815 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:32,815 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:32,815 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:32,815 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:32,815 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:32,815 - root - INFO : 请求正文: {'name': '自动化计划15301031', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 5, 'allocInstType': 2}
+2020-09-09 09:05:33,120 - root - INFO : 响应消息: {'traceId': 'e832a0b945694a409b3ef4c19e27fd46', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11563, 'oldProgramId': '', 'no': '1000001103427902', 'name': '自动化计划15301031', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613534000, 'putMode': 5, 'updateState': 1}]}}
+2020-09-09 09:05:33,120 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:33,120 - root - INFO : 提取变量: [ putMode: 5 ]
+2020-09-09 09:05:33,120 - root - INFO : 提取变量: [ adName: 自动化计划15301031 ]
+2020-09-09 09:05:33,121 - root - INFO : 提取变量: [ adId: 11563 ]
+2020-09-09 09:05:33,121 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:33,121 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:33,121 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:33,121 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:33,121 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:33,121 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:33,121 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:33,121 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:33,122 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:33,122 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:33,122 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:33,122 - root - INFO : 请求正文: {'name': '自动化创意69847073', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '5', 'channelId': '6', 'programId': '11563', 'programName': '自动化计划15301031'}
+2020-09-09 09:05:33,335 - root - INFO : 响应消息: {'traceId': '80a0106873b340bd9f3cc50b850dec21', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:33,335 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:33,335 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:33,335 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:33,335 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:33,335 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:33,336 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:33,336 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:33,336 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:33,336 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11563', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:33,668 - root - INFO : 响应消息: {'traceId': 'e736b0e53e814fc7b74afed429368cdd', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111334, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'ceb0f8bcb5ae41a58a77f293565faa16', 'name': '自动化创意69847073', 'programName': '自动化计划15301031', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613534000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 5, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11563, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:33,668 - root - INFO : 提取变量: [ creativityId: 111334 ]
+2020-09-09 09:05:33,668 - root - INFO : 提取变量: [ creativityName: 自动化创意69847073 ]
+2020-09-09 09:05:33,669 - root - INFO : 提取变量: [ creativityNo: ceb0f8bcb5ae41a58a77f293565faa16 ]
+2020-09-09 09:05:33,669 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:33,669 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:33,669 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:33,669 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:33,669 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:33,669 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:33,669 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:33,669 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:33,670 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:33,670 - root - INFO : 请求正文: {'name': '自动化落地页36426034', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:33,866 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'ae14c90a85854082a7d5d03ff01e6427', 'data': {'code': '1303499760691740674', 'id': 6624}}
+2020-09-09 09:05:33,866 - root - INFO : 提取变量: [ websiteId: 6624 ]
+2020-09-09 09:05:33,866 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:33,866 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:33,866 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:33,866 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:33,867 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:33,867 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:33,867 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:33,867 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:33,867 - root - INFO : 请求正文: {'websiteId': '6624'}
+2020-09-09 09:05:34,043 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '6d2fdc62530e4dcc9ad1aed698a99cfa', 'data': None}
+2020-09-09 09:05:34,043 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:34,043 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:34,043 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:34,084 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:34,084 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:34,084 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:34,084 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:34,084 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:34,084 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11563', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:34,403 - root - INFO : 响应消息: {'traceId': '1a289710bded4d23bd707a8aa6295e97', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111334, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'ceb0f8bcb5ae41a58a77f293565faa16', 'name': '自动化创意69847073', 'programName': '自动化计划15301031', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613534000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 5, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11563, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:34,404 - root - INFO : 提取变量: [ creativityId: 111334 ]
+2020-09-09 09:05:34,404 - root - INFO : 提取变量: [ creativityName: 自动化创意69847073 ]
+2020-09-09 09:05:34,404 - root - INFO : 提取变量: [ creativityNo: ceb0f8bcb5ae41a58a77f293565faa16 ]
+2020-09-09 09:05:34,404 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:34,404 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:34,404 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:34,404 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:34,405 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:34,405 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:34,405 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:34,405 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:34,405 - root - INFO : 请求正文: {'websiteId': '6624', 'title': '自动化落地页36426034', 'releaseChannel': 3, 'putPlanNames': ['自动化计划15301031'], 'adType': 1, 'adPlan': '自动化计划15301031', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意69847073', 'adNo': 'ceb0f8bcb5ae41a58a77f293565faa16', 'creativityId': '111334'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:34,569 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': 'b38983b931a743eb99c4135eb7364c1c', 'data': None}
+2020-09-09 09:05:34,784 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:34,830 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:34,852 - root - INFO : 当前运行Case: test_manual_high_need
+2020-09-09 09:05:34,853 - root - INFO : 正在执行Function: test_manual_high_need
+2020-09-09 09:05:34,853 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:34,853 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:34,853 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:34,853 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:34,853 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:34,853 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:34,853 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划46126009', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 3, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:35,071 - root - INFO : 响应消息: {'traceId': '80010027af244ee297e78774b9b93318', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:35,072 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:35,072 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:35,072 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:35,072 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:35,072 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:35,072 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:35,072 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:35,072 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:35,072 - root - INFO : 请求正文: {'name': '自动化计划46126009', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 3, 'allocInstType': 2}
+2020-09-09 09:05:35,380 - root - INFO : 响应消息: {'traceId': 'bec46be82cec496880bf10711121f635', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11564, 'oldProgramId': '', 'no': '1000001801519799', 'name': '自动化计划46126009', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613536000, 'putMode': 3, 'updateState': 1}]}}
+2020-09-09 09:05:35,380 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:35,381 - root - INFO : 提取变量: [ putMode: 3 ]
+2020-09-09 09:05:35,381 - root - INFO : 提取变量: [ adName: 自动化计划46126009 ]
+2020-09-09 09:05:35,381 - root - INFO : 提取变量: [ adId: 11564 ]
+2020-09-09 09:05:35,381 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:35,381 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:35,381 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:35,382 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:35,382 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:35,382 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:35,382 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:35,382 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:35,382 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:35,382 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:35,382 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:35,382 - root - INFO : 请求正文: {'name': '自动化创意11776000', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '3', 'channelId': '6', 'programId': '11564', 'programName': '自动化计划46126009'}
+2020-09-09 09:05:35,597 - root - INFO : 响应消息: {'traceId': 'fb3ffb981647415a8c265dfa4d3f02b2', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:35,597 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:35,597 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:35,597 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:35,597 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:35,597 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:35,597 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:35,597 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:35,597 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:35,597 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11564', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:35,900 - root - INFO : 响应消息: {'traceId': '841de58e94ff4d76b9a1758099546fe4', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111335, 'oldCreativityId': '', 'oldProgramId': '', 'no': '79022c6f51ea45329c57b0743bf176a9', 'name': '自动化创意11776000', 'programName': '自动化计划46126009', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613537000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11564, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:35,901 - root - INFO : 提取变量: [ creativityId: 111335 ]
+2020-09-09 09:05:35,901 - root - INFO : 提取变量: [ creativityName: 自动化创意11776000 ]
+2020-09-09 09:05:35,901 - root - INFO : 提取变量: [ creativityNo: 79022c6f51ea45329c57b0743bf176a9 ]
+2020-09-09 09:05:35,901 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:35,901 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:35,901 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:35,901 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:35,902 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:35,902 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:35,902 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:35,902 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:35,902 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:35,902 - root - INFO : 请求正文: {'name': '自动化落地页77617873', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:36,104 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'a3f3b8c9aa3c45d0980be075939a4e8c', 'data': {'code': '1303499770070204418', 'id': 6625}}
+2020-09-09 09:05:36,104 - root - INFO : 提取变量: [ websiteId: 6625 ]
+2020-09-09 09:05:36,104 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:36,104 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:36,104 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:36,104 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:36,104 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:36,104 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:36,104 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:36,104 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:36,105 - root - INFO : 请求正文: {'websiteId': '6625'}
+2020-09-09 09:05:36,281 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': 'bc0d458eb3a64f5d827dc0e47040a49a', 'data': None}
+2020-09-09 09:05:36,281 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:36,281 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:36,282 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:36,322 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:36,322 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:36,323 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:36,323 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:36,323 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:36,323 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11564', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:36,656 - root - INFO : 响应消息: {'traceId': '93d68f4a4a024fb7bffea93e4a9fbb2c', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111335, 'oldCreativityId': '', 'oldProgramId': '', 'no': '79022c6f51ea45329c57b0743bf176a9', 'name': '自动化创意11776000', 'programName': '自动化计划46126009', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613537000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11564, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:36,656 - root - INFO : 提取变量: [ creativityId: 111335 ]
+2020-09-09 09:05:36,657 - root - INFO : 提取变量: [ creativityName: 自动化创意11776000 ]
+2020-09-09 09:05:36,657 - root - INFO : 提取变量: [ creativityNo: 79022c6f51ea45329c57b0743bf176a9 ]
+2020-09-09 09:05:36,657 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:36,657 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:36,657 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:36,657 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:36,657 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:36,658 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:36,658 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:36,658 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:36,658 - root - INFO : 请求正文: {'websiteId': '6625', 'title': '自动化落地页77617873', 'releaseChannel': 3, 'putPlanNames': ['自动化计划46126009'], 'adType': 1, 'adPlan': '自动化计划46126009', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意11776000', 'adNo': '79022c6f51ea45329c57b0743bf176a9', 'creativityId': '111335'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:36,830 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '375f30b3761046029352ecce5f3a9740', 'data': None}
+2020-09-09 09:05:37,066 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:37,112 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:37,135 - root - INFO : 当前运行Case: test_manual_high_not
+2020-09-09 09:05:37,135 - root - INFO : 正在执行Function: test_manual_high_not
+2020-09-09 09:05:37,135 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:37,135 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:37,135 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:37,135 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:37,136 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:37,136 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:37,136 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划27786314', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 3, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:37,331 - root - INFO : 响应消息: {'traceId': 'c66b03c1ce5a428bbacdbdcbeb117326', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:37,331 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:37,331 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:37,331 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:37,332 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:37,332 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:37,332 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:37,332 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:37,332 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:37,332 - root - INFO : 请求正文: {'name': '自动化计划27786314', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 3, 'allocInstType': 2}
+2020-09-09 09:05:37,647 - root - INFO : 响应消息: {'traceId': 'b6e8de0396294fc38b677bd656392cfa', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11565, 'oldProgramId': '', 'no': '1000001598538610', 'name': '自动化计划27786314', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613538000, 'putMode': 3, 'updateState': 1}]}}
+2020-09-09 09:05:37,647 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:37,647 - root - INFO : 提取变量: [ putMode: 3 ]
+2020-09-09 09:05:37,648 - root - INFO : 提取变量: [ adName: 自动化计划27786314 ]
+2020-09-09 09:05:37,648 - root - INFO : 提取变量: [ adId: 11565 ]
+2020-09-09 09:05:37,648 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:37,648 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:37,648 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:37,648 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:37,648 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:37,649 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:37,649 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:37,649 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:37,649 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:37,649 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:37,649 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:37,649 - root - INFO : 请求正文: {'name': '自动化创意09533745', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '3', 'channelId': '6', 'programId': '11565', 'programName': '自动化计划27786314'}
+2020-09-09 09:05:37,875 - root - INFO : 响应消息: {'traceId': 'd9788c61d0884275aaa2dd2ddb3a1b26', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:37,875 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:37,875 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:37,875 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:37,876 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:37,876 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:37,876 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:37,876 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:37,876 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:37,876 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11565', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:38,214 - root - INFO : 响应消息: {'traceId': '868319d810354df3b95fd8d330bc99dc', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111336, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'c5370cb936f04f189b546ca6635beaac', 'name': '自动化创意09533745', 'programName': '自动化计划27786314', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613539000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11565, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:38,214 - root - INFO : 提取变量: [ creativityId: 111336 ]
+2020-09-09 09:05:38,215 - root - INFO : 提取变量: [ creativityName: 自动化创意09533745 ]
+2020-09-09 09:05:38,215 - root - INFO : 提取变量: [ creativityNo: c5370cb936f04f189b546ca6635beaac ]
+2020-09-09 09:05:38,215 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:38,215 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:38,215 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:38,215 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:38,215 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:38,215 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:38,216 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:38,216 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:38,216 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:38,216 - root - INFO : 请求正文: {'name': '自动化落地页45296239', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:38,406 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '0bf116828ea343a2bcd03b5c10af40e0', 'data': {'code': '1303499779733880833', 'id': 6626}}
+2020-09-09 09:05:38,406 - root - INFO : 提取变量: [ websiteId: 6626 ]
+2020-09-09 09:05:38,406 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:38,406 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:38,406 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:38,406 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:38,407 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:38,407 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:38,407 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:38,407 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:38,407 - root - INFO : 请求正文: {'websiteId': '6626'}
+2020-09-09 09:05:38,597 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '6567dfdb31a3400f86cf2d0eca31883e', 'data': None}
+2020-09-09 09:05:38,597 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:38,597 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:38,597 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:38,638 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:38,639 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:38,639 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:38,639 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:38,639 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:38,639 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11565', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:38,975 - root - INFO : 响应消息: {'traceId': 'a4af7be3ae124e0394059a46446d3651', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111336, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'c5370cb936f04f189b546ca6635beaac', 'name': '自动化创意09533745', 'programName': '自动化计划27786314', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613539000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11565, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:38,975 - root - INFO : 提取变量: [ creativityId: 111336 ]
+2020-09-09 09:05:38,976 - root - INFO : 提取变量: [ creativityName: 自动化创意09533745 ]
+2020-09-09 09:05:38,976 - root - INFO : 提取变量: [ creativityNo: c5370cb936f04f189b546ca6635beaac ]
+2020-09-09 09:05:38,976 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:38,976 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:38,976 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:38,976 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:38,976 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:38,977 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:38,977 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:38,977 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:38,977 - root - INFO : 请求正文: {'websiteId': '6626', 'title': '自动化落地页45296239', 'releaseChannel': 3, 'putPlanNames': ['自动化计划27786314'], 'adType': 1, 'adPlan': '自动化计划27786314', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意09533745', 'adNo': 'c5370cb936f04f189b546ca6635beaac', 'creativityId': '111336'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:39,148 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '0f13e0326f8b4662ab809faf14a87ce9', 'data': None}
+2020-09-09 09:05:39,388 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:39,432 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:39,454 - root - INFO : 当前运行Case: test_manual_normal_need
+2020-09-09 09:05:39,454 - root - INFO : 正在执行Function: test_manual_normal_need
+2020-09-09 09:05:39,454 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:39,454 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:39,454 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:39,455 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:39,455 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:39,455 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:39,455 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划02352398', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:39,668 - root - INFO : 响应消息: {'traceId': 'edc4d40bb72e483a97d928f5cd0e394a', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:39,668 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:39,668 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:39,669 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:39,669 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:39,669 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:39,669 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:39,669 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:39,669 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:39,669 - root - INFO : 请求正文: {'name': '自动化计划02352398', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 2}
+2020-09-09 09:05:39,970 - root - INFO : 响应消息: {'traceId': 'b7288928fcb44892871c98781563f940', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11566, 'oldProgramId': '', 'no': '1000001305196444', 'name': '自动化计划02352398', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613541000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:39,971 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:39,971 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:39,971 - root - INFO : 提取变量: [ adName: 自动化计划02352398 ]
+2020-09-09 09:05:39,971 - root - INFO : 提取变量: [ adId: 11566 ]
+2020-09-09 09:05:39,972 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:39,972 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:39,972 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:39,972 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:39,972 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:39,972 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:39,972 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:39,972 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:39,972 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:39,973 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:39,973 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:39,973 - root - INFO : 请求正文: {'name': '自动化创意61192218', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11566', 'programName': '自动化计划02352398'}
+2020-09-09 09:05:40,200 - root - INFO : 响应消息: {'traceId': 'ffbb82a10c9146ee8dace6b7f17c46ca', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:40,200 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:40,200 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:40,200 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:40,200 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:40,200 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:40,201 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:40,201 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:40,201 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:40,201 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11566', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:40,524 - root - INFO : 响应消息: {'traceId': 'b7e8bf78aa42458c8d5ca8982ce039e0', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111337, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'de5008462e984b16a4aaab68edd0b5df', 'name': '自动化创意61192218', 'programName': '自动化计划02352398', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613541000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11566, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:40,525 - root - INFO : 提取变量: [ creativityId: 111337 ]
+2020-09-09 09:05:40,525 - root - INFO : 提取变量: [ creativityName: 自动化创意61192218 ]
+2020-09-09 09:05:40,525 - root - INFO : 提取变量: [ creativityNo: de5008462e984b16a4aaab68edd0b5df ]
+2020-09-09 09:05:40,525 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:40,525 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:40,526 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:40,526 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:40,526 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:40,526 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:40,526 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:40,526 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:40,526 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:40,526 - root - INFO : 请求正文: {'name': '自动化落地页54889620', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:40,725 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '853c5b258a3842b491698b8a9662379c', 'data': {'code': '1303499789443694593', 'id': 6627}}
+2020-09-09 09:05:40,726 - root - INFO : 提取变量: [ websiteId: 6627 ]
+2020-09-09 09:05:40,726 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:40,726 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:40,726 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:40,726 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:40,726 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:40,726 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:40,726 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:40,726 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:40,726 - root - INFO : 请求正文: {'websiteId': '6627'}
+2020-09-09 09:05:40,913 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': 'd2d4c8788cf049998f5666e4e719a493', 'data': None}
+2020-09-09 09:05:40,913 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:40,913 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:40,913 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:40,954 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:40,954 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:40,954 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:40,954 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:40,954 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:40,954 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11566', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:41,303 - root - INFO : 响应消息: {'traceId': 'b658f121af7648f68454ba56da8645e6', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111337, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'de5008462e984b16a4aaab68edd0b5df', 'name': '自动化创意61192218', 'programName': '自动化计划02352398', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613541000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11566, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:41,304 - root - INFO : 提取变量: [ creativityId: 111337 ]
+2020-09-09 09:05:41,304 - root - INFO : 提取变量: [ creativityName: 自动化创意61192218 ]
+2020-09-09 09:05:41,304 - root - INFO : 提取变量: [ creativityNo: de5008462e984b16a4aaab68edd0b5df ]
+2020-09-09 09:05:41,304 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:41,304 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:41,304 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:41,305 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:41,305 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:41,305 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:41,305 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:41,305 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:41,305 - root - INFO : 请求正文: {'websiteId': '6627', 'title': '自动化落地页54889620', 'releaseChannel': 3, 'putPlanNames': ['自动化计划02352398'], 'adType': 1, 'adPlan': '自动化计划02352398', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意61192218', 'adNo': 'de5008462e984b16a4aaab68edd0b5df', 'creativityId': '111337'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:41,481 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': 'fdb235ba71354862940a3f0f8b42078f', 'data': None}
+2020-09-09 09:05:41,723 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:41,767 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:41,790 - root - INFO : 当前运行Case: test_manual_normal_not
+2020-09-09 09:05:41,790 - root - INFO : 正在执行Function: test_manual_normal_not
+2020-09-09 09:05:41,790 - root - INFO : 正在执行Function: ad_plan
+2020-09-09 09:05:41,790 - root - INFO : 正在执行Function: program_info_save
+2020-09-09 09:05:41,790 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-09-09 09:05:41,790 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:41,790 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:41,791 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:41,791 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划20638832', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 2, 'channelName': '微信'}
+2020-09-09 09:05:42,004 - root - INFO : 响应消息: {'traceId': '4bef9fcd1afb46d5a89268162af88c8f', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:42,004 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:42,005 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:42,005 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:42,005 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:42,005 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:42,005 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:42,005 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:42,005 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:42,005 - root - INFO : 请求正文: {'name': '自动化计划20638832', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 2}
+2020-09-09 09:05:42,305 - root - INFO : 响应消息: {'traceId': 'f9c61ea23ad3412cb1bddc023cd6b194', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11567, 'oldProgramId': '', 'no': '1000000286715648', 'name': '自动化计划20638832', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613543000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:42,306 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:42,306 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:42,306 - root - INFO : 提取变量: [ adName: 自动化计划20638832 ]
+2020-09-09 09:05:42,307 - root - INFO : 提取变量: [ adId: 11567 ]
+2020-09-09 09:05:42,307 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:42,307 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:42,307 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:42,307 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:42,307 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:42,307 - root - INFO : 正在执行Function: create_creativity
+2020-09-09 09:05:42,307 - root - INFO : 正在执行Function: creativity_save
+2020-09-09 09:05:42,307 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-09-09 09:05:42,308 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:42,308 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:42,308 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:42,308 - root - INFO : 请求正文: {'name': '自动化创意43212255', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11567', 'programName': '自动化计划20638832'}
+2020-09-09 09:05:42,550 - root - INFO : 响应消息: {'traceId': '6f86717847dc43e7b1036fceff0342d8', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:42,551 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:42,551 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:42,551 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:42,551 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:42,551 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:42,551 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:42,551 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:42,551 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:42,551 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11567', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:42,889 - root - INFO : 响应消息: {'traceId': '2c0422ad00e14fe5b45234e9cc8f3beb', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111338, 'oldCreativityId': '', 'oldProgramId': '', 'no': '02cb25b06d0c4663856a90c303db7407', 'name': '自动化创意43212255', 'programName': '自动化计划20638832', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613544000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11567, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:42,889 - root - INFO : 提取变量: [ creativityId: 111338 ]
+2020-09-09 09:05:42,889 - root - INFO : 提取变量: [ creativityName: 自动化创意43212255 ]
+2020-09-09 09:05:42,890 - root - INFO : 提取变量: [ creativityNo: 02cb25b06d0c4663856a90c303db7407 ]
+2020-09-09 09:05:42,890 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:42,890 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:42,890 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:42,890 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:42,890 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:42,890 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:42,890 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:42,890 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:42,891 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:42,891 - root - INFO : 请求正文: {'name': '自动化落地页98716128', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:43,081 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'cf440330105c403b924c86a945174427', 'data': {'code': '1303499799342252034', 'id': 6628}}
+2020-09-09 09:05:43,081 - root - INFO : 提取变量: [ websiteId: 6628 ]
+2020-09-09 09:05:43,081 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:43,082 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:43,082 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:43,082 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:43,082 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:43,082 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:43,082 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:43,082 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:43,082 - root - INFO : 请求正文: {'websiteId': '6628'}
+2020-09-09 09:05:43,257 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '37344e32833a40f6b07333bd0528260a', 'data': None}
+2020-09-09 09:05:43,257 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:43,257 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:43,257 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:43,298 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:43,298 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:43,298 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:43,298 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:43,298 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:43,299 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11567', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:43,625 - root - INFO : 响应消息: {'traceId': '955a90b7bea3478db2e63c834d5eb65d', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111338, 'oldCreativityId': '', 'oldProgramId': '', 'no': '02cb25b06d0c4663856a90c303db7407', 'name': '自动化创意43212255', 'programName': '自动化计划20638832', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613544000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 2, 'receiveDeptId': '', 'receiveDeptIdChain': '', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11567, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:43,625 - root - INFO : 提取变量: [ creativityId: 111338 ]
+2020-09-09 09:05:43,626 - root - INFO : 提取变量: [ creativityName: 自动化创意43212255 ]
+2020-09-09 09:05:43,626 - root - INFO : 提取变量: [ creativityNo: 02cb25b06d0c4663856a90c303db7407 ]
+2020-09-09 09:05:43,626 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:43,626 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:43,626 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:43,626 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:43,626 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:43,627 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:43,627 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:43,627 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:43,627 - root - INFO : 请求正文: {'websiteId': '6628', 'title': '自动化落地页98716128', 'releaseChannel': 3, 'putPlanNames': ['自动化计划20638832'], 'adType': 1, 'adPlan': '自动化计划20638832', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意43212255', 'adNo': '02cb25b06d0c4663856a90c303db7407', 'creativityId': '111338'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:43,805 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': 'ee4b86ad0e464b618a59374745a98e4e', 'data': None}
+2020-09-09 09:05:44,055 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:44,099 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:44,123 - root - INFO : 当前运行Case: test_direct_normal_need
+2020-09-09 09:05:44,123 - root - INFO : 正在执行Function: test_direct_normal_need
+2020-09-09 09:05:44,123 - root - INFO : 正在执行Function: ad_plan_direct
+2020-09-09 09:05:44,123 - root - INFO : 正在执行Function: program_info_save_direct
+2020-09-09 09:05:44,123 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划，直线下发分配方式，普通投放模式：putMode=1,allocInstType=3；高转VIP：putMode=3,allocInstType=3
+2020-09-09 09:05:44,123 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:44,124 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:44,124 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:44,124 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划62311496', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'receiveDeptId': 4572, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 3, 'channelName': '微信'}
+2020-09-09 09:05:44,380 - root - INFO : 响应消息: {'traceId': 'f2e11a0be6f540219ac67d2e237b2b52', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:44,380 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:44,381 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:44,381 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:44,381 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:44,381 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:44,381 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:44,381 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:44,381 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:44,381 - root - INFO : 请求正文: {'name': '自动化计划62311496', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-09-09 09:05:44,707 - root - INFO : 响应消息: {'traceId': '2d66d9708ea742dc9d8b4a1c75973a0d', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11568, 'oldProgramId': '', 'no': '1000000592639382', 'name': '自动化计划62311496', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613545000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:44,707 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:44,708 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:44,708 - root - INFO : 提取变量: [ adName: 自动化计划62311496 ]
+2020-09-09 09:05:44,708 - root - INFO : 提取变量: [ adId: 11568 ]
+2020-09-09 09:05:44,708 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:44,708 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:44,708 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:44,708 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:44,709 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:44,709 - root - INFO : 正在执行Function: create_creativity_direct
+2020-09-09 09:05:44,709 - root - INFO : 正在执行Function: creativity_save_direct
+2020-09-09 09:05:44,709 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意-直线下发分配方式的广告计划
+2020-09-09 09:05:44,709 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:44,709 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:44,709 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:44,709 - root - INFO : 请求正文: {'name': '自动化创意47122222', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11568', 'programName': '自动化计划62311496', 'receiveDeptId': 4572, 'receiveDeptName': '潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院'}
+2020-09-09 09:05:44,934 - root - INFO : 响应消息: {'traceId': '09ae0dbe02c842e7b3e28940966c871b', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:44,934 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:44,934 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:44,934 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:44,934 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:44,935 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:44,935 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:44,935 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:44,935 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:44,935 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11568', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:45,263 - root - INFO : 响应消息: {'traceId': 'c1d42d00f3594e04ab6b369d8158a47a', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111339, 'oldCreativityId': '', 'oldProgramId': '', 'no': '631406b83acb480f90d70d97a34a6086', 'name': '自动化创意47122222', 'programName': '自动化计划62311496', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613546000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11568, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:45,264 - root - INFO : 提取变量: [ creativityId: 111339 ]
+2020-09-09 09:05:45,264 - root - INFO : 提取变量: [ creativityName: 自动化创意47122222 ]
+2020-09-09 09:05:45,264 - root - INFO : 提取变量: [ creativityNo: 631406b83acb480f90d70d97a34a6086 ]
+2020-09-09 09:05:45,264 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:45,264 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:45,265 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:45,265 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:45,265 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:45,265 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:45,265 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:45,265 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:45,265 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:45,265 - root - INFO : 请求正文: {'name': '自动化落地页74185696', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:45,459 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '58e3c18defea4d64af9c3ef8b950408c', 'data': {'code': '1303499809312112641', 'id': 6629}}
+2020-09-09 09:05:45,459 - root - INFO : 提取变量: [ websiteId: 6629 ]
+2020-09-09 09:05:45,459 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:45,459 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:45,459 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:45,460 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:45,460 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:45,460 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:45,460 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:45,460 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:45,460 - root - INFO : 请求正文: {'websiteId': '6629'}
+2020-09-09 09:05:45,626 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '78100f0e40394259861b423fc186fbff', 'data': None}
+2020-09-09 09:05:45,626 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:45,626 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:45,626 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:45,668 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:45,668 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:45,668 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:45,668 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:45,668 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:45,668 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11568', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:45,986 - root - INFO : 响应消息: {'traceId': '23a98577f3e34d6dae6277bd41816227', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111339, 'oldCreativityId': '', 'oldProgramId': '', 'no': '631406b83acb480f90d70d97a34a6086', 'name': '自动化创意47122222', 'programName': '自动化计划62311496', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613546000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11568, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:45,986 - root - INFO : 提取变量: [ creativityId: 111339 ]
+2020-09-09 09:05:45,987 - root - INFO : 提取变量: [ creativityName: 自动化创意47122222 ]
+2020-09-09 09:05:45,987 - root - INFO : 提取变量: [ creativityNo: 631406b83acb480f90d70d97a34a6086 ]
+2020-09-09 09:05:45,987 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:45,987 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:45,987 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:45,987 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:45,988 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:45,988 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:45,988 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:45,988 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:45,988 - root - INFO : 请求正文: {'websiteId': '6629', 'title': '自动化落地页74185696', 'releaseChannel': 3, 'putPlanNames': ['自动化计划62311496'], 'adType': 1, 'adPlan': '自动化计划62311496', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意47122222', 'adNo': '631406b83acb480f90d70d97a34a6086', 'creativityId': '111339'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:46,166 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '337af62a064648059962103d33d3d01f', 'data': None}
+2020-09-09 09:05:46,407 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:46,452 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:46,474 - root - INFO : 当前运行Case: test_direct_normal_not
+2020-09-09 09:05:46,475 - root - INFO : 正在执行Function: test_direct_normal_not
+2020-09-09 09:05:46,475 - root - INFO : 正在执行Function: ad_plan_direct
+2020-09-09 09:05:46,475 - root - INFO : 正在执行Function: program_info_save_direct
+2020-09-09 09:05:46,475 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划，直线下发分配方式，普通投放模式：putMode=1,allocInstType=3；高转VIP：putMode=3,allocInstType=3
+2020-09-09 09:05:46,475 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:46,475 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:46,475 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:46,475 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划28050261', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'receiveDeptId': 4572, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 3, 'channelName': '微信'}
+2020-09-09 09:05:46,725 - root - INFO : 响应消息: {'traceId': '80038c5546e84e0abeaa7ad3a543d7bf', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:46,726 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:46,726 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:46,726 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:46,726 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:46,726 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:46,726 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:46,726 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:46,726 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:46,726 - root - INFO : 请求正文: {'name': '自动化计划28050261', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-09-09 09:05:47,033 - root - INFO : 响应消息: {'traceId': 'fb0caed0e7fe4d72a39980108bf207ce', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11569, 'oldProgramId': '', 'no': '1000000453085550', 'name': '自动化计划28050261', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613548000, 'putMode': 1, 'updateState': 1}]}}
+2020-09-09 09:05:47,033 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:47,033 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-09-09 09:05:47,034 - root - INFO : 提取变量: [ adName: 自动化计划28050261 ]
+2020-09-09 09:05:47,034 - root - INFO : 提取变量: [ adId: 11569 ]
+2020-09-09 09:05:47,034 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:47,034 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:47,034 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:47,034 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:47,034 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:47,035 - root - INFO : 正在执行Function: create_creativity_direct
+2020-09-09 09:05:47,035 - root - INFO : 正在执行Function: creativity_save_direct
+2020-09-09 09:05:47,035 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意-直线下发分配方式的广告计划
+2020-09-09 09:05:47,035 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:47,035 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:47,035 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:47,035 - root - INFO : 请求正文: {'name': '自动化创意56893953', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '11569', 'programName': '自动化计划28050261', 'receiveDeptId': 4572, 'receiveDeptName': '潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院'}
+2020-09-09 09:05:47,248 - root - INFO : 响应消息: {'traceId': 'ef33765f48744864bccc12cb963f416d', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:47,248 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:47,248 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:47,248 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:47,248 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:47,248 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:47,248 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:47,248 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:47,248 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:47,248 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11569', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:47,580 - root - INFO : 响应消息: {'traceId': 'd5c1b48d9c75434dbeb3648a704a6e81', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111340, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'e623c444b747439a94be39f741e13b91', 'name': '自动化创意56893953', 'programName': '自动化计划28050261', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613548000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11569, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:47,580 - root - INFO : 提取变量: [ creativityId: 111340 ]
+2020-09-09 09:05:47,581 - root - INFO : 提取变量: [ creativityName: 自动化创意56893953 ]
+2020-09-09 09:05:47,581 - root - INFO : 提取变量: [ creativityNo: e623c444b747439a94be39f741e13b91 ]
+2020-09-09 09:05:47,581 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:47,581 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:47,581 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:47,581 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:47,581 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:47,581 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:47,582 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:47,582 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:47,582 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:47,582 - root - INFO : 请求正文: {'name': '自动化落地页82816872', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:47,782 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '169bb8f4d13c4d35aacaae0939eafc58', 'data': {'code': '1303499819059675138', 'id': 6630}}
+2020-09-09 09:05:47,782 - root - INFO : 提取变量: [ websiteId: 6630 ]
+2020-09-09 09:05:47,782 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:47,782 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:47,782 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:47,782 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:47,782 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:47,782 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:47,783 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:47,783 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:47,783 - root - INFO : 请求正文: {'websiteId': '6630'}
+2020-09-09 09:05:47,959 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '08fba3a89c5e424a811ada4c57a245f7', 'data': None}
+2020-09-09 09:05:47,959 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:47,960 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:47,960 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:48,002 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:48,003 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:48,003 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:48,003 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:48,003 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:48,003 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11569', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:48,314 - root - INFO : 响应消息: {'traceId': '51d2ed5bf5fb4fb4a2120ca97a33c413', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111340, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'e623c444b747439a94be39f741e13b91', 'name': '自动化创意56893953', 'programName': '自动化计划28050261', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613548000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 1, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11569, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:48,315 - root - INFO : 提取变量: [ creativityId: 111340 ]
+2020-09-09 09:05:48,315 - root - INFO : 提取变量: [ creativityName: 自动化创意56893953 ]
+2020-09-09 09:05:48,316 - root - INFO : 提取变量: [ creativityNo: e623c444b747439a94be39f741e13b91 ]
+2020-09-09 09:05:48,316 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:48,316 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:48,316 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:48,316 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:48,316 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:48,316 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:48,316 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:48,316 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:48,316 - root - INFO : 请求正文: {'websiteId': '6630', 'title': '自动化落地页82816872', 'releaseChannel': 3, 'putPlanNames': ['自动化计划28050261'], 'adType': 1, 'adPlan': '自动化计划28050261', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意56893953', 'adNo': 'e623c444b747439a94be39f741e13b91', 'creativityId': '111340'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:48,487 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': 'bca274e5c86b43ffb59b7ae304ff857b', 'data': None}
+2020-09-09 09:05:48,716 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:48,762 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:48,784 - root - INFO : 当前运行Case: test_direct_highl_need
+2020-09-09 09:05:48,784 - root - INFO : 正在执行Function: test_direct_highl_need
+2020-09-09 09:05:48,784 - root - INFO : 正在执行Function: ad_plan_direct
+2020-09-09 09:05:48,784 - root - INFO : 正在执行Function: program_info_save_direct
+2020-09-09 09:05:48,785 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划，直线下发分配方式，普通投放模式：putMode=1,allocInstType=3；高转VIP：putMode=3,allocInstType=3
+2020-09-09 09:05:48,785 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:48,785 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:48,785 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:48,785 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划35302599', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'receiveDeptId': 4572, 'putMode': 3, 'type': 1, 'gatherType': 1, 'allocInstType': 3, 'channelName': '微信'}
+2020-09-09 09:05:49,016 - root - INFO : 响应消息: {'traceId': '73ea1fb13a914afb8667d254b402d531', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:49,016 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:49,016 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:49,016 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:49,016 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:49,016 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:49,016 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:49,016 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:49,016 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:49,016 - root - INFO : 请求正文: {'name': '自动化计划35302599', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-09-09 09:05:49,336 - root - INFO : 响应消息: {'traceId': '03813d71a97d4622a07f89d61a5c35d8', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11570, 'oldProgramId': '', 'no': '1000001164570713', 'name': '自动化计划35302599', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613550000, 'putMode': 3, 'updateState': 1}]}}
+2020-09-09 09:05:49,336 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:49,337 - root - INFO : 提取变量: [ putMode: 3 ]
+2020-09-09 09:05:49,337 - root - INFO : 提取变量: [ adName: 自动化计划35302599 ]
+2020-09-09 09:05:49,337 - root - INFO : 提取变量: [ adId: 11570 ]
+2020-09-09 09:05:49,337 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:49,338 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:49,338 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:49,338 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:49,338 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:49,338 - root - INFO : 正在执行Function: create_creativity_direct
+2020-09-09 09:05:49,338 - root - INFO : 正在执行Function: creativity_save_direct
+2020-09-09 09:05:49,338 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意-直线下发分配方式的广告计划
+2020-09-09 09:05:49,338 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:49,338 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:49,338 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:49,339 - root - INFO : 请求正文: {'name': '自动化创意42857716', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '3', 'channelId': '6', 'programId': '11570', 'programName': '自动化计划35302599', 'receiveDeptId': 4572, 'receiveDeptName': '潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院'}
+2020-09-09 09:05:49,572 - root - INFO : 响应消息: {'traceId': 'f0f32c58e6cc465e8be1522978552924', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:49,572 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:49,572 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:49,572 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:49,572 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:49,572 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:49,572 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:49,572 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:49,573 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:49,573 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11570', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:49,905 - root - INFO : 响应消息: {'traceId': '6c6e7189376649e6acfcebd9dca9f9c4', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111341, 'oldCreativityId': '', 'oldProgramId': '', 'no': '54cc5cdfc8b246539bfbc9f8019cd4ff', 'name': '自动化创意42857716', 'programName': '自动化计划35302599', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613551000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11570, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:49,905 - root - INFO : 提取变量: [ creativityId: 111341 ]
+2020-09-09 09:05:49,906 - root - INFO : 提取变量: [ creativityName: 自动化创意42857716 ]
+2020-09-09 09:05:49,906 - root - INFO : 提取变量: [ creativityNo: 54cc5cdfc8b246539bfbc9f8019cd4ff ]
+2020-09-09 09:05:49,906 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:49,906 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:49,906 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:49,906 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:49,906 - root - INFO : 正在执行Function: create_website_NeedCaptch
+2020-09-09 09:05:49,906 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+2020-09-09 09:05:49,907 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:49,907 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:49,907 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:49,907 - root - INFO : 请求正文: {'name': '自动化落地页20244675', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 1, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcx58wtk471fc3t","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcx58xfke5x7xrm","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":176}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcx5908gjvytg5v","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":278}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcx5908gi0o5iva","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:50,096 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '97fcfa471584447cb168c5dc267721a9', 'data': {'code': '1303499828756905986', 'id': 6631}}
+2020-09-09 09:05:50,096 - root - INFO : 提取变量: [ websiteId: 6631 ]
+2020-09-09 09:05:50,096 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:50,096 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:50,097 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:50,097 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:50,097 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:50,097 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:50,097 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:50,097 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:50,097 - root - INFO : 请求正文: {'websiteId': '6631'}
+2020-09-09 09:05:50,282 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '92b3c7aae19e44fb8d92aa5746fbd410', 'data': None}
+2020-09-09 09:05:50,282 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:50,282 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:50,282 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:50,334 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:50,334 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:50,334 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:50,334 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:50,334 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:50,334 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11570', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:50,669 - root - INFO : 响应消息: {'traceId': '209c77f8218c41098644b37e19e05a19', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111341, 'oldCreativityId': '', 'oldProgramId': '', 'no': '54cc5cdfc8b246539bfbc9f8019cd4ff', 'name': '自动化创意42857716', 'programName': '自动化计划35302599', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613551000, 'remark': '', 'isNeedCaptch': 1, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11570, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:50,670 - root - INFO : 提取变量: [ creativityId: 111341 ]
+2020-09-09 09:05:50,670 - root - INFO : 提取变量: [ creativityName: 自动化创意42857716 ]
+2020-09-09 09:05:50,670 - root - INFO : 提取变量: [ creativityNo: 54cc5cdfc8b246539bfbc9f8019cd4ff ]
+2020-09-09 09:05:50,671 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:50,671 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:50,671 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:50,671 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:50,671 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:50,671 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:50,671 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:50,671 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:50,671 - root - INFO : 请求正文: {'websiteId': '6631', 'title': '自动化落地页20244675', 'releaseChannel': 3, 'putPlanNames': ['自动化计划35302599'], 'adType': 1, 'adPlan': '自动化计划35302599', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意42857716', 'adNo': '54cc5cdfc8b246539bfbc9f8019cd4ff', 'creativityId': '111341'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:50,844 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': 'b376a4bbc1f44e45a36c85b3beeb422c', 'data': None}
+2020-09-09 09:05:51,086 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-09-09 09:05:51,132 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-09-09 09:05:51,155 - root - INFO : 当前运行Case: test_direct_highl_not
+2020-09-09 09:05:51,155 - root - INFO : 正在执行Function: test_direct_highl_not
+2020-09-09 09:05:51,155 - root - INFO : 正在执行Function: ad_plan_direct
+2020-09-09 09:05:51,155 - root - INFO : 正在执行Function: program_info_save_direct
+2020-09-09 09:05:51,155 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划，直线下发分配方式，普通投放模式：putMode=1,allocInstType=3；高转VIP：putMode=3,allocInstType=3
+2020-09-09 09:05:51,155 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-09-09 09:05:51,155 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:51,155 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:51,155 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划35179818', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'receiveDeptId': 4572, 'putMode': 3, 'type': 1, 'gatherType': 1, 'allocInstType': 3, 'channelName': '微信'}
+2020-09-09 09:05:51,381 - root - INFO : 响应消息: {'traceId': '6ed157e126eb4d2999428b00229d2203', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:51,382 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:51,382 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:51,382 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:51,382 - root - INFO : 正在执行Function: program_pageList
+2020-09-09 09:05:51,382 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-09-09 09:05:51,382 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-09-09 09:05:51,382 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:51,382 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:51,382 - root - INFO : 请求正文: {'name': '自动化计划35179818', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1}
+2020-09-09 09:05:51,696 - root - INFO : 响应消息: {'traceId': 'c0abf9c967dc47bf8828e2fd3255827f', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 11571, 'oldProgramId': '', 'no': '1000000184928768', 'name': '自动化计划35179818', 'type': 1, 'programName': '', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': '', 'position': '', 'keyword': '', 'areaId': '', 'areaName': '', 'remark': '', 'isNeedCaptch': '', 'state': '', 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613552000, 'putMode': 3, 'updateState': 1}]}}
+2020-09-09 09:05:51,696 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-09-09 09:05:51,697 - root - INFO : 提取变量: [ putMode: 3 ]
+2020-09-09 09:05:51,697 - root - INFO : 提取变量: [ adName: 自动化计划35179818 ]
+2020-09-09 09:05:51,697 - root - INFO : 提取变量: [ adId: 11571 ]
+2020-09-09 09:05:51,697 - root - INFO : 提取变量: [ type: 1 ]
+2020-09-09 09:05:51,697 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:51,697 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:51,698 - root - INFO : 校验类型: [-in], 结果: [Passed], 预期: [name]
+2020-09-09 09:05:51,698 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:51,698 - root - INFO : 正在执行Function: create_creativity_direct
+2020-09-09 09:05:51,698 - root - INFO : 正在执行Function: creativity_save_direct
+2020-09-09 09:05:51,698 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意-直线下发分配方式的广告计划
+2020-09-09 09:05:51,698 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-09-09 09:05:51,698 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:51,698 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:51,698 - root - INFO : 请求正文: {'name': '自动化创意18860641', 'gatherType': 1, 'isNeedCaptch': 0, 'position': 1, 'type': '1', 'putMode': '3', 'channelId': '6', 'programId': '11571', 'programName': '自动化计划35179818', 'receiveDeptId': 4572, 'receiveDeptName': '潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院'}
+2020-09-09 09:05:51,943 - root - INFO : 响应消息: {'traceId': 'a36eaff3ad8d4cd3a6dc33e6cdcd318f', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:05:51,944 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:51,944 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:51,944 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:51,944 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:51,944 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:51,944 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:51,944 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:51,944 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:51,944 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11571', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:52,268 - root - INFO : 响应消息: {'traceId': '3a5682dbe601486a8126a86193173a56', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111342, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'f101ae7b69044bdd8c46d7db3da0d0d0', 'name': '自动化创意18860641', 'programName': '自动化计划35179818', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613553000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11571, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:52,268 - root - INFO : 提取变量: [ creativityId: 111342 ]
+2020-09-09 09:05:52,269 - root - INFO : 提取变量: [ creativityName: 自动化创意18860641 ]
+2020-09-09 09:05:52,269 - root - INFO : 提取变量: [ creativityNo: f101ae7b69044bdd8c46d7db3da0d0d0 ]
+2020-09-09 09:05:52,269 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:52,269 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:52,269 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:52,269 - root - INFO : 正在执行Function: landing_page_create
+2020-09-09 09:05:52,269 - root - INFO : 正在执行Function: create_website_NotneedCaptch
+2020-09-09 09:05:52,269 - root - INFO : 描述信息: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+2020-09-09 09:05:52,269 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-09-09 09:05:52,270 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:52,270 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:52,270 - root - INFO : 请求正文: {'name': '自动化落地页78634299', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee', 'isRecommendApp': False, 'submitType': 0, 'isSmsVerify': 0, 'websiteType': 1, 'adCreateType': 1, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.0.0', 'compReqs': [{'compJson': '{"id":"kcolj5jz1vue0hy","type":3,"width":375,"height":115,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":false,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 3}, {'compJson': '{"id":"kcolj64vjygwwbi","type":8,"width":375,"height":102,"title":"年龄","options":[{"label":"成年","isDefault":false},{"label":"未成年","isDefault":false}],"required":true,"layout":1,"optColNum":2,"y":115}', 'fileIds': [], 'scene': 1, 'type': 8}, {'compJson': '{"id":"kcolj7tqmvsgoj0","type":6,"width":339,"height":77,"text":"提交","textColor":"#FFFFFF","textSize":17,"borderColor":"#1855FB","borderWidth":2,"borderRadius":4,"bgColor":"#1855FB","position":false,"positionBtnBgColor":"#1855FB","isBuy":false,"y":217}', 'fileIds': [], 'scene': 1, 'type': 6}, {'compJson': '{"id":"kcolj7tryu2ia4b","type":20,"width":375,"img":"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz","height":220,"title":"提交成功","desc":"我们已收到您的反馈，感谢填写","isDownloadApp":false,"y":0}', 'fileIds': [], 'scene': 2, 'type': 20}]}
+2020-09-09 09:05:52,461 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '629705c5ea2641c6bff680baad2af270', 'data': {'code': '1303499838689017858', 'id': 6632}}
+2020-09-09 09:05:52,461 - root - INFO : 提取变量: [ websiteId: 6632 ]
+2020-09-09 09:05:52,461 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:52,461 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:52,462 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:52,462 - root - INFO : 正在执行Function: publish_website
+2020-09-09 09:05:52,462 - root - INFO : 描述信息: 【银河/工具/落地页工具】发布落地页
+2020-09-09 09:05:52,462 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-09-09 09:05:52,462 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:52,462 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:52,462 - root - INFO : 请求正文: {'websiteId': '6632'}
+2020-09-09 09:05:52,645 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '1d34f27746c24346a47f0a02fb383d38', 'data': None}
+2020-09-09 09:05:52,645 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:52,646 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [落地页发布成功]
+2020-09-09 09:05:52,646 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:52,686 - root - INFO : 正在执行Function: creativity_pageList
+2020-09-09 09:05:52,687 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-09-09 09:05:52,687 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-09-09 09:05:52,687 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:52,687 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:52,687 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '11571', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-09-09 09:05:53,023 - root - INFO : 响应消息: {'traceId': '916f54f2ea0a4a28a76b5caebf6f4244', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 111342, 'oldCreativityId': '', 'oldProgramId': '', 'no': 'f101ae7b69044bdd8c46d7db3da0d0d0', 'name': '自动化创意18860641', 'programName': '自动化计划35179818', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': '', 'areaId': '', 'areaName': '', 'creatorName': '测试环境_全权限_负责人', 'createTime': 1599613553000, 'remark': '', 'isNeedCaptch': 0, 'state': 2, 'adMainId': '', 'channelAgencyAccountId': '', 'accountCode': '', 'adMainAccount': '', 'thirdUrl': '', 'allocInstType': 3, 'receiveDeptId': 4572, 'receiveDeptIdChain': '1001-2001-4569-4570-4571-4572', 'isHide': 0, 'isTest': 0, 'creatorDeptId': 4572, 'vector': '', 'customerVectorValue': '', 'followerName': '', 'followerTanzkAccount': '', 'putMode': 3, 'receptionistId': '', 'receptionistName': '', 'receptionistTanzkAccount': '', 'receptionistDeptId': '', 'receptionistDeptIdChain': '', 'creatorDeptIdChain': '1001-2001-4569-4570-4571-4572', 'updateState': 1, 'type': 1, 'programId': 11571, 'promotionTerminal': 1, 'vectorType': '', 'channelQrCode': '', 'channelNumber': '', 'companyWechatId': '', 'vectorId': '', 'vectorName': ''}]}}
+2020-09-09 09:05:53,024 - root - INFO : 提取变量: [ creativityId: 111342 ]
+2020-09-09 09:05:53,024 - root - INFO : 提取变量: [ creativityName: 自动化创意18860641 ]
+2020-09-09 09:05:53,025 - root - INFO : 提取变量: [ creativityNo: f101ae7b69044bdd8c46d7db3da0d0d0 ]
+2020-09-09 09:05:53,025 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:05:53,025 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:05:53,025 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:05:53,025 - root - INFO : 正在执行Function: association_creativity
+2020-09-09 09:05:53,025 - root - INFO : 描述信息: 【银河/工具/落地页工具】生成链接
+2020-09-09 09:05:53,025 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-09-09 09:05:53,025 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:05:53,025 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:05:53,025 - root - INFO : 请求正文: {'websiteId': '6632', 'title': '自动化落地页78634299', 'releaseChannel': 3, 'putPlanNames': ['自动化计划35179818'], 'adType': 1, 'adPlan': '自动化计划35179818', 'channel': '微信', 'channelId': 6, 'subject': 'Python', 'subjectId': 282, 'baseReqs': [{'adCreativity': '自动化创意18860641', 'adNo': 'f101ae7b69044bdd8c46d7db3da0d0d0', 'creativityId': '111342'}], 'accountId': 'wx359bdedd5d18907a', 'domain': 'https://mz-fat.tanzhouedu.com'}
+2020-09-09 09:05:53,195 - root - INFO : 响应消息: {'status': -1, 'msg': '无效accountId', 'traceId': '06bd9d7e6f87499b9877001758142128', 'data': None}

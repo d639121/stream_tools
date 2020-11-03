@@ -1,0 +1,90 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 数据-数据统计-部门分配统计
+
+config:
+  valueable:
+    organizationId: 1001
+    projectName: xiaokakecheng
+
+query_dept_allot_data:
+
+    desc: 【数据/数据统计/部门分配统计】查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/installoc/daycount/alloc/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      startGatherDate: $<gatherTimeStart>
+      endGatherDate: $<gatherTimeEnd>
+      startAllocDate: $<gatherTimeStart>
+      endAllocDate: $<gatherTimeEnd>
+    shared:
+      totalItem: totalItem
+    check:
+      status: 0
+      msg: success
+
+export_dept_allot_data:
+
+    desc: 【数据/数据统计/部门分配统计】导出
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/installoc/daycount/alloc/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      startGatherDate: $<gatherTimeStart>
+      endGatherDate: $<gatherTimeEnd>
+    shared:
+    check:
+      no_check
+
+query_wx_dept_allot_data:
+
+    desc: 【数据/数据统计/部门分配统计】查询微信CPC
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/installoc/daycount/alloc/wx/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      startDate: $<gatherTimeStart>
+      endDate: $<gatherTimeEnd>
+    shared:
+      totalItem: totalItem
+    check:
+      status: 0
+      msg: success
+
+export_wx_dept_allot_data:
+
+    desc: 【数据/数据统计/部门分配统计】导出微信CPC
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/installoc/daycount/alloc/wx/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      startDate: $<gatherTimeStart>
+      endDate: $<gatherTimeEnd>
+    shared:
+    check:
+      no_check

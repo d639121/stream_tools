@@ -1,0 +1,69 @@
+get_account:
+
+  - caseid: 1001
+    #判断是否运行
+    run: YES
+    # 描述信息， 尽可能描述清楚点
+    desc: 【教务/投诉退款/认领】查询账号account
+    # 前置条件，是否需要依赖其他接口
+    precondition:
+    #  key 为data中的替换正则时的变量名，value 可以为取全局字典中的key，Global_Val[key]，
+    parameterize:
+      account: account
+    # 发起请求必备数据
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/waitDeal/qryUntreatedComplaints
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "headmasterId": ,
+        "creatorId":  ,
+        "complaintReasonType": ,
+        "complaintReasonSubdivide": ,
+        "userType": 1,
+        "userInfoType": 2,
+        "userInfoContent": "$<account>"
+      }
+    shared: # key1为存入全局字典中的key，value1是使用jsonpath取res中的key，组合存入全局字典中
+      traceId1: traceId
+      msg1: msg
+    check:
+      status: !!str 0
+      msg: success
+      data:   # 循环遍历判断params1和params2是否存在于res的data中
+        - totalItem
+        - pageSize
+
+query_worksheet:
+
+  - caseid: 1002
+    run: YES
+    desc: 【CRM/财务管理/财务列表】查询工单
+    precondition: get_account
+    parameterize:
+      orderNo: traceId1
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/pageList
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/x-www-form-urlencoded
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 1,
+        "state": 91,
+        "orderNo": "$<orderNo>"
+      }
+    shared:
+      traceId2: traceId
+      msg2: msg
+    check:
+      status: !!str 0
+      msg: success
+      data:   # 循环遍历判断params1和params2是否存在于res的data中
+        - totalItem
+        - list

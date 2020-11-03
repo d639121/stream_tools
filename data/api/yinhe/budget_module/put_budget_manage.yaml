@@ -1,0 +1,266 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 预算-投放预算管理
+
+config:
+  valueable:
+    organizationId: 1001
+    projectName: xiaokakecheng
+    promotionerDeptIdChain: 1001-3003-1
+    receiveDeptIdChain: 1001-3003-1
+#    用例中调用了登录方法，传了账号，需要修改成pre的账号
+
+query_budget_data:
+
+    desc: 【预算-投放预算管理-预算表】查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      promotionerDeptIdChain: ''
+      receiveDeptIdChain: ''
+    shared:
+        budget_id: id
+        costMonth: costMonth
+        promotionerDeptName: promotionerDeptName
+        receiveDeptName: receiveDeptName
+        subjectName: subjectName
+        gatherType: gatherType
+        putMode: putMode
+        weekNum: weekNum
+        workRange: workRange
+        workDay: workDay
+        monthEntryNum: monthEntryNum
+        monthUnCorrectNum: monthUnCorrectNum
+        monthCorrectNum: monthCorrectNum
+        avgCardNum: avgCardNum
+        conversionRate: conversionRate
+        customerPrice: customerPrice
+        applyStauts: applyStauts
+    check:
+      status: 0
+      msg: success
+
+import_budget_data:
+
+    desc: 【预算-投放预算管理-预算表】导入
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      file: (binary)
+    shared:
+    check:
+      status: 0
+
+qry_cost_apply:
+
+    desc: 【预算-投放预算管理-申请记录】查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      budget_id: id
+    check:
+      status: 0
+      msg: success
+
+export_cost_apply:
+
+    desc: 【预算-投放预算管理-申请记录】导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      {}
+    shared:
+    check:
+      no_check
+
+chk_cost_apply:
+
+    desc: 【预算-投放预算管理-申请记录】审核
+    parameterize:
+      flow_budget_id: flow_budget_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/audit
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      ids: $<flow_budget_id>
+      auditState: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+record_cost_apply:
+
+    desc: 【预算-投放预算管理-申请记录】操作记录
+    parameterize:
+      budget_id: budget_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/record
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      id: $<budget_id>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+failure_budget_data:
+
+    desc: 【预算-投放预算管理-预算表】失效
+    parameterize:
+      budget_id: budget_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/failure
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<budget_id>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+failure_update_record:
+
+    desc: 【预算-投放预算管理-预算表】已失效预算的修改记录功能
+    parameterize:
+      budget_id: budget_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/listChangeRecord
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<budget_id>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+update_budget_data:
+
+    desc: 【预算-投放预算管理-预算表】修改
+    parameterize:
+      id: budget_id
+      costMonth: costMonth
+      promotionerDeptName: promotionerDeptName
+      receiveDeptName: receiveDeptName
+      subjectName: subjectName
+      gatherType: gatherType
+      putMode: putMode
+      weekNum: weekNum
+      workRange: workRange
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<id>
+      costMonth: $<costMonth>
+      promotionerDeptIdChainName: $<promotionerDeptName>
+      receiveDeptIdChainName: $<receiveDeptName>
+      subjectName: $<subjectName>
+      gatherType: $<gatherType>
+      putMode: $<putMode>
+      weekNum: $<weekNum>
+      workRange: $<workRange>
+      workDay: 1
+      monthEntryNum: 1
+      monthUnCorrectNum: 1
+      monthCorrectNum: 1
+      avgCardNum: 1
+      conversionRate: 0.7
+      customerPrice: 1000
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_budget_data_for_type:
+
+    desc: 【预算-投放预算管理-预算表】条件导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/export
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 1
+    shared:
+    check:
+      no_check
+
+export_budget_data:
+
+    desc: 【预算-投放预算管理-预算表】导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/export
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+    shared:
+    check:
+      no_check
+
+import_budget_error_data:
+
+    desc: 【预算-投放预算管理-预算表】导入异常文件
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      file: (binary)
+    shared:
+    check:
+      msg: 文件解析失败，该文件无法解析。
+
+import_budget_file_data:
+
+    desc: 【预算-投放预算管理-预算表】导入错误类型文件
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/put/cost/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      file: (binary)
+    shared:
+    check:
+      status: 999999004

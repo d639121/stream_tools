@@ -1,0 +1,6 @@
+2020-10-29 15:00:12,470 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-29 15:00:12,470 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-29 15:00:12,470 - root - INFO : 请求方法: [- POST -]
+2020-10-29 15:00:12,470 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-29 15:00:12,471 - root - INFO : 请求正文: {'account': 't0373492024\n', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-29 15:00:12,604 - root - INFO : 响应消息: {'traceId': '2c09e4f63d464205b022d1b315475a02', 'status': 'V1009', 'msg': '对不起，账号或密码错误', 'data': {}}

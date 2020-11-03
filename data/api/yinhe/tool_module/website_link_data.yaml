@@ -1,0 +1,38 @@
+config:
+  valueable:
+    organizationId: 1001
+
+list_creativity:
+
+    desc: 【银河/工具/落地页工具】落地页数据查询
+    parameterize:
+     todayStartTime: todayStartTime
+     todayEndTime: todayEndTime
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "websiteCode": "",
+        "creativityCode": "",
+        "adNo": "",
+        "isTest": "",
+        "channelCode": "",
+        "subjectId": "",
+        "putMode": "",
+        "websiteName": "",
+        "submitStartTime": $<todayStartTime>,
+        "submitEndTime": $<todayEndTime>,
+        "pageNo": 1,
+        "pageSize": 10,
+        "websiteType": 1
+      }
+    shared:
+      adNo: adNo
+      websiteCode: websiteCode
+      websiteLinkId: websiteLinkId
+    check:
+      status: 0
+      msg: success

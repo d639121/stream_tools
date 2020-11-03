@@ -1,0 +1,80 @@
+2020-09-01 17:59:22,533 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 17:59:22,533 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 17:59:22,533 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:22,533 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:22,534 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 17:59:22,681 - root - INFO : 响应消息: {'traceId': '2e46261ef0734b58985eb677f13959be', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77e7210712f1253e411434aa010b5c'}}
+2020-09-01 17:59:22,682 - root - INFO : 提取变量: [ pttoken: 0x77e7210712f1253e411434aa010b5c ]
+2020-09-01 17:59:22,682 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 17:59:22,682 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 17:59:22,682 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:22,682 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_doc
+2020-09-01 17:59:22,682 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_doc
+2020-09-01 17:59:22,683 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 17:59:22,683 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 17:59:22,785 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 17:59:22,785 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:22,785 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=811ce02bb10d574b653076e64165c6ff', 'token': '0x77e7210712f1253e411434aa010b5c', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:22,785 - root - INFO : 请求正文: b'--811ce02bb10d574b653076e64165c6ff\r\nContent-Disposition: form-data; name="file"; filename="import_doc.doc"\r\nContent-Type: application/msword\r\n\r\n\r\n--811ce02bb10d574b653076e64165c6ff--\r\n'
+2020-09-01 17:59:23,014 - root - INFO : 响应消息: {'traceId': '152cf5c735304856aafc2ddf2a1e9fc6', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 17:59:23,014 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 17:59:23,014 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 17:59:23,014 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,015 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 17:59:23,015 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 17:59:23,015 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:23,015 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:23,015 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 17:59:23,174 - root - INFO : 响应消息: {'traceId': '71941f1ec8354e6abe8efdbdaa7a7007', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x776a920712f12532f32496d982abcf'}}
+2020-09-01 17:59:23,174 - root - INFO : 提取变量: [ pttoken: 0x776a920712f12532f32496d982abcf ]
+2020-09-01 17:59:23,174 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 17:59:23,174 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 17:59:23,174 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,175 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_csv
+2020-09-01 17:59:23,175 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_csv
+2020-09-01 17:59:23,175 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 17:59:23,175 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 17:59:23,175 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 17:59:23,176 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:23,176 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=3781b6d233758b7457b93d0d66d068b1', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:23,176 - root - INFO : 请求正文: b'--3781b6d233758b7457b93d0d66d068b1\r\nContent-Disposition: form-data; name="file"; filename="import_csv.csv"\r\nContent-Type: application/vnd.ms-excel\r\n\r\n\r\n--3781b6d233758b7457b93d0d66d068b1--\r\n'
+2020-09-01 17:59:23,352 - root - INFO : 响应消息: {'traceId': '0de379c76bec42a5a6ac26cf75c3be2d', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 17:59:23,352 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 17:59:23,352 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 17:59:23,353 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,354 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 17:59:23,354 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 17:59:23,354 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:23,354 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:23,354 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 17:59:23,497 - root - INFO : 响应消息: {'traceId': 'a4d32cdf7a1b44ee9a50c3a557c1bc54', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77a6630712f12536291468fb44c780'}}
+2020-09-01 17:59:23,498 - root - INFO : 提取变量: [ pttoken: 0x77a6630712f12536291468fb44c780 ]
+2020-09-01 17:59:23,498 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 17:59:23,498 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 17:59:23,498 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,498 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 17:59:23,498 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 17:59:23,499 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 17:59:23,499 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 17:59:23,499 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 17:59:23,499 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:23,499 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=95e17779c3a82033c71e77de30cb8a56', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:23,499 - root - INFO : 请求正文: b'--95e17779c3a82033c71e77de30cb8a56\r\nContent-Disposition: form-data; name="file"; filename="import_excel.xlsx"\r\nContent-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\r\n\r\n\r\n--95e17779c3a82033c71e77de30cb8a56--\r\n'
+2020-09-01 17:59:23,686 - root - INFO : 响应消息: {'traceId': '0f3d03fbfbbb4b649023cb6d8e83ffbf', 'status': '999999011', 'msg': '文件解析失败，该文件无法解析。', 'data': {}}
+2020-09-01 17:59:23,686 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999011]
+2020-09-01 17:59:23,686 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件解析失败，该文件无法解析。]
+2020-09-01 17:59:23,687 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,688 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 17:59:23,688 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 17:59:23,688 - root - INFO : 请求方法: [- POST -]
+2020-09-01 17:59:23,688 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 17:59:23,688 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 17:59:23,815 - root - INFO : 响应消息: {'traceId': 'df5e1941153b403b9df33fdce50822bb', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x773f0d0712f1253f4964b94b380924'}}
+2020-09-01 17:59:23,815 - root - INFO : 提取变量: [ pttoken: 0x773f0d0712f1253f4964b94b380924 ]
+2020-09-01 17:59:23,815 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 17:59:23,815 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 17:59:23,815 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 17:59:23,815 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_excel
+2020-09-01 17:59:23,815 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_excel
+2020-09-01 17:59:23,815 - root - INFO : 正在执行Function: flow_cost_mgt_import
+2020-09-01 17:59:23,815 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入

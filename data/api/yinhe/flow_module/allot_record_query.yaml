@@ -1,0 +1,59 @@
+# @Time  : 2020/08/06 16:30
+# @Author: Jones
+# @Desc  : 流量-分配记录查询
+config:
+  valueable:
+    organizationId: 1001
+
+allot_record_query:
+    desc: 【流量/分配记录查询】分配记录查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/personAllocRecord/personList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      sourceStartTime: 1590940800000
+      sourceEndTime: 1593532799999
+      isAdult: 1
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_record:
+    desc: 【流量/分配记录查询】导出到院查询记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/instAllocRecord/instExport
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "isAdult":1,
+        "sourceStartTime":1590940800000,
+        "sourceEndTime":1593619199999
+      }
+    shared:
+    check:
+      no_check
+
+export_person_record:
+    desc: 【流量/分配记录查询】导出到人查询记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/personAllocRecord/personExport
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      isAdult: 1
+      sourceStartTime: 1590940800000
+      sourceEndTime: 1593532799999
+    shared:
+    check:
+      no_check

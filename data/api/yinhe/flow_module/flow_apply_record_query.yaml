@@ -1,0 +1,54 @@
+# @Author: Jones
+# @Desc  : 流量申请记录查询
+config:
+  valueable:
+    organizationId: 1001
+
+flow_apply_record_query:
+
+    desc: 【流量/流量申请记录查询】流量申请记录查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/instApplyRecord/pageList/putting
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      pageIndex: 1
+      pageSize: 20
+      applyDateValue: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_flow_apply_record:
+    desc: 【流量/流量申请记录查询】导出流量申请记录
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/instApplyRecord/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      applyDateValue: 3
+    shared:
+    check:
+      no_check
+
+flow_apply_record_query_perssion:
+    desc: 【流量/流量申请记录查询】流量申请记录查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/instApplyRecord/pageList/putting
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      pageIndex: 1
+      pageSize: 20
+      applyDateValue: 1
+    shared:
+    check:
+      status: R1003
+      msg: 您暂无权限访问该接口

@@ -1,0 +1,16 @@
+2020-10-24 14:00:17,817 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-24 14:00:17,817 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-24 14:00:17,817 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:00:17,817 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-24 14:00:17,817 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-24 14:00:18,114 - root - INFO : 响应消息: {'traceId': 'ee4fbbdcff1f47b5b352268d4675ad2a', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x775cbc0712f10d06df341948ce0c3e'}}
+2020-10-24 14:00:18,156 - root - INFO : 提取变量: [ pttoken: 0x775cbc0712f10d06df341948ce0c3e ]
+2020-10-24 14:00:18,157 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:00:18,157 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:00:18,157 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:00:37,329 - root - INFO : 正在执行Function: add_agent
+2020-10-24 14:00:37,330 - root - INFO : 描述信息: 【银河/账户/代理商管理】新增代理商
+2020-10-24 14:00:37,330 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/save
+2020-10-24 14:00:37,330 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:00:37,330 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x775cbc0712f10d06df341948ce0c3e', 'terminaltype': '4'}
+2020-10-24 14:00:37,331 - root - INFO : 请求正文: {'agencyShortName': '阿里', 'agencyName': '王五测试分', 'thirdAgencyCode': '62112002344', 'channelId': '6', 'channelName': '微信'}

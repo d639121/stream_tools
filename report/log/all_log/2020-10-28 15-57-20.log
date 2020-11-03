@@ -1,0 +1,16 @@
+2020-10-28 15:57:21,438 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-28 15:57:21,438 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-28 15:57:21,439 - root - INFO : 请求方法: [- POST -]
+2020-10-28 15:57:21,439 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-28 15:57:21,439 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-28 15:57:21,605 - root - INFO : 响应消息: {'traceId': '30f55917333943a293464618ac712398', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77ed490712f10d06f104d06a1d5dff'}}
+2020-10-28 15:57:21,608 - root - INFO : 提取变量: [ pttoken: 0x77ed490712f10d06f104d06a1d5dff ]
+2020-10-28 15:57:21,608 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-28 15:57:21,608 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-28 15:57:21,608 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-28 16:00:14,294 - root - INFO : 描述信息: 【学员录入】--录入（手机流量）--拥有【免费流量组】
+2020-10-28 16:00:14,295 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/add
+2020-10-28 16:00:14,295 - root - INFO : 请求方法: [- POST -]
+2020-10-28 16:00:14,295 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77ed490712f10d06f104d06a1d5dff'}
+2020-10-28 16:00:14,295 - root - INFO : 请求正文: {'mobile': '13001036472', 'nick': 'Louie', 'qq': '13961251', 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '282', 'wx': '13961251', 'vouchers': 'https://res.shiguangkey.com/file/galaxy/pluralistic/20200805/14/20200805144128839437534.jpg', 'gatherType': 1, 'subjectName': 'Python'}
+2020-10-28 16:00:14,652 - root - INFO : 响应消息: {'traceId': 'b64641829d5c4851b62db5fefe2410b6', 'status': '0', 'msg': 'success', 'data': {}}

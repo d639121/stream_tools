@@ -1,0 +1,32 @@
+config:
+  valueable:
+    organizationId: 1001
+
+order_manager_list:
+
+    desc: 【银河/工具/落地页工具】订单管理/查询
+    parameterize:
+     payTimeStart: payTimeStart
+     tomorrow: tomorrow
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/order_manager/page-list
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "courseSource": "",
+        "isCreateWorksheet": "",
+        "goodsName": "python公开课视频课",
+        "nickName": "",
+        "payNo": "",
+        "payTimeStart": "$<payTimeStart>T16:00:00.000Z",
+        "payTimeEnd": "$<tomorrow>T15:59:59.000Z",
+        "pageNo": 1,
+        "pageSize": 20
+      }
+    check:
+      status: 0
+      msg: success
+      data:
+        - "'isCreateWorksheet': 1"

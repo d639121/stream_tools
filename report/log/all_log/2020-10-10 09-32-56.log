@@ -1,0 +1,40 @@
+2020-10-10 09:32:56,882 - root - INFO : ************** 当前运行环境: Fat *************
+2020-10-10 09:32:56,882 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-10 09:32:56,882 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-10 09:32:56,883 - root - INFO : 请求方法: [- POST -]
+2020-10-10 09:32:56,883 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-10 09:32:56,883 - root - INFO : 请求正文: {'account': 't0312814888', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-10 09:32:57,026 - root - INFO : 响应消息: {'traceId': 'c6762d6b83684262874ea8962f891f5f', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19865505, 'mobile': '', 'account': '', 'nickname': '拥挤的鳐鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x773d850712f1fa1f86e4a37a0328b2'}}
+2020-10-10 09:32:57,027 - root - INFO : 提取变量: [ pttoken: 0x773d850712f1fa1f86e4a37a0328b2 ]
+2020-10-10 09:32:57,027 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-10 09:32:57,027 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-10 09:32:57,027 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-10 09:32:57,150 - root - INFO : 凭证获取成功并写入 /common/config.txt 配置文件中
+2020-10-10 09:32:57,150 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-10 09:32:57,150 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-10 09:32:57,150 - root - INFO : 请求方法: [- POST -]
+2020-10-10 09:32:57,150 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-10 09:32:57,150 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-10 09:32:57,301 - root - INFO : 响应消息: {'traceId': 'c058766f18c14780b6b2410e2b1a4c35', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7795ae0712f12532c0747a8864e42f'}}
+2020-10-10 09:32:57,302 - root - INFO : 提取变量: [ pttoken: 0x7795ae0712f12532c0747a8864e42f ]
+2020-10-10 09:32:57,302 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-10 09:32:57,302 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-10 09:32:57,302 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-10 09:32:57,335 - root - INFO : 当前运行Case: test_chk_cost_apply_batch_pass
+2020-10-10 09:32:57,336 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-10 09:32:57,336 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-10 09:32:57,336 - root - INFO : 请求方法: [- POST -]
+2020-10-10 09:32:57,336 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-10 09:32:57,336 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-10 09:32:57,494 - root - INFO : 响应消息: {'traceId': 'af46b4366e1b462d81e2f8c17b1367f0', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x775fa30712f10d2a93a4886a932e6d'}}
+2020-10-10 09:32:57,494 - root - INFO : 提取变量: [ pttoken: 0x775fa30712f10d2a93a4886a932e6d ]
+2020-10-10 09:32:57,495 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-10 09:32:57,495 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-10 09:32:57,495 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-10 09:32:57,495 - root - INFO : 正在执行Function: add_flow_budget
+2020-10-10 09:32:57,495 - root - INFO : 描述信息: 【海川/预算管理/流量预算】新增流量预算
+2020-10-10 09:32:57,495 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/add?organizationId=8009
+2020-10-10 09:32:57,495 - root - INFO : 请求方法: [- POST -]
+2020-10-10 09:32:57,495 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x775fa30712f10d2a93a4886a932e6d'}
+2020-10-10 09:32:57,495 - root - INFO : 请求正文: {'id': '', 'costMonth': '2020-12-01', 'weekNum': 1, 'weekRange': '1-4', 'promotionerDeptId': 8009, 'subjectId': '925', 'putMode': 2, 'gatherType': 2, 'flowCost': '0.00', 'avgCardNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'visitorNum': 3, 'workDay': 1, 'stageCardNum': 3, 'flowExpenditure': 0, 'customerPrice': 1, 'conversionRate': 1, 'signUpNum': 3, 'performance': 3, 'roi': 0, 'applyRemark': '', 'subjectName': 'DEMO', 'receiveDeptId': '', 'receiveDeptName': '', 'promotionerDeptName': '', 'subjectIdChain': '261-505-925', 'organizationId': 8009}
+2020-10-10 09:32:57,773 - root - INFO : 响应消息: {'data': None, 'msg': '该条申请已存在', 'platform': 'ocean-stat-service', 'res': -99999, 'traceId': '80313b9252902011'}

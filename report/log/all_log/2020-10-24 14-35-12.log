@@ -1,0 +1,68 @@
+2020-10-24 14:35:12,748 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-24 14:35:12,748 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-24 14:35:12,748 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:12,748 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-24 14:35:12,749 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-24 14:35:12,989 - root - INFO : 响应消息: {'traceId': 'b16504ed939b4dc49339c1a7b0fe0f99', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7720570712f10d0c72b456abf41a4d'}}
+2020-10-24 14:35:12,990 - root - INFO : 提取变量: [ pttoken: 0x7720570712f10d0c72b456abf41a4d ]
+2020-10-24 14:35:12,990 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:35:12,990 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:35:12,990 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:35:30,792 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-24 14:35:30,792 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-24 14:35:30,792 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:30,793 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-24 14:35:30,793 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-24 14:35:31,044 - root - INFO : 响应消息: {'traceId': 'c5ecb36c914c4ffc8fb32fdfa8ccd8ee', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77159e0712f10d49c7a4e73b0b1dd5'}}
+2020-10-24 14:35:31,044 - root - INFO : 提取变量: [ pttoken: 0x77159e0712f10d49c7a4e73b0b1dd5 ]
+2020-10-24 14:35:31,045 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:35:31,045 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:35:31,045 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:35:31,067 - root - INFO : 正在执行Function: add_agent
+2020-10-24 14:35:31,068 - root - INFO : 描述信息: 【银河/账户/代理商管理】新增代理商
+2020-10-24 14:35:31,068 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/save
+2020-10-24 14:35:31,068 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:31,068 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77159e0712f10d49c7a4e73b0b1dd5', 'terminaltype': '4'}
+2020-10-24 14:35:31,069 - root - INFO : 请求正文: {'agencyShortName': '微信十一', 'agencyName': '微信十一', 'thirdAgencyCode': '131565215165', 'channelId': '6', 'channelName': '微信'}
+2020-10-24 14:35:31,259 - root - INFO : 响应消息: {'traceId': 'a734ac04e44a44e2b33d7bc0fef3464c', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-24 14:35:31,259 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:35:31,260 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:35:31,260 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:35:31,260 - root - INFO : 正在执行Function: qry_channel_agency
+2020-10-24 14:35:31,260 - root - INFO : 描述信息: 【银河/账户/代理商管理】查询代理商
+2020-10-24 14:35:31,260 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/pageList
+2020-10-24 14:35:31,261 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:31,261 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77159e0712f10d49c7a4e73b0b1dd5', 'terminaltype': '4'}
+2020-10-24 14:35:31,261 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'thirdAgencyCode': '131565215165'}
+2020-10-24 14:35:31,450 - root - INFO : 响应消息: {'traceId': 'a31f78bddd9d4a5d86358598853e103f', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 140, 'agencyCode': 10000129, 'agencyName': '微信十一', 'agencyShortName': '微信十一', 'channelId': 6, 'channelName': '微信', 'bank': '-1', 'bankAccount': '-1', 'state': 1, 'creatorId': 19861716, 'creatorName': '用功的柠檬', 'creatorDeptId': 1001, 'creatorDeptIdChain': '1001', 'createTime': 1603521332000, 'modifierId': None, 'modifierName': None, 'modifyTime': 1603521332000, 'isDelete': 0, 'thirdAgencyCode': '131565215165', 'stateName': None, 'rebateNum': 0}]}}
+2020-10-24 14:35:31,451 - root - INFO : 提取变量: [ channelAgencyId: 140 ]
+2020-10-24 14:35:31,452 - root - INFO : 提取变量: [ agencyCode: 10000129 ]
+2020-10-24 14:35:31,452 - root - INFO : 提取变量: [ agencyName: 微信十一 ]
+2020-10-24 14:35:31,453 - root - INFO : 提取变量: [ agencyShortName: 微信十一 ]
+2020-10-24 14:35:31,453 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-10-24 14:35:31,453 - root - INFO : 提取变量: [ thirdAgencyCode: 131565215165 ]
+2020-10-24 14:35:31,453 - root - INFO : 提取变量: [ rebateNum: 0 ]
+2020-10-24 14:35:31,453 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:35:31,453 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:35:31,453 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:35:38,071 - root - INFO : 正在执行Function: add_rebate
+2020-10-24 14:35:38,071 - root - INFO : 描述信息: 【银河/账户/代理商管理】新增返点
+2020-10-24 14:35:38,073 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/save
+2020-10-24 14:35:38,073 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:38,073 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77159e0712f10d49c7a4e73b0b1dd5', 'terminaltype': '4'}
+2020-10-24 14:35:38,073 - root - INFO : 请求正文: {'rebate': '1.5', 'channelAgencyId': '140', 'validDate': '1603555200000'}
+2020-10-24 14:35:38,329 - root - INFO : 响应消息: {'traceId': 'b4d89bacddda41778927a75e06037990', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-24 14:35:38,329 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:35:38,329 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:35:38,329 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:35:39,331 - root - INFO : 正在执行Function: qry_channel_agency_rebate
+2020-10-24 14:35:39,331 - root - INFO : 描述信息: 【银河/账户/代理商管理】查询代理商返点
+2020-10-24 14:35:39,331 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/pageList
+2020-10-24 14:35:39,332 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:35:39,332 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77159e0712f10d49c7a4e73b0b1dd5', 'terminaltype': '4'}
+2020-10-24 14:35:39,332 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'agencyCode': '10000129'}
+2020-10-24 14:35:39,509 - root - INFO : 响应消息: {'traceId': 'e096b4d1f5d7461bb0cde6cbe03c2bd4', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 174, 'channelAgencyId': 140, 'rebate': 1.5, 'validDate': 1603555200000, 'invalidDate': 4102415999000, 'remark': None, 'creatorId': None, 'creatorName': None, 'creatorDeptId': None, 'creatorDeptIdChain': None, 'createTime': None, 'modifierId': None, 'modifierName': None, 'modifyTime': None, 'isDelete': None, 'agencyCode': '10000129', 'channelName': '微信', 'agencyShortName': '微信十一', 'channelAgencyState': 1, 'isLast': 0}]}}
+2020-10-24 14:35:39,509 - root - INFO : 提取变量: [ agencyCode: 10000129 ]
+2020-10-24 14:35:39,510 - root - INFO : 提取变量: [ agencyShortName: 微信十一 ]
+2020-10-24 14:35:39,510 - root - INFO : 提取变量: [ channelAgencyId: 140 ]
+2020-10-24 14:35:39,510 - root - INFO : 提取变量: [ channelAgencyState: 1 ]

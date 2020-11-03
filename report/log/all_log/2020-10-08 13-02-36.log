@@ -1,0 +1,61 @@
+2020-10-08 13:02:36,401 - root - INFO : ************** 当前运行环境: Fat *************
+2020-10-08 13:02:36,402 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-08 13:02:36,402 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-08 13:02:36,402 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:36,402 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:36,402 - root - INFO : 请求正文: {'account': 't0331433110', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-08 13:02:36,589 - root - INFO : 响应消息: {'traceId': 'd50b0c1770df43a28268f3e8ce3b4cc1', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19854060, 'mobile': '', 'account': '', 'nickname': '测试环境_全权限_负责人', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x774a450712ef2ec5e1e42588000086'}}
+2020-10-08 13:02:36,590 - root - INFO : 提取变量: [ pttoken: 0x774a450712ef2ec5e1e42588000086 ]
+2020-10-08 13:02:36,590 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-08 13:02:36,590 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-08 13:02:36,590 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-08 13:02:36,590 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-08 13:02:36,591 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-08 13:02:36,591 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:36,591 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:36,591 - root - INFO : 请求正文: {'account': 't0376791779', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-08 13:02:37,723 - root - INFO : 响应消息: {'traceId': '9e2f458a8e6e4b8fb99eaa4829d812b8', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19854056, 'mobile': '', 'account': '', 'nickname': '测试环境_全权限_小伙伴', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x771caf0712ef2e8941d42e3aa1e66b'}}
+2020-10-08 13:02:37,724 - root - INFO : 提取变量: [ pttoken: 0x771caf0712ef2e8941d42e3aa1e66b ]
+2020-10-08 13:02:37,724 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-08 13:02:37,724 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-08 13:02:37,724 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-08 13:02:37,724 - root - INFO : 描述信息: 【潭州课堂】获取登录学员 token
+2020-10-08 13:02:37,724 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/login/standard
+2020-10-08 13:02:37,724 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:37,724 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'inviteLinkId': '', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:37,724 - root - INFO : 请求正文: {'account': 't0331433110', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-08 13:02:38,618 - root - INFO : 响应消息: {'traceId': 'a6ff5a49c4134ba686e0a6eb92926c60', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19854060, 'mobile': '18100000003', 'account': 't0331433110', 'nickname': '测试环境_全权限_负责人', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '1248f2590712ef2ecac764e4e95ec90f'}}
+2020-10-08 13:02:38,618 - root - INFO : 提取变量: [ sttoken: 1248f2590712ef2ecac764e4e95ec90f ]
+2020-10-08 13:02:38,619 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-08 13:02:38,619 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-08 13:02:38,619 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-08 13:02:38,773 - root - INFO : 凭证获取成功并写入 /common/config.txt 配置文件中
+2020-10-08 13:02:38,773 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-08 13:02:38,773 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-08 13:02:38,773 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:38,773 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:38,773 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-08 13:02:38,934 - root - INFO : 响应消息: {'traceId': '528221fcddf94f148edec9f719f301d7', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x775a1c0712f12532f6f4435ab41335'}}
+2020-10-08 13:02:38,934 - root - INFO : 提取变量: [ pttoken: 0x775a1c0712f12532f6f4435ab41335 ]
+2020-10-08 13:02:38,934 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-08 13:02:38,934 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-08 13:02:38,935 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-08 13:02:38,953 - root - INFO : 当前运行Case: test_record_cost_apply
+2020-10-08 13:02:38,953 - root - INFO : 正在执行Function: test_record_cost_apply
+2020-10-08 13:02:38,954 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-08 13:02:38,954 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-08 13:02:38,954 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:38,954 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:38,954 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-08 13:02:39,122 - root - INFO : 响应消息: {'traceId': '9b32f3f6530740259fe9bc34a4632a35', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x779f090712f10d271c54e6eb13d469'}}
+2020-10-08 13:02:39,122 - root - INFO : 提取变量: [ pttoken: 0x779f090712f10d271c54e6eb13d469 ]
+2020-10-08 13:02:39,122 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-08 13:02:39,123 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-08 13:02:39,123 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-08 13:02:39,123 - root - INFO : 正在执行Function: qry_cost_apply
+2020-10-08 13:02:39,123 - root - INFO : 描述信息: 【预算-投放预算管理-申请记录】查询
+2020-10-08 13:02:39,123 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/pageList
+2020-10-08 13:02:39,123 - root - INFO : 请求方法: [- POST -]
+2020-10-08 13:02:39,123 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x779f090712f10d271c54e6eb13d469', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-10-08 13:02:39,123 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'auditState': 4}
+2020-10-08 13:02:39,386 - root - INFO : 响应消息: {'traceId': 'c165615feb7b47f1a8511ab4cd6e3e6d', 'status': 'R1003', 'msg': '您暂无权限访问该接口', 'data': {}}

@@ -1,0 +1,171 @@
+2020-09-09 09:41:33,992 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-09 09:41:33,993 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-09 09:41:33,993 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:33,993 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:33,993 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-09 09:41:34,128 - root - INFO : 响应消息: {'traceId': '240520d404ee4e119b4c3e6d5b151eb5', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7763720712f1253509a48df8bb13f7'}}
+2020-09-09 09:41:34,128 - root - INFO : 提取变量: [ pttoken: 0x7763720712f1253509a48df8bb13f7 ]
+2020-09-09 09:41:34,129 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:34,129 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:34,129 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:34,142 - root - INFO : 当前运行Case: test_add_flow_cost_mgt_mobile
+2020-09-09 09:41:34,142 - root - INFO : 正在执行Function: test_add_flow_cost_mgt_mobile
+2020-09-09 09:41:34,143 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:34,143 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:34,143 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:34,143 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:34,143 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:34,143 - root - INFO : 请求正文: {'costMonth': '1598889600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '275', 'channelId': 4, 'gatherType': 1, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '新媒体运营', 'channelName': '知乎'}
+2020-09-09 09:41:34,403 - root - INFO : 响应消息: {'traceId': 'e3c18f9f7ff14bfeab27b5582266cf71', 'status': '110111002', 'msg': '已有同维度数据', 'data': {}}
+2020-09-09 09:41:34,452 - root - INFO : 当前运行Case: test_add_flow_cost_mgt_wx
+2020-09-09 09:41:34,453 - root - INFO : 正在执行Function: test_add_flow_cost_mgt_wx
+2020-09-09 09:41:34,453 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:34,453 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:34,453 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:34,453 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:34,453 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:34,453 - root - INFO : 请求正文: {'costMonth': '1598889600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '275', 'channelId': 4, 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '新媒体运营', 'channelName': '知乎'}
+2020-09-09 09:41:34,656 - root - INFO : 响应消息: {'traceId': '27a4a5433dba4b00b9302bbf8111a5f5', 'status': '110111002', 'msg': '已有同维度数据', 'data': {}}
+2020-09-09 09:41:34,686 - root - INFO : 当前运行Case: test_add_flow_cost_mgt_qq
+2020-09-09 09:41:34,686 - root - INFO : 正在执行Function: test_add_flow_cost_mgt_qq
+2020-09-09 09:41:34,686 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:34,686 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:34,686 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:34,686 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:34,686 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:34,686 - root - INFO : 请求正文: {'costMonth': '1598889600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '275', 'channelId': 4, 'gatherType': 2, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '新媒体运营', 'channelName': '知乎'}
+2020-09-09 09:41:34,888 - root - INFO : 响应消息: {'traceId': '6133bb040dbc4cf6893a21727ab71c92', 'status': '110111002', 'msg': '已有同维度数据', 'data': {}}
+2020-09-09 09:41:34,917 - root - INFO : 当前运行Case: test_update_flow_cost_mgt
+2020-09-09 09:41:34,917 - root - INFO : 正在执行Function: test_update_flow_cost_mgt
+2020-09-09 09:41:34,918 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:34,918 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:34,918 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:34,918 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:34,918 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:34,918 - root - INFO : 请求正文: {'costMonth': '1601481600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '489', 'channelId': 4, 'gatherType': 2, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '泰语', 'channelName': '知乎'}
+2020-09-09 09:41:35,133 - root - INFO : 响应消息: {'traceId': '97a8644fb36e4ab0aa63d4da2520c514', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:35,134 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:35,134 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:35,134 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:35,134 - root - INFO : 正在执行Function: flow_cost_mgt_page_list
+2020-09-09 09:41:35,134 - root - INFO : 描述信息: 【预算/流量成本管理/查询】
+2020-09-09 09:41:35,134 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+2020-09-09 09:41:35,134 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:35,134 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:35,134 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'gatherType': 2, 'startCostMonth': '1601481600000', 'endCostMonth': '1602172799999', 'channelId': 4}
+2020-09-09 09:41:35,311 - root - INFO : 响应消息: {'traceId': 'c8b03ac21dfd41d7b4a65d2dac59a883', 'status': '0', 'msg': 'success', 'data': {'list': [{'id': 106, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 489, 'subjectName': '泰语', 'channelId': 4, 'channelName': '知乎', 'gatherType': 2, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615697000, 'modifierId': '', 'modifierName': '', 'modifyTime': '', 'isDelete': 2020}], 'totalItem': 1, 'summation': {'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 0.1, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 0.1, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0}}}
+2020-09-09 09:41:35,312 - root - INFO : 提取变量: [ id: 106 ]
+2020-09-09 09:41:35,312 - root - INFO : 提取变量: [ costMonth: 1601481600000 ]
+2020-09-09 09:41:35,312 - root - INFO : 提取变量: [ subjectId: 489 ]
+2020-09-09 09:41:35,312 - root - INFO : 提取变量: [ subjectName: 泰语 ]
+2020-09-09 09:41:35,312 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:35,312 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:35,313 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:35,313 - root - INFO : 正在执行Function: flow_cost_mgt_update
+2020-09-09 09:41:35,313 - root - INFO : 描述信息: 【预算/流量成本管理/更新流量成本】
+2020-09-09 09:41:35,313 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/update
+2020-09-09 09:41:35,313 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:35,313 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:35,313 - root - INFO : 请求正文: {'id': '106', 'costMonth': '1601481600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '489', 'channelId': 4, 'gatherType': 2, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '泰语', 'channelName': '知乎'}
+2020-09-09 09:41:35,500 - root - INFO : 响应消息: {'traceId': '27c66ced61f14db9937dfaa0e67bf3ee', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:35,500 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:35,500 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:35,500 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:35,520 - root - INFO : 当前运行Case: test_update_flow_cost_mgt_gather
+2020-09-09 09:41:35,520 - root - INFO : 正在执行Function: test_update_flow_cost_mgt_gather
+2020-09-09 09:41:35,520 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:35,520 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:35,520 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:35,520 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:35,521 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:35,521 - root - INFO : 请求正文: {'costMonth': '1601481600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '489', 'channelId': 4, 'gatherType': 1, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '泰语', 'channelName': '知乎'}
+2020-09-09 09:41:35,722 - root - INFO : 响应消息: {'traceId': '359f7424976d48c990897c1b4df1d212', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:35,722 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:35,722 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:35,722 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:35,723 - root - INFO : 正在执行Function: flow_cost_mgt_page_list
+2020-09-09 09:41:35,723 - root - INFO : 描述信息: 【预算/流量成本管理/查询】
+2020-09-09 09:41:35,723 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+2020-09-09 09:41:35,723 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:35,723 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:35,723 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'startCostMonth': '1601481600000', 'endCostMonth': '1602172799999', 'channelId': 4}
+2020-09-09 09:41:35,917 - root - INFO : 响应消息: {'traceId': '5cfdce3e2cf74f999241ca2330d96495', 'status': '0', 'msg': 'success', 'data': {'list': [{'id': 107, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 489, 'subjectName': '泰语', 'channelId': 4, 'channelName': '知乎', 'gatherType': 1, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615697000, 'modifierId': '', 'modifierName': '', 'modifyTime': '', 'isDelete': 2020}], 'totalItem': 1, 'summation': {'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 0.1, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 0.1, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0}}}
+2020-09-09 09:41:35,917 - root - INFO : 提取变量: [ id: 107 ]
+2020-09-09 09:41:35,917 - root - INFO : 提取变量: [ costMonth: 1601481600000 ]
+2020-09-09 09:41:35,918 - root - INFO : 提取变量: [ subjectId: 489 ]
+2020-09-09 09:41:35,918 - root - INFO : 提取变量: [ subjectName: 泰语 ]
+2020-09-09 09:41:35,918 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:35,918 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:35,918 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:35,918 - root - INFO : 正在执行Function: flow_cost_mgt_update
+2020-09-09 09:41:35,918 - root - INFO : 描述信息: 【预算/流量成本管理/更新流量成本】
+2020-09-09 09:41:35,919 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/update
+2020-09-09 09:41:35,919 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:35,919 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:35,919 - root - INFO : 请求正文: {'id': '107', 'costMonth': '1601481600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '489', 'channelId': 4, 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '泰语', 'channelName': '知乎'}
+2020-09-09 09:41:36,101 - root - INFO : 响应消息: {'traceId': 'a63bc4e8e9144d1993fbd15e066020fb', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:36,101 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:36,101 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:36,101 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:36,117 - root - INFO : 当前运行Case: test_del_flow_cost_mgt
+2020-09-09 09:41:36,117 - root - INFO : 正在执行Function: test_del_flow_cost_mgt
+2020-09-09 09:41:36,118 - root - INFO : 正在执行Function: flow_cost_mgt_save
+2020-09-09 09:41:36,118 - root - INFO : 描述信息: 【预算/流量成本管理/新增流量成本】
+2020-09-09 09:41:36,118 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+2020-09-09 09:41:36,118 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:36,118 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:36,118 - root - INFO : 请求正文: {'costMonth': '1601481600000', 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'subjectId': '275', 'channelId': 4, 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000, 'sameMonthDayConsume': 100, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000, 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectName': '新媒体运营', 'channelName': '知乎'}
+2020-09-09 09:41:36,340 - root - INFO : 响应消息: {'traceId': '93604179b9744a26b2b56b627e97af7a', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:36,340 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:36,340 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:36,340 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:36,340 - root - INFO : 正在执行Function: flow_cost_mgt_page_list
+2020-09-09 09:41:36,340 - root - INFO : 描述信息: 【预算/流量成本管理/查询】
+2020-09-09 09:41:36,340 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+2020-09-09 09:41:36,340 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:36,340 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:36,340 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'gatherType': 3, 'startCostMonth': '1601481600000', 'endCostMonth': '1602172799999', 'channelId': 4}
+2020-09-09 09:41:36,515 - root - INFO : 响应消息: {'traceId': '6760cef458f3494e801c4229f1d7b539', 'status': '0', 'msg': 'success', 'data': {'list': [{'id': 108, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 275, 'subjectName': '新媒体运营', 'channelId': 4, 'channelName': '知乎', 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615698000, 'modifierId': '', 'modifierName': '', 'modifyTime': '', 'isDelete': 2020}, {'id': 107, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 489, 'subjectName': '泰语', 'channelId': 4, 'channelName': '知乎', 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615697000, 'modifierId': 19862099, 'modifierName': '日常的阿魏', 'modifyTime': '', 'isDelete': 2020}], 'totalItem': 2, 'summation': {'lastMonthLaunchNumber': 20000, 'lastMonthCashConsume': 2000.0, 'lastMonthSupplyTotal': 20000, 'lastMonthCost': 0.1, 'lastMonthDayAverageSupply': 3200, 'sameMonthDayAverageSupply': 20000, 'sameMonthDayAverageIncrement': 200, 'sameMonthCost': 0.1, 'sameMonthDayConsume': 200.0, 'sameMonthSupply': 20000, 'sameMonthCashConsume': 2000.0}}}
+2020-09-09 09:41:36,516 - root - INFO : 提取变量: [ id: 108 ]
+2020-09-09 09:41:36,516 - root - INFO : 提取变量: [ costMonth: 1601481600000 ]
+2020-09-09 09:41:36,516 - root - INFO : 提取变量: [ subjectId: 275 ]
+2020-09-09 09:41:36,517 - root - INFO : 提取变量: [ subjectName: 新媒体运营 ]
+2020-09-09 09:41:36,517 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:36,517 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:36,517 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:36,517 - root - INFO : 正在执行Function: del_flow_cost_mgt
+2020-09-09 09:41:36,517 - root - INFO : 描述信息: 【预算/流量成本管理/删除流量成本】
+2020-09-09 09:41:36,517 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/delete
+2020-09-09 09:41:36,517 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:36,517 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:36,518 - root - INFO : 请求正文: {'ids': '108'}
+2020-09-09 09:41:36,700 - root - INFO : 响应消息: {'traceId': 'bad684bc75d540d5bc99c693baf84d3a', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:36,700 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:36,700 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:36,700 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:36,717 - root - INFO : 当前运行Case: test_del_flow_cost_mgt_batch
+2020-09-09 09:41:36,717 - root - INFO : 正在执行Function: test_del_flow_cost_mgt_batch
+2020-09-09 09:41:36,717 - root - INFO : 正在执行Function: flow_cost_mgt_page_list
+2020-09-09 09:41:36,717 - root - INFO : 描述信息: 【预算/流量成本管理/查询】
+2020-09-09 09:41:36,717 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+2020-09-09 09:41:36,717 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:36,717 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:36,717 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'startCostMonth': '1601481600000', 'endCostMonth': '1602172799999'}
+2020-09-09 09:41:36,902 - root - INFO : 响应消息: {'traceId': '3facb7e92022435fb0b6da181d2e9364', 'status': '0', 'msg': 'success', 'data': {'list': [{'id': 107, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 489, 'subjectName': '泰语', 'channelId': 4, 'channelName': '知乎', 'gatherType': 3, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615697000, 'modifierId': 19862099, 'modifierName': '日常的阿魏', 'modifyTime': '', 'isDelete': 2020}, {'id': 106, 'costMonth': 1601481600000, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'subjectId': 489, 'subjectName': '泰语', 'channelId': 4, 'channelName': '知乎', 'gatherType': 2, 'putMode': 1, 'lastMonthLaunchNumber': 10000, 'lastMonthCashConsume': 1000.0, 'lastMonthSupplyTotal': 10000, 'lastMonthCost': 100.0, 'lastMonthDayAverageSupply': 1600, 'sameMonthDayAverageSupply': 10000, 'sameMonthDayAverageIncrement': 100, 'sameMonthCost': 1000.0, 'sameMonthDayConsume': 100.0, 'sameMonthSupply': 10000, 'sameMonthCashConsume': 1000.0, 'creatorId': 19862099, 'creatorName': '日常的阿魏', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1599615697000, 'modifierId': 19862099, 'modifierName': '日常的阿魏', 'modifyTime': '', 'isDelete': 2020}], 'totalItem': 2, 'summation': {'lastMonthLaunchNumber': 20000, 'lastMonthCashConsume': 2000.0, 'lastMonthSupplyTotal': 20000, 'lastMonthCost': 0.1, 'lastMonthDayAverageSupply': 3200, 'sameMonthDayAverageSupply': 20000, 'sameMonthDayAverageIncrement': 200, 'sameMonthCost': 0.1, 'sameMonthDayConsume': 200.0, 'sameMonthSupply': 20000, 'sameMonthCashConsume': 2000.0}}}
+2020-09-09 09:41:36,903 - root - INFO : 提取变量: [ id: 107 ]
+2020-09-09 09:41:36,903 - root - INFO : 提取变量: [ costMonth: 1601481600000 ]
+2020-09-09 09:41:36,904 - root - INFO : 提取变量: [ subjectId: 489 ]
+2020-09-09 09:41:36,904 - root - INFO : 提取变量: [ subjectName: 泰语 ]
+2020-09-09 09:41:36,904 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:36,904 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:36,904 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-09 09:41:36,904 - root - INFO : 正在执行Function: del_flow_cost_mgt
+2020-09-09 09:41:36,905 - root - INFO : 描述信息: 【预算/流量成本管理/删除流量成本】
+2020-09-09 09:41:36,905 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/delete
+2020-09-09 09:41:36,905 - root - INFO : 请求方法: [- POST -]
+2020-09-09 09:41:36,905 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7763720712f1253509a48df8bb13f7', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-09 09:41:36,905 - root - INFO : 请求正文: {'ids': '107,106'}
+2020-09-09 09:41:37,081 - root - INFO : 响应消息: {'traceId': 'c9936e98e46a4aabae7ab12f77c31a08', 'status': '0', 'msg': 'success', 'data': {}}
+2020-09-09 09:41:37,081 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-09 09:41:37,081 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-09 09:41:37,081 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

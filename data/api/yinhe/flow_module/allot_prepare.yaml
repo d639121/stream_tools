@@ -1,0 +1,22 @@
+# @Time  : 2020/08/06 16:41
+# @Author: Jones
+# @Desc  : 分配准备
+config:
+  valueable:
+    organizationId: 1001
+
+query_allot_plan:
+    desc: 【流量/分配计划】分配准备查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/deptIncomeCost/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success

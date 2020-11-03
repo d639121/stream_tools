@@ -1,0 +1,59 @@
+# @Time  : 2020/10/23 15:11
+# @Author: LOUIE
+# @Desc  : 邮件管理
+config:
+  valueable:
+    organizationId: 1001
+
+mail_pagelist:
+    desc: 【银河/账户/邮件管理】邮件管理列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge-mail/pageList
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":20,
+        "channelId":6,
+        "state":"0"
+      }
+    shared:
+      mailId: id
+    check:
+      status: 0
+      msg: success
+
+generate_mail:
+    desc: 【银河/账户/邮件管理】生成邮件
+    parameterize:
+      applyId: applyId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge-mail/generate
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      ids: $<applyId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+send_mail:
+    desc: 【银河/账户/邮件管理】发送邮件
+    parameterize:
+      mailId: mailId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/recharge-mail/send
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+    data:
+      mailId: $<mailId>
+    shared:
+    check:
+      status: 0
+      msg: success

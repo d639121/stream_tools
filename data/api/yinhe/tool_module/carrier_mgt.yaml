@@ -1,0 +1,72 @@
+# @Time  : 2020/08/06 16:41
+# @Author: Louie
+# @Desc  : 载体管理
+config:
+  valueable:
+    organizationId: 1001
+    belongDepartmentIdChain: 1001-3003-1
+    belongDepartmentId: 1
+    followUid: 15514410
+
+add_carrier:
+
+    desc: 【银河/工具/载体管理】新增载体
+    parameterize:
+      qq: qq
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/create
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "followUid": 19377198,
+        "belongDepartmentIdChain": "1001-2001-4569-4570-4571-4572",
+        "belongDepartmentId": "4572",
+        "carriers":[
+        {
+          "type":1,
+          "carrierName":"自动化测试载体",
+          "carrierNo":"$<qq>",
+          "qrCodeUrl":"https://res.shiguangkey.com/promotion/2020/8/1/54259283f9/1596285166(1).jpg"
+        }
+        ]
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+delete_carrier:
+
+    desc: 【银河/工具/载体管理】新增载体
+    parameterize:
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/delete_check/
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+carrier_list:
+
+    desc: 【银河/工具/载体管理】查询
+    parameterize:
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/list
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "pageNo": 1,
+        "pageSize": 20
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+

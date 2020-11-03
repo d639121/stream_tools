@@ -1,0 +1,34 @@
+2020-10-21 18:13:45,752 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 18:13:45,752 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 18:13:45,752 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:13:45,753 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 18:13:45,753 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 18:13:46,006 - root - INFO : 响应消息: {'traceId': '75437e6eb9c24560b64f77b2d2f0d263', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x779a7f0712f10d0c3844bf3bba942e'}}
+2020-10-21 18:13:46,008 - root - INFO : 提取变量: [ pttoken: 0x779a7f0712f10d0c3844bf3bba942e ]
+2020-10-21 18:13:46,008 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 18:13:46,008 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 18:13:46,008 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 18:13:58,102 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-21 18:13:58,215 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 18:13:58,278 - root - INFO : 描述信息: 查询企业微信载体信息
+2020-10-21 18:13:58,279 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/search
+2020-10-21 18:13:58,279 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:13:58,279 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x779a7f0712f10d0c3844bf3bba942e'}
+2020-10-21 18:13:58,279 - root - INFO : 请求正文: {'carrierName': '别皱眉', 'type': 3}
+2020-10-21 18:13:58,446 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'c3864186c8fa491b8bf35840d7c8f831', 'data': [{'id': 552, 'carrierName': '别皱眉', 'carrierNo': '别皱眉', 'qrCodeUrl': 'https://open.work.weixin.qq.com/wwopen/userQRCode?vcode=vc42c79008dbbacc02', 'wwUserId': '17444'}]}
+2020-10-21 18:13:58,447 - root - INFO : 提取变量: [ vectorId: 552 ]
+2020-10-21 18:13:58,447 - root - INFO : 提取变量: [ carrierNo: 别皱眉 ]
+2020-10-21 18:13:58,447 - root - INFO : 提取变量: [ vector: 别皱眉 ]
+2020-10-21 18:13:58,447 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 18:13:58,447 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 18:13:58,447 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 18:13:58,448 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】生成二维码，保存(工具使用)
+2020-10-21 18:13:58,448 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-10-21 18:13:58,448 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:13:58,448 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x779a7f0712f10d0c3844bf3bba942e'}
+2020-10-21 18:13:58,448 - root - INFO : 请求正文: {'name': '落地页-20370060', 'goodsId': None, 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kfgggwadl35zu6j', 'isRecommendApp': False, 'submitType': 0, 'wechatReqs': [{'imageUrl': 'https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0', 'wechat': '别皱眉', 'wechatChangeTime': 50, 'creativityId': '0', 'creativityNo': '$<creativityNo>', 'limitClickNum': 100, 'isWehub': False, 'isCarrier': True, 'channelNumber': 584, 'carrierId': '552'}], 'isSmsVerify': 0, 'pageMode': 1, 'websiteType': 2, 'adCreateType': 1, 'websiteWechatType': 2, 'bgColor': '', 'bgImage': '', 'version': '2.3.0', 'compReqs': [{'compJson': '{"id":"kfgggj37c3bv3yc","type":15,"wechatList":[{"imageUrl":"https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0", "wechat":"Jones","wechatChangeTime":50,"creativityId":0,"creativityNo":$<creativityNo>, "creativityName":"自动化创意21516566","limitClickNum":100,"carrierName":"Abbey","isWehub":false,"isCarrier":true, "channelId":7,"channelNumber":371,"carrierId":296,"disabledCarrier":true,"disabled":false,"deleted":false}], "width":375,"height":375,"y":0}', 'fileIds': [], 'scene': 1, 'type': 15}]}
+2020-10-21 18:13:58,659 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '1ac2774bd5a04df0bce2cc99696c6d41', 'data': {'code': '1318858061197484033', 'id': 9115}}
+2020-10-21 18:13:58,660 - root - INFO : 提取变量: [ websiteId: 9115 ]
+2020-10-21 18:13:58,660 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 18:13:58,660 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 18:13:58,661 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

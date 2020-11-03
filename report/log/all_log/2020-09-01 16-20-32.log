@@ -1,0 +1,19 @@
+2020-09-01 16:20:32,659 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 16:20:32,659 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 16:20:32,660 - root - INFO : 请求方法: [- POST -]
+2020-09-01 16:20:32,660 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 16:20:32,660 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 16:20:32,793 - root - INFO : 响应消息: {'traceId': '8f98c44c6ee8434c85ef6dcd320d1571', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7749910712f125350514155b19bcdc'}}
+2020-09-01 16:20:32,794 - root - INFO : 提取变量: [ pttoken: 0x7749910712f125350514155b19bcdc ]
+2020-09-01 16:20:32,794 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 16:20:32,794 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 16:20:32,795 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 16:20:32,801 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_doc
+2020-09-01 16:20:32,801 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_doc
+2020-09-01 16:20:32,802 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 16:20:32,828 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_csv
+2020-09-01 16:20:32,828 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_csv
+2020-09-01 16:20:32,829 - root - INFO : 正在执行Function: flow_cost_mgt_import_others
+2020-09-01 16:20:32,834 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 16:20:32,834 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_import_blank_excel
+2020-09-01 16:20:32,835 - root - INFO : 正在执行Function: flow_cost_mgt_import_others

@@ -1,0 +1,133 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 公众号管理
+
+config:
+  valueable:
+    organizationId: 1001
+    projectName: xiaokakecheng
+
+add_public_account:
+
+    desc: 【广告/公众号管理】新增公众号
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      phoneNumber: phoneNumber
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      subjectId: 279
+      subjectName: Java
+      channelName: test
+      contractDate: $<gatherTimeStart>
+      payDate: $<gatherTimeStart>
+      contacts: $<phoneNumber>
+      price: 2000
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_public_account:
+
+    desc: 【广告/公众号管理】查询公众号
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      gzh_name: name
+      gzh_id: id
+      gzh_wx: wx
+      noCustomer: noCustomer
+      noApply: noApply
+      totalItem: totalItem
+    check:
+      status: 0
+      msg: success
+
+query_del_public_account:
+
+    desc: 【广告/公众号管理】查询公众号
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      totalItem: totalItem
+    check:
+      status: 0
+      msg: success
+
+editor_public_account:
+
+    desc: 【广告/公众号管理】编辑公众号
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gzh_id: gzh_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<gzh_id>
+      noCustomer: 11
+      puttingDate: $<gatherTimeStart>
+      linkUrl: 123
+      noApply: 11
+      wx: 12345
+    shared:
+    check:
+      status: 0
+      msg: success
+
+del_public_account:
+
+    desc: 【广告/公众号管理】删除公众号
+    parameterize:
+      gzh_id: gzh_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/delete
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<gzh_id>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+import_public_account:
+
+    desc: 【广告/公众号管理】批量导入公众号
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/officialAccounts/importing
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: 导入成功
+

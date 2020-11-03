@@ -1,0 +1,28 @@
+config:
+  valueable:
+    organizationId: 1001
+
+query_carrier_data:
+    desc: 【数据/载体数据】查询
+    parameterize:
+      # url: url 这里需要通过落地页链接查询，但是这里现在还没有确定
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/carrier_data
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "carrierStatus": 1,
+        "startTime": 1594742400000,
+        "endTime": 1594828799999,
+        "carrierName": "Abbey",
+        "pageNo": 1,
+        "pageSize": 20
+      }
+    shared:
+    check:
+      status: 0
+      msg: success

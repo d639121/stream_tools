@@ -1,0 +1,8 @@
+2020-10-09 09:48:08,602 - root - INFO : 正在执行Function: ad_plan
+2020-10-09 09:48:08,602 - root - INFO : 正在执行Function: program_info_save
+2020-10-09 09:48:08,602 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-10-09 09:48:08,602 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-10-09 09:48:08,602 - root - INFO : 请求方法: [- POST -]
+2020-10-09 09:48:08,602 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x7752400712ef2ecd2d946989b9147b'}
+2020-10-09 09:48:08,603 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划17790758', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-10-09 09:48:08,841 - root - INFO : 响应消息: {'traceId': '7632712435e5439fa6f2dfac8cb69e53', 'status': '110107001', 'msg': '账号未登录', 'data': {}}

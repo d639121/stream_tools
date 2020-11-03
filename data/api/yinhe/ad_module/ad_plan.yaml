@@ -1,0 +1,277 @@
+config:
+  valueable:
+    organizationId: 1001
+
+create_wechat_ad_plant:
+
+    desc: 【广告/广告计划/新增广告计划】创建微信广告计划_直线下发
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 4
+      name: $<projectName>
+      subjectId: 280
+      subjectName: PHP
+      isTest: 0
+      gatherType: 3
+#      receiveDeptIdChain: 1001-2001-4569-4570-4571-4572
+#      receiveDeptId: 4572
+      putMode: 1
+      type: 1
+      allocInstType: 3
+      channelName: 知乎
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_wechat_xiaoka_ad_plan:
+
+    desc: 【广告/广告计划/新增广告计划】创建微信广告计划-小咖投放模式
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 7
+      name: $<projectName>
+      subjectId: 280
+      subjectName: PHP
+      isTest: 1
+      putMode: 5
+      type: 1
+      gatherType: 3
+      allocInstType: 2
+      channelName: 百度信息流
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_plan_id:
+    desc: 【广告/广告计划】获取计划ID
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<projectName>
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      adId: id
+      ad_name: name
+    check:
+      status: 0
+      msg: success
+
+create_wechat_ad_plant_for_hand:
+
+    desc: 【广告/广告计划/新增广告计划】创建微信广告计划_手动分配
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 7
+      name: $<projectName>
+      subjectId: 280
+      subjectName: PHP
+      isTest: 1
+      putMode: 1
+      type: 1
+      gatherType: 3
+      allocInstType: 2
+      channelName: 百度信息流
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_wechat_ad_plant_for_reception:
+
+    desc: 【广告/广告计划/新增广告计划】创建微信广告计划_直线下发，接待投放模式
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 7
+      name: $<projectName>
+      subjectId: 280
+      subjectName: PHP
+      isTest: 0
+      putMode: 2
+      type: 1
+      gatherType: 3
+      allocInstType: 3
+      channelName: 广点通
+    shared:
+    check:
+      status: 0
+      msg: success
+
+# ----------------#
+
+program_info_save:
+
+    desc: 【银河/广告/广告计划】新增广告计划
+    parameterize:
+     projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 6
+      name: $<projectName>
+      subjectId: 282
+      subjectName: Python
+      isTest: 0
+      putMode: 1
+      type: 1
+      gatherType: 1
+      allocInstType: 1
+      channelName: 微信
+    shared:
+    check:
+      status: 0
+      msg: success
+
+program_info_save_direct:
+
+    desc: 【银河/广告/广告计划】新增广告计划，直线下发分配方式，普通投放模式：putMode=1,allocInstType=3；高转VIP：putMode=3,allocInstType=3
+    parameterize:
+     projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: 6
+      name: $<projectName>
+      subjectId: 282
+      subjectName: Python
+      isTest: 0
+      receiveDeptIdChain: 1001-2001-4569-4570-4571-4572
+      receiveDeptId: 4572
+      putMode: 1
+      type: 1
+      gatherType: 1
+      allocInstType: 3
+      channelName: 微信
+    check:
+      status: 0
+      msg: success
+
+
+program_pageList:
+
+    desc: 【银河/广告/广告计划】查询广告计划
+    parameterize:
+      projectName: projectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<projectName>
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+      gatherType: 1
+    shared:
+      channelId: channelId
+      putMode:  putMode
+      adName: name
+      adId: id
+      type: type
+      subjectId: subjectId
+    check:
+      status: 0
+      msg: success
+      data:
+        - name
+
+query_ad_plan:
+    desc: 【银河/广告/广告计划】查询广告计划
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      channelId: channelId
+      putMode:  putMode
+      newName: name
+      adId: id
+      type: type
+    check:
+      status: 0
+      msg: success
+
+export_flow:
+    desc: 【银河/广告/广告计划】广告计划--导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      isHide: 0
+      gatherType: 3
+    shared:
+    check:
+      status_code: 200
+
+editor_flow:
+    desc: 【银河/广告/广告计划】流量-编辑
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/update
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      channelId: $<channelId>  # 投放渠道ID，需要与下面的channelName对应
+      name: name # 计划名称
+      subjectId: 280
+      subjectName: "PHP"
+      isTest: 0
+      type: $<type>  # 广告类型
+      gatherType: $<gatherType> # 流量类型 1，手机流量 2，qq流量 3，微信流量
+      putMode: 1
+      allocInstType: 3
+      channelName: $<channelName> # 投放渠道名称
+      id: $<id> # 计划ID
+    shared:
+    check:
+      status: 0
+      msg: success

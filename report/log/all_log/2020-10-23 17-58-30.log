@@ -1,0 +1,10 @@
+2020-10-23 17:58:30,401 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-23 17:58:30,402 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-23 17:58:30,402 - root - INFO : 请求方法: [- POST -]
+2020-10-23 17:58:30,402 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-23 17:58:30,402 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-23 17:58:30,741 - root - INFO : 响应消息: {'traceId': '17084acc3b9a45e98ccd6d09119969f2', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77258b0712f10d0f5e543abbcd5956'}}
+2020-10-23 17:58:30,742 - root - INFO : 提取变量: [ pttoken: 0x77258b0712f10d0f5e543abbcd5956 ]
+2020-10-23 17:58:30,743 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-23 17:58:30,743 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-23 17:58:30,743 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

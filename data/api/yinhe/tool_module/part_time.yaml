@@ -1,0 +1,106 @@
+# @Time  : 2020/8/7 16:40
+# @Author: Louie
+# @Desc  : 兼职工具
+config:
+  valueable:
+    organizationId: 1001
+
+part_time_pagelist:
+
+    desc: 【银河/工具/兼职工具】查询
+    parameterize:
+    url: https://organization-fat.shiguangkey.com/api/organization/employee/partTime/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+      x-dept-id-chain: 1001-2001-4569-4570-4571-4572
+    data:
+      pageIndex: 1
+      pageSize: 20
+    check:
+      status: 0
+      msg: success
+
+add_employee:
+
+    desc: 【银河/工具/兼职工具】新增兼职员工
+    parameterize:
+      stNickname: stNickname
+      mobile: mobile
+      stAccount: stAccount
+    url: https://organization-fat.shiguangkey.com/api/organization/employee/partTime/add
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      deptId: 8009
+      type: 11
+      nick: $<stNickname>
+      mobile: $<mobile>
+      name:
+      tanzkAccount: $<stAccount>
+    check:
+      status: 0
+      msg: success
+
+move_employee:
+
+    desc: 【银河/工具/兼职工具】调动兼职员工
+    parameterize:
+    url: https://organization-fat.shiguangkey.com/api/organization/employee/partTime/staffAdjust
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      employeeId: 7167
+      deptId: 4572
+      ownerId: 7056
+    check:
+      status: 0
+      msg: success
+
+forbid_employee:
+
+    desc: 【银河/工具/兼职工具】禁用兼职员工
+    parameterize:
+    url: https://organization-fat.shiguangkey.com/api/organization/employee/partTime/updateStatus
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      id: 4143
+      status: 2
+    check:
+      status: 0
+      msg: success
+
+edit_employee:
+
+    desc: 【银河/工具/兼职工具】新增兼职员工
+    parameterize:
+    url: https://organization-fat.shiguangkey.com/api/organization/employee/partTime/modify
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+      terminaltype: '4'
+    data:
+      id: 6253
+      deptId: 4531
+      type: 13
+      nick: 均匀的沉香1
+      mobile: 15288765644
+      name: 1111
+      tanzkAccount: t0309371827
+    check:
+      status: 0
+      msg: success
+

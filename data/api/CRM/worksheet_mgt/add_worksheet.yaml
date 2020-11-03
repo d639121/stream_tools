@@ -1,0 +1,78 @@
+add_worksheet:
+  parameterize:
+    gatherTimeStart: gatherTimeStart
+    transNo: transNo
+    account: account
+    phoneNumber: phoneNumber
+  desc: 【CRM-工单管理-工单列表】新建工单
+  url: https://order-fat.shiguangkey.com/admin/order/order/saveFirst
+  method: POST
+  header:
+    content-type: application/x-www-form-urlencoded
+    token: $<token>
+  data:
+    userAccount: $<account>
+    userName: 王五
+    userPhone: $<phoneNumber>
+    userQq: $<phoneNumber>
+    channel: 21
+    buyType: 1
+    goodsType: 6810
+    vipLiveState: 1
+    payTime: $<gatherTimeStart>
+    payMoney: 2300
+    isKoubei: 0
+    followerUid: 19861712
+    goods: '[{"goodsType":6810,"goodsId":20814,"goodsMoney":2300}]'
+    receiveChannelIdF: 1
+    receiveChannelIdT: 37
+    transNo: $<transNo>
+    loanSubsidizedAmount: 0
+    currencyValue: 1
+    voucherUrl: https://res.shiguangkey.com/paymentVoucher/2020/10/10/94ad995362/20200408153408271523387.jpg
+    divideDeptDetails: '[{"followerUid":19861712,"deptIdChain":"1001-8006-8007-8008-8009","divideAmount":2300}]'
+    customerDeptId: 8009
+    isSuspend: 0
+  shared:
+  check:
+    status: 0
+    msg: success
+
+qry_worksheet:
+  parameterize:
+    account: account
+    gatherTimeStart: gatherTimeStart
+    gatherTimeEnd: gatherTimeEnd
+    transNo: transNo
+  desc: 【CRM-工单管理-工单列表】查询工单
+  url: https://order-fat.shiguangkey.com/admin/order/paymentWater/getPageList
+  method: GET
+  header:
+    token: $<token>
+  data:
+    userAccount: $<account>
+    createTimeStart: $<gatherTimeStart>
+    createTimeEnd: $<gatherTimeEnd>
+    pageIndex: 1
+    pageSize: 20
+  shared:
+    id: id
+  check:
+    status: 0
+    msg: success
+
+chk_worksheet:
+  parameterize:
+    id: id
+  desc: 【CRM-财务管理-工单审核列表】审核工单
+  url: https://order-fat.shiguangkey.com/admin/order/finance/audit/pass
+  method: GET
+  header:
+    content_type: application/x-www-form-urlencoded
+    token: $<token>
+  data:
+    id: $<id>
+  shared:
+  check:
+    status: 0
+    msg: success

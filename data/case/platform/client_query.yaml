@@ -1,0 +1,1079 @@
+queryByStudent:
+
+  - caseid: 1001
+    run: YES
+    desc: 【潭州课堂/我的订单】查询我的订单
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/course/queryByStudent
+    method: POST
+    header:
+      token: $<students>
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+
+urgeSignContractStatus:
+
+  - caseid: 1002
+    run: YES
+    desc: 【潭州课堂/我的课表】查询我的课表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/student/contract/urgeSignContractStatus
+    method: GET
+    header:
+      token: $<students>
+    data:
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+
+listHomeworkClassByPage:
+
+  - caseid: 1003
+    run: YES
+    desc: 【潭州课堂/我的作业】查询 我的作业
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/student/homework/listHomeworkClassByPage
+    method: GET
+    header:
+      content-type: application/json
+      terminaltype: "4"
+      token: $<students>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      terminalType: "4"
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - pageIndex
+        - totalItem
+
+manageList:
+
+  - caseid: 1004
+    run: YES
+    desc: 【潭州课堂/我的评测】查询 我的评测
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/student/manage/list
+    method: GET
+    header:
+      token: $<students>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      terminalType: "4"
+    shared:
+    check:
+      status: 0
+      msg: success
+
+qryContractsByUserId:
+
+  - caseid: 1005
+    run: YES
+    desc: 【潭州课堂/我的合同】查询 我的合同
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/student/contract/qryContractsByUserId
+    method: GET
+    header:
+      token: $<students>
+    data:
+      pageSize: 10
+      pageIndex: 1
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryTeachersByUserId:
+
+  - caseid: 1006
+    run: YES
+    desc: 【潭州课堂/我的班主任】查询 我的班主任
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/student/teacher/qryTeachersByUserId
+    method: GET
+    header:
+      token: $<students>
+    data:
+      type: 3
+      terminalType: "4"
+    shared:
+    check:
+      msg: 暂无数据
+      status: 0
+
+getHelpQuestion:
+
+  - caseid: 1007
+    run: YES
+    desc: 【潭州课堂/合同常见问题】查询 合同常见问题
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/system/getHelpQuestion
+    method: POST
+    header:
+      token: $<students>
+      content-type: application/x-www-form-urlencoded
+    data:
+      questionId: 796
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+
+mineInfo:
+
+  - caseid: 1008
+    run: YES
+    desc: 【潭州课堂/个人资料】查询 个人资料
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/user/mine
+    method: GET
+    header:
+      token: $<students>
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+
+getUserCouponCardBag:
+
+  - caseid: 1009
+    run: YES
+    desc: 【潭州课堂/我的卡包】查询 我的卡包
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/coupon/user/getUserCouponCardBag
+    method: GET
+    header:
+      token: $<students>
+    data:
+      pageIndex: 1
+      pageSize: 8
+      status: 0
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+
+userInfo:
+
+  - caseid: 1010
+    run: YES
+    desc: 【潭州课堂/我的】查询 我的
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/user/mine
+    method: GET
+    header:
+      token: $<students>
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - uid
+        - account
+
+getRole:
+
+  - caseid: 1011
+    run: YES
+    desc: 【潭州课堂/我的】查询 getRole
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/live/live/user/getRole
+    method: POST
+    header:
+      token: $<students>
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - role
+
+getToken:
+
+  - caseid: 1012
+    run: YES
+    desc: 【潭州课堂/我的】获取登录的token
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/live/user/getToken
+    method: POST
+    header:
+      token: $<students>
+      terminaltype: "4"
+      content-type: application/x-www-form-urlencoded
+    data:
+      pcClientType: 1
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - appKey
+        - account
+
+qryTodayCourses:
+
+  - caseid: 1013
+    run: YES
+    desc: 【潭州课堂/我的】查询今日课程
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/homePage/qryTodayCourses
+    method: GET
+    header:
+      token: $<students>
+      terminaltype: "4"
+    data:
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - courseNum
+        - uncompleteNum
+
+isLogin:
+
+  - caseid: 1014
+    run: YES
+    desc: 【潭州课堂/我的】查询是否登录
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/login/isLogin
+    method: GET
+    header:
+      token: $<students>
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+happyLearningList:
+
+  - caseid: 1015
+    run: YES
+    desc: 【潭州课堂/首页】查询 happyLearningList
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/homePage/index/happyLearningList
+    method: GET
+    header:
+      token: $<students>
+      terminaltype: "4"
+    data:
+      num: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+
+quality:
+
+  - caseid: 1016
+    run: YES
+    desc: 【潭州课堂/首页】查询 quality
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/homePage/index/quality
+    method: GET
+    header:
+      token: $<students>
+    data:
+      num: 10
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - courseId
+        - cover
+
+getUserCouponCenter:
+
+  - caseid: 1017
+    run: YES
+    desc: 【潭州课堂/首页】查询 用户优惠活动中心
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/coupon/user/getUserCouponCenter
+    method: GET
+    header:
+      token: $<students>
+    data:
+      assignUrl: https://www-test.shiguangkey.com/coupon
+      pageIndex: 1
+      pageSize: 10
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - pageIndex
+
+getNewVersion:
+
+  - caseid: 1018
+    run: YES
+    desc: 【潭州课堂/客户端】获取最新版本
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/system/getNewVersion
+    method: POST
+    header:
+      token: $<students>
+      content-type: application/x-www-form-urlencoded
+    data:
+      clientId: 16
+      terminalType: "4"
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - clientId
+        - downloadUrl
+
+capsule:
+
+  - caseid: 1019
+    run: YES
+    desc: 【M站/首页】获取 capsule
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/capsule
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      page: 0
+      type: 2
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - list
+
+newListTopic:
+
+  - caseid: 1020
+    run: YES
+    desc: 【M站/首页】获取 限时秒杀 课程
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/newListTopic
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+
+
+getRecentEnrollmentCourse:
+
+  - caseid: 1021
+    run: YES
+    desc: 【M站/首页】获取 最近报名在学 课程
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/course/getRecentEnrollmentCourse
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+
+listCourse:
+
+  - caseid: 1022
+    run: YES
+    desc: 【M站/首页】获取 课程列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/activity/seckill/listCourse
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      data:
+        - courseList
+        - courseName
+
+operation:
+
+  - caseid: 1023
+    run: YES
+    desc: 【M站/首页】获取 operation
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/information/operation
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      page: 0
+      type: 2
+    shared:
+    check:
+      msg: success
+      status: 0
+
+index:
+
+  - caseid: 1024
+    run: YES
+    desc: 【M站/首页】获取 首页信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/quality/index
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      localCateId:
+      type: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - title
+        - cover
+
+category:
+
+  - caseid: 1025
+    run: YES
+    desc: 【M站/首页】获取 课程类别
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/category
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - categoryList
+        - name
+
+MisLogin:
+
+  - caseid: 1026
+    run: YES
+    desc: 【M站/首页】获取 课程类别
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/login/isLogin
+    method: POST
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+
+userMine:
+
+  - caseid: 1027
+    run: YES
+    desc: 【M站/首页】获取 课程类别
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/user/mine
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - userDetail
+        - account
+
+checkVipStudent:
+
+  - caseid: 1028
+    run: YES
+    desc: 【M站/首页】获取 VIP 学员信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/public/course/checkVipStudent
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+
+courseGiftStatus:
+
+  - caseid: 1029
+    run: YES
+    desc: 【M站/首页】获取 课程类别
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/activity/courseGift/status
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+
+configRead:
+
+  - caseid: 1030
+    run: YES
+    desc: 【M站/首页】获取 配置信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/public/configRead
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      node: h5MpShowComeTip
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - h5MpShowComeTip
+
+myinfo:
+
+  - caseid: 1031
+    run: YES
+    desc: 【M站/我的】获取 个人信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/user/myinfo
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      onlyFree: 0
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - id
+        - account
+
+selectCouponUserCount:
+
+  - caseid: 1032
+    run: YES
+    desc: 【M站/我的】获取 用户优惠券
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/public/coupon/selectCouponUserCount
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalItem
+
+myCardBag:
+
+  - caseid: 1033
+    run: YES
+    desc: 【M站/我的】获取 我的钱包
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/public/coupon/myCardBag
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      pageIndex: 1
+      pageSize: 20
+      status: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalItem
+
+mySchedule:
+
+  - caseid: 1034
+    run: YES
+    desc: 【M站/我的】获取 我的课程信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/mySchedule
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      pageIndex: 1
+      pageSize: 20
+      courseType: 0
+      teachingMethod: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalPage
+        - totalCount
+
+qryMyOrder:
+
+  - caseid: 1035
+    run: NO
+    desc: 【M站/我的】获取 我的订单信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/order/qryMyOrder
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      status:
+      pageNo: 1
+      pageSize: 6
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - count
+        - orderType
+
+qryContracts:
+
+  - caseid: 1036
+    run: YES
+    desc: 【M站/我的】获取 我的合同信息
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/student/contract/qryContractsByUserId
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      pageSize: 6
+      pageIndex: 1
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalItem
+
+qryTeachers:
+
+  - caseid: 1037
+    run: YES
+    desc: 【M站/我的】获取 我的班主任信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/taoli/user/qryTeachersByUserId
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      type: 1
+    shared:
+    check:
+      msg: 暂无数据
+      status: 0
+
+listCommonQuestion:
+
+  - caseid: 1038
+    run: YES
+    desc: 【M站/我的】获取 常见问题 列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/system/listCommonQuestion
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      limit: 5
+      key: h5
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - list
+        - title
+
+listCategory:
+
+  - caseid: 1039
+    run: YES
+    desc: 【M站/我的】获取 类别列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/listCategory
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - name
+
+banner:
+
+  - caseid: 1040
+    run: YES
+    desc: 【M站/我的】获取 Banner 列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/index/banner
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminaltype: "5"
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      page: 0
+      type: 2
+    shared:
+    check:
+      msg: success
+      status: 0
+
+courseDetails:
+
+  - caseid: 1041
+    run: YES
+    desc: 【M站/我的】获取 课程详情
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/activity/seckill/course/details
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - localDateTime
+        - activityRulesId
+
+maxInfo:
+
+  - caseid: 1042
+    run: YES
+    desc: 【M站/我的】获取 maxInfo
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/live-marketing/scoring/maxInfo
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - score
+
+getRecommendListByCourseId:
+
+  - caseid: 1043
+    run: YES
+    desc: 【M站/我的】获取 getRecommendListByCourseId
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/course/getRecommendListByCourseId
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+      onlyFree: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalCount
+        - courseId
+
+endChapter:
+
+  - caseid: 1044
+    run: YES
+    desc: 【M站/我的】获取 getRecommendListByCourseId
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/app/endChapter
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+      classId: 5429
+      type: 3
+      pageNo: 1
+      pageSize: 20
+      teachingMethod: 8010
+      hasVideo:
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - title
+        - startDate
+
+listClass:
+
+  - caseid: 1045
+    run: YES
+    desc: 【M站/我的】获取 listClass
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/course/listClass
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - classId
+        - startDate
+
+userSignStatus:
+
+  - caseid: 1046
+    run: YES
+    desc: 【M站/我的】获取 userSignStatus
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/app/userSignStatus
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+      token: '19f670ac0712ef2ecb0b9433992fe8f3'
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - placementStatus
+        - freeLiveCourseEnd
+
+details:
+
+  - caseid: 1047
+    run: YES
+    desc: 【M站/我的】获取 userSignStatus
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/m/courses/details
+    method: GET
+    header:
+      token: "19f670ac0712ef2ecb0b9433992fe8f3"
+      terminaltype: "5"
+    data:
+      terminalType: 5
+      imei: 54b3261c-f6ca-b894-860b-b72cd8f40e51
+      channel: 0
+      courseId: 3088
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - cover
+        - courseId

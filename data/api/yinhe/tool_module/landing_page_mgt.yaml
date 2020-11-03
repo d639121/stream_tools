@@ -1,0 +1,32 @@
+# @Time  : 2020/8/11 16:59
+# @Author: LOUIE
+# @Desc  : 落地页管理
+config:
+  valueable:
+    organizationId: 1001
+
+page_list:
+
+    desc: 【银河/工具/落地页工具/落地页管理】查询页面数据
+    parameterize:
+     landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/list_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "releaseChannel":"",
+        "isHide":"0",
+        "name":"$<landingPageName>",
+        "adCreateType":"",
+        "pageNo":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: name

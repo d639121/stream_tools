@@ -1,0 +1,1933 @@
+# 运营系统查询测试数据
+
+userInfo:
+
+  - caseid: 1048
+    run: YES
+    desc: 【运营系统/公共】获取 当前登录用户信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/sys/userInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+      leaderUid: uid
+      account: account
+    check:
+      msg: OK
+      code: 0
+
+sidebar:
+
+  - caseid: 1049
+    run: YES
+    desc: 【运营系统/公共】获取 菜单信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/sys/sidebar
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+
+getList:
+
+  - caseid: 1050
+    run: YES
+    desc: 【运营系统/用户管理/用户分组】查询 用户分组
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/userGroupList/getList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - userIdParam
+
+getOrderList:
+
+  - caseid: 1051
+    run: YES
+    desc: 【运营系统/用户管理/订单列表】查询 订单列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/order/getOrderList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - total
+
+getAllOrg:
+
+  - caseid: 1052
+    run: YES
+    desc: 【运营系统/用户管理/订单列表】查询 所有机构信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/getAllOrg
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifierName
+
+getEmployeeDetailByUid:
+
+  - caseid: 1053
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型维护】查询 当前用户下的部门信息
+    precondition:
+    parameterize:
+      leaderUid: leaderUid
+    url: https://admin-test-new.shiguangkey.com/api/user/getEmployeeDetailByUid
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      uid: $<leaderUid>
+    shared:
+      organizationId: organId
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifierUid
+
+modelType:
+
+  - caseid: 1054
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型维护】查询 优惠券类型
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/coupon/modelType
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+institutionDetail:
+
+  - caseid: 1054
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型维护】查询 机构详情
+    precondition:
+    parameterize:
+      organizationId: organizationId
+    url: https://admin-test-new.shiguangkey.com/api/institution/detail
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: $<organizationId>
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+getAllList:
+
+  - caseid: 1055
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型维护】查询 所有机构名称
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/institution/getAllList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+modelList:
+
+  - caseid: 1056
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型维护】查询 所有优惠券
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/coupon/modelList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      type: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - departmentName
+
+checkList:
+
+  - caseid: 1057
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券模型审核】查询 卡券模型审核
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/coupon/checkList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      status: 0
+      action: 0,1,2,3,4,5,6
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - departmentName
+
+dataList:
+
+  - caseid: 1058
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/卡券使用明细】查询 卡券使用明细
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/coupon/dataList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      title:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - departmentName
+
+queryApplicationPages:
+
+  - caseid: 1059
+    run: YES
+    desc: 【运营系统/营销管理/卡券管理/申领页维护】查询 申领页维护
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/coupon/queryApplicationPages
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      pageIndex: 1
+      pageSize: 10
+      isPage: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - departmentName
+
+listApplyPlan:
+
+  - caseid: 1060
+    run: YES
+    desc: 【运营系统/营销管理/申领计划/申领计划维护】查询 申领计划维护
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/couponPlan/listApplyPlan
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      pageIndex: 1
+      pageSize: 10
+      isPage: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - total
+
+listApplyChecks:
+
+  - caseid: 1061
+    run: YES
+    desc: 【运营系统/营销管理/申领计划/申领计划审核】查询 申领计划审核
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/couponPlan/listApplyChecks
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      pageIndex: 1
+      pageSize: 10
+      isPage: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - departmentName
+
+getBonus:
+
+  - caseid: 1062
+    run: YES
+    desc: 【运营系统/营销管理/课程券管理】查询 课程券管理
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/activity/getBonus
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      type: 1
+      account:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - userId
+
+activity:
+
+  - caseid: 1063
+    run: YES
+    desc: 【运营系统/营销管理/活动管理/活动列表】查询 活动列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/activity
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      currentPage: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+teacherActivity:
+
+  - caseid: 1064
+    run: YES
+    desc: 【运营系统/营销管理/活动管理/活动列表】查询 活动列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/activity/teacher
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      activityId: 3333
+      searchType: nickName
+      search:
+      nickName:
+      account:
+      telephone:
+      prizeId:
+      prizeState:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - deliverDate
+
+teacherPrize:
+
+  - caseid: 1065
+    run: YES
+    desc: 【运营系统/营销管理/活动管理/助学金活动】查询 助学金活动列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/activity/teacherPrize
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      id: 3333
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - prizeName
+
+applyList:
+
+  - caseid: 1066
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/申领列表】查询 申领列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/applyCert/applyList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      id: 3333
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - total
+
+subject:
+
+  - caseid: 1067
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/申领列表】查询 所有科目
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/template/subject
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - college
+        - cateList
+
+getCate:
+
+  - caseid: 1068
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/申领列表】查询 所有类目
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/getCate
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pid: 0
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - twoLevelCateName
+
+applyNumberOfPeopleList:
+
+  - caseid: 1069
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/申领人数】查询 申领人数列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/applyNumberOfPeople/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      collegeLike:
+      cateLineIds:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - cateLineNames
+        - college
+
+certStudent:
+
+  - caseid: 1070
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/学生证书】查询 学生证书
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/cert-student
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      name:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+certTeacher:
+
+  - caseid: 1071
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/教师证书】查询 教师证书
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/cert-teacher
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      name:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+certTemplate:
+
+  - caseid: 1072
+    run: YES
+    desc: 【运营系统/营销管理/产学研管理/证书模板】查询 证书模板
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iur/cert-template
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      name:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+getValueList:
+
+  - caseid: 1073
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/积分价值管理】查询 积分价值管理
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/integralValueManage/getValueList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - accumulateAmount
+
+getOnlyTaskList:
+
+  - caseid: 1074
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/积分入口管理】查询 积分入口管理
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iOnlyTask/getOnlyTaskList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+getIntegralExportLimit:
+
+  - caseid: 1075
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/出口限制管理】查询 出口限制管理
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/integralExit/getIntegralExportLimit
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - taskName
+
+getCourseExchangeList:
+
+  - caseid: 1076
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/积分出口管理】查询 积分出口管理
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/integralExit/getCourseExchangeList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - courseIdList
+
+getStatistics:
+
+  - caseid: 1077
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/数据总览】查询 数据总览
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iIntegralStatistics/getStatistics
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      timeArea: 0
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - provideRate
+
+getUserStatistics:
+
+  - caseid: 1078
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/数据总览】查询 用户数据统计
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iIntegralStatistics/getUserStatistics
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - avgAmout
+
+getReportStatistics:
+
+  - caseid: 1079
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/数据总览】查询 报表统计
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/iIntegralStatistics/getReportStatistics
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      startDate: 2020-06-08
+      endDate: 2020-06-15
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - consumeIntegerList
+
+getIntegralUserDetailPageList:
+
+  - caseid: 1080
+    run: YES
+    desc: 【运营系统/营销管理/积分管理/积分明细】查询 积分明细
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/integralUserDetail/getIntegralUserDetailPageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - modifyTime
+
+courseLandingList:
+
+  - caseid: 1081
+    run: YES
+    desc: 【运营系统/营销管理/课程落地页】查询 课程落地页
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/courseLanding/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      startTime:
+      endTime:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - cover
+
+getPushFlowType:
+
+  - caseid: 1081
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/课程列表】查询 推流方式
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/getPushFlowType
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      startTime:
+      endTime:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - pushFlowType
+
+courseVerifyList:
+
+  - caseid: 1082
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/课程审核】查询 课程审核列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/verifyList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      startTime:
+      endTime:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - currentPage
+
+courseClassifyTreeList:
+
+  - caseid: 1083
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/审核设置】查询 课程类型
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/courseAudit/courseClassifyTreeList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      title:
+      startTime:
+      endTime:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - createTime
+
+getCourseReviewerList:
+
+  - caseid: 1084
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/审核设置】查询 审核设置
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/courseAudit/getCourseReviewerList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      courseCategoryId:
+      teacherMethodId:
+      courseTypeId:
+      status:
+      revieweNameOrAccount:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - totalItem
+
+getThreeLevelCourseClassifyList:
+
+  - caseid: 1085
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/审核设置】查询 课程类型
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/courseAudit/getThreeLevelCourseClassifyList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - createTime
+
+getDepartmentTreeByRoleId:
+
+  - caseid: 1086
+    run: NO
+    desc: 【运营系统/运营管理/课程管理/售后服务费管理】获取 部门信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/institution/getDepartmentTreeByRoleId
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "roleIdList":[1,2,3,4,5]
+      }
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - createTime
+
+getRatioList:
+
+  - caseid: 1087
+    run: YES
+    desc: 【运营系统/运营管理/课程管理/售后服务费管理】获取 部门信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/afterSaleFee/getRatioList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      vipliveState: 1
+      deptType: 1
+      deptIdChain:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - totalItem
+
+gethuabeipay:
+
+  - caseid: 1088
+    run: YES
+    desc: 【运营系统/运营管理/分期信息管理/分期乐列表】获取 花呗分期
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/order/gethuabeipay
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - value
+
+fenqile:
+
+  - caseid: 1089
+    run: YES
+    desc: 【运营系统/运营管理/分期信息管理/分期乐列表】获取 分期乐列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/order/fenqile
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - organName
+
+gethuabeicourselist:
+
+  - caseid: 1090
+    run: YES
+    desc: 【运营系统/运营管理/分期信息管理/花呗分期管理】获取 花呗分期课程列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/order/gethuabeicourselist
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      cateId:
+      title:
+      joinFlag:
+      courseType: course
+      teachingMethod:
+      orgId:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - currentPage
+
+getfenqiinfo:
+
+  - caseid: 1091
+    run: YES
+    desc: 【运营系统/运营管理/分期信息管理/花呗分期管理】获取 分期详细
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/order/getfenqiinfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - platformFeeRate
+
+notice:
+
+  - caseid: 1092
+    run: YES
+    desc: 【运营系统/运营管理/后台消息】获取 后台消息列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/admin/notice
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - gmtCreate
+
+keywordList:
+
+  - caseid: 1093
+    run: YES
+    desc: 【运营系统/运营管理/客服机器人管理/问题设置】获取 问题设置 列表
+    precondition:
+    parameterize:
+    url: https://robot-test.shiguangkey.com/robot/manager/keyword/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      keyWord:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalItem
+
+systemList:
+
+  - caseid: 1094
+    run: YES
+    desc: 【运营系统/运营管理/客服机器人管理/问题设置】获取 系统 列表
+    precondition:
+    parameterize:
+    url: https://robot-test.shiguangkey.com/robot/manager/system/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: success
+      status: 0
+
+statisticsList:
+
+  - caseid: 1095
+    run: YES
+    desc: 【运营系统/运营管理/客服机器人管理/问题设置】获取 问题统计 列表
+    precondition:
+    parameterize:
+    url: https://robot-test.shiguangkey.com/robot/statistics/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalItem
+
+queryChannelLinkList:
+
+  - caseid: 1096
+    run: YES
+    desc: 【运营系统/运营管理/渠道管理】获取 渠道 方式
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/channelManage/channelLink/queryChannelLinkList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - data
+
+queryChannelOperationList:
+
+  - caseid: 1097
+    run: YES
+    desc: 【运营系统/运营管理/渠道管理】获取 渠道管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/channelManage/channelLink/queryChannelOperationList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      searchType: 0
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - data
+
+messageList:
+
+  - caseid: 1098
+    run: YES
+    desc: 【运营系统/运营管理/人工推送】获取 人工推送消息 列表
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/manual/messageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "terminalUnit":null,
+        "pushStatus":null,
+        "status":null,
+        "pageIndex":1,
+        "pageSize":10
+      }
+    shared:
+    check:
+      msg: 成功
+      status: 0
+      data:
+        - title
+
+maintainList:
+
+  - caseid: 1099
+    run: YES
+    desc: 【运营系统/运营管理/标签管理/标签维护】获取 标签维护 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/label/maintain/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - data
+
+dictList:
+
+  - caseid: 1100
+    run: YES
+    desc: 【运营系统/运营管理/标签管理/标签维护】获取 标签字典 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/label/dict/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - parentName
+
+dictTree:
+
+  - caseid: 1101
+    run: YES
+    desc: 【运营系统/运营管理/标签管理/标签维护】获取 标签字典 类型
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/label/dictTree
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pid: 0
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - data
+
+queryRecommendCourseList:
+
+  - caseid: 1102
+    run: YES
+    desc: 【运营系统/运营管理/推荐课程配置】查询 推荐课程配置 列表
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/recommendCourse/queryRecommendCourseList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      terminal: 1
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: 成功
+      code: 0
+      result:
+        - courseId
+
+appModel:
+
+  - caseid: 1102
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/弹框管理】查询 弹框管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/appModel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - list
+
+recommend:
+
+  - caseid: 1103
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/精品小课】查询 精品小课 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/course/tinyCourse/recommend
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      disable: -1
+      title:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - createTime
+
+queryTemplateThemes:
+
+  - caseid: 1104
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/精品小课】查询 主题氛围 列表
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/templateTheme/queryTemplateThemes
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: 成功
+      status: 0
+      result:
+        - themeName
+
+queryAdsList:
+
+  - caseid: 1105
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/精品小课】查询 APP启动页 列表
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/ads/queryAdsList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: 成功
+      status: 0
+      result:
+        - cover
+
+queryBanners:
+
+  - caseid: 1106
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/精品小课】查询 APP启动页 列表
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/banner/queryBanners
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: 成功
+      status: 0
+      result:
+        - cover
+
+queryAllTwoCates:
+
+  - caseid: 1107
+    run: YES
+    desc: 【运营系统/终端配置/APP配置/运营位】查询 所有品类科目
+    precondition:
+    parameterize:
+    url: https://operation-test.shiguangkey.com/public/queryAllTwoCates
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      result:
+        - name
+
+positionSetting:
+
+  - caseid: 1108
+    run: YES
+    desc: 【运营系统/终端配置/PC/WEB配置/运营位配置】查询 运营位配置 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/pc/setting/position
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      positionType: 1
+      status:
+      startTime:
+      endTime:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - pageIndex
+
+moduleSetting:
+
+  - caseid: 1108
+    run: YES
+    desc: 【运营系统/终端配置/PC/WEB配置/运营模块配置】查询 运营模块配置 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/pc/setting/module
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      moduleType: 1
+      status:
+      startTime:
+      endTime:
+      imageType: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - list
+
+bannerSetting:
+
+  - caseid: 1109
+    run: YES
+    desc: 【运营系统/终端配置/PC/WEB配置/Banner】查询 Banner配置 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/pc/setting/banner
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      status:
+      startTime:
+      endTime:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - list
+
+getLiveToken:
+
+  - caseid: 1110
+    run: YES
+    desc: 【运营系统/终端配置/直播设置/直播间消息】查询 在线Token
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/live/getLiveToken
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {}
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - opToken
+
+getFilterConf:
+
+  - caseid: 1111
+    run: YES
+    desc: 【运营系统/终端配置/直播设置/直播间消息】查询 过滤的配置信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/live/getFilterConf
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {}
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - opToken
+
+getSupportPhone:
+
+  - caseid: 1112
+    run: YES
+    desc: 【运营系统/终端配置/直播设置/直播间消息】查询 监督电话
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/live/getSupportPhone
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {}
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - phone
+
+emoticon:
+
+  - caseid: 1113
+    run: YES
+    desc: 【运营系统/终端配置/直播设置/表情包管理】查询 表情包 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/live/emoticon
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      {}
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - version
+
+getNews:
+
+  - caseid: 1114
+    run: YES
+    desc: 【运营系统/终端配置/品牌官网管理/新闻管理】查询 新闻 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/news/get
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - total
+
+bannerList:
+
+  - caseid: 1115
+    run: YES
+    desc: 【运营系统/终端配置/品牌官网管理/Banner及头图】查询 Banner 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/officialWebsite/banner/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - totalItem
+
+adviserList:
+
+  - caseid: 1116
+    run: YES
+    desc: 【运营系统/终端配置/品牌官网管理/顾问素材】查询 顾问素材 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/officialWebsite/adviser/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      result:
+        - data
+
+clientVersion:
+
+  - caseid: 1117
+    run: YES
+    desc: 【运营系统/终端配置/版本管理/老师客户端版本统计】查询 所有老师客户端版本号
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/client/versions
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+
+teacherData:
+
+  - caseid: 1118
+    run: YES
+    desc: 【运营系统/终端配置/版本管理/老师客户端版本统计】查询 所有教师信息
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/client/teacherData
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      account:
+      nick:
+      departmentId:
+      startDate:
+      endDate:
+      version:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+wechatAccount:
+
+  - caseid: 1119
+    run: YES
+    desc: 【运营系统/机构管理/企业微信管理/企业微信】查询 企业微信 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/account/wechatAccount
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      qryStr:
+      bindStatus:
+      qryType: 2
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - total
+
+systemAccount:
+
+  - caseid: 1120
+    run: YES
+    desc: 【运营系统/机构管理/企业微信管理/账号管理】查询 账号管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/account/systemAccount
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      alias:
+      mobile:
+      userAccount:
+      pageIndex: 1
+      pageSize: 10
+      systemId:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+groupList:
+
+  - caseid: 1120
+    run: YES
+    desc: 【运营系统/机构管理/企业微信管理/群管理】查询 群管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/wechat/groupList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":10
+      }
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - totalItem
+
+systems:
+
+  - caseid: 1121
+    run: YES
+    desc: 【运营系统/机构管理/企业微信管理/群管理】查询 系统 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/wechat/systems
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - data
+
+organList:
+
+  - caseid: 1122
+    run: YES
+    desc: 【运营系统/机构管理/机构列表】查询 机构列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/organ/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      account:
+      organizationName:
+      companyName:
+      examineStatus: 0
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+institutionList:
+
+  - caseid: 1123
+    run: YES
+    desc: 【运营系统/机构管理/入驻机构列表】查询 入驻机构列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/institution/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      name:
+      state:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+getOrganListById:
+
+  - caseid: 1124
+    run: YES
+    desc: 【运营系统/机构管理/入驻机构列表】查询 机构名称列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/institution/getOrganListById
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      modules: [4]
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - results
+
+systemModel:
+
+  - caseid: 1125
+    run: YES
+    desc: 【运营系统/机构管理/入驻机构列表】查询 系统模块
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/systemModel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      modules: [4]
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - results
+
+institutionAccount:
+
+  - caseid: 1126
+    run: YES
+    desc: 【运营系统/机构管理/机构账号管理】查询 机构账号管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/institution/account
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      organName:
+      tanzkAccount:
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - total
+
+shareProportionList:
+
+  - caseid: 1127
+    run: YES
+    desc: 【运营系统/机构管理/售前分成比例列表】查询 售前分成比例列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/shareProportion/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+organShareList:
+
+  - caseid: 1128
+    run: YES
+    desc: 【运营系统/机构管理/分成设置】查询 机构配置列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/organShare/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      goodSetType: 1
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+usersList:
+
+  - caseid: 1129
+    run: YES
+    desc: 【运营系统/机构管理/用户管理】查询 用户管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/auth/users
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      currentPage: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - list
+
+getMenuTree:
+
+  - caseid: 1130
+    run: YES
+    desc: 【运营系统/机构管理/菜单管理】查询 菜单管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/helpCenter/getMenuTree
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      isContainForbidden: true
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - data
+
+getContentList:
+
+  - caseid: 1131
+    run: YES
+    desc: 【运营系统/机构管理/内容管理】查询 内容管理 列表
+    precondition:
+    parameterize:
+    url: https://admin-test-new.shiguangkey.com/api/helpCenter/getContentList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: OK
+      code: 0
+      data:
+        - data
+
+
+
+
+
+
+
+

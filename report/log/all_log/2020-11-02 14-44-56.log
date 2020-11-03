@@ -1,0 +1,50 @@
+2020-11-02 14:45:12,430 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-11-02 14:45:12,430 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-11-02 14:45:12,430 - root - INFO : 请求方法: [- POST -]
+2020-11-02 14:45:12,430 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-11-02 14:45:12,431 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-11-02 14:45:12,749 - root - INFO : 响应消息: {'traceId': '6d8dd551d4d74555ac0d27c73888b94d', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77de510712f10d40f23485986c097e'}}
+2020-11-02 14:45:12,751 - root - INFO : 提取变量: [ pttoken: 0x77de510712f10d40f23485986c097e ]
+2020-11-02 14:45:12,751 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-11-02 14:45:12,751 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-11-02 14:45:12,751 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-11-02 14:45:17,456 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-11-02 14:45:17,456 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-11-02 14:45:17,456 - root - INFO : 请求方法: [- POST -]
+2020-11-02 14:45:17,456 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-11-02 14:45:17,456 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-11-02 14:45:17,598 - root - INFO : 响应消息: {'traceId': '966cfd6d7536448a82d03788f009fc19', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x770a280712f10d4bf3c4be3a46d3df'}}
+2020-11-02 14:45:17,598 - root - INFO : 提取变量: [ pttoken: 0x770a280712f10d4bf3c4be3a46d3df ]
+2020-11-02 14:45:17,598 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-11-02 14:45:17,598 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-11-02 14:45:17,599 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-11-02 14:45:20,605 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-11-02 14:45:20,605 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-11-02 14:45:20,606 - root - INFO : 请求方法: [- POST -]
+2020-11-02 14:45:20,606 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-11-02 14:45:20,606 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-11-02 14:45:20,808 - root - INFO : 响应消息: {'traceId': 'dbcc723a74fa4f1c9afcffad6165302d', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7743220712f10d470824e0fba02061'}}
+2020-11-02 14:45:20,808 - root - INFO : 提取变量: [ pttoken: 0x7743220712f10d470824e0fba02061 ]
+2020-11-02 14:45:20,809 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-11-02 14:45:20,809 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-11-02 14:45:20,809 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-11-02 14:45:23,301 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-11-02 14:45:23,301 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-11-02 14:45:23,302 - root - INFO : 请求方法: [- POST -]
+2020-11-02 14:45:23,302 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-11-02 14:45:23,302 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-11-02 14:45:23,447 - root - INFO : 响应消息: {'traceId': '29bb0ba975dc41e8befcc2a56573a7d9', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x771bd80712f10d4c5914048ab1f3b7'}}
+2020-11-02 14:45:23,447 - root - INFO : 提取变量: [ pttoken: 0x771bd80712f10d4c5914048ab1f3b7 ]
+2020-11-02 14:45:23,447 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-11-02 14:45:23,447 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-11-02 14:45:23,448 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-11-02 14:45:25,879 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-11-02 14:45:25,879 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-11-02 14:45:25,879 - root - INFO : 请求方法: [- POST -]
+2020-11-02 14:45:25,880 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-11-02 14:45:25,880 - root - INFO : 请求正文: {'account': 't0373492024', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-11-02 14:45:26,030 - root - INFO : 响应消息: {'traceId': 'f234f54adf6d49f78eb75cf8af8e7b2b', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861716, 'mobile': '', 'account': '', 'nickname': '用功的柠檬', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x7757ec0712f10d47852417db3ed771'}}
+2020-11-02 14:45:26,030 - root - INFO : 提取变量: [ pttoken: 0x7757ec0712f10d47852417db3ed771 ]
+2020-11-02 14:45:26,031 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-11-02 14:45:26,031 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-11-02 14:45:26,031 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

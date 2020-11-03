@@ -1,0 +1,47 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 数据-数据统计-部门成单统计
+
+config:
+  valueable:
+    organizationId: 1001
+    projectName: xiaokakecheng
+
+query_dept_order_data:
+
+    desc: 【数据/数据统计/部门成单统计】查询
+    parameterize:
+      monthAgoTimeStart: monthAgoTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/instorder/daycount/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      endDate: $<gatherTimeEnd>
+      startDate: $<monthAgoTimeStart>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_dept_order_data:
+
+    desc: 【数据/数据统计/部门成单统计】导出
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/statistics/instorder/daycount/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      endDate: $<gatherTimeEnd>
+      startDate: $<gatherTimeStart>
+    shared:
+    check:
+      no-check

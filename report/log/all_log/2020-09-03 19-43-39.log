@@ -1,0 +1,30 @@
+2020-09-03 19:43:39,471 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-03 19:43:39,472 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-03 19:43:39,472 - root - INFO : 请求方法: [- POST -]
+2020-09-03 19:43:39,472 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 19:43:39,472 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-03 19:43:39,611 - root - INFO : 响应消息: {'traceId': 'f9fabc96172d43169b257a7da45a8890', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77deda0712f10d2d4d04da197ef2bf'}}
+2020-09-03 19:43:39,612 - root - INFO : 提取变量: [ pttoken: 0x77deda0712f10d2d4d04da197ef2bf ]
+2020-09-03 19:43:39,612 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-03 19:43:39,612 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-03 19:43:39,612 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-03 19:43:39,620 - root - INFO : 当前运行Case: test_chk_flow_budget
+2020-09-03 19:43:39,620 - root - INFO : 正在执行Function: test_chk_flow_budget
+2020-09-03 19:43:39,621 - root - INFO : 正在执行Function: qry_flow_budget
+2020-09-03 19:43:39,621 - root - INFO : 描述信息: 【海川/预算管理/流量预算】查询流量预算
+2020-09-03 19:43:39,621 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/pageList?organizationId=8009
+2020-09-03 19:43:39,621 - root - INFO : 请求方法: [- POST -]
+2020-09-03 19:43:39,621 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77deda0712f10d2d4d04da197ef2bf', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 19:43:39,621 - root - INFO : 请求正文: {'pageNow': 1, 'pageSize': 20, 'auditState': 1, 'organizationId': [8009], 'deptId': 8009}
+2020-09-03 19:43:39,869 - root - INFO : 响应消息: {'data': {'extraData': None, 'list': [{'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599120893000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599120893000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 1, 'id': 33, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599120893000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 1, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 277, 'subjectIdChain': '258-267-277', 'subjectName': 'C', 'visitorNum': 3, 'weekNum': 2, 'weekRange': '5-11', 'workDay': 1}, {'apply': '精彩的鲀鱼', 'applyRemark': '', 'applyTime': 1599120701000, 'applyUid': 19861714, 'auditState': 1, 'avgCardNum': 1, 'conversionRate': 1.0, 'costMonth': 1601481600000, 'createTime': 1599120701000, 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001', 'creatorId': 19861714, 'creatorName': '精彩的鲀鱼', 'customerPrice': 1.0, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'gatherType': 1, 'id': 32, 'modifierId': 19861714, 'modifierName': '丁聪4', 'modifyTime': 1599120701000, 'monthCorrectNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'performance': 3.0, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'putMode': 1, 'receiveDeptId': 8009, 'receiveDeptIdChain': '1001-8006-8007-8008-8009', 'receiveDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'roi': 0.0, 'signUpNum': 3, 'stageCardNum': 3, 'subjectId': 277, 'subjectIdChain': '258-267-277', 'subjectName': 'C', 'visitorNum': 3, 'weekNum': 1, 'weekRange': '1-4', 'workDay': 1}], 'pageNum': 1, 'pageSize': 20, 'pages': 1, 'sEcho': None, 'size': 2, 'total': 2}, 'msg': None, 'platform': None, 'res': 100, 'traceId': '03f643d6c43542d3'}
+2020-09-03 19:43:39,870 - root - INFO : 提取变量: [ flow_budget_id: 33 ]
+2020-09-03 19:43:39,870 - root - INFO : 校验类型: [-res], 结果: [Passed], 预期: [100]
+2020-09-03 19:43:39,870 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [None]
+2020-09-03 19:43:39,870 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-03 19:43:39,870 - root - INFO : 正在执行Function: chk_flow_budget
+2020-09-03 19:43:39,870 - root - INFO : 描述信息: 【海川/预算管理/流量预算】审核流量预算
+2020-09-03 19:43:39,870 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/audit?id=34&auditFlag=1&organizationId=8009
+2020-09-03 19:43:39,870 - root - INFO : 请求方法: [- GET -]
+2020-09-03 19:43:39,871 - root - INFO : 请求头部: {'token': '0x77deda0712f10d2d4d04da197ef2bf', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 19:43:39,871 - root - INFO : 请求正文: {'id': '33', 'auditFlag': 1, 'organizationId': 8009}
+2020-09-03 19:43:40,027 - root - INFO : 响应消息: {'data': None, 'msg': '非售前数据中心待审核审核状态，操作无效', 'platform': 'ocean-stat-service', 'res': -99999, 'traceId': '74d4b6b5d62927a0'}

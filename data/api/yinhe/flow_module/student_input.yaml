@@ -1,0 +1,175 @@
+#!/usr/bin/python
+# @Time  : 2020/7/27 10:13
+# @Author: Jones
+# @Desc  : 学员录入
+
+config:
+  valueable:
+    organizationId: 1001
+    receiveDeptIdChain: 1001-3003-1
+
+add_student:
+    desc: 【学员录入】--录入（手机流量）--拥有【免费流量组】
+    parameterize:
+      phoneNumber: phoneNumber
+      qq: qq
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/add
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      mobile: $<phoneNumber>
+      nick: Louie
+      qq: $<qq>
+      receiveDeptIdChain: 1001-2001-4569-4570-4571-4572
+      subjectId: 280
+      wx: $<qq>
+      vouchers: https://res.shiguangkey.com/file/galaxy/pluralistic/20200805/14/20200805144128839437534.jpg
+      gatherType: 1
+      subjectName: PHP
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_phone_not_free:
+    desc: 【学员录入】-导入（手机流量）--未拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 1
+      subjectId: 280
+      subjectName: PHP
+      receiveDeptIdChain: 1001-3
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_phone_free:
+    desc: 【学员录入】-导入（手机流量）--拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 1
+      subjectId: 280
+      subjectName: PHP
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_qq_free:
+    desc: 【学员录入】--导入（QQ流量）--拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 2
+      subjectId: 280
+      subjectName: PHP
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_qq_not_free:
+    desc: 【学员录入】--导入（QQ流量）--未拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 2
+      subjectId: 280
+      subjectName: PHP
+      receiveDeptIdChain: 1001-3
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_wx_not_free:
+    desc: 【学员录入】--导入（微信流量）--未拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 2
+      subjectId: 280
+      subjectName: PHP
+      receiveDeptIdChain: 1001-3
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_wx_free:
+    desc: 【学员录入】--导入（微信流量）--拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 2
+      subjectId: 280
+      subjectName: PHP
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_query:
+    desc: 【学员录入】--查询
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/pgList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherTimeStart: 1596211200000
+      gatherTimeEnd: 1598889599999
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+student_input_import_for_wx_free_perssion:
+    desc: 【学员录入】--导入（微信流量）--拥有【免费流量组】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/pluralistic/customer/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      gatherType: 2
+      subjectId: 280
+      subjectName: PHP
+    shared:
+    check:
+      status: R1003
+      msg: 您暂无权限访问该接口

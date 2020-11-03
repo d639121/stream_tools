@@ -1,0 +1,18 @@
+2020-10-21 18:05:14,919 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 18:05:14,920 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 18:05:14,920 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:05:14,920 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 18:05:14,920 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 18:05:15,171 - root - INFO : 响应消息: {'traceId': '3f99c090f5df4a45bc7666238fe62deb', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77056c0712f10d0315d46fea91dd18'}}
+2020-10-21 18:05:15,172 - root - INFO : 提取变量: [ pttoken: 0x77056c0712f10d0315d46fea91dd18 ]
+2020-10-21 18:05:15,172 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 18:05:15,173 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 18:05:15,173 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 18:05:34,596 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-21 18:05:34,705 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 18:05:34,770 - root - INFO : 描述信息: 查询企业微信载体信息
+2020-10-21 18:05:34,770 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/search
+2020-10-21 18:05:34,770 - root - INFO : 请求方法: [- POST -]
+2020-10-21 18:05:34,770 - root - INFO : 请求头部: {'content-type': 'application/json;charset=UTF-8', 'token': '0x77056c0712f10d0315d46fea91dd18'}
+2020-10-21 18:05:34,771 - root - INFO : 请求正文: {'carrierName': '别皱眉', 'type': 3}
+2020-10-21 18:05:34,961 - root - INFO : 响应消息: {'status': -1, 'msg': "JSON parse error: Unrecognized token 'carrierName': was expecting ('true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'carrierName': was expecting ('true', 'false' or 'null')\n at [Source: (PushbackInputStream); line: 1, column: 13]", 'traceId': '2e37da920b1a48b3b91ad6e7c8e36011', 'data': None}

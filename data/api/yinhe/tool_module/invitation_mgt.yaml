@@ -1,0 +1,49 @@
+# @Author: LOUIE
+# @Desc  : 邀请引流管理
+config:
+  valueable:
+    organizationId: 1001
+    receiveDeptIdChain: 1001-3003-1
+
+generate_link:
+
+    desc: 【银河/工具/邀课引流管理】生成邀课链接
+    parameterize:
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/inviteLessonLink/generateLink
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+      terminaltype: '4'
+      x-dept-id-chain: 1001-2001-4569-4570-4571-4572
+    data:
+      courseId: 19260
+      deadline: $<gatherTimeEnd>
+      receiveDeptIdChain: 1001-2001-4569-4570-4571-4572
+      platform: 0
+      type: 1
+    check:
+      status: 0
+      msg: success
+
+
+diversion_list:
+
+    desc: 【银河/工具/邀课引流管理】查询
+    parameterize:
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/inviteLessonLink/diversionList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+      terminaltype: '4'
+      x-dept-id-chain: 1001-2001-4569-4570-4571-4572
+    data:
+      pageIndex: 1
+      pageSize: 20
+      tabType: 1
+    check:
+      status: 0
+      msg: success

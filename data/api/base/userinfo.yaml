@@ -1,0 +1,23 @@
+# @Time  : 2020/8/10 20:11
+# @Author: LOUIE
+# @Desc  : 文档描述信息
+
+get_user_info:
+  desc: 【银河/公共】获取登录用户信息
+  url: https://organization-fat.shiguangkey.com/api/organization/login/getUserInfo
+  method: get
+  header:
+    token: token
+    terminaltype: "4"
+  data:
+  shared:
+    departmentName: deptName
+    departmentId:  deptId
+    leaderName: nick
+    leaderUid: uid
+    organId: organId
+    departmentIdChain: deptIdChain
+    tanzkAccount: tanzkAccount
+  check:
+    status: 0
+    msg: success

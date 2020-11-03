@@ -1,0 +1,39 @@
+# @Time  : 2020/10/22 16:03
+# @Author: Jones
+# @Desc  : 合同管理
+config:
+  valueable:
+    organizationId: 1001
+
+create_contract:
+    desc: 【银河/账户/合同管理】新建合同
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+      nextMonthFirst: nextMonthFirst
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/account/contract/create
+    method: POST
+    header:
+      content-type: application/json
+      token: token
+      terminaltype: '4'
+    data:
+      agencyCode: 10000043
+      agencyName: "今日头条啊"
+      agencyShortName: "随机"
+      bankAccount: "45465432153464316431"
+      bankName: "丁聪测试"
+      channelAgencyId: 45
+      channelId: 2
+      channelName: "今日头条"
+      contractId: "1000000121"
+      contractName: "测试合同0012"
+      fapiaoType: 1
+      invalidDate:  $<nextMonthFirst>
+      rebates: 1.2
+      signUpDate: $<gatherTimeStart>
+      validDate: $<gatherTimeEnd>
+    shared:
+    check:
+      status: 0
+      msg: success

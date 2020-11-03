@@ -1,0 +1,26 @@
+# @Time  : 2020/08/07 10:30
+# @Author: Jones
+# @Desc  : 流量-导入流量查询
+config:
+  valueable:
+    organizationId: 1001
+
+import_flow_query:
+    desc: 【流量/导入流量查询】导入流量查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerImportBatch/fileUploadList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success

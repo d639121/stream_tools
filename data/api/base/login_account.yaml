@@ -1,0 +1,90 @@
+# 登录数据
+config:
+  valueable:
+
+tz_platform_account:
+  desc: 【潭州平台】获取登录用户 token
+  url: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+  method: POST
+  header:
+    content-type: application/x-www-form-urlencoded
+    terminaltype: "4"
+  data:
+    account: t0331433110
+    password: 4QrcOUm6Wau+VuBX8g+IPg
+  shared:
+    pttoken: token
+  check:
+    status: 0
+    msg: success
+
+tz_classroom_account:
+
+    desc: 【潭州课堂】获取登录学员 token
+    url: https://open-test.shiguangkey.com/api/udb/login/standard
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+      inviteLinkId: ''
+    data:
+      account: t0331433110
+      password: 4QrcOUm6Wau+VuBX8g+IPg
+    shared:
+      sttoken: token
+    check:
+      status: 0
+      msg: success
+
+classroom_login:
+    parameterize:
+    desc: 【潭州课堂】获取登录学员 token
+    url: https://open-fat.shiguangkey.com/api/udb/login/standard
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+      inviteLinkId: ''
+    data:
+      account: 86-18774925933
+      password: awtXQHQoCXGTz04Tm1guMw
+    shared:
+      student: token
+    check:
+      status: 0
+      msg: success
+
+classroom_verification_login:
+    parameterize:
+      phoneNumber: phoneNumber
+      smsCode: smsCode
+    desc: 【潭州课堂】获取登录学员 token
+    url: https://open-fat.shiguangkey.com/api/udb/login/phone/login
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      terminaltype: "4"
+    data:
+      phone: 86-$<phoneNumber>
+      code: $<smsCode>
+    shared:
+      student: token
+    check:
+      status: 0
+      msg: success
+
+get_personal_information:
+  parameterize:
+    student: student
+  desc: 【潭州课堂】获取潭州账号
+  url: https://open-fat.shiguangkey.com/api/udb/user/mine
+  method: GET
+  header:
+    terminaltype: "4"
+    token: $<student>
+  data:
+  shared:
+    account: account
+  check:
+    status: 0
+    msg: success

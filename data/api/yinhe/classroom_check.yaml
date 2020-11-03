@@ -1,0 +1,24 @@
+config:
+  valueable:
+    organizationId: 1001
+
+api_course_queryByStudent:
+
+    desc: 【潭州课堂/我的课表】查看我的课表
+    parameterize:
+      student: student
+    url: https://www-fat.shiguangkey.com/api/course/queryByStudent
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<student>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: python公开课视频课
+

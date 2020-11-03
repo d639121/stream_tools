@@ -1,0 +1,49 @@
+2020-10-21 09:28:52,028 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-21 09:28:52,028 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-21 09:28:52,028 - root - INFO : 请求方法: [- POST -]
+2020-10-21 09:28:52,028 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-21 09:28:52,028 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-21 09:28:52,263 - root - INFO : 响应消息: {'traceId': 'a604badfc923462cbff0937c0ccd1cfe', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x775e5b0712f1253c91e41f2b3ff45c'}}
+2020-10-21 09:28:52,265 - root - INFO : 提取变量: [ pttoken: 0x775e5b0712f1253c91e41f2b3ff45c ]
+2020-10-21 09:28:52,265 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 09:28:52,265 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 09:28:52,265 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 09:29:44,779 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-21 09:29:44,882 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 09:29:44,940 - root - INFO : 当前所在Class: Website || 类描述信息: None
+2020-10-21 09:29:44,988 - root - INFO : 当前所在Class: Check || 类描述信息: None
+2020-10-21 09:29:45,099 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/API】一键提交模式-保存落地页
+2020-10-21 09:29:45,100 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+2020-10-21 09:29:45,100 - root - INFO : 请求方法: [- POST -]
+2020-10-21 09:29:45,100 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77ffb30712f1fa16cc04677878f70c'}
+2020-10-21 09:29:45,100 - root - INFO : 请求正文: {'name': '落地页-15033741', 'goodsId': '506', 'previewUrl': 'https://fat-huawei-media.shiguangkey.com/kdqr01o7kdjm64t', 'isRecommendApp': False, 'submitType': 3, 'isSmsVerify': 1, 'pageMode': 1, 'websiteType': 1, 'adCreateType': 2, 'websiteWechatType': 1, 'bgColor': '', 'bgImage': '', 'version': '2.1.3', 'compReqs': [{'compJson': '{"id":"kdqqz7py6tvtjhs","type":19,"width":375,"height":70,"isFixed":true,"goodsName":"自动化测试专用商品（小咖）","goodsId":173,"priceText":50,"priceOrigin":199,"priceTextColor":"#FF0363","priceTextSize":28,"tipText":"前100名活动限时价","tipTextColor":"#666666","tipTextSize":11,"buttonText":"立即购买","buttonTextColor":"#FFFFFF","buttonTextSize":18,"buttonBg":"#FF0363","isOneKey":true,"pageMode":1,"pageType":1,"isPopup":false,"y":0}', 'fileIds': [], 'scene': 1, 'type': 19}, {'compJson': '{"id":"kdqqz7sunmzeza0","type":24,"width":375,"height":257,"goodsName":"自动化测试专用商品（小咖）","goodsId":0,"goodsDesc":"自动化测试专用商品（小咖）","goodsCover":"https://xk-assets.tanzhou.cn/file/edu/courseType/20200422/16/20200422160000300999108.jpg","priceText":50,"priceOrigin":199,"phoneNo":"130XXXXXXXX","payNo":"D000000000000000000","isPay":true,"y":0}', 'fileIds': [], 'scene': 2, 'type': 24}, {'compJson': '{"id":"kdqqz7suesf0szw","type":13,"width":375,"height":136,"text":"上课须知\\n1.本产品为特价活动课程，一经购买，概不退款，请谅解；\\n2.课程购买成功后，老师会在24小时以内通过电话、微信或短信的方式联系您，请保持联系方式畅通。","fontSize":12,"fontWeight":"normal","fontStyle":"normal","textDecoration":"none","opacity":100,"textAlign":"left","letterSpacing":0,"lineHeight":2,"placeholder":"请输入文本内容","color":"#999999","y":257}', 'fileIds': [], 'scene': 2, 'type': 13}, {'compJson': '{"id":"kdqqz7suc6uq9j5","type":3,"width":375,"height":176,"required":true,"value":"","title":"手机 (已加密)","placeholder":"请输入手机号码","unique":true,"validate":true,"layout":1,"phoneCodeType":0,"codeTextColor":"#FFFFFF","codeTextSize":15,"codeBgColor":"#1855FB","isAbroad":false,"y":0}', 'fileIds': [], 'scene': 3, 'type': 3}, {'compJson': '{"id":"kdqqz7suy9ju2xa","type":24,"width":375,"height":218,"goodsName":"自动化测试专用商品（小咖）","goodsId":0,"goodsDesc":"自动化测试专用商品（小咖）","goodsCover":"https://xk-assets.tanzhou.cn/file/edu/courseType/20200422/16/20200422160000300999108.jpg","priceText":50,"priceOrigin":199,"phoneNo":"130XXXXXXXX","payNo":"D000000000000000000","y":176}', 'fileIds': [], 'scene': 3, 'type': 24}, {'compJson': '{"id":"kdqqz7su0wy2opu","type":23,"width":339,"height":71,"buttonHeight":45,"text":"确认支付 ￥50","textColor":"#FFFFFF","textSize":18,"borderColor":"#FF0363","borderWidth":2,"borderRadius":4,"bgColor":"#FF0363","isDownloadApp":false,"isFixed":true,"y":394}', 'fileIds': [], 'scene': 3, 'type': 23}]}
+2020-10-21 09:29:45,387 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '78864d60d7c244fe9cb4bd1ce885f138', 'data': {'code': '1318726132728995842', 'id': 9088}}
+2020-10-21 09:29:45,387 - root - INFO : 提取变量: [ websiteId: 9088 ]
+2020-10-21 09:29:45,387 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 09:29:45,387 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 09:29:45,387 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 09:29:45,387 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】发布落地页
+2020-10-21 09:29:45,388 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+2020-10-21 09:29:45,388 - root - INFO : 请求方法: [- POST -]
+2020-10-21 09:29:45,388 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x775e5b0712f1253c91e41f2b3ff45c'}
+2020-10-21 09:29:45,388 - root - INFO : 请求正文: {'websiteId': '9088'}
+2020-10-21 09:29:45,568 - root - INFO : 响应消息: {'status': 0, 'msg': '落地页发布成功', 'traceId': '6a3e93f4600f4413a5d09cf3cc156ba9', 'data': None}
+2020-10-21 09:29:45,568 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 09:29:45,568 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 09:29:45,568 - root - INFO : 描述信息: 【工具/落地页工具/新建落地页/手动】生成链接
+2020-10-21 09:29:45,568 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+2020-10-21 09:29:45,569 - root - INFO : 请求方法: [- POST -]
+2020-10-21 09:29:45,569 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x775e5b0712f1253c91e41f2b3ff45c'}
+2020-10-21 09:29:45,569 - root - INFO : 请求正文: {'websiteId': '9088', 'title': 'kuaishou', 'accountId': 'wx359bdedd5d18907a', 'releaseChannel': 3, 'putPlanNames': ['自动化落地页56466829'], 'domain': 'https://mz-fat.tanzhouedu.com', 'subjectId': 280, 'websiteLinkFollowReq': {'gatherType': 1, 'isTest': 0, 'receiveDeptIdChain': '', 'receiveDeptName': '', 'allocInstType': 2, 'putMode': 3}, 'channelId': 6, 'subject': 'PHP'}
+2020-10-21 09:29:45,775 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': 'ff4c545506ac49f5b8a4323df4ce78e2', 'data': [{'putPlanName': None, 'creativityCode': 'a859636a1f981851'}]}
+2020-10-21 09:29:45,775 - root - INFO : 提取变量: [ creativityCode: a859636a1f981851 ]
+2020-10-21 09:29:45,775 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-21 09:29:45,775 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-21 09:29:45,775 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-21 09:29:45,775 - root - INFO : 正在执行Function: list_landing_page
+2020-10-21 09:29:45,775 - root - INFO : 描述信息: 【银河/工具/落地页工具】落地页数据查询
+2020-10-21 09:29:45,776 - root - INFO : 请求地址: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+2020-10-21 09:29:45,776 - root - INFO : 请求方法: [- POST -]
+2020-10-21 09:29:45,776 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x775e5b0712f1253c91e41f2b3ff45c'}
+2020-10-21 09:29:45,776 - root - INFO : 请求正文: {'websiteCode': '', 'creativityCode': '', 'adNo': '', 'isTest': '', 'channelCode': '', 'subjectId': '', 'putMode': '', 'websiteName': '自动化落地页56466829', 'submitStartTime': '2020-10-21 00:00:00', 'submitEndTime': '2020-10-21 23:59:59', 'pageNo': 1, 'pageSize': 10, 'websiteType': 1}
+2020-10-21 09:29:45,979 - root - INFO : 响应消息: {'status': 0, 'msg': 'success', 'traceId': '949f1a30041b4c9a9cc13e688d1da071', 'data': {'totalPage': 0, 'rows': [], 'totalCount': 0, 'pageNo': 1, 'pageSize': 10, 'currentPageSize': 0}}

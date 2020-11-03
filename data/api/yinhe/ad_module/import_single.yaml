@@ -1,0 +1,57 @@
+config:
+  valueable:
+    organizationId: 1001
+
+import_mobile_single:
+
+    desc: 【银河/广告/广告创意】导入单个手机流量
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/gather/importing
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      adNo: 93994a6c5fa84e9699d68b5c0c467f5b
+      putMode: 1
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: success
+
+import_qq_single:
+
+    desc: 【银河/广告/广告创意】导入单个qq流量
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/qq/gather/importing
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      adNo: Qddc85f3e73fa4e07bd55964943ea559a
+      putMode: 1
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: success
+
+import_wx_single:
+
+    desc: 【银河/广告/广告创意】导入单个微信流量
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/wx/gather/importing
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+    data:
+      adNo: W2d8435b4ee094074a1cb6a5cabedf88b
+      putMode: 1
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: success

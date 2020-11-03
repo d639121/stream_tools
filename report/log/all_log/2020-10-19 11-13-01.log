@@ -1,0 +1,6 @@
+2020-10-19 11:13:11,285 - root - INFO : 描述信息: 【银河/广告/广告创意】录入单个消费记录
+2020-10-19 11:13:11,286 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/save
+2020-10-19 11:13:11,286 - root - INFO : 请求方法: [- POST -]
+2020-10-19 11:13:11,286 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x773e5f0712f1fa1952e49a28ba06ab'}
+2020-10-19 11:13:11,286 - root - INFO : 请求正文: {'noExposure': 100, 'noClicks': 100, 'cost': 10000, 'rebates': 1, 'costDate': '$<gatherTimeStart>', 'creativityId': '113559'}
+2020-10-19 11:13:11,475 - root - INFO : 响应消息: {'traceId': 'ba5b4d565b534bd5b63d02aac74bf827', 'status': 'R0001', 'msg': '系统异常', 'data': {}}

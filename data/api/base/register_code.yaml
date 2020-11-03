@@ -1,0 +1,40 @@
+# @Time  : 2020/8/19 15:30
+# @Author: LOUIE
+# @Desc  : 运营后台获取注册验证码
+
+login_operation:
+
+    desc: 【运营系统】登录运营后台
+    parameterize:
+    url: https://admin-fat.shiguangkey.com/sys/login
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+    data:
+      username: admin
+      password: admin1024
+      captcha: AAAAA
+    shared:
+    check:
+      code: 0
+
+register_code:
+
+    desc: 【运营系统】获取注册验证码
+    parameterize:
+      phoneNumber: phoneNumber
+      timestamp: timestamp
+    url: https://admin-fat.shiguangkey.com/user/set-smscode
+    method: GET
+    header:
+      cookie: $<cookie>
+    data:
+      phone: $<phoneNumber>
+      _: $<timestamp>
+    shared:
+      smsCode: smsCode
+    check:
+      status: 0
+      msg: success
+      data:
+        - in: smsCode

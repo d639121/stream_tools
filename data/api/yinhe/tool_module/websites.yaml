@@ -1,0 +1,240 @@
+# @Time  : 2020/08/06 16:41
+# @Author: Fold
+# @Desc  : 新建落地页
+
+config:
+  valueable:
+    organizationId: 1001
+
+create_website_pay:
+
+    desc: 【银河/工具/落地页工具】新建落地页-一键支付
+    parameterize:
+     websiteName: websiteName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": $<websiteName>,
+        "goodsId": 416,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kcmry3ec1go5l9l",
+        "isRecommendApp": false,
+        "submitType": 3,
+        "isSmsVerify": 1,
+        "websiteType": 1,
+        "adCreateType": 1,
+        "websiteWechatType": 1,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.0.0",
+        "compReqs": [   {
+                          "compJson": "{\"id\":\"kcmrxf4afj4414j\",\"type\":19,\"width\":375,\"height\":70,\"isFixed\":true,\"goodsName\":\"python公开课视频课\",\"goodsId\":416,\"priceText\":0.01,\"priceOrigin\":0.01,\"priceTextColor\":\"#FF0363\",\"priceTextSize\":28,\"tipText\":\"前100名活动限时价\",\"tipTextColor\":\"#666666\",\"tipTextSize\":11,\"buttonText\":\"立即购买\",\"buttonTextColor\":\"#FFFFFF\",\"buttonTextSize\":18,\"buttonBg\":\"#FF0363\",\"isOneKey\":true,\"y\":0}",
+                          "fileIds": [],
+                          "scene": 1,
+                          "type": 19
+                        }, {
+                          "compJson": "{\"id\":\"kcmrxf7pawt8u71\",\"type\":24,\"width\":375,\"height\":257,\"goodsName\":\"python公开课视频课\",\"goodsId\":0,\"goodsDesc\":null,\"goodsCover\":\"https://res.shiguangkey.com/file/201811/07/20181107094126190210027.png\",\"priceText\":0.01,\"priceOrigin\":0.01,\"phoneNo\":\"130XXXXXXXX\",\"payNo\":\"D000000000000000000\",\"isPay\":true,\"y\":0}",
+                          "fileIds": [],
+                          "scene": 2,
+                          "type": 24
+                        }, {
+                          "compJson": "{\"id\":\"kcmrxf7pltcazu2\",\"type\":13,\"width\":375,\"height\":136,\"text\":\"上课须知\\n1.本产品为特价活动课程，一经购买，概不退款，请谅解；\\n2.课程购买成功后，老师会在24小时以内通过电话、微信或短信的方式联系您，请保持联系方式畅通。\",\"fontSize\":12,\"fontWeight\":\"normal\",\"fontStyle\":\"normal\",\"textDecoration\":\"none\",\"opacity\":100,\"textAlign\":\"left\",\"letterSpacing\":0,\"lineHeight\":2,\"placeholder\":\"请输入文本内容\",\"color\":\"#999999\",\"y\":257}",
+                          "fileIds": [],
+                          "scene": 2,
+                          "type": 13
+                        }, {
+                          "compJson": "{\"id\":\"kcmrxf7oqv0p0pw\",\"type\":3,\"width\":375,\"height\":176,\"required\":true,\"value\":\"\",\"title\":\"手机 (已加密)\",\"placeholder\":\"请输入手机号码\",\"unique\":true,\"validate\":true,\"layout\":1,\"phoneCodeType\":0,\"codeTextColor\":\"#FFFFFF\",\"codeTextSize\":15,\"codeBgColor\":\"#1855FB\",\"isAbroad\":false,\"y\":0}",
+                          "fileIds": [],
+                          "scene": 3,
+                          "type": 3
+                        }, {
+                          "compJson": "{\"id\":\"kcmrxf7pxhahryk\",\"type\":24,\"width\":375,\"height\":218,\"goodsName\":\"python公开课视频课\",\"goodsId\":0,\"goodsDesc\":null,\"goodsCover\":\"https://res.shiguangkey.com/file/201811/07/20181107094126190210027.png\",\"priceText\":0.01,\"priceOrigin\":0.01,\"phoneNo\":\"130XXXXXXXX\",\"payNo\":\"D000000000000000000\",\"y\":176}",
+                          "fileIds": [],
+                          "scene": 3,
+                          "type": 24
+                        }, {
+                          "compJson": "{\"id\":\"kcmrxf7pwj33r33\",\"type\":23,\"width\":339,\"height\":71,\"buttonHeight\":45,\"text\":\"确认支付 ￥0.01\",\"textColor\":\"#FFFFFF\",\"textSize\":18,\"borderColor\":\"#FF0363\",\"borderWidth\":2,\"borderRadius\":4,\"bgColor\":\"#FF0363\",\"isDownloadApp\":false,\"isFixed\":true,\"y\":394}",
+                          "fileIds": [],
+                          "scene": 3,
+                          "type": 23
+                        }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+
+
+create_website_NotneedCaptch:
+
+    desc: 【银河/工具/落地页工具】新建落地页-空白落地页不需要验证
+    parameterize:
+     websiteName: websiteName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": $<websiteName>,
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kcolji7cllgr0ee",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "isSmsVerify": 0,
+        "websiteType": 1,
+        "adCreateType": 1,
+        "websiteWechatType": 1,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.0.0",
+        "compReqs": [   {
+                          "compJson": "{\"id\":\"kcolj5jz1vue0hy\",\"type\":3,\"width\":375,\"height\":115,\"required\":true,\"value\":\"\",\"title\":\"手机 (已加密)\",\"placeholder\":\"请输入手机号码\",\"unique\":true,\"validate\":false,\"layout\":1,\"phoneCodeType\":0,\"codeTextColor\":\"#FFFFFF\",\"codeTextSize\":15,\"codeBgColor\":\"#1855FB\",\"isAbroad\":false,\"y\":0}",
+                          "fileIds": [],
+                          "scene": 1,
+                          "type": 3
+                        }, {
+                          "compJson": "{\"id\":\"kcolj64vjygwwbi\",\"type\":8,\"width\":375,\"height\":102,\"title\":\"年龄\",\"options\":[{\"label\":\"成年\",\"isDefault\":false},{\"label\":\"未成年\",\"isDefault\":false}],\"required\":true,\"layout\":1,\"optColNum\":2,\"y\":115}",
+                          "fileIds": [],
+                          "scene": 1,
+                          "type": 8
+                        }, {
+                          "compJson": "{\"id\":\"kcolj7tqmvsgoj0\",\"type\":6,\"width\":339,\"height\":77,\"text\":\"提交\",\"textColor\":\"#FFFFFF\",\"textSize\":17,\"borderColor\":\"#1855FB\",\"borderWidth\":2,\"borderRadius\":4,\"bgColor\":\"#1855FB\",\"position\":false,\"positionBtnBgColor\":\"#1855FB\",\"isBuy\":false,\"y\":217}",
+                          "fileIds": [],
+                          "scene": 1,
+                          "type": 6
+                        }, {
+                          "compJson": "{\"id\":\"kcolj7tryu2ia4b\",\"type\":20,\"width\":375,\"img\":\"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz\",\"height\":220,\"title\":\"提交成功\",\"desc\":\"我们已收到您的反馈，感谢填写\",\"isDownloadApp\":false,\"y\":0}",
+                          "fileIds": [],
+                          "scene": 2,
+                          "type": 20
+                        }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+create_website_NeedCaptch:
+
+    desc: 【银河/工具/落地页工具】新建落地页-空白落地页需要验证
+    parameterize:
+     websiteName: websiteName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": $<websiteName>,
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kcx594r34s18uoq",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "isSmsVerify": 1,
+        "websiteType": 1,
+        "adCreateType": 1,
+        "websiteWechatType": 1,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.0.0",
+        "compReqs": [      {
+                             "compJson": "{\"id\":\"kcx58wtk471fc3t\",\"type\":3,\"width\":375,\"height\":176,\"required\":true,\"value\":\"\",\"title\":\"手机 (已加密)\",\"placeholder\":\"请输入手机号码\",\"unique\":true,\"validate\":true,\"layout\":1,\"phoneCodeType\":0,\"codeTextColor\":\"#FFFFFF\",\"codeTextSize\":15,\"codeBgColor\":\"#1855FB\",\"isAbroad\":false,\"y\":0}",
+                             "fileIds": [],
+                             "scene": 1,
+                             "type": 3
+                           }, {
+                             "compJson": "{\"id\":\"kcx58xfke5x7xrm\",\"type\":8,\"width\":375,\"height\":102,\"title\":\"年龄\",\"options\":[{\"label\":\"成年\",\"isDefault\":false},{\"label\":\"未成年\",\"isDefault\":false}],\"required\":true,\"layout\":1,\"optColNum\":2,\"y\":176}",
+                             "fileIds": [],
+                             "scene": 1,
+                             "type": 8
+                           }, {
+                             "compJson": "{\"id\":\"kcx5908gjvytg5v\",\"type\":6,\"width\":339,\"height\":77,\"text\":\"提交\",\"textColor\":\"#FFFFFF\",\"textSize\":17,\"borderColor\":\"#1855FB\",\"borderWidth\":2,\"borderRadius\":4,\"bgColor\":\"#1855FB\",\"position\":false,\"positionBtnBgColor\":\"#1855FB\",\"isBuy\":false,\"y\":278}",
+                             "fileIds": [],
+                             "scene": 1,
+                             "type": 6
+                           }, {
+                             "compJson": "{\"id\":\"kcx5908gi0o5iva\",\"type\":20,\"width\":375,\"img\":\"https://prod-qiniu-media.shiguangkey.com/FhUCXVlZjjAzQghQxr1bHT9pa3yz\",\"height\":220,\"title\":\"提交成功\",\"desc\":\"我们已收到您的反馈，感谢填写\",\"isDownloadApp\":false,\"y\":0}",
+                             "fileIds": [],
+                             "scene": 2,
+                             "type": 20
+                           }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+publish_website:
+
+    desc: 【银河/工具/落地页工具】发布落地页
+    parameterize:
+      websiteId: websiteId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "websiteId": $<websiteId>
+      }
+    shared:
+    check:
+      status: 0
+      msg: 落地页发布成功
+
+association_creativity:
+
+    desc: 【银河/工具/落地页工具】生成链接
+    parameterize:
+      websiteId: websiteId
+      websiteName: websiteName
+      adName: adName
+      creativityName: creativityName
+      creativityNo: creativityNo
+      creativityId: creativityId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "websiteId": $<websiteId>,
+        "title": $<websiteName>,
+        "releaseChannel":3,
+        "putPlanNames":[$<adName>],
+        "adType":1,
+        "adPlan":$<adName>,
+        "channel":"微信",
+        "channelId": 6,
+        "subject": "Python",
+        "subjectId": 282,
+        "baseReqs":[
+        {
+          "adCreativity": $<creativityName>,
+          "adNo": $<creativityNo>,
+          "creativityId": $<creativityId>
+        }
+        ],
+        "accountId": "wx359bdedd5d18907a",
+        "domain": "https://mz-fat.tanzhouedu.com"
+      }
+    shared:
+      creativityCode: creativityCode
+    check:
+      status: 0
+      msg: success
+      data:
+        - creativityCode
+

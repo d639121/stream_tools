@@ -1,0 +1,112 @@
+config:
+  host: https://organization-test.shiguangkey.com
+  valueable:
+    organizationId: 1001
+
+get_user_info:
+
+    desc: 【教务】获取当前登录用户信息
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/login/getUserInfo
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+    shared:
+      departmentName: deptName
+      # 注意此处因关联后面接口的organId
+      organizationId:  deptId
+      leaderName: nick
+      leaderUid: uid
+      departmentIdChain: deptIdChain
+      tanzkAccount: tanzkAccount
+    check:
+      status: 0
+      msg: success
+      data:
+        - tanzkAccount  # # 判断列表中的值是否存在于data中
+        - in: deptIdChain # 判断列表中的值是否存在于data中
+        - in: [deptName, tanzkAccount, deptIdChain]   # 判断列表中的值是否存在于data中
+        - eq: {deptName: 动漫院}   # 以键值对的形式存在，判断key:value与response中data的是否相等
+#        - tag: departmentName     # 校验动态变化的值，值必须是shared字段中的key
+
+submit_course:
+
+    desc: 【教务/VIP课程管理/管理课程】发布课程
+    parameterize:
+      title: title
+      leader: leader
+      referPrice: referPrice
+      timestamp: timestamp
+      floorPrice: floorPrice
+      discountsPrice: discountsPrice
+      organizationId: organizationId
+    url: https://www-test.shiguangkey.com/api/course/submitCourse
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+    data:
+      cateIdFk: 282
+      title: $<title>
+      coverVideo:
+      marketPhone:
+      qqNum:
+      marketWechat:
+      descrption: python测试课程简介
+      cover: file/202005/25/20200525175818284516403.png
+      qqGroups:
+      courseContent: <p>测试课程详情</p>
+      learningGoal: 测试目标
+      suitableCrowds: 测试人群
+      difficultyLevel: 1
+      courseLabel: python
+      courseServicePromise:
+      visibility: 5510
+      originalPrice: $<referPrice>
+      syllabusId:
+      relationPhone: 0
+      courseDepartmentId: $<organizationId>
+      afterSaleDepartmentalChainId: 1001-2001
+      afterDeptId: 2001
+      afterDeptName: VIP教学服务中心
+      ratioStrategySales: 0.1
+      vipRatioAfterSales: 0.05
+      effectiveTime: $<timestamp>
+      ratioAfterSales: 0.15
+      divideType: 5
+      syllabusJson: '[{"nodeName":"testsection1","order":1,"nodeType":2}]'
+      typeDicFk: 5310
+      floorPrice: $<floorPrice>
+      price: $<discountsPrice>
+      learnDuration: 60
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_verify_course:
+
+    desc: 【旧运营系统/运营管理/课程审核】查询待审核课程
+    parameterize:
+      title: title
+      leaderUid: leaderUid
+    url: https://admin-test-new.shiguangkey.com/api/course/verifyList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      courseTitle: $<title>
+      checkStatus: 1511
+      orgId: ""
+      reviewId: $<leaderUid>
+      pageSize: 10
+      pageIndex: 1
+    shared:
+    check:
+      code: 0
+      msg: OK
+
+

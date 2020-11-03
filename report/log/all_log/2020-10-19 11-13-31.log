@@ -1,0 +1,16 @@
+2020-10-19 11:13:36,491 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-19 11:13:36,491 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-19 11:13:36,491 - root - INFO : 请求方法: [- POST -]
+2020-10-19 11:13:36,492 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-19 11:13:36,492 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-19 11:13:36,650 - root - INFO : 响应消息: {'traceId': '95263de839b3438b979cde8ff121313d', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x775a510712f10d069de404e9ff1515'}}
+2020-10-19 11:13:36,651 - root - INFO : 提取变量: [ pttoken: 0x775a510712f10d069de404e9ff1515 ]
+2020-10-19 11:13:36,651 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-19 11:13:36,652 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-19 11:13:36,652 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-19 11:13:36,720 - root - INFO : 描述信息: 【银河/广告/广告创意】录入单个消费记录
+2020-10-19 11:13:36,721 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/save
+2020-10-19 11:13:36,721 - root - INFO : 请求方法: [- POST -]
+2020-10-19 11:13:36,722 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x773e5f0712f1fa1952e49a28ba06ab'}
+2020-10-19 11:13:36,722 - root - INFO : 请求正文: {'noExposure': 100, 'noClicks': 100, 'cost': 10000, 'rebates': 1, 'costDate': '$<gatherTimeStart>', 'creativityId': '113559'}
+2020-10-19 11:13:36,896 - root - INFO : 响应消息: {'traceId': '868398ea40f94a9281411c41d3c3e4bc', 'status': 'R0001', 'msg': '系统异常', 'data': {}}

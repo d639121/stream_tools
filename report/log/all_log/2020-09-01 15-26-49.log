@@ -1,0 +1,22 @@
+2020-09-01 15:26:50,007 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 15:26:50,008 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 15:26:50,008 - root - INFO : 请求方法: [- POST -]
+2020-09-01 15:26:50,008 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 15:26:50,008 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 15:26:50,209 - root - INFO : 响应消息: {'traceId': '1ec36fafe222442aa213c592f40e2b68', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x772a1b0712f1253a9524ebaa43d267'}}
+2020-09-01 15:26:50,210 - root - INFO : 提取变量: [ pttoken: 0x772a1b0712f1253a9524ebaa43d267 ]
+2020-09-01 15:26:50,210 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 15:26:50,210 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 15:26:50,210 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 15:26:50,216 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_mobile
+2020-09-01 15:26:50,216 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_mobile
+2020-09-01 15:26:50,217 - root - INFO : 正在执行Function: flow_cost_mgt_import
+2020-09-01 15:26:50,217 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 15:26:50,318 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 15:26:50,318 - root - INFO : 请求方法: [- POST -]
+2020-09-01 15:26:50,318 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=3f2163d931ebe56f048c42684e1020a8', 'token': '0x772a1b0712f1253a9524ebaa43d267', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 15:26:50,318 - root - INFO : 请求正文: b'--3f2163d931ebe56f048c42684e1020a8\r\nContent-Disposition: form-data; name="file"; filename="import_doc.doc"\r\nContent-Type: application/msword\r\n\r\n\r\n--3f2163d931ebe56f048c42684e1020a8--\r\n'
+2020-09-01 15:26:50,604 - root - INFO : 响应消息: {'traceId': '74e2cc8421314047a204dcd861131bf3', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 15:26:50,605 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 15:26:50,605 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 15:26:50,605 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

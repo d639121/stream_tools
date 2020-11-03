@@ -1,0 +1,155 @@
+config:
+  valueable:
+    organizationId: 1001
+
+flow_cost_mgt_pageList:
+
+    desc: 【预算/流量成本管理/查询】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      id: id
+      costMonth: costMonth
+      subjectId: subjectId
+      subjectName: subjectName
+    check:
+      status: 0
+      msg: success
+
+flow_cost_mgt_save:
+
+    desc: 【预算/流量成本管理/新增流量成本】
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      costMonth: 1598889600000
+      promotionerDeptIdChain: 1001-8006-8007-8008-8009
+      subjectId: 277
+      channelId: 4
+      gatherType: 1
+      putMode: 1
+      lastMonthLaunchNumber: 10000
+      lastMonthCashConsume: 1000
+      lastMonthSupplyTotal: 10000
+      lastMonthCost: 100
+      lastMonthDayAverageSupply: 1600
+      sameMonthDayAverageSupply: 10000
+      sameMonthDayAverageIncrement: 100
+      sameMonthCost: 1000
+      sameMonthDayConsume: 100
+      sameMonthSupply: 10000
+      sameMonthCashConsume: 1000
+      promotionerDeptName: 潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院
+      subjectName: C
+      channelName: 哔哩哔哩
+
+    shared:
+
+    check:
+      status: 0
+      msg: success
+
+flow_cost_mgt_import:
+
+    desc: 【预算/流量成本管理】流量成本导入
+    parameterize:
+      token: token
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+    method: POST
+    header:
+      content-type: multipart/form-data
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      file: (binary)
+    shared:
+    check:
+      status: 0
+      msg: success
+
+flow_cost_mgt_export:
+
+    desc: 【预算/流量成本管理】流量成本导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      {}
+    shared:
+    check:
+      no_check
+
+flow_cost_mgt_update:
+
+    desc: 【预算/流量成本管理/更新流量成本】
+    parameterize:
+      id: id
+      costMonth: costMonth
+      subjectId: subjectId
+      subjectName: subjectName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      id: $<id>
+      costMonth: $<costMonth>
+      promotionerDeptIdChain: 1001-8006-8007-8008-8009
+      subjectId: $<subjectId>
+      channelId: 4
+      gatherType: 2
+      putMode: 1
+      lastMonthLaunchNumber: 10000
+      lastMonthCashConsume: 1000
+      lastMonthSupplyTotal: 10000
+      lastMonthCost: 100
+      lastMonthDayAverageSupply: 1600
+      sameMonthDayAverageSupply: 10000
+      sameMonthDayAverageIncrement: 100
+      sameMonthCost: 1000
+      sameMonthDayConsume: 100
+      sameMonthSupply: 10000
+      sameMonthCashConsume: 1000
+      promotionerDeptName: 潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院
+      subjectName: $<subjectName>
+      channelName: 知乎
+    shared:
+    check:
+      status: 0
+      msg: success
+
+del_flow_cost_mgt:
+
+    desc: 【预算/流量成本管理/删除流量成本】
+    parameterize:
+      id: id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/delete
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      x-dept-id-chain: 1001-8006-8007-8008-8009
+    data:
+      ids: $<id>
+    shared:
+    check:
+      status: 0
+      msg: success

@@ -1,0 +1,22 @@
+2020-10-20 17:35:34,564 - root - ERROR : Error: 数据库连接时发生错误, 信息: (2003, "Can't connect to MySQL server on 'rm-uf63c1mgv7c7b80a4.mysql.rds.aliyuncs.com' (timed out)")
+Traceback (most recent call last):
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 571, in connect
+    **kwargs)
+  File "D:\Program Files\Python\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\Program Files\Python\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\WorkZoom\apiFlowAutoTest\common\config_db.py", line 23, in connect_db
+    self.db = pymysql.connect(host=self.host, port=int(self.port), user=self.user, password=self.password)
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "E:\WorkZoom\apiFlowAutoTest\venv\lib\site-packages\pymysql\connections.py", line 619, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'rm-uf63c1mgv7c7b80a4.mysql.rds.aliyuncs.com' (timed out)")

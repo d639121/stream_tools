@@ -1,0 +1,408 @@
+# @Time  : 2020/08/06 16:41
+# @Author: Jones
+# @Desc  : 新建落地页-手动
+config:
+  valueable:
+    organizationId: 1001
+    previewUrl: https://pre-huawei-media.shiguangkey.com/kg7pp0orb4a8d6m
+    domain: https://mz-pre.tanzhouedu.com
+
+create_qr_code:
+    desc: 【工具/落地页工具/新建落地页/手动】生成二维码，保存
+    parameterize:
+      creativityId: creativityId
+      creativityNo: creativityNo
+      ideaName: ideaName
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": "$<landingPageName>",
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kfgggwadl35zu6j",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0",
+                         "wechat": "Jones",
+                         "wechatChangeTime": 50,
+                         "creativityId": $<creativityId>,
+                         "creativityNo": $<creativityNo>,
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "channelNumber": 3250,
+                         "carrierId": 1143
+                       }],
+        "isSmsVerify": 0,
+        pageMode: 1,
+        "websiteType": 2,
+        "adCreateType": 1,
+        "websiteWechatType": 2,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.3.0",
+        "compReqs": [{
+                       "compJson": "{\"id\":\"kfgggj37c3bv3yc\",\"type\":15,\"wechatList\":[{\"imageUrl\":\"https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0\",
+                       \"wechat\":\"Jones\",\"wechatChangeTime\":50,\"creativityId\":$<creativityId>,\"creativityNo\":$<creativityNo>,
+                       \"creativityName\":\"$<ideaName>\",\"limitClickNum\":100,\"carrierName\":\"Abbey\",\"isWehub\":false,\"isCarrier\":true,
+                       \"channelId\":7,\"channelNumber\":371,\"carrierId\":296,\"disabledCarrier\":true,\"disabled\":false,\"deleted\":false}],
+                       \"width\":375,\"height\":375,\"y\":0}",
+                       "fileIds": [],
+                       "scene": 1,
+                       "type": 15
+                     }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+publish_website:
+    desc: 【工具/落地页工具/新建落地页/手动】发布落地页
+    parameterize:
+      websiteId: websiteId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/publish_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      websiteId: $<websiteId>
+    shared:
+    check:
+      status: 0
+
+add_personal_code:
+    desc: 【工具/落地页工具/新建落地页/手动】生成个人微信二维码，发布
+    parameterize:
+      creativityId: creativityId
+      creativityNo: creativityNo
+      ideaName: ideaName
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": "$<landingPageName>",
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kcrh075lhrsh12c",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://res.shiguangkey.com/promotion/2020/7/18/4b8c745717/u%3D3223803202%2C805726719%26fm%3D26%26gp%3D0.jpg",
+                         "wechat": "xy3467708161",
+                         "wechatChangeTime": 50,
+                         "creativityId": $<creativityId>,
+                         "creativityNo": $<creativityNo>,
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "carrierId": 309
+                       }],
+        "isSmsVerify": 0,
+        "websiteType": 2,
+        "adCreateType": 1,
+        "websiteWechatType": 1,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.0.0",
+        "compReqs": [{
+                       "compJson": "{\"id\":\"kcrgzoc8p54he4r\",\"type\":15,\"wechatList\":[{\"imageUrl\":\"https://res.shiguangkey.com/promotion/2020/7/18/4b8
+                       c745717/u%3D3223803202%2C805726719%26fm%3D26%26gp%3D0.jpg\",\"wechat\":\"xy3467708161\",\"wechatChangeTime\":50,\"creativityId\":$<creativityId>,
+                       \"creativityNo\":\"$<creativityNo>\",\"creativityName\":\"$<ideaName>\",\"limitClickNum\":100,\"carrierName\":\"【勿删】自动化载体\",
+                       \"isWehub\":false,\"isCarrier\":true,\"channelId\":7,\"disabledCarrier\":true,\"carrierId\":309,\"disabled\":false,\"deleted\":false}],\"width\":375,
+                       \"height\":375,\"y\":0}",
+                       "fileIds": [],
+                       "scene": 1,
+                       "type": 15
+                     }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+create_link:
+    desc: 【工具/落地页工具/新建落地页/手动】生成链接
+    parameterize:
+      websiteName: websiteName
+      websiteId: websiteId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/association_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "websiteId": $<websiteId>,
+        "title": "kuaishou",
+        "accountId": ,
+        "releaseChannel": 8,
+        "putPlanNames": ["$<websiteName>"],
+        "domain": "https://mz-fat.tanzhouedu.com"
+      }
+    shared:
+      creativityCode: creativityCode
+    check:
+      status: 0
+      msg: success
+
+query_ldy_data:
+    desc: 【工具/落地页工具/落地页数据】落地页数据列表统计查询
+    parameterize:
+      websiteId: websiteId
+      todayStartTime: todayStartTime
+      todayEndTime: todayEndTime
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website_link/list_creativity
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "websiteId": $<websiteId>,
+        "websiteCode": "",
+        "creativityCode": "",
+        "adNo": "",
+        "isTest": "",
+        "channelCode": "",
+        "subjectId": "",
+        "putMode": "",
+        "websiteName": "",
+        "submitStartTime": $<todayStartTime>,
+        "submitEndTime": $<todayEndTime>,
+        "pageNo": 1,
+        "pageSize": 10,
+        "websiteType": 2
+      }
+    shared:
+      websiteLinkId: websiteLinkId
+      url: url
+    check:
+      status: 0
+      msg: success
+
+create_pay_qr_code:
+    desc: 【工具/落地页工具/新建落地页/手动】生成带课程支付二维码，发布
+    parameterize:
+      creativityId: creativityId
+      landingPageName: landingPageName
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": "$<landingPageName>",
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kfghxz511spxufv",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://wework.qpic.cn/wwpic/989765_orW4xaA9R_2Wkt6_1600932608/0",
+                         "wechat": "Jones",
+                         "wechatChangeTime": 50,
+                         "creativityId": $<creativityId>,
+                         "creativityNo": "We1bf7ffd64494ac6b693a000f8466169",
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "channelNumber": 3250,
+                         "carrierId": 1143
+                       }],
+        "isSmsVerify": 0,
+        "pageMode": 1,
+        "websiteType": 2,
+        "adCreateType": 1,
+        "websiteWechatType": 2,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.3.0",
+        "compReqs": [{"compJson": '{"id":"kfghxrdaphhv6gl","type":15,"wechatList":[{"imageUrl":"https://wework.qpic.cn/wwpic/989765_orW4xaA9R_2Wkt6_1600932608/0","wechat":"Jones","wechatChangeTime":50,"creativityId":"$<creativityId>","creativityNo":"$<creativityNo>","creativityName":"chuangyivip","limitClickNum":100,"carrierName":"Jones","isWehub":false,"isCarrier":true,"channelId":7,"channelNumber":390,"carrierId":296,"disabledCarrier":true,"disabled":false,"deleted":false}],"width":375,"height":375,"y":0}',
+                        "fileIds": [],
+                        "scene": 1,
+                        "type": 15
+        }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+
+add_personal_code_for_tools:
+    desc: 【工具/落地页工具/新建落地页/手动】生成个人微信二维码，发布(工具使用)
+    parameterize:
+      creativityId: creativityId
+      creativityNo: creativityNo
+      ideaName: ideaName
+      landingPageName: landingPageName
+      vector: vector
+      vectorId: vectorId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "name": "$<landingPageName>",
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kcrh075lhrsh12c",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://res.shiguangkey.com/promotion/2020/7/18/4b8c745717/u%3D3223803202%2C805726719%26fm%3D26%26gp%3D0.jpg",
+                         "wechat": $<vector>,
+                         "wechatChangeTime": 50,
+                         "creativityId": $<creativityId>,
+                         "creativityNo": $<creativityNo>,
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "carrierId": $<vectorId>
+                       }],
+        "isSmsVerify": 0,
+        "websiteType": 2,
+        "adCreateType": 1,
+        "websiteWechatType": 1,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.0.0",
+        "compReqs": [{
+                       "compJson": "{\"id\":\"kcrgzoc8p54he4r\",\"type\":15,\"wechatList\":[{\"imageUrl\":\"https://res.shiguangkey.com/promotion/2020/7/18/4b8
+                       c745717/u%3D3223803202%2C805726719%26fm%3D26%26gp%3D0.jpg\",\"wechat\":\"xy3467708161\",\"wechatChangeTime\":50,\"creativityId\":$<creativityId>,
+                       \"creativityNo\":\"$<creativityNo>\",\"creativityName\":\"$<ideaName>\",\"limitClickNum\":100,\"carrierName\":\"【勿删】自动化载体\",
+                       \"isWehub\":false,\"isCarrier\":true,\"channelId\":7,\"disabledCarrier\":true,\"carrierId\":309,\"disabled\":false,\"deleted\":false}],\"width\":375,
+                       \"height\":375,\"y\":0}",
+                       "fileIds": [],
+                       "scene": 1,
+                       "type": 15
+                     }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+create_qr_code_for_tools:
+    desc: 【工具/落地页工具/新建落地页/手动】生成二维码，保存(工具使用)
+    parameterize:
+      creativityId: creativityId
+      creativityNo: creativityNo
+      ideaName: ideaName
+      landingPageName: landingPageName
+      vector: vector
+      vectorId: vectorId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": "$<landingPageName>",
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kfgggwadl35zu6j",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0",
+                         "wechat": $<vector>,
+                         "wechatChangeTime": 50,
+                         "creativityId": $<creativityId>,
+                         "creativityNo": $<creativityNo>,
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "channelNumber": 584,
+                         "carrierId": $<vectorId>
+                       }],
+        "isSmsVerify": 0,
+        pageMode: 1,
+        "websiteType": 2,
+        "adCreateType": 1,
+        "websiteWechatType": 2,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.3.0",
+        "compReqs": [{
+                       "compJson": "{\"id\":\"kfgggj37c3bv3yc\",\"type\":15,\"wechatList\":[{\"imageUrl\":\"https://wework.qpic.cn/wwpic/960110_J5MXkoF2T4KA13J_1600930134/0\",
+                       \"wechat\":\"Jones\",\"wechatChangeTime\":50,\"creativityId\":$<creativityId>,\"creativityNo\":$<creativityNo>,
+                       \"creativityName\":\"$<ideaName>\",\"limitClickNum\":100,\"carrierName\":\"Abbey\",\"isWehub\":false,\"isCarrier\":true,
+                       \"channelId\":7,\"channelNumber\":371,\"carrierId\":296,\"disabledCarrier\":true,\"disabled\":false,\"deleted\":false}],
+                       \"width\":375,\"height\":375,\"y\":0}",
+                       "fileIds": [],
+                       "scene": 1,
+                       "type": 15
+                     }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success
+
+create_landing_page_for_api:
+    desc: 【工具/落地页工具/新建落地页/手动】生成二维码，保存(工具使用)
+    parameterize:
+      websiteName: websiteName
+      vector: vector
+      vectorId: vectorId
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/website/create_website
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "name": $<websiteName>,
+        "goodsId": null,
+        "previewUrl": "https://fat-huawei-media.shiguangkey.com/kgj83rvewqrs6j6",
+        "isRecommendApp": false,
+        "submitType": 0,
+        "wechatReqs": [{
+                         "imageUrl": "https://wework.qpic.cn/wwpic/825733_CZSQHUg-SMCv0u5_1603273871/0",
+                         "wechat": $<vector>,
+                         "wechatChangeTime": 50,
+                         "creativityId": 0,
+                         "creativityNo": "",
+                         "limitClickNum": 100,
+                         "isWehub": false,
+                         "isCarrier": true,
+                         "carrierId": $<vectorId>,
+                         "channelNumber": 630
+                       }],
+        "isSmsVerify": 0,
+        "pageMode": 1,
+        "websiteType": 2,
+        "adCreateType": 2,
+        "websiteWechatType": 2,
+        "bgColor": "",
+        "bgImage": "",
+        "version": "2.5.0",
+        "compReqs": [{
+                       "compJson": "{\"id\":\"kgj7urhze978pok\",\"type\":15,\"wechatList\":[{\"imageUrl\":\"https://wework.qpic.cn/wwpic/825733_CZSQHUg-SMCv0u5_1603273871/0\",\"wechat\":\"别皱眉\",\"wechatChangeTime\":50,\"creativityId\":0,\"creativityNo\":\"\",\"creativityName\":\"\",\"limitClickNum\":100,\"carrierName\":\"别皱眉\",\"isWehub\":false,\"isCarrier\":true,\"channelId\":\"\",\"carrierId\":552,\"channelNumber\":630,\"disabled\":false,\"deleted\":false}],\"width\":375,\"height\":160,\"backgroundType\":2,\"background\":\"\",\"codeWidth\":120,\"codeLeft\":50,\"codeTop\":50,\"y\":0}",
+                       "fileIds": [],
+                       "scene": 1,
+                       "type": 15
+                     }]
+      }
+    shared:
+      websiteId: id
+    check:
+      status: 0
+      msg: success

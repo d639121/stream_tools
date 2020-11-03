@@ -1,0 +1,28 @@
+2020-10-09 09:53:02,290 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-09 09:53:02,290 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-09 09:53:02,291 - root - INFO : 请求方法: [- POST -]
+2020-10-09 09:53:02,291 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-09 09:53:02,291 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-09 09:53:02,452 - root - INFO : 响应消息: {'traceId': '89509788e3c54cbe970fa0fdd00cba19', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77c8e00712f12538a34462b9f4aca3'}}
+2020-10-09 09:53:02,453 - root - INFO : 提取变量: [ pttoken: 0x77c8e00712f12538a34462b9f4aca3 ]
+2020-10-09 09:53:02,453 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 09:53:02,453 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 09:53:02,453 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 09:53:02,453 - root - INFO : 正在执行Function: ad_plan
+2020-10-09 09:53:02,453 - root - INFO : 正在执行Function: program_info_save
+2020-10-09 09:53:02,453 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-10-09 09:53:02,454 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-10-09 09:53:02,454 - root - INFO : 请求方法: [- POST -]
+2020-10-09 09:53:02,454 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77c8e00712f12538a34462b9f4aca3'}
+2020-10-09 09:53:02,454 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划11796619', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-10-09 09:53:02,658 - root - INFO : 响应消息: {'traceId': 'b389ca8fe03744e0b79525e95705d50d', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-09 09:53:02,658 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 09:53:02,659 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 09:53:02,659 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 09:53:02,659 - root - INFO : 正在执行Function: program_pageList
+2020-10-09 09:53:02,659 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-10-09 09:53:02,659 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-10-09 09:53:02,659 - root - INFO : 请求方法: [- POST -]
+2020-10-09 09:53:02,659 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x7752400712ef2ecd2d946989b9147b'}
+2020-10-09 09:53:02,659 - root - INFO : 请求正文: {'name': '自动化计划11796619', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 1}
+2020-10-09 09:53:02,799 - root - INFO : 响应消息: {'traceId': 'f373f760654d4f0c8accad110ab28034', 'status': '110107001', 'msg': '账号未登录', 'data': {}}

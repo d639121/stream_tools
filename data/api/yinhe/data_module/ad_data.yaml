@@ -1,0 +1,65 @@
+# @Time  : 2020/8/26 15:15
+# @Author: Jones
+# @Desc  : 数据-数据统计-广告数据
+
+config:
+  valueable:
+    organizationId: 1001
+    projectName: xiaokakecheng
+
+query_ad_data:
+
+    desc: 【数据/数据统计/广告数据】查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/count/pay/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      createTimeStart: $<gatherTimeStart>
+      createTimeEnd: $<gatherTimeEnd>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_ad_data:
+
+    desc: 【数据/数据统计/广告数据】导出
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/count/pay/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      createTimeStart: $<gatherTimeStart>
+      createTimeEnd: $<gatherTimeEnd>
+    shared:
+    check:
+      no_check
+
+prepare_export_ad_data:
+
+    desc: 【数据/数据统计/广告数据】预约导出
+    parameterize:
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/count/pay/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      queryParams: {"来源日期":"2019-07-01 至 2020-08-28"}
+      createTimeStart: 1561910400000
+      createTimeEnd: $<gatherTimeEnd>
+    shared:
+    check:
+      no_check

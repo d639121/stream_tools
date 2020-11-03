@@ -1,0 +1,201 @@
+# @Author: LOUIE
+# @Desc  : 入库记录查询
+config:
+  valueable:
+    organizationId: 1001
+    deptIdChain: 1001-3003-1
+
+query_put_flow_data:
+    desc: 【流量/入库记录查询】入库记录流量数据查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningRepeat/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      creativityId: 103867 # 需要参数化 目前由于流量入库问题未解决，所以这两个参数写死了，后续需要改成以上参数化形式
+      websiteId: 3422 # 需要参数化
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+put_record_list:
+    desc: 【流量/入库记录查询】入库记录流量数据查询
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningRepeat/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherTimeStart: 1593532800000
+      gatherTimeEnd: 1598889599000
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+      customerId: id
+    check:
+      status: 0
+      msg: success
+
+no_intention_list:
+    desc: 【流量/入库记录查询】暂无意向列表
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerVague/list
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      {
+        "gatherTimeStart":$<gatherTimeStart>,
+        "gatherTimeEnd":$<gatherTimeEnd>,
+        "pageIndex":1,
+        "pageSize":20
+      }
+    shared:
+    check:
+      status: 0
+      msg: success
+
+allot_flow:
+    desc: 【流量/入库记录查询】单个分配流量
+    parameterize:
+      customerId: customerId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customer/pay/adult/allocToDept
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      deptIdChain: 1001-2001-4569-4570-4571-4572
+      customerLeaningRepeatIds: $<customerId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_adult_list:
+    desc: 【流量/入库记录查询】导出成年列表
+    parameterize:
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningRepeat/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      gatherTimeStart: $<gatherTimeStart>
+      gatherTimeEnd: $<gatherTimeEnd>
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 1
+    shared:
+    check:
+      status_code: 200
+
+export_nonage_list:
+    desc: 【流量/入库记录查询】导出未成年列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customerLeaningRepeat/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      gatherTimeStart: 1596211200000
+      gatherTimeEnd: 1598889599000
+      pageIndex: 1
+      pageSize: 20
+      isAdult: 0
+    shared:
+    check:
+      status_code: 200
+
+add_identify:
+    desc: 【流量/入库记录查询/识别词配置】增加识别词
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customer/identify/add
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      identifie: 自动化识别词Auto
+    shared:
+    check:
+      status: 0
+      msg: success
+
+edit_identify:
+    desc: 【流量/入库记录查询/识别词配置】编辑识别词
+    parameterize:
+      identifie_id: identifie_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customer/identify/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      id: $<identifie_id>
+      identifie: 自动化识别词Auto-Edit
+    shared:
+    check:
+      status: 0
+      msg: success
+
+delete_identify:
+    desc: 【流量/入库记录查询/识别词配置】删除识别词
+    parameterize:
+      identifie_id: identifie_id
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customer/identify/delete
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      id: $<identifie_id>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_identify:
+    desc: 【流量/入库记录查询/识别词配置】查询识别词
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/customer/identify/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+      identifie: 自动化识别词Auto
+    shared:
+      identifie_id: id
+    check:
+      status: 0
+      msg: success

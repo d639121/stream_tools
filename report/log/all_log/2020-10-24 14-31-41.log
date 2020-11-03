@@ -1,0 +1,54 @@
+2020-10-24 14:31:41,941 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-24 14:31:41,942 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-24 14:31:41,942 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:31:41,942 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-24 14:31:41,942 - root - INFO : 请求正文: {'account': 't0383212689', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-24 14:31:42,229 - root - INFO : 响应消息: {'traceId': '4adcc87549454b4daeecce862c1fc811', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861712, 'mobile': '', 'account': '', 'nickname': '暖和的少女花', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77b19a0712f10d09aaa498581bd251'}}
+2020-10-24 14:31:42,230 - root - INFO : 提取变量: [ pttoken: 0x77b19a0712f10d09aaa498581bd251 ]
+2020-10-24 14:31:42,231 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:31:42,231 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:31:42,231 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:31:57,569 - root - INFO : 正在执行Function: add_agent
+2020-10-24 14:31:57,569 - root - INFO : 描述信息: 【银河/账户/代理商管理】新增代理商
+2020-10-24 14:31:57,570 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/save
+2020-10-24 14:31:57,570 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:31:57,570 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77b19a0712f10d09aaa498581bd251', 'terminaltype': '4'}
+2020-10-24 14:31:57,570 - root - INFO : 请求正文: {'agencyShortName': '微信就', 'agencyName': '微信就', 'thirdAgencyCode': '21212031320351', 'channelId': '6', 'channelName': '微信'}
+2020-10-24 14:31:57,847 - root - INFO : 响应消息: {'traceId': '3400663231b1439989c9bd66d4e0edc3', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-24 14:31:57,848 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:31:57,848 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:31:57,848 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:31:57,848 - root - INFO : 正在执行Function: qry_channel_agency
+2020-10-24 14:31:57,849 - root - INFO : 描述信息: 【银河/账户/代理商管理】查询代理商
+2020-10-24 14:31:57,849 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgency/pageList
+2020-10-24 14:31:57,849 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:31:57,849 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77b19a0712f10d09aaa498581bd251', 'terminaltype': '4'}
+2020-10-24 14:31:57,849 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'thirdAgencyCode': '21212031320351'}
+2020-10-24 14:31:58,027 - root - INFO : 响应消息: {'traceId': 'c9f2217cee9744dcaca77e5473709783', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 138, 'agencyCode': 10000127, 'agencyName': '微信就', 'agencyShortName': '微信就', 'channelId': 6, 'channelName': '微信', 'bank': '-1', 'bankAccount': '-1', 'state': 1, 'creatorId': 19861712, 'creatorName': '暖和的少女花', 'creatorDeptId': 8009, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'createTime': 1603521119000, 'modifierId': None, 'modifierName': None, 'modifyTime': 1603521119000, 'isDelete': 0, 'thirdAgencyCode': '21212031320351', 'stateName': None, 'rebateNum': 0}]}}
+2020-10-24 14:31:58,028 - root - INFO : 提取变量: [ channelAgencyId: 138 ]
+2020-10-24 14:31:58,028 - root - INFO : 提取变量: [ agencyCode: 10000127 ]
+2020-10-24 14:31:58,028 - root - INFO : 提取变量: [ agencyName: 微信就 ]
+2020-10-24 14:31:58,029 - root - INFO : 提取变量: [ agencyShortName: 微信就 ]
+2020-10-24 14:31:58,029 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-10-24 14:31:58,030 - root - INFO : 提取变量: [ thirdAgencyCode: 21212031320351 ]
+2020-10-24 14:31:58,031 - root - INFO : 提取变量: [ rebateNum: 0 ]
+2020-10-24 14:31:58,031 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:31:58,032 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:31:58,032 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:32:02,984 - root - INFO : 正在执行Function: add_rebate
+2020-10-24 14:32:02,984 - root - INFO : 描述信息: 【银河/账户/代理商管理】新增返点
+2020-10-24 14:32:02,985 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/save
+2020-10-24 14:32:02,985 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:32:02,985 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77b19a0712f10d09aaa498581bd251', 'terminaltype': '4'}
+2020-10-24 14:32:02,985 - root - INFO : 请求正文: {'rebate': '1.2', 'channelAgencyId': '138', 'validDate': '1603555200000'}
+2020-10-24 14:32:03,231 - root - INFO : 响应消息: {'traceId': '8100090742bb4dfba6e134535cd8c825', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-24 14:32:03,232 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-24 14:32:03,232 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-24 14:32:03,232 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-24 14:32:03,232 - root - INFO : 正在执行Function: qry_channel_agency_rebate
+2020-10-24 14:32:03,232 - root - INFO : 描述信息: 【银河/账户/代理商管理】查询代理商返点
+2020-10-24 14:32:03,233 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyRebate/pageList
+2020-10-24 14:32:03,233 - root - INFO : 请求方法: [- POST -]
+2020-10-24 14:32:03,233 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x77b19a0712f10d09aaa498581bd251', 'terminaltype': '4'}
+2020-10-24 14:32:03,233 - root - INFO : 请求正文: {'pageIndex': 1, 'pageSize': 20, 'agencyCode': '10000127'}
+2020-10-24 14:32:03,410 - root - INFO : 响应消息: {'traceId': '4c3f68bfb9634c818e140a2ee93347cc', 'status': '0', 'msg': 'success', 'data': {'totalItem': 0, 'list': []}}

@@ -1,0 +1,18 @@
+2020-09-03 17:45:09,951 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-03 17:45:09,952 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-03 17:45:09,952 - root - INFO : 请求方法: [- POST -]
+2020-09-03 17:45:09,952 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 17:45:09,952 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-03 17:45:10,202 - root - INFO : 响应消息: {'traceId': '76d84bbabf23476798935ba2c792fdae', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77a58d0712f10d2f4144c4eade05d2'}}
+2020-09-03 17:45:10,202 - root - INFO : 提取变量: [ pttoken: 0x77a58d0712f10d2f4144c4eade05d2 ]
+2020-09-03 17:45:10,202 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-03 17:45:10,202 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-03 17:45:10,203 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-03 17:45:10,208 - root - INFO : 当前运行Case: test_add_flow_budget
+2020-09-03 17:45:10,208 - root - INFO : 正在执行Function: test_add_flow_budget
+2020-09-03 17:45:10,209 - root - INFO : 正在执行Function: add_flow_budget
+2020-09-03 17:45:10,209 - root - INFO : 描述信息: 【海川/预算管理/流量预算】新增流量预算
+2020-09-03 17:45:10,209 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/add?organizationId=8009
+2020-09-03 17:45:10,209 - root - INFO : 请求方法: [- POST -]
+2020-09-03 17:45:10,209 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x77a58d0712f10d2f4144c4eade05d2', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-03 17:45:10,209 - root - INFO : 请求正文: {'id': '', 'costMonth': datetime.date(2020, 10, 1), 'weekNum': 1, 'weekRange': '1-4', 'promotionerDeptId': 8009, 'subjectId': '509', 'putMode': 1, 'gatherType': 1, 'flowCost': '0.00', 'avgCardNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'visitorNum': 3, 'workDay': 1, 'stageCardNum': 3, 'flowExpenditure': 0, 'customerPrice': 1, 'conversionRate': 1, 'signUpNum': 3, 'performance': 3, 'roi': 0, 'applyRemark': '', 'subjectName': 'CDR', 'receiveDeptId': '', 'receiveDeptName': '', 'promotionerDeptName': '', 'subjectIdChain': '261-505-509', 'organizationId': 8009}

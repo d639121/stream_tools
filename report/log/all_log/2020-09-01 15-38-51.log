@@ -1,0 +1,32 @@
+2020-09-01 15:38:51,854 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-01 15:38:51,854 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-01 15:38:51,854 - root - INFO : 请求方法: [- POST -]
+2020-09-01 15:38:51,854 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 15:38:51,854 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-01 15:38:52,001 - root - INFO : 响应消息: {'traceId': 'dc28ba5195d847f0b39124209184ea52', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x77be300712f1253c53843938392544'}}
+2020-09-01 15:38:52,002 - root - INFO : 提取变量: [ pttoken: 0x77be300712f1253c53843938392544 ]
+2020-09-01 15:38:52,002 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-01 15:38:52,002 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-01 15:38:52,002 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 15:38:52,009 - root - INFO : 当前运行Case: test_import_flow_cost_mgt_mobile
+2020-09-01 15:38:52,009 - root - INFO : 正在执行Function: test_import_flow_cost_mgt_mobile
+2020-09-01 15:38:52,009 - root - INFO : 正在执行Function: flow_cost_mgt_import
+2020-09-01 15:38:52,010 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 15:38:52,110 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 15:38:52,110 - root - INFO : 请求方法: [- POST -]
+2020-09-01 15:38:52,110 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=d96ed8434d87acd04bab9ce15b2e1998', 'token': '0x77be300712f1253c53843938392544', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 15:38:52,110 - root - INFO : 请求正文: b'--d96ed8434d87acd04bab9ce15b2e1998\r\nContent-Disposition: form-data; name="file"; filename="import_doc.doc"\r\nContent-Type: application/msword\r\n\r\n\r\n--d96ed8434d87acd04bab9ce15b2e1998--\r\n'
+2020-09-01 15:38:52,310 - root - INFO : 响应消息: {'traceId': '7785369b973c496b9f3deb4e18bf2a48', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 15:38:52,310 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 15:38:52,310 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 15:38:52,310 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-01 15:38:52,310 - root - INFO : 正在执行Function: flow_cost_mgt_import
+2020-09-01 15:38:52,310 - root - INFO : 描述信息: 【预算/流量成本管理】流量成本导入
+2020-09-01 15:38:52,311 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/flow/cost/manage/import
+2020-09-01 15:38:52,311 - root - INFO : 请求方法: [- POST -]
+2020-09-01 15:38:52,311 - root - INFO : 请求头部: {'content-type': 'multipart/form-data; boundary=c41fcaacac87a2eb538388ff2306e432', 'token': '0x77ebc60712ef2ecf9654072a54ed0a', 'x-dept-id-chain': '1001-8006-8007-8008-8009', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-01 15:38:52,311 - root - INFO : 请求正文: b'--c41fcaacac87a2eb538388ff2306e432\r\nContent-Disposition: form-data; name="file"; filename="import_csv.csv"\r\nContent-Type: application/vnd.ms-excel\r\n\r\n\r\n--c41fcaacac87a2eb538388ff2306e432--\r\n'
+2020-09-01 15:38:52,508 - root - INFO : 响应消息: {'traceId': '99b9ccec16a145aa9f14b5b46fa94896', 'status': '999999004', 'msg': '文件类型错误。', 'data': {}}
+2020-09-01 15:38:52,509 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [999999004]
+2020-09-01 15:38:52,509 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [文件类型错误。]
+2020-09-01 15:38:52,509 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

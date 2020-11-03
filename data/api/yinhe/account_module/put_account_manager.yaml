@@ -1,0 +1,165 @@
+# @Time  : 2020/8/26 17:32
+# @Author: LOUIE
+# @Desc  : 投放账户管理
+config:
+  valueable:
+    organizationId: 1001
+
+account_pagelist:
+
+    desc: 【银河/账户/投放账户管理】账户信息列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccount/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      account_id: id
+      accountCode: accountCode
+      accountName: accountName
+    check:
+      status: 0
+      msg: success
+
+useage_pagelist:
+
+    desc: 【银河/账户/投放账户管理】使用信息列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccountUser/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+recharge_application:
+
+    desc: 【银河/账户/投放账户管理】充值申请
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccount/rechargeApply
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      id: 29
+      rechargeAmount: 101
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_account_pagelist:
+
+    desc: 【银河/账户/投放账户管理】导出 账户信息列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccount/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+    shared:
+    check:
+      status_code: 200
+
+export_useage_pagelist:
+
+    desc: 【银河/账户/投放账户管理】导出 使用信息列表
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccountUser/pageList/export
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      invalidDateBeginDate: 4102329600000
+      invalidDateEndDate: 4102329600000
+    shared:
+    check:
+      status_code: 200
+
+add_put_account:
+
+    desc: 【银河/账户/投放账户管理】新增投放账户
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccount/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      channelId: 4
+      channelName: 知乎
+      channelAgencyId: 120
+      accountCode: 1111111100
+      accountName: cx11111
+      loginAccount: 123456
+      loginPassword: 123456
+      accountType: 1
+      openAccount: aaa
+    shared:
+    check:
+      status: 0
+      msg: success
+
+associated_promoter:
+
+    desc: 【银河/账户/投放账户管理】关联推广人
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccountUser/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      promotionerDeptId: 8009
+      promotionerDeptIdChain: 1001-8006-8007-8008-8009
+      promotionerId: 19862742
+      channelAgencyAccountId: 48
+    shared:
+    check:
+      status: 0
+      msg: success
+
+add_account:
+
+    desc: 【银河/账户/投放账户管理】新建账户
+    parameterize:
+      phoneNumber: phoneNumber
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/channelAgencyAccount/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: token
+      terminaltype: '4'
+    data:
+      channelId: 2
+      channelName: 今日头条
+      channelAgencyId: 44
+      accountCode: $<phoneNumber>
+      accountName: 接口呢接口
+      loginAccount: $<phoneNumber>
+      loginPassword: 123456
+      accountType: 1
+      openAccount: 好机会
+    shared:
+    check:
+      status_code: 200

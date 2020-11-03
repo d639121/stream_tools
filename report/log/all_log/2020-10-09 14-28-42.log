@@ -1,0 +1,60 @@
+2020-10-09 14:28:44,195 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-10-09 14:28:44,195 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-10-09 14:28:44,195 - root - INFO : 请求方法: [- POST -]
+2020-10-09 14:28:44,195 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4'}
+2020-10-09 14:28:44,195 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-10-09 14:28:44,355 - root - INFO : 响应消息: {'traceId': 'a553a35183c048a68a01491480b19dc1', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x770a110712f1253fd4b4105b03ff3f'}}
+2020-10-09 14:28:44,356 - root - INFO : 提取变量: [ pttoken: 0x770a110712f1253fd4b4105b03ff3f ]
+2020-10-09 14:28:44,356 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 14:28:44,356 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 14:28:44,356 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 14:28:44,356 - root - INFO : 正在执行Function: ad_plan
+2020-10-09 14:28:44,357 - root - INFO : 正在执行Function: program_info_save
+2020-10-09 14:28:44,357 - root - INFO : 描述信息: 【银河/广告/广告计划】新增广告计划
+2020-10-09 14:28:44,357 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/info/save
+2020-10-09 14:28:44,357 - root - INFO : 请求方法: [- POST -]
+2020-10-09 14:28:44,357 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x775fb60712f1fa187cc4589af1010a'}
+2020-10-09 14:28:44,357 - root - INFO : 请求正文: {'channelId': 6, 'name': '自动化计划17334365', 'subjectId': 282, 'subjectName': 'Python', 'isTest': 0, 'putMode': 1, 'type': 1, 'gatherType': 1, 'allocInstType': 1, 'channelName': '微信'}
+2020-10-09 14:28:44,557 - root - INFO : 响应消息: {'traceId': 'b4e2d1c9705848e9abdcd8904aad16a9', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-09 14:28:44,557 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 14:28:44,557 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 14:28:44,557 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 14:28:44,557 - root - INFO : 正在执行Function: program_pageList
+2020-10-09 14:28:44,557 - root - INFO : 描述信息: 【银河/广告/广告计划】查询广告计划
+2020-10-09 14:28:44,557 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/program/pageList
+2020-10-09 14:28:44,557 - root - INFO : 请求方法: [- POST -]
+2020-10-09 14:28:44,557 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x775fb60712f1fa187cc4589af1010a'}
+2020-10-09 14:28:44,557 - root - INFO : 请求正文: {'name': '自动化计划17334365', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20, 'gatherType': 1, 'putMode': 1, 'allocInstType': 1}
+2020-10-09 14:28:44,888 - root - INFO : 响应消息: {'traceId': 'fe497e1c131346d7a3dda00ed173d9f6', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 13380, 'oldProgramId': None, 'no': '1000001451563236', 'name': '自动化计划17334365', 'type': 1, 'programName': None, 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': None, 'position': None, 'keyword': None, 'areaId': None, 'areaName': None, 'remark': None, 'isNeedCaptch': None, 'state': None, 'adMainId': None, 'channelAgencyAccountId': None, 'accountCode': None, 'adMainAccount': None, 'thirdUrl': None, 'allocInstType': 1, 'receiveDeptId': None, 'receiveDeptIdChain': None, 'isHide': 0, 'isTest': 0, 'creatorDeptId': 8009, 'creatorName': '自动化专用-勿动', 'createTime': 1602224926000, 'putMode': 1, 'updateState': 1}]}}
+2020-10-09 14:28:44,889 - root - INFO : 提取变量: [ channelId: 6 ]
+2020-10-09 14:28:44,889 - root - INFO : 提取变量: [ putMode: 1 ]
+2020-10-09 14:28:44,889 - root - INFO : 提取变量: [ adName: 自动化计划17334365 ]
+2020-10-09 14:28:44,890 - root - INFO : 提取变量: [ adId: 13380 ]
+2020-10-09 14:28:44,890 - root - INFO : 提取变量: [ type: 1 ]
+2020-10-09 14:28:44,890 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 14:28:44,890 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 14:28:44,890 - root - INFO : 校验类型: [-in]  结果: [Passed]  预期: [name]
+2020-10-09 14:28:44,890 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 14:28:44,890 - root - INFO : 正在执行Function: creativity_save
+2020-10-09 14:28:44,890 - root - INFO : 描述信息: 【银河/广告/广告计划】新建广告创意
+2020-10-09 14:28:44,890 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+2020-10-09 14:28:44,890 - root - INFO : 请求方法: [- POST -]
+2020-10-09 14:28:44,891 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x775fb60712f1fa187cc4589af1010a'}
+2020-10-09 14:28:44,891 - root - INFO : 请求正文: {'name': '自动化创意17714907', 'gatherType': 1, 'isNeedCaptch': 1, 'position': 1, 'type': '1', 'putMode': '1', 'channelId': '6', 'programId': '13380', 'programName': '自动化计划17334365'}
+2020-10-09 14:28:45,112 - root - INFO : 响应消息: {'traceId': 'b944d195b8bc4692a068701051d74139', 'status': '0', 'msg': 'success', 'data': {}}
+2020-10-09 14:28:45,112 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 14:28:45,112 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 14:28:45,112 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-10-09 14:28:45,112 - root - INFO : 正在执行Function: creativity_pageList
+2020-10-09 14:28:45,112 - root - INFO : 描述信息: 【银河/广告/广告创意】查询广告创意
+2020-10-09 14:28:45,113 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+2020-10-09 14:28:45,113 - root - INFO : 请求方法: [- POST -]
+2020-10-09 14:28:45,113 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x775fb60712f1fa187cc4589af1010a'}
+2020-10-09 14:28:45,113 - root - INFO : 请求正文: {'gatherType': 1, 'programId': '13380', 'isHide': 0, 'pageIndex': 1, 'pageSize': 20}
+2020-10-09 14:28:45,424 - root - INFO : 响应消息: {'traceId': '71805bacc79d4032bf75ad2a132eefcd', 'status': '0', 'msg': 'success', 'data': {'totalItem': 1, 'list': [{'id': 113018, 'oldCreativityId': None, 'oldProgramId': None, 'no': '745e4c253e474fc5ac7de6497dc02922', 'name': '自动化创意17714907', 'programName': '自动化计划17334365', 'subjectName': 'Python', 'subjectId': 282, 'channelName': '微信', 'channelId': 6, 'isImport': 0, 'position': '1', 'keyword': None, 'areaId': None, 'areaName': None, 'creatorName': '自动化专用-勿动', 'createTime': 1602224927000, 'remark': None, 'isNeedCaptch': 1, 'state': 2, 'adMainId': None, 'channelAgencyAccountId': None, 'accountCode': None, 'adMainAccount': None, 'thirdUrl': None, 'allocInstType': 1, 'receiveDeptId': None, 'receiveDeptIdChain': None, 'isHide': 0, 'isTest': 0, 'creatorDeptId': 8009, 'vector': None, 'customerVectorValue': None, 'followerName': None, 'followerTanzkAccount': None, 'putMode': 1, 'receptionistId': None, 'receptionistName': None, 'receptionistTanzkAccount': None, 'receptionistDeptId': None, 'receptionistDeptIdChain': None, 'creatorDeptIdChain': '1001-8006-8007-8008-8009', 'updateState': 1, 'type': 1, 'programId': 13380, 'promotionTerminal': 1, 'vectorType': None, 'channelQrCode': None, 'channelNumber': None, 'companyWechatId': None, 'vectorId': None, 'vectorName': None}]}}
+2020-10-09 14:28:45,424 - root - INFO : 提取变量: [ creativityId: 113018 ]
+2020-10-09 14:28:45,424 - root - INFO : 提取变量: [ creativityName: 自动化创意17714907 ]
+2020-10-09 14:28:45,425 - root - INFO : 提取变量: [ creativityNo: 745e4c253e474fc5ac7de6497dc02922 ]
+2020-10-09 14:28:45,425 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-10-09 14:28:45,425 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-10-09 14:28:45,425 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

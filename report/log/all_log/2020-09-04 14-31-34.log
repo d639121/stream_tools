@@ -1,0 +1,23 @@
+2020-09-04 14:31:34,982 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 14:31:34,983 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 14:31:34,983 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:31:34,983 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:31:34,983 - root - INFO : 请求正文: {'account': 't0384223793', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 14:31:35,196 - root - INFO : 响应消息: {'traceId': 'b3ecb19f44de44b8a34ccf141d7fe42e', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19862099, 'mobile': '', 'account': '', 'nickname': '日常的阿魏', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x772ccd0712f1253bd2340979728241'}}
+2020-09-04 14:31:35,197 - root - INFO : 提取变量: [ pttoken: 0x772ccd0712f1253bd2340979728241 ]
+2020-09-04 14:31:35,197 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:31:35,197 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:31:35,197 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 14:31:35,212 - root - INFO : 当前运行Case: test_qry_cost_apply_blank
+2020-09-04 14:31:35,213 - root - INFO : 正在执行Function: test_qry_cost_apply_blank
+2020-09-04 14:31:35,213 - root - INFO : 正在执行Function: qry_cost_apply
+2020-09-04 14:31:35,213 - root - INFO : 描述信息: 【预算-投放预算管理-申请记录】查询
+2020-09-04 14:31:35,213 - root - INFO : 请求地址: https://galaxy-api-fat.shiguangkey.com/api/galaxy/costApply/pageList
+2020-09-04 14:31:35,214 - root - INFO : 请求方法: [- POST -]
+2020-09-04 14:31:35,214 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'token': '0x772ccd0712f1253bd2340979728241', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 14:31:35,214 - root - INFO : 请求正文: {'pageIndex': 2, 'pageSize': 20}
+2020-09-04 14:31:35,455 - root - INFO : 响应消息: {'traceId': '8d336e45ccbd4f1fa1948f9a5b01eb72', 'status': '0', 'msg': 'success', 'data': {'totalItem': 21, 'list': [{'id': 29, 'costMonth': 1598889600000, 'promotionerDeptId': 8009, 'promotionerDeptIdChain': '1001-8006-8007-8008-8009', 'promotionerDeptName': '潭州教育>自动化测试分公司--勿动>自动化测试群--勿动>自动化测试事业部>自动化测试院', 'receiveDeptId': 7995, 'receiveDeptIdChain': '1001-7988-7993-7995', 'receiveDeptName': '潭州教育>意舟分公司>售前事业部>售前一院', 'subjectId': 269, 'subjectIdChain': '258-265-269', 'subjectName': '产品策划', 'gatherType': 1, 'putMode': 1, 'weekNum': 1, 'workRange': '1-6', 'workDay': 1, 'visitorNum': 3, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'avgCardNum': 1, 'stageCardNum': 3, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'conversionRate': 1.0, 'conversionRateStr': '100.00%', 'signUpNum': 3, 'customerPrice': 1.0, 'performance': 3.0, 'roi': 0.0, 'applyRemark': '', 'auditState': 5, 'creatorId': 19861626, 'creatorName': '绿莹莹的麦兰', 'creatorDeptId': 7995, 'creatorDeptIdChain': '1001', 'createTime': 1597483973000, 'modifierId': 19862102, 'modifierName': '鲜艳的鼠', 'modifyTime': 1597483992000}], 'summation': {'id': '', 'costMonth': '', 'promotionerDeptId': '', 'promotionerDeptIdChain': '', 'promotionerDeptName': '', 'receiveDeptId': '', 'receiveDeptIdChain': '', 'receiveDeptName': '', 'subjectId': '', 'subjectIdChain': '', 'subjectName': '', 'gatherType': '', 'putMode': '', 'weekNum': '', 'workRange': '', 'workDay': 21, 'visitorNum': 63, 'monthEntryNum': 21, 'monthUnCorrectNum': 21, 'monthCorrectNum': 21, 'avgCardNum': 21, 'stageCardNum': 63, 'flowCost': 0.0, 'flowExpenditure': 0.0, 'conversionRate': 21.0, 'conversionRateStr': '', 'signUpNum': 63, 'customerPrice': 21.0, 'performance': 63.0, 'roi': 0.0, 'applyRemark': '', 'auditState': '', 'creatorId': '', 'creatorName': '', 'creatorDeptId': '', 'creatorDeptIdChain': '', 'createTime': '', 'modifierId': '', 'modifierName': '', 'modifyTime': ''}}}
+2020-09-04 14:31:35,456 - root - INFO : 提取变量: [ budget_id: 29 ]
+2020-09-04 14:31:35,456 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 14:31:35,456 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 14:31:35,456 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 

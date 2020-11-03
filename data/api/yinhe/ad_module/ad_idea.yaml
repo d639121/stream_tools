@@ -1,0 +1,632 @@
+config:
+  valueable:
+    organizationId: 1001
+    receiveDeptName: 潭州教育>潭州课堂>运营部门-付费
+    vectorName: Jones
+    vector: jones
+    followerTanzkAccount: t0322511032
+    receiveDeptId: 1
+
+create_wc_ad_ideas:
+
+    desc: 【广告/广告计划/新增创意】创建企业微信广告创意_直线下发，普通投放模式
+    parameterize:
+      projectName: projectName
+      ideaName: ideaName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      gatherType: 3
+      vector: Jones
+      receiveDeptId: 8009
+      followerTanzkAccount: t0385252771
+      vectorType: 3
+      receiveDeptName: 潭州教育>自动化测试分公司>>勿动>自动化测试群>>勿动>自动化测试事业部>自动化测试院
+      companyWechatId: 35140
+      vectorId: 852
+      vectorName: Jones
+      type: 1
+      putMode: 1
+      channelId: 2
+      programId: $<adId>
+      programName: $<projectName>
+      channelQrCode: https://wework.qpic.cn/wwpic/237229_gOWqjeZeS6iPyds_1594782516/0
+      channelNumber: 370
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_person_wc_ad_ideas:
+
+    desc: 【广告/广告计划/新增创意】创建企业微信广告创意_个人微信
+    parameterize:
+      projectName: projectName
+      ideaName: ideaName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      gatherType: 3
+      vector: 13881425670
+      receiveDeptId: 4572
+      followerTanzkAccount: m13807380006
+      vectorType: 1
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+      vectorId: 557
+      vectorName: 自动化测试载体
+      type: 1
+      putMode: 1
+      channelId: 7
+      programId: $<adId>
+      programName: $<projectName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_ad_ideas:
+
+    desc: 【广告/广告计划/新增创意】创建广告创意
+    parameterize:
+      projectName: projectName
+      ideaName: ideaName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      isNeedCaptch: 0
+      position: asd
+      type: 1
+      putMode: 1
+      channelId: 12
+      programId: $<adId>
+      programName: $<projectName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_qq_ad_ideas:
+
+    desc: 【广告/广告计划/新增创意】创建QQ广告创意
+    parameterize:
+      adName: adName
+      ideaName: ideaName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      gatherType: 2
+      vector: 05883936
+      receiveDeptId: 4572
+#      followerTanzkAccount: m13807380006
+      vectorType: 2
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+      vectorId: 558
+      vectorName: 自动化测试载体
+      type: 1
+      putMode: 1
+      channelId: 12
+      programId: $<adId>
+      programName: $<adName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+create_personal_wechat_ad_ideas:
+
+    desc: 【广告/广告计划/新增创意】创建个人微信广告创意
+    parameterize:
+      projectName: projectName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<projectName>
+      gatherType: 3
+      vector: xy3467708161
+      receiveDeptId: 4572
+      followerTanzkAccount: m13807380006
+      vectorType: 1
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+      vectorId: 309
+      vectorName: 【勿删】自动化载体
+      type: 1
+      putMode: 1
+      channelId: 7
+      programId: $<adId>
+      programName: $<projectName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_ad_ideas_data:
+    desc: 【广告/创意/流量】广告创意流量数据查询
+    parameterize:
+      creativityId: creativityId
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherType: 3
+      id: $<creativityId>
+      startDate: $<gatherTimeStart>
+      endDate: $<gatherTimeEnd>
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_ad_ideas_id:
+    desc: 【广告/广告创意/微信流量】获取创意ID
+    parameterize:
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      programId: $<adId>
+      isHide: 0
+      gatherType: 2
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      creativityId: id
+      creativityNo: 'no'
+      programName: programName
+      newName: name
+      position: position
+      remark: remark
+    check:
+      status: 0
+      msg: success
+
+get_ad_ideas_id_for_tools:
+    desc: 【广告/广告创意/微信流量】获取创意ID(工具使用)
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<adId>
+      isHide: 0
+      gatherType: 2
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      creativityId: id
+      creativityNo: 'no'
+      vectorName: vectorName
+      vectorId: vectorId
+      vector: vector
+      channelNumber: channelNumber
+      programName: programName
+      newName: name
+      position: position
+      remark: remark
+    check:
+      status: 0
+      msg: success
+
+creativity_save:
+
+    desc: 【银河/广告/广告计划】新建广告创意
+    parameterize:
+     putMode: putMode
+     channelId: channelId
+     adId: adId
+     adName: adName
+     type: type
+     ideaName: ideaName
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      gatherType: 1
+      isNeedCaptch: 1
+      position: 1
+      type: $<type>
+      putMode: $<putMode>
+      channelId: $<channelId>
+      programId: $<adId>
+      programName: $<adName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+creativity_save_direct:
+
+    desc: 【银河/广告/广告计划】新建广告创意-直线下发分配方式的广告计划
+    parameterize:
+     ideaName: ideaName
+     putMode: putMode
+     channelId: channelId
+     adId: adId
+     adName: adName
+     type: type
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/save
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: $<ideaName>
+      gatherType: 1
+      isNeedCaptch: 1
+      position: 1
+      type: $<type>
+      putMode: $<putMode>
+      channelId: $<channelId>
+      programId: $<adId>
+      programName: $<adName>
+      receiveDeptId: 4572
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+    check:
+      status: 0
+      msg: success
+
+
+creativity_pageList:
+
+    desc: 【银河/广告/广告创意】查询广告创意
+    parameterize:
+     adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherType: 1
+      programId: $<adId>
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      creativityId: id
+      creativityName: name
+      creativityNo: 'no'
+    check:
+      status: 0
+      msg: success
+
+qry_ideals:
+
+    desc: 【银河/广告/广告创意】查询广告创意
+    parameterize:
+      creativityId: creativityId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      gatherType: 1
+      id: $<creativityId>
+      isHide: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+      creativityId: id
+      creativityName: name
+      creativityNo: 'no'
+      adName: programName
+    check:
+      status: 0
+      msg: success
+
+add_ad_data:
+
+    desc: 【银河/广告/广告创意】新增广告数据
+    parameterize:
+     creativityId: creativityId
+     gatherTimeStart: gatherTimeStart
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/save
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      noExposure: 1
+      noClicks: 1
+      cost: 1
+      rebates: 1
+      costDate: $<gatherTimeStart>
+      creativityId: $<creativityId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+get_ad_data_id:
+    desc: 【银河/广告/广告创意】获取新增广告数据id
+    parameterize:
+     creativityId: creativityId
+     gatherTimeEnd: gatherTimeEnd
+     gatherTimeStart: gatherTimeStart
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/pageList
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      startDate: $<gatherTimeStart>
+      endDate: $<gatherTimeStart>
+      pageIndex: 1
+      pageSize: 20
+      creativityId: $<creativityId>
+    shared:
+      dataId: id
+      noExposure: noExposure
+      noClicks: noClicks
+      cost: cost
+      rebates: rebates
+    check:
+      status: 0
+      msg: success
+
+change_ad_data:
+
+    desc: 【银河/广告/广告创意】修改广告数据
+    parameterize:
+     creativityId: creativityId
+     dataId: dataId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/modify
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      noExposure: 2
+      noClicks: 3
+      cost: 2
+      rebates: 1.2
+      creativityId: $<creativityId>
+      id: $<dataId>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+del_ad_data:
+
+    desc: 【银河/广告/广告创意】删除广告数据
+    parameterize:
+     dataId: dataId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/grgz/cost/del
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      id: $<dataId>
+      gatherType: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+export_idea_flow:
+    desc: 【银河/广告/广告创意】流量导出
+    parameterize:
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/exportAdCreativity
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      isHide: 0
+      gatherType: 1
+    shared:
+    check:
+      status_code: 200
+
+editor_idea_flow:
+    desc: 【银河/广告/广告创意】流量编辑
+    parameterize:
+      creativityId: creativityId
+      programName: programName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      remark: remark
+      gatherType: 1
+      isNeedCaptch: 0
+      position: weizhi
+      id: $<creativityId>
+      type: 1
+      putMode: 1
+      channelId: 1
+      programId: $<adId>
+      programName: $<programName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+editor_qq_idea_flow:
+    desc: 【银河/广告/广告创意】QQ流量编辑
+    parameterize:
+      creativityId: creativityId
+      programName: programName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      remark: remark
+      gatherType: 1
+      isNeedCaptch: 0
+#      position: weizhi
+      id: $<creativityId>
+      type: 1
+      putMode: 1
+      channelId: 1
+      programId: $<adId>
+      programName: $<programName>
+      vector: 05883936
+      receiveDeptId: 4572
+#      followerTanzkAccount: m13807380006
+      vectorType: 2
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+      vectorId: 558
+      vectorName: 自动化测试载体
+    shared:
+    check:
+      status: 0
+      msg: success
+
+editor_wechat_idea_flow:
+    desc: 【银河/广告/广告创意】微信流量编辑
+    parameterize:
+      creativityId: creativityId
+      programName: programName
+      adId: adId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/update
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      name: name
+      remark: remark
+      gatherType: 1
+      vector: 13881425670
+      receiveDeptId: 4572
+      followerTanzkAccount: m13807380006
+      vectorType: 1
+      receiveDeptName: 潭州教育>长沙分公司>rm集群>rm群>rm事业部>rm一院
+      vectorId: 557
+      vectorName: 自动化测试载体
+      id: $<creativityId>
+      type: 1
+      putMode: 1
+      channelId: 7
+      programId: $<adId>
+      programName: $<programName>
+    shared:
+    check:
+      status: 0
+      msg: success
+
+query_zt_info_for_person:
+    desc: 查询微信载体信息
+    parameterize:
+      adId: adId
+      subjectId: subjectId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/carrier
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      vectorType: 3
+      subjectId: $<subjectId>
+      programId: $<adId>
+      isEnterpriseWx: 0
+      gatherType: 3
+    shared:
+      zt_id: id
+      receiveDeptName: receiveDeptName
+      followNick: followNick
+      followTzAccount: followTzAccount
+      belongDepartmentId: belongDepartmentId
+      carrierNo: carrierNo
+      carrierName: carrierName
+    check:
+      status: 0
+      msg: success
+
+query_zt_info_for_company:
+    desc: 查询企业微信载体信息
+    parameterize:
+      adId: adId
+      subjectId: subjectId
+    url: https://galaxy-api-fat.shiguangkey.com/api/galaxy/creativity/carrier
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<token>
+    data:
+      vectorType: 3
+      subjectId: $<subjectId>
+      programId: $<adId>
+      isEnterpriseWx: 1
+      gatherType: 3
+    shared:
+      zt_id: id
+      carrierNo: carrierNo
+      carrierName: carrierName
+      companyWechatId: companyWechatId
+      receiveDeptName: receiveDeptName
+      followNick: followNick
+      followTzAccount: followTzAccount
+      belongDepartmentId: belongDepartmentId
+    check:
+      status: 0
+      msg: success
+
+qry_vector_info_for_company:
+    desc: 查询企业微信载体信息
+    parameterize:
+    url: https://luban-api-fat.shiguangkey.com/website-edit-api/carrier/search
+    method: POST
+    header:
+      content-type: application/json
+      token: $<token>
+    data:
+      carrierName: 别皱眉
+      type: 3
+    shared:
+      vectorId: id
+      carrierNo: carrierNo
+      vector: carrierName
+    check:
+      status: 0
+      msg: success

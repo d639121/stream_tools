@@ -1,0 +1,866 @@
+tradesPageList:
+
+  - caseid: 1056
+    run: YES
+    desc: 【CRM/工单管理/第三方电商订单】查询订单
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/trades/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+prePageList:
+
+  - caseid: 1057
+    run: YES
+    desc: 【CRM/工单管理/预收款列表】查询预收款订单
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/pre/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      state: 0
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+getChannel:
+
+  - caseid: 1058
+    run: YES
+    desc: 【CRM/工单管理/预收款列表】收款渠道
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/receive/channel/get
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+worksheetPageList:
+
+  - caseid: 1058
+    run: YES
+    desc: 【CRM/工单管理/工单列表】查询工单列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/worksheet/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+divideDeptPageList:
+
+  - caseid: 1059
+    run: YES
+    desc: 【CRM/工单管理/预收款列表】修改分成信息表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/edit/divideDept/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      type: 1
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+divideDeptPageListDivide:
+
+  - caseid: 1060
+    run: YES
+    desc: 【CRM/工单管理/按交易号查询】交易号查询列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/divideDept/pageListDivide
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+refundApplyPageList:
+
+  - caseid: 1061
+    run: YES
+    desc: 【CRM/工单管理/退款申请列表】查询退款申请列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+cashierPageList:
+
+  - caseid: 1062
+    run: YES
+    desc: 【CRM/工单管理/退款出纳列表】查询退款出纳列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/cashier/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      paymentState: 1
+      cashieType: 11
+      pageIndex: 1
+      pageSize: 20
+      tabType: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+worksheetLoanPageList:
+
+  - caseid: 1063
+    run: YES
+    desc: 【CRM/外联管理/工单审核列表】查询工单审核列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/loan/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      state: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+refundLoanPageList:
+
+  - caseid: 1064
+    run: YES
+    desc: 【CRM/外联管理/退款审核列表】查询退款审核列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/loan/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      state: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+refundCashierPageList:
+
+  - caseid: 1065
+    run: YES
+    desc: 【CRM/外联管理/退款出纳列表】查询退款出纳列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/cashier/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      paymentState: 1
+      cashieType: 10
+      pageIndex: 1
+      pageSize: 20
+      tabType: 2
+    shared:
+    check:
+      status: 0
+      msg: success
+
+getPayWaterHedgeInfo:
+
+  - caseid: 1066
+    run: YES
+    desc: 【CRM/财务管理/流水对冲列表】查询流水对冲列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/water/hedge/getPayWaterHedgeInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      statusType: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+auditPageList:
+
+  - caseid: 1067
+    run: YES
+    desc: 【CRM/财务管理/工单审核列表】查询工单审核列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/finance/audit/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      state: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+financePageList:
+
+  - caseid: 1068
+    run: YES
+    desc: 【CRM/财务管理/退款审核列表】查询退款审核列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/apply/finance/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      state: 91
+    shared:
+    check:
+      status: 0
+      msg: success
+
+CwCashierPageList:
+
+  - caseid: 1069
+    run: YES
+    desc: 【CRM/财务管理/退款出纳列表】查询退款出纳列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/cashier/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+      state: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+editDivideDeptPageList:
+
+  - caseid: 1070
+    run: YES
+    desc: 【CRM/财务管理/分成修改审核】查询分成修改审核列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/edit/divideDept/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 20
+      type: 2
+    shared:
+    check:
+      status: 0
+      msg: success
+
+bankStatistics:
+
+  - caseid: 1071
+    run: YES
+    desc: 【CRM/财务管理/渠道统计列表】查询渠道统计列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/finance/bank/statistics
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      payTimeStart: 1590940800000
+      payTimeEnd: 1591425375226
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+orderFinancePageList:
+
+  - caseid: 1072
+    run: YES
+    desc: 【CRM/财务管理/订单列表】查询订单列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/order/finance/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startTime: 1590854400000
+      endTime: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+tanzhouCoinStatistics:
+
+  - caseid: 1073
+    run: YES
+    desc: 【CRM/财务管理/潭州币统计列表】查询潭州币统计列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/tanzhou/coin/statistics
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+tanzhouCoinRecord:
+
+  - caseid: 1074
+    run: YES
+    desc: 【CRM/财务管理/潭州币充值记录】查询潭州币充值记录
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/tanzhou/coin/recharge/record
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      endTime: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+payRecord:
+
+  - caseid: 1075
+    run: YES
+    desc: 【CRM/财务管理/支付记录】查询支付记录
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/pay/record
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      endTime: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+waterBillsPageList:
+
+  - caseid: 1076
+    run: YES
+    desc: 【CRM/财务管理/财务流水表】查询财务流水表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/finance/waterBills/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      payStartTime: 1590940800000
+      payEndTime: 1591427971645
+      state: 1
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+getUserInfo:
+
+  - caseid: 1077
+    run: YES
+    desc: 【CRM/公共】查询当前登录用户信息
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/login/getUserInfo
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+    shared:
+    check:
+      status: 0
+      msg: success
+
+getDepartsByLevel:
+
+  - caseid: 1078
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/按转化部门统计】查询部门登记
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/report/department/getDepartsByLevel
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      level: 2
+    shared:
+    check:
+      status: 0
+      msg: success
+
+departmentList:
+
+  - caseid: 1079
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/按转化部门统计】查询按转化部门统计列表
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/department/list
+    method: POST
+    header:
+      content-type: application/x-www-form-urlencoded
+      token: $<leader>
+    data:
+      id: 1001
+    shared:
+    check:
+      status: 0
+      msg: success
+
+totalreport:
+
+  - caseid: 1080
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/按转化部门统计】查询按转化部门统计列表
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/rainbowjade/totalreport
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      deptIdChain: 1001
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+worksheetReport:
+
+  - caseid: 1081
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/部门虹之玉统计】查询实时部门虹之玉统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/rainbowjade/report
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      deptIdChain: 1001
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+collegeReport:
+
+  - caseid: 1082
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/院虹之玉统计】查询实时院虹之玉统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/college/rainbowjade/report
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      deptIdChain: 1001
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+divideDetail:
+
+  - caseid: 1083
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/部门分成明细】查询部门分成明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/dept/divide/detail
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      payStartTime: 1590940800000
+      payEndTime: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+deptDividePageList:
+
+  - caseid: 1084
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/部门退款明细】查询部门退款明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/refundDetail/deptDivide/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      isOverdue: 0
+      refundTimeStart: 1590940800000
+      refundTimeEnd: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+customerDividePageList:
+
+  - caseid: 1085
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/流量部门分成】查询流量部门分成
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/customer/divide/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      endDate: 1591459199999
+      startDate: 1591372800000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+worksheetRefundReport:
+
+  - caseid: 1086
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/按部门退款统计】查询按部门退款统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/refund/report
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      endDate: 1591431463457
+      startDate: 1591431463457
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success
+
+oneselfReport:
+
+  - caseid: 1087
+    run: YES
+    desc: 【CRM/统计列表/个人业绩统计/个人虹之玉统计】查询个人虹之玉统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/oneself/rainbowjade/report
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      deptIdChain: 1001-4530-4531
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+personDetail:
+
+  - caseid: 1088
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/流量部门分成】查询个人分成明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/person/divide/detail
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      payStartTime: 1590940800000
+      payEndTime: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+personDivideDividePageList:
+
+  - caseid: 1089
+    run: YES
+    desc: 【CRM/统计列表/部门业绩统计/个人退款明细】查询个人退款明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/refundDetail/personDivide/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      refundTimeStart: 1590940800000
+      refundTimeEnd: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+afterSaleStatisticsPageList:
+
+  - caseid: 1090
+    run: YES
+    desc: 【CRM/统计列表/科目统计/售后部门分成统计】查询售后部门分成统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/afterSale/statistics/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      deptIdChain: 1001
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+subjectStatistics:
+
+  - caseid: 1091
+    run: YES
+    desc: 【CRM/统计列表/科目统计/科目分成统计】查询科目分成统计
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/subject/statistics/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      startDate: 1590940800000
+      endDate: 1591459199999
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+incomeDetail:
+
+  - caseid: 1092
+    run: YES
+    desc: 【CRM/统计列表/科目统计/课程分成明细】查询课程分成明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/rubrotinctum/income/detail
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      payStartTime: 1590940800000
+      payEndTime: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+refundDetailStatistics:
+
+  - caseid: 1093
+    run: YES
+    desc: 【CRM/统计列表/分成明细/课程退款明细】查询课程退款明细
+    precondition:
+    parameterize:
+    url: https://work-test.shiguangkey.com/api/worksheet/report/refundDetail/statistics/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      refundTimeStart: 1590940800000
+      refundTimeEnd: 1593446400000
+      pageIndex: 1
+      pageSize: 20
+      tab: 0
+    shared:
+    check:
+      status: 0
+      msg: success
+
+departmentlist:
+
+  - caseid: 1094
+    run: YES
+    desc: 【CRM/统计列表/人员管理/组织架构】查询组织架构列表
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/department/list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      state: 1
+    shared:
+    check:
+      status: 0
+      msg: success
+
+employeeList:
+
+  - caseid: 1095
+    run: YES
+    desc: 【CRM/统计列表/人员管理/员工管理】查询员工管理列表
+    precondition:
+    parameterize:
+    url: https://organization-test.shiguangkey.com/api/organization/employee/pageList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      deptId: 4531
+      pageIndex: 1
+      pageSize: 20
+    shared:
+    check:
+      status: 0
+      msg: success

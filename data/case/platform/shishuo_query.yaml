@@ -1,0 +1,1034 @@
+queryByTeacherForWeb1:
+
+  - caseid: 1001
+    run: YES
+    desc: 【师说/VIP课程管理/管理课程】查询我的课程
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/course/queryByTeacherForWeb
+    method: GET
+    header:
+    data:
+      status: 2
+      pageIndex: 1
+      pageSize: 10
+      courseType: 5310
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - count
+        - courses
+
+
+queryNeedCheck1:
+
+  - caseid: 1002
+    run: YES
+    desc: 【师说/VIP课程管理/管理课程】查询待审核课程
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/course/queryNeedCheck
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      status: 1
+      courseSource:
+      attrtag: 0
+      courseType: 5310
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - count
+        - courses
+
+
+pageListClassesByCourseId:
+
+  - caseid: 1003
+    run: YES
+    desc: 【师说/VIP课程管理/班期管理】查询VIP课程班期
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/class/pageListClassesByCourseId
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      status: 0
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: ""
+      data:
+        - totalItem
+        - list
+
+
+queryByTeacherForWeb2:
+
+  - caseid: 1004
+    run: YES
+    desc: 【师说/公开课管理管理/管理课程】查询我的课程
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/course/queryByTeacherForWeb
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      current: 1
+      attrtag: 0
+      difficultyLevel: -1
+      courseType: 5311
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - count
+        - courses
+
+
+queryNeedCheck2:
+
+  - caseid: 1005
+    run: YES
+    desc: 【师说/公开课管理管理/管理课程】查询待审核课程
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/course/queryNeedCheck
+    method: GET
+    header:
+    data:
+      attrtag: 0
+      difficultyLevel: -1
+      pageIndex: 1
+      status: 1
+      pageSize: 10
+      courseType: 5311
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - count
+        - courses
+
+
+getMaterialPackageList:
+
+  - caseid: 1006
+    run: YES
+    desc: 【师说/公开课管理管理/资料包管理】查询列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/materialPackage/getMaterialPackageList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - materialPackages
+        - results
+        - totalCount
+
+
+pageListChapterInteractVideos:
+
+  - caseid: 1007
+    run: YES
+    desc: 【师说/上课视频管理】查询列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/chapterInteractVideo/pageListChapterInteractVideos
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      videoType: videoId
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - chapterInteractVideos
+        - results
+        - totalCount
+
+
+listStudents:
+
+  - caseid: 1008
+    run: YES
+    desc: 【师说/学员管理/学员管理列表】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/student/listStudents
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      submitStartTime: '2020-06-10 00:00:00'
+      submitEndTime: '2020-06-10 23:59:59'
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+coursePackage_list:
+
+  - caseid: 1009
+    run: YES
+    desc: 【师说/套餐管理/套餐列表】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/coursePackage/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      unshelve:
+      title:
+      order:
+      indexName:
+      setTime: '2020-06-10T02:08:12.901Z'
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - coursePackages
+        - results
+
+
+manage_vipClass:
+
+  - caseid: 1010
+    run: YES
+    desc: 【师说/学员数据管理/随堂练习】查询VIP课随堂练习列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/practice/backStage/manage/vipClass
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - courseList
+
+
+manage_publicClass:
+
+  - caseid: 1011
+    run: YES
+    desc: 【师说/学员数据管理/随堂练习】查询公开课课随堂练习列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/practice/backStage/manage/publicClass
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - courseList
+
+
+listCourserInfo:
+
+  - caseid: 1012
+    run: YES
+    desc: 【师说/学员数据管理/作业管理】查询直播课作业列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/manage/listCourserInfo
+    method: GET
+    header:
+    data:
+      pageSize: 10
+      pageIndex: 1
+      courseStatus: 1
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - listCourse
+
+
+listVideoCourserInfo:
+
+  - caseid: 1013
+    run: NO
+    desc: 【师说/学员数据管理/作业管理】查询录播课作业列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/manage/listVideoCourserInfo
+    method: GET
+    header:
+    data:
+      pageSize: 10
+      pageIndex: 1
+      courseStatus: 1
+      tabIndex: 2
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - listCourse
+
+
+listChapterInfoByPage:
+
+  - caseid: 1014
+    run: YES
+    desc: 【师说/学员数据管理/作业管理】按作业查询统计
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/listChapterInfoByPage
+    method: GET
+    header:
+    data:
+      pageSize: 10
+      pageIndex: 1
+      classId: 25641
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+listClassStudentStatisticsByPage:
+
+  - caseid: 1015
+    run: YES
+    desc: 【师说/学员数据管理/作业管理】按学员查询统计
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/listClassStudentStatisticsByPage
+    method: GET
+    header:
+    data:
+      serviceLevel: 0
+      type: 1
+      pageSize: 10
+      pageIndex: 1
+      classId: 25641
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+classHomeworkPage:
+
+  - caseid: 1016
+    run: YES
+    desc: 【师说/学员数据管理/作业管理】查询指定课程的作业列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/manage/classHomeworkPage
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      classId: 25641
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+manage_list:
+
+  - caseid: 1017
+    run: YES
+    desc: 【师说/学员数据管理/评测管理】查询评测列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/teacher/manage/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      state:
+      title:
+      setTime: '2020-06-10T02:58:44.258Z'
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+
+
+manage_detail:
+
+  - caseid: 1018
+    run: YES
+    desc: 【师说/学员数据管理/评测管理】查询指定评测详情
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/teacher/manage/detail
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - title
+        - questionList
+
+
+manage_getReviewList:
+
+  - caseid: 1019
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/批阅】查询批阅列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/teacher/manage/getReviewList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+      state: 0
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+
+
+manage_evaluationInfo:
+
+  - caseid: 1020
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/数据统计】查询指定评测基础信息
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/statistics/manage/evaluationInfo
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - title
+        - pusherName
+
+
+manage_evaluationScoreProportion:
+
+  - caseid: 1021
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/数据统计】查询分值和人数统计
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/statistics/manage/evaluationScoreProportion
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+
+
+manage_questionScoreProportion:
+
+  - caseid: 1022
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/数据统计】查询各题得分统计
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/statistics/manage/questionScoreProportion
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+
+
+getEvaluationAnswerStatistics:
+
+  - caseid: 1023
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/数据统计】查询答卷统计
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/statistics/manage/getEvaluationAnswerStatistics
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      evaluationId: 5ee07743b47c1b38c33c2f6e
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - evaluationId
+        - list
+
+
+manage_userStatistics:
+
+  - caseid: 1024
+    run: YES
+    desc: 【师说/学员数据管理/评测管理/数据统计】查询用户统计
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/evaluation/statistics/manage/userStatistics
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      pageSize: 10
+      evaluationId: '5ee07743b47c1b38c33c2f6e'
+      qryType: 0
+      state: ''
+      pageIndex: 1
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+
+
+qryAttendCourseInfos:
+
+  - caseid: 1025
+    run: YES
+    desc: 【师说/学员数据管理/考勤管理】查询考勤课程列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/attendance/qryAttendCourseInfos
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      unshelve: 1410
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: ""
+      data:
+        - totalItem
+        - list
+
+
+attendance_list:
+
+  - caseid: 1026
+    run: YES
+    desc: 【师说/学员数据管理/考勤管理/查看考勤】查询指定考勤列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/attendance/list
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      courseId: 19330  #
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+queryPackagePageList:
+
+  - caseid: 1027
+    run: YES
+    desc: 【师说/订单管理/录播套餐交易明细】查询列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/order/queryPackagePageList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      startTime: 1590940800000
+      endTime: 1591772839371
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+queryQualityCoursePageList:
+
+  - caseid: 1028
+    run: YES
+    desc: 【师说/订单管理/录播课程交易明细】查询列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/order/queryQualityCoursePageList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      courseId: 6911  # 此处要替换参数
+      startTime: 1590940800000
+      endTime: 1591773050337
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+order_qryOrders:
+
+  - caseid: 1029
+    run: YES
+    desc: 【师说/订单管理/学员订单】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/order/qryOrders
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      startTime: 1591200000000
+      endTime: 1591804799000
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      data:
+        - totalItem
+        - list
+
+
+present_list:
+
+  - caseid: 1030
+    run: YES
+    desc: 【师说/赠送管理/赠品管理】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/present/list
+    method: GET
+    header:
+    data:
+      pageSize: 10
+      pageIndex: 1
+      submitTime: 1591773341496
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+getPresentStati:
+
+  - caseid: 1031
+    run: YES
+    desc: 【师说/赠送管理/赠品统计】查询列表
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/present/getPresentStati
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      month: 2020-06
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+record_list:
+
+  - caseid: 1032
+    run: YES
+    desc: 【师说/赠送管理/赠品记录】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/present/record/list
+    method: GET
+    header:
+    data:
+      orderStatus: 1111
+      present: 3
+      presentType: 1
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+cate_listCateStats:
+
+  - caseid: 1033
+    run: YES
+    desc: 【师说/统计/作业统计】查询概述
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/cate/listCateStats
+    method: GET
+    header:
+    data:
+      cateId: 277
+      yearMonth: 2020-06
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+
+
+listCourseHomeWorkStats:
+
+  - caseid: 1034
+    run: YES
+    desc: 【师说/统计/作业统计】查询课程作业统计数据
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/cate/listCourseHomeWorkStats
+    method: GET
+    header:
+    data:
+      cateId: 277
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - list
+        - totalItem
+
+
+class_listStatistics:
+
+  - caseid: 1035
+    run: YES
+    desc: 【师说/统计/作业统计/查看详情】查询概述
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/class/listStatistics
+    method: GET
+    header:
+    data:
+      classId: 5996
+      yearMonth: 2020-06
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - classStats
+
+
+listStudentClassStatsPage:
+
+  - caseid: 1036
+    run: YES
+    desc: 【师说/统计/作业统计/查看详情】查询学员作业数据统计
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/class/listStudentClassStatsPage
+    method: GET
+    header:
+    data:
+      classId: 5996
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+listHomeworkStats:
+
+  - caseid: 1037
+    run: YES
+    desc: 【师说/统计/作业统计/查看详情】查询班期作业数据统计
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/homework/statistics/class/listHomeworkStats
+    method: GET
+    header:
+    data:
+      classId: 5996
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+course_list:
+
+  - caseid: 1038
+    run: YES
+    desc: 【师说/课程评分管理/课程评分统计】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/scoring/statistics/course/list
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      teachingMethod: 8010
+      courseTypeDic: 5311
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+chapter_list:
+
+  - caseid: 1039
+    run: YES
+    desc: 【师说/课程评分管理/课程评分统计/课时评分】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/scoring/statistics/course/chapter/list
+    method: GET
+    header:
+    data:
+      pcourseId: 4839
+      courseClassId: 17889
+      pageSize: 10
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+listStaff:
+
+  - caseid: 1040
+    run: YES
+    desc: 【师说/账号管理/账号设置】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/teacher/department/listStaff
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      roleIds:
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalItem
+        - list
+
+
+questions:
+
+  - caseid: 1041
+    run: YES
+    desc: 【师说/账号管理/账号设置】查询列表
+    precondition:
+    parameterize:
+      partner: partner
+    url: https://www-test.shiguangkey.com/api/questionbank/questions
+    method: GET
+    header:
+    data:
+      bindMark: 1
+      keyword:
+      pageIndex: 1
+      pageSize: 10
+      terminalType: 4
+      token: $<partner>
+    shared:
+    check:
+      status: 0
+      msg: "success"
+      data:
+        - totalCount
+        - list

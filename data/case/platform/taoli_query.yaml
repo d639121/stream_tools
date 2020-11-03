@@ -1,0 +1,1308 @@
+pageListClassesByCourseId:
+
+  - caseid: 1001
+    run: YES
+    desc: 【桃李/班期管理/班期列表】班期管理列表
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/class/pageListClassesByCourseId
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      hideFooter: 1
+      hideHeader: 1
+      hideMenu: 1
+      system: taoli
+      token: $<leader>
+      pageIndex: 1
+      pageSize: 10
+      status: 0
+      terminalType: 4
+    shared:
+    check:
+      status: 0
+      msg: ""
+      data:
+        - teacherName
+        - courseId
+        - title
+
+getClassById:
+
+  - caseid: 1002
+    run: YES
+    desc: 【桃李/班期管理/班期列表】编辑班期
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/class/getClassById
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      classId: 25201
+      terminalType: 4
+      token: "$<leader>"
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - courseTitle
+        - userIdFk
+        - nick
+
+studentList:
+
+  - caseid: 1003
+    run: YES
+    desc: 【桃李/班期管理/班期列表】学员管理
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/studentManage/studentList
+    method: POST
+    header:
+      content-type: application/json
+      terminaltype: "4"
+      token: $<leader>
+    data:
+      {
+        "pageSize": 10,
+        "pageIndex": 1,
+        "courseId": "9574",
+        "classId": "24690"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - studentName
+        - courseTitle
+        - studentId
+
+queryFirstCallList:
+
+  - caseid: 1004
+    run: YES
+    desc: 【桃李/学员通信录】新生首次沟通列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/studentAddrBook/queryFirstCallList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+
+queryScheduleList:
+
+  - caseid: 1005
+    run: YES
+    desc: 【桃李/学员通讯录】学员列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/studentAddrBook/queryScheduleList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+listStudents:
+
+  - caseid: 1006
+    run: YES
+    desc: 【桃李/学员管理】学员列表
+    precondition:
+    parameterize:
+      todayStartTime: todayStartTime
+      todayEndTime: todayEndTime
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/student/listStudents
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      submitStartTime: $<todayStartTime>
+      submitEndTime: $<todayEndTime>
+      hideFooter: 1
+      hideHeader: 1
+      hideMenu: 1
+      system: taoli
+      token: $<leader>
+      timeType: -1
+      isAddFriend: -1
+      isArrears: -1
+      education: -1
+      isEnrol: -1
+      isNeedEnrol: -1
+      buyType: -1
+      enrolEndTime:
+      enrolStartTime:
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - courseName
+        - courseId
+        - enrolTime
+
+myTeachList:
+
+  - caseid: 1007
+    run: YES
+    desc: 【桃李/我的授课表】我的授课表-课程表-全部课程
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/courses/myTeachList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 12
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+
+myTeachChapterList:
+
+  - caseid: 1008
+    run: YES
+    desc: 【桃李/我的授课表】我的授课表-课程表-我的课程
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/courses/myTeachChapterList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+
+getLoginStaffInfo:
+
+  - caseid: 1009
+    run: YES
+    desc: 【桃李/我的授课表】我的授课表-查登陆人所属组织信息
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/staff/getLoginStaffInfo
+    method: GET
+    header:
+    data:
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryAttendCourseInfos:
+
+  - caseid: 1010
+    run: YES
+    desc: 【桃李/考勤管理】查询考勤列表
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/attendance/qryAttendCourseInfos
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      unshelve: 1410
+      hideFooter: 1
+      hideHeader: 1
+      hideMenu: 1
+      system: taoli
+      token: $<leader>
+      terminalType: 4
+    shared:
+    check:
+      msg: ""
+      status: 0
+      data:
+        - title
+        - totalItem
+
+qryPeriodListByCourse:
+
+  - caseid: 1011
+    run: YES
+    desc: 【桃李/考勤管理】查询考勤列表-查班期考勤
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/teacher/public/qryPeriodListByCourse
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      courseId: 4498
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - classId
+
+listStatsByChapter:
+
+  - caseid: 1012
+    run: YES
+    desc: 【桃李/考勤管理】查询考勤列表-查考勤明细(按课时)
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/attendance/listStatsByChapter
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - chapterId
+        - chapterTitle
+
+listStatsByStudent:
+
+  - caseid: 1013
+    run: YES
+    desc: 【桃李/考勤管理】查询考勤列表-查考勤明细(按学员)
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/attendance/listStatsByStudent
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10,
+        "studentInfo": "",
+        "studentType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - userId
+        - account
+        - nickname
+
+attendanceList:
+
+  - caseid: 1014
+    run: YES
+    desc: 【桃李/考勤管理】查考勤接口
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/attendance/list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10,
+        "studentInfo": "",
+        "studentType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+visitPageList:
+
+  - caseid: 1015
+    run: YES
+    desc: 【桃李/售后回访】售后回访-待处理接口
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visit/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10,
+        "studentInfo": "",
+        "studentType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+visitPageList2:
+
+  - caseid: 1016
+    run: YES
+    desc: 【桃李/售后回访】售后回访-暂不处理接口
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visit/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10,
+        "studentInfo": "",
+        "studentType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+queryHandledTaskByPage:
+
+  - caseid: 1017
+    run: YES
+    desc: 【桃李/售后回访】售后回访-已处理接口
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visit/queryHandledTaskByPage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      {
+        "classId": "17492",
+        "courseId": "4498",
+        "pageIndex": 1,
+        "pageSize": 10,
+        "studentInfo": "",
+        "studentType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+queryEnrolQueue:
+
+  - caseid: 1018
+    run: YES
+    desc: 【桃李/入学管理】入学接待查询列表
+    precondition:
+    parameterize:
+      setTime: setTime
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/query
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      courseType: 0
+      autoVisitStatus:
+      taskStatus:
+      dialingStatus:
+      status: 0
+      setTime: $<setTime>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+quiteList:
+
+  - caseid: 1019
+    run: YES
+    desc: 【桃李/入学管理】学前休学查询列表
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/quitSchool/quiteList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageIndex: 1
+      pageSize: 10
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getContractList:
+
+  - caseid: 1020
+    run: YES
+    desc: 【桃李/入学管理】待发合同查询列表
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/contract/getContractList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageSize: 10
+      pageIndex: 1
+      statusType: 0
+      status: 0
+      token: $<leader>
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+
+handleList:
+
+  - caseid: 1021
+    run: YES
+    desc: 【桃李/入学管理】桃李暂不办理查询列表
+    precondition:
+    parameterize:
+      leader: leader
+      setTime: setTime
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/handleList
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      hideFooter: 1
+      hideHeader: 1
+      hideMenu: 1
+      system: taoli
+      token: $<leader>
+      status: 0
+      setTime: $<setTime>
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - totalNum
+        - totalPage
+
+enrolQueueHandleRecordList:
+
+  - caseid: 1022
+    run: YES
+    desc: 【桃李/入学管理】桃李办理记录列表
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueueHandleRecord/list
+    method: GET
+    header:
+    data:
+      hideFooter: 1
+      hideHeader: 1
+      hideMenu: 1
+      system: taoli
+      token: $<leader>
+      buyType: 0
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - pageIndex
+        - totalItem
+        - totalPage
+
+qryOrders:
+
+  - caseid: 1023
+    run: NO
+    desc: 【桃李/我的订单】订单查询
+    precondition:
+    parameterize:
+      leader: leader
+      gatherTimeStart: gatherTimeStart
+      gatherTimeEnd: gatherTimeEnd
+    url: https://www-test.shiguangkey.com/api/teacher/order/qryOrders
+    method: GET
+    header:
+    data:
+      pageIndex: 1
+      pageSize: 10
+      startTime: $<gatherTimeStart>
+      endTime: $<gatherTimeEnd>
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg:
+      status: 0
+      data:
+        - orderId
+        - totalItem
+        - totalPage
+
+getStudentOrderDetail:
+
+  - caseid: 1024
+    run: YES
+    desc: 【桃李/我的订单】查询学员详细信息
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/order/getStudentOrderDetail
+    method: GET
+    header:
+    data:
+      orderId: 109325
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - orderDetail
+        - orderNo
+        - orderStatus
+
+showMenu:
+
+  - caseid: 1025
+    run: YES
+    desc: 【桃李/公共】查询所有菜单
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/teacher/menu/showMenu
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getAllIntention:
+
+  - caseid: 1026
+    run: YES
+    desc: 【桃李/公共】查询所有Intention
+    precondition:
+    parameterize:
+    url: https://www-test.shiguangkey.com/api/coursePackage/getAllIntention
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getMine:
+
+  - caseid: 1027
+    run: YES
+    desc: 【桃李/公共】查询当前系统用户信息
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/udb/user/mine
+    method: GET
+    header:
+      token: $<leader>
+      terminaltype: "4"
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - uid
+        - account
+        - nickname
+
+getReqId:
+
+  - caseid: 1028
+    run: YES
+    desc: 【桃李/公共】getReqId
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/idempotency/getReqId
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+      data:
+        - idempotencyId
+
+qryUntreatedComplaints:
+
+  - caseid: 1029
+    run: YES
+    desc: 【桃李/投诉退款/认领】查询异动单
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/waitDeal/qryUntreatedComplaints
+    method: POST
+    header:
+      content-type: application/json
+      token: $<leader>
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "hideFooter": "1",
+        "hideHeader": "1",
+        "hideMenu": "1",
+        "system": "taoli",
+        "token": "$<leader>"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryComplaintReason:
+
+  - caseid: 1030
+    run: YES
+    desc: 【桃李/投诉退款/认领】查询所有异动原因
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/taskDeal/qryComplaintReason
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+listAllRole:
+
+  - caseid: 1031
+    run: YES
+    desc: 【桃李/投诉退款】查询角色信息
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/role/listAllRole
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 200
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryDealingComplaints:
+
+  - caseid: 1032
+    run: YES
+    desc: 【桃李/投诉退款】查询所有处理异动单
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/inDeal/qryDealingComplaints
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "1",
+        "hideFooter": "1",
+        "hideHeader": "1",
+        "hideMenu": "1",
+        "system": "taoli",
+        "token": "$<leader>"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryPendingRefund:
+
+  - caseid: 1033
+    run: YES
+    desc: 【桃李/投诉退款/退款】查询待退款单
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/refund/qryPendingRefund
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":10,
+        "queryDealingStatus":"1",
+        "approveUserId":"",
+        "queryDealTimeType":"1",
+        "dealTaskUserId":"",
+        "complaintReasonType":"",
+        "complaintReasonSubdivide":"",
+        "userType":"1",
+        "approveUserIdType":"1",
+        "userInfoType":""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryRefundTabNum:
+
+  - caseid: 1034
+    run: YES
+    desc: 【桃李/投诉退款/退款】qryRefundTabNum
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/refund/qryRefundTabNum
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryInRefund:
+
+  - caseid: 1035
+    run: YES
+    desc: 【桃李/投诉退款/退款】查询退款中订单
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/refund/qryInRefund
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "2"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryFinishRefund:
+
+  - caseid: 1036
+    run: YES
+    desc: 【桃李/投诉退款/退款】查询已退款订单
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/refund/qryFinishRefund
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "3"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryDealingComplaintss:
+
+  - caseid: 1037
+    run: YES
+    desc: 【桃李/投诉退款/处理】查询待处理订单
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/inDeal/qryDealingComplaints
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "1",
+        "hideFooter": "1",
+        "hideHeader": "1",
+        "hideMenu": "1",
+        "system": "taoli",
+        "token": "$<leader>",
+        "headmasterId": "",
+        "creatorId": "",
+        "dealDistributeId": "",
+        "complaintReasonType": "",
+        "complaintReasonSubdivide": "",
+        "dealDistributeIdType": "1",
+        "creatorIdType": "1",
+        "userInfoType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryPendingRefundInDeal:
+
+  - caseid: 1038
+    run: YES
+    desc: 【桃李/投诉退款/处理】查询待退款订单
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/inDeal/qryPendingRefund
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "3",
+        "approveUserId": "",
+        "queryDealTimeType": "1",
+        "complaintReasonType": "",
+        "complaintReasonSubdivide": "",
+        "dealTaskUserId": "",
+        "dealTaskUserIdType": "1",
+        "approveUserIdType": "1",
+        "userInfoType": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryRejectApproveForInDealList:
+
+  - caseid: 1039
+    run: YES
+    desc: 【桃李/投诉退款/处理】查询审核不通过订单
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qryRejectApproveForInDealList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "queryDealingStatus": "4"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryFinishComplaints:
+
+  - caseid: 1040
+    run: YES
+    desc: 【桃李/投诉退款/处理记录】查询处理记录
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/finishDeal/qryFinishComplaints
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":10,
+        "approveUserId":"",
+        "distributeId":"",
+        "creatorId":"",
+        "complaintReasonType":"",
+        "complaintReasonSubdivide":"",
+        "dealCountType":"1",
+        "userType":"1",
+        "creatorIdType":"1",
+        "approveUserIdType":"1",
+        "userInfoType":""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getProfileDetail:
+
+  - caseid: 1041
+    run: YES
+    desc: 【桃李/投诉退款/处理记录】查询处理记录详情
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/vipProfile/getProfileDetail
+    method: GET
+    header:
+    data:
+      userId: 19845739
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qrySallersApproveList:
+
+  - caseid: 1042
+    run: YES
+    desc: 【桃李/投诉退款/审核】查询待售前售后审核
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qrySallersApproveList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "tabIndex": "1",
+        "userInfoType": "2",
+        "dealTaskUserIdType": "1",
+        "dealTaskUserId": "",
+        "queryDealTimeType": "1",
+        "dealCountType": "",
+        "approveUntreatedUserIdType": "1",
+        "approveUntreatedUserId": "",
+        "complaintReasonType": "",
+        "complaintReasonSubdivide": ""
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryRiskApproveList:
+
+  - caseid: 1043
+    run: NO
+    desc: 【桃李/投诉退款/审核】查询待风控审核
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qryRiskApproveList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex": 1,
+        "pageSize": 10,
+        "tabIndex": "2"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryRejectApproveList:
+
+  - caseid: 1044
+    run: YES
+    desc: 【桃李/投诉退款/审核】查询审核不通过页面
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/complaintRefund/applyManager/qryRejectApproveList
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        "pageIndex":1,
+        "pageSize":10,
+        "tabIndex":"3"
+      }
+    shared:
+    check:
+      msg: success
+      status: 0
+
+visitpageList:
+
+  - caseid: 1045
+    run: YES
+    desc: 【桃李/售后服务/售后回访】售后回访查询
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visit/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      taskStatus: 1
+      setTime: '2020-05-26T07:15:09.926Z'
+    shared:
+    check:
+      msg: success
+      status: 0
+
+rulePageList:
+
+  - caseid: 1046
+    run: YES
+    desc: 【桃李/售后服务/回访配置】回访配置查询
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visit/rule/pageList
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      pageIndex: 1
+      pageSize: 10
+      visitWay: 0
+      courseAttribute:
+      courseLabel:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+queryStatus:
+
+  - caseid: 1047
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/enrolQueue/status/query
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      orderIds: 103618
+    shared:
+    check:
+      msg: success
+      status: 0
+
+enrolorderinfo:
+
+  - caseid: 1048
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teach/enrolqueue/enrolorderinfo/query
+    method: GET
+    header:
+    data:
+      orderId: 103619
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+qryOrderInfo:
+
+  - caseid: 1049
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://www-test.shiguangkey.com/api/teacher/contract/qryOrderInfo
+    method: GET
+    header:
+    data:
+      orderId: 103619
+      worksheetId: 0
+      terminalType: 4
+      token: $<leader>
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getVisitAutoInfo:
+
+  - caseid: 1050
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/visitAuto/getVisitAutoInfo
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      orderNo: D703303414909505536
+      userId: 9112659
+      orderId: 103619
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getContractDetail:
+
+  - caseid: 1051
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理/签订合同
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/contract/getDetail
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      orderId: 103619
+    shared:
+    check:
+      msg: success
+      status: 0
+
+getContract:
+
+  - caseid: 1052
+    run: YES
+    desc: 【桃李/入学管理/入学接待】去办理/预览合同
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/contract/getContract
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      id: 11796
+    shared:
+    check:
+      msg: success
+      status: 0
+
+permissionAnomalyList:
+
+  - caseid: 1053
+    run: YES
+    desc: 【桃李/入学管理/合同关联】查询合同列表
+    precondition:
+    parameterize:
+      leader: leader
+    url: https://open-test.shiguangkey.com/api/afterSales/permissionAnomaly/list
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/x-www-form-urlencoded
+    data:
+      pageSize: 10
+      pageIndex: 1
+      statusType: 0
+      status: 0
+      token: $<leader>
+      terminalType: 4
+    shared:
+    check:
+      msg: success
+      status: 0
+
+unhandleList:
+
+  - caseid: 1054
+    run: YES
+    desc: 【桃李/入学管理】未入学学员列表-待处理
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/enrol/unhandle/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0
+
+keepList:
+
+  - caseid: 1055
+    run: YES
+    desc: 【桃李/入学管理】未入学学员列表-维稳学员
+    precondition:
+    parameterize:
+    url: https://open-test.shiguangkey.com/api/afterSales/enrol/keep/list
+    method: GET
+    header:
+      token: $<leader>
+    data:
+    shared:
+    check:
+      msg: success
+      status: 0

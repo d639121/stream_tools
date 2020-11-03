@@ -1,0 +1,28 @@
+2020-09-04 10:18:52,068 - root - INFO : 描述信息: 【潭州平台】获取登录用户 token
+2020-09-04 10:18:52,068 - root - INFO : 请求地址: https://open-fat.shiguangkey.com/api/udb/workwechat/auth/login
+2020-09-04 10:18:52,068 - root - INFO : 请求方法: [- POST -]
+2020-09-04 10:18:52,069 - root - INFO : 请求头部: {'content-type': 'application/x-www-form-urlencoded', 'terminaltype': '4', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 10:18:52,069 - root - INFO : 请求正文: {'account': 't0385252771', 'password': '4QrcOUm6Wau+VuBX8g+IPg'}
+2020-09-04 10:18:52,219 - root - INFO : 响应消息: {'traceId': 'd388696f9cc24db6a0e5c574b0db90ce', 'status': '0', 'msg': 'success', 'data': {'user': {'uid': 19861714, 'mobile': '', 'account': '', 'nickname': '精彩的鲀鱼', 'headImg': 'https://res.shiguangkey.com/res/images/default.png', 'openId': '', 'newRegister': False, 'needBindPhone': False, 'showAccountList': False}, 'token': '0x777afb0712f10d219924b7b978705f'}}
+2020-09-04 10:18:52,220 - root - INFO : 提取变量: [ pttoken: 0x777afb0712f10d219924b7b978705f ]
+2020-09-04 10:18:52,220 - root - INFO : 校验类型: [-status], 结果: [Passed], 预期: [0]
+2020-09-04 10:18:52,220 - root - INFO : 校验类型: [-msg], 结果: [Passed], 预期: [success]
+2020-09-04 10:18:52,220 - root - INFO :  = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 分割线 = = =  = = =  = = =  = = =  = = =  = = =  = = =  = = = 
+2020-09-04 10:18:52,228 - root - INFO : 当前运行Case: test_add_flow_budget
+2020-09-04 10:18:52,228 - root - INFO : 正在执行Function: test_add_flow_budget
+2020-09-04 10:18:52,229 - root - INFO : 正在执行Function: add_flow_budget
+2020-09-04 10:18:52,229 - root - INFO : 描述信息: 【海川/预算管理/流量预算】新增流量预算
+2020-09-04 10:18:52,229 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/add?organizationId=8009
+2020-09-04 10:18:52,229 - root - INFO : 请求方法: [- POST -]
+2020-09-04 10:18:52,229 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x777afb0712f10d219924b7b978705f', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 10:18:52,229 - root - INFO : 请求正文: {'id': '', 'costMonth': '2020-10-01', 'weekNum': 1, 'weekRange': '1-4', 'promotionerDeptId': 8009, 'subjectId': '509', 'putMode': 1, 'gatherType': 1, 'flowCost': '0.00', 'avgCardNum': 1, 'monthEntryNum': 1, 'monthUnCorrectNum': 1, 'monthCorrectNum': 1, 'visitorNum': 3, 'workDay': 1, 'stageCardNum': 3, 'flowExpenditure': 0, 'customerPrice': 1, 'conversionRate': 1, 'signUpNum': 3, 'performance': 3, 'roi': 0, 'applyRemark': '', 'subjectName': 'CDR', 'receiveDeptId': '', 'receiveDeptName': '', 'promotionerDeptName': '', 'subjectIdChain': '261-505-509', 'organizationId': 8009}
+2020-09-04 10:18:52,502 - root - INFO : 响应消息: {'data': None, 'msg': '该条申请已存在', 'platform': 'ocean-stat-service', 'res': -99999, 'traceId': 'deeba5a7b8ff8a7c'}
+2020-09-04 10:18:52,544 - root - INFO : 当前运行Case: test_chk_flow_budget
+2020-09-04 10:18:52,544 - root - INFO : 正在执行Function: test_chk_flow_budget
+2020-09-04 10:18:52,545 - root - INFO : 正在执行Function: qry_flow_budget
+2020-09-04 10:18:52,545 - root - INFO : 描述信息: 【海川/预算管理/流量预算】查询流量预算
+2020-09-04 10:18:52,545 - root - INFO : 请求地址: https://ocean-fat.shiguangkey.com/api/stat/budget/traffic/pageList?organizationId=8009
+2020-09-04 10:18:52,545 - root - INFO : 请求方法: [- POST -]
+2020-09-04 10:18:52,545 - root - INFO : 请求头部: {'content-type': 'application/json', 'token': '0x777afb0712f10d219924b7b978705f', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36', 'Connection': 'close', 'keep-alive': 'False'}
+2020-09-04 10:18:52,545 - root - INFO : 请求正文: {'pageNow': 1, 'pageSize': 20, 'auditState': 1, 'organizationId': [8009], 'deptId': 8009}
+2020-09-04 10:18:52,732 - root - INFO : 响应消息: {'data': {'extraData': None, 'list': [], 'pageNum': 1, 'pageSize': 20, 'pages': 1, 'sEcho': None, 'size': 0, 'total': 0}, 'msg': None, 'platform': None, 'res': 100, 'traceId': 'a0046f8027c22eca'}

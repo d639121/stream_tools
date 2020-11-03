@@ -1,0 +1,4714 @@
+performance:
+
+  - caseid: 1001
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询业绩目标
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/performance
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - day
+        - month
+
+manage:
+
+  - caseid: 1002
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询经营数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/manage
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - ap
+        - roi
+
+apply:
+
+  - caseid: 1003
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询报名数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/apply
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - newApply
+        - spare
+
+channel:
+
+  - caseid: 1004
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询渠道业绩占比
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/channel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+funnel1:
+
+  - caseid: 1005
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询“新量付费”转化漏斗
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/funnel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      type: 14
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - applyNum
+        - inviteRate
+
+funnel2:
+
+  - caseid: 1006
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询“新量免费”转化漏斗
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/funnel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      type: 15
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - applyNum
+        - inviteRate
+
+funnel3:
+
+  - caseid: 1007
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询“新量全部”转化漏斗
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/funnel
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      type: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - applyNum
+        - inviteRate
+
+trend:
+
+  - caseid: 1008
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询业绩趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/trend
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      startTime: 2020-06-04
+      endTime: 2020-06-04
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - 2020-06-04 07:00
+
+ranking:
+
+  - caseid: 1009
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询今日排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/ranking
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rate1:
+
+  - caseid: 1010
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询流量过程“新量付费”率数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/rate
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      costType: 14
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - classApply
+        - friend
+
+rate2:
+
+  - caseid: 1011
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询流量过程“新量免费”率数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/rate
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      costType: 15
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - classApply
+        - friend
+
+rate3:
+
+  - caseid: 1012
+    run: YES
+    desc: 【海川/数据洞察/仪表盘】查询流量过程“新量全部”率数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/dashBoard/rate
+    method: GET
+    header:
+      token: $<leader>
+    data:
+      costType: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - classApply
+        - friend
+
+performanceData:
+
+  - caseid: 1013
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询业绩数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/performanceData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - cost
+        - performanceRate
+
+flowData:
+
+  - caseid: 1014
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询名片数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/flowData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - toCollegeFlowNum
+        - voteRate
+
+dashBoard_processData:
+
+  - caseid: 1015
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询过程数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/processData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - classApplyRate
+        - inviteRate
+
+trendAnalysis:
+
+  - caseid: 1016
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询趋势分析-销转
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/trendAnalysis?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        'startDate': "2020-05-29",
+        'endDate': "2020-06-04",
+        'organizationId': 4531
+      }
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-05-29'
+
+contrastiveAnalysis:
+
+  - caseid: 1017
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询对比分析
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/contrastiveAnalysis?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        'startDate': "2020-06-05",
+        'endDate': "2020-06-05",
+        'organizationId': 4531
+      }
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '名片'
+        - '业绩'
+
+indicatorRanking:
+
+  - caseid: 1018
+    run: YES
+    desc: 【海川/数据洞察/高转VIP】查询指标排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/vipFlow/dashBoard/indicatorRanking?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        'startDate': "2020-06-04",
+        'endDate': "2020-06-04",
+        'organizationId': 4531
+      }
+    shared:
+    check:
+      res: 100
+      msg: null
+
+trafficData:
+
+  - caseid: 1019
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询流量数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/trafficData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: null
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "flux"
+      secondType: "toCollege"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+processData:
+
+  - caseid: 1020
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询过程数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/processData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "process"
+      secondType: "friend"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+processNum:
+
+  - caseid: 1021
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询过程人数
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/processNum?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "process"
+      secondType: "friend"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+callData:
+
+  - caseid: 1022
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询呼叫数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/callData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "call"
+      secondType: "totalCallLength"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+invitedData:
+
+  - caseid: 1023
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询邀课数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/invitedData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "invite"
+      secondType: "create"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+registrationResults:
+
+  - caseid: 1024
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询报名业绩
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/registrationResults?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "performance"
+      secondType: "total"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+refundPerformance:
+
+  - caseid: 1025
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询退款业绩
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/refundPerformance?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-06-04"
+      endTime: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "refund"
+      secondType: "amount"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-04 07:00'
+
+receptionEfficiency:
+
+  - caseid: 1026
+    run: YES
+    desc: 【海川/数据洞察/趋势分析】查询接待效率
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/trend/receptionEfficiency?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startTime: "2020-05-28"
+      endTime: "2020-06-03"
+      organizationId: 4531
+      funnelType: 1
+      showBefore: 0
+      showGroupByDate: 0
+      firstType: "receive"
+      secondType: "efficiency"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-05-28'
+
+ranking_performance:
+
+  - caseid: 1027
+    run: YES
+    desc: 【海川/数据洞察/数据排名】业绩排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/performance?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: null
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 1
+      type: 'total'
+    shared:
+    check:
+      res: 100
+      msg: null
+
+ranking_apply:
+
+  - caseid: 1028
+    run: YES
+    desc: 【海川/数据洞察/数据排名】报名人数排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/apply?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: null
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showLastest: 0
+      showGroupByDate: 1
+      type: "apply"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+process:
+
+  - caseid: 1029
+    run: YES
+    desc: 【海川/数据洞察/数据排名】过程排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/process?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showLastest: 0
+      showGroupByDate: 1
+      type: "friend"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+ranking_processNum:
+
+  - caseid: 1030
+    run: YES
+    desc: 【海川/数据洞察/数据排名】过程人数排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/processNum?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showLastest: 0
+      showGroupByDate: 1
+      type: "friend"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+flux:
+
+  - caseid: 1031
+    run: YES
+    desc: 【海川/数据洞察/数据排名】流量排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/flux?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showLastest: 0
+      showGroupByDate: 1
+      type: "apply"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+
+call:
+
+  - caseid: 1032
+    run: YES
+    desc: 【海川/数据洞察/数据排名】呼叫排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/call?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      newSourceFlag: null
+      showGroupByDate: 1
+      type: "call"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+ranking_manage:
+
+  - caseid: 1033
+    run: YES
+    desc: 【海川/数据洞察/数据排名】经营数据排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/manage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 1
+      newSourceFlag: null
+      type: "roi"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+refund:
+
+  - caseid: 1034
+    run: YES
+    desc: 【海川/数据洞察/数据排名】退款业绩排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/ranking/refund?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      showBefore: 0
+      showGroupByDate: 1
+      newSourceFlag: null
+      type: "amount"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+performanceChainRatio:
+
+  - caseid: 1035
+    run: YES
+    desc: 【海川/数据洞察/表格汇总】日业绩环比
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat//analysis/summary/performanceChainRatio?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      funnelType: null
+      costType: null
+      connectQryType: null
+      deptTypeId: null
+      isSameDayAssign: null
+      showGroupByDate: null
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - childrenDataList
+        - organizationId
+
+performanceTarget:
+
+  - caseid: 1036
+    run: YES
+    desc: 【海川/数据洞察/表格汇总】业绩统计
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/summary/performanceTarget?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      funnelType: null
+      costType: null
+      connectQryType: null
+      deptTypeId: null
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - ap
+        - organizationId
+
+inviteLesson:
+
+  - caseid: 1037
+    run: YES
+    desc: 【海川/数据洞察/表格汇总】邀课数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/summary/inviteLesson?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      deptTypeId: null
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - childrenDataList
+        - organizationId
+
+summary_callData:
+
+  - caseid: 1038
+    run: YES
+    desc: 【海川/数据洞察/表格汇总】呼叫数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/summary/callData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      funnelType: 1
+      costType: null
+      connectQryType: null
+      deptTypeId: null
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - childrenDataList
+        - organizationId
+
+workSheetSubmit:
+
+  - caseid: 1039
+    run: YES
+    desc: 【海川/数据洞察/使用数据】提单数据统计
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/summary/workSheetSubmit?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      organizationId: 4531
+      deptTypeId: null
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - childrenDataList
+        - organizationId
+
+wechat:
+
+  - caseid: 1040
+    run: YES
+    desc: 【海川/数据洞察/使用数据】微信聊天数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/analysis/summary/wechat?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      organizationId: 4531
+      deptTypeId: null
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      isOneDay: 1
+    shared:
+    check:
+      res: 100
+      msg:
+      data:
+        - addDataCardNum
+
+query:
+
+  - caseid: 1041
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询科目列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/crm/stuser/cate/query?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      terminalType: 4
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - cateId
+        - subCates
+
+listChildren:
+
+  - caseid: 1042
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询组织架构列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/department/analysis/listChildren
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      onlyBusiness: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - businessType
+        - organizationList
+
+getClassTransformData:
+
+  - caseid: 1043
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询课堂转化数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getClassTransformData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - contrastEnrollRate
+        - saleRate
+
+getClassRoomData:
+
+  - caseid: 1044
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询课堂数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getClassRoomData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - classApplyNum
+        - toPersonFlowNum
+
+getChapterLiveTypeAnalysis:
+
+  - caseid: 1045
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询直播和智能直播对比
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getChapterLiveTypeAnalysis?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '开课数'
+
+listDetailData:
+
+  - caseid: 1046
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询详细数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/listDetailData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - avgListenDuration
+        - organizationId
+
+ListenDurationAndDealAnalysis:
+
+  - caseid: 1047
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询听课时长&成交分析
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/ListenDurationAndDealAnalysis?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+    shared:
+    check:
+      res: 100
+      msg: null
+
+getClassRoomEnrollRateRanking:
+
+  - caseid: 1048
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询课堂报名率排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getClassRoomEnrollRateRanking?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+      rankType: 1
+    shared:
+    check:
+      res: 100
+      msg: null
+
+getClassRoomDataTrendAnalysis:
+
+  - caseid: 1049
+    run: YES
+    desc: 【海川/数据洞察/课堂分析】查询课堂数据趋势分析
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getClassRoomDataTrendAnalysis?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-05"
+      endDate: "2020-06-05"
+      organizationId: 4531
+      subjectIds: []
+      subjectId: ""
+      chapterLiveType: 2
+      trendType: 5
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '2020-06-05 07:00'
+
+listCourse:
+
+  - caseid: 1050
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询选择课程列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/listCourse?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      deptId: 1051
+      beginDate: "2020-06-02 00:00:00"
+      endDate: "2020-06-05 23:59:59"
+      pageNow: 1
+      pageSize: 10
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+selectCourse:
+
+  - caseid: 1051
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课程章节时间
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/selectCourse?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - chapterId
+        - classTime
+
+trendChart1:
+
+  - caseid: 1052
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“课堂人数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "audience"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+trendChart2:
+
+  - caseid: 1053
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“离开人数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "leave"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+trendChart3:
+
+  - caseid: 1054
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“发言数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "speeche"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+trendChart4:
+
+  - caseid: 1055
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“送花数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "flower"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+trendChart5:
+
+  - caseid: 1056
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“+1数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "endorse"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+trendChart6:
+
+  - caseid: 1057
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂数据趋势分析-“咨询数”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/trendChart?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466
+      type: "privateChart"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - text
+
+getListenDuration:
+
+  - caseid: 1058
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询听课时长分析
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getListenDuration
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      chapterId: 4970665  # 这里可能需要参数化
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - '60分钟~课程结束'
+
+getChapterVideoLink:
+
+  - caseid: 1059
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂回放
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/getChapterVideoLink?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      chapterId: 4970665   # 这里可能需要参数化
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - polyvvid
+        - videoUrl
+
+baseInfo:
+
+  - caseid: 1060
+    run: YES
+    desc: 【海川/数据洞察/课堂复盘】查询课堂回放
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/classroom/baseInfo?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      courseId: 7234  # 这里可能需要参数化
+      id: 2466  # 这里可能需要参数化
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - ap
+        - courseId
+        - subjectName
+
+lastUpdateTime:
+
+  - caseid: 1061
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询更新时间
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/dashBoard/lastUpdateTime
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryTime: 2020-06-04
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+overview:
+
+  - caseid: 1062
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询概述指标卡
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/dashBoard/overview?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1591200000000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - bearRefund
+        - profit
+
+trend1:
+
+  - caseid: 1063
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询利润趋势-“利润”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/trend?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1590681600000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+      queryType: "profit"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - realData
+
+trend2:
+
+  - caseid: 1064
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询利润趋势-“利润率”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/trend?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1590681600000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+      queryType: "profitRate"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - realData
+
+ranking1:
+
+  - caseid: 1065
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询数据排名-“利润”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/ranking?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1591200000000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+      queryType: "profit"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - realData
+
+ranking2:
+
+  - caseid: 1066
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询表格详情-“利润率”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/ranking?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1591200000000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+      queryType: "profitRate"
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - realData
+
+summary:
+
+  - caseid: 1067
+    run: YES
+    desc: 【海川/数据洞察/虹之玉统计】查询表格详情-“收入支出汇总”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/sedumRubrotinctum/summary?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      queryStartTime: 1591200000000
+      queryEndTime: 1591286399000
+      profitFlag: 0
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - afterSalesIncome
+        - childrenDataList
+
+instApplyRecord_pageList:
+
+  - caseid: 1068
+    run: YES
+    desc: 【海川/流量管理/申请流量】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/crm/stuser/instApplyRecord/pageList?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageIndex: 1
+      pageSize: 50
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage1:
+
+  - caseid: 1069
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“未沟通”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "new"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage2:
+
+  - caseid: 1070
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“已沟通”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "connect"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage3:
+
+  - caseid: 1071
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“已加好友”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "add"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage4:
+
+  - caseid: 1072
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“已邀课”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "ingroup"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage5:
+
+  - caseid: 1073
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“已到课”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "inclass"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage6:
+
+  - caseid: 1074
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“已报名”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: "enroll"
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+StUserPage7:
+
+  - caseid: 1075
+    run: YES
+    desc: 【海川/流量管理/我的流量】查询列表-“全部”
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/StUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      status: null
+      pageSize: 20
+      pageNow: 1
+      assignId: null
+      isNew: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+WxStUserPage:
+
+  - caseid: 1076
+    run: YES
+    desc: 【海川/流量管理/网校流量导入】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stuser/WxStUserPage?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      {
+        pageNow: 1,
+        pageSize: 50,
+        followerId: 1607506,
+        source: 3,
+        assignId: "",
+        assigned: 1,
+        channelTime: 1591286400000,
+        channel: "",
+        likeParam: "",
+        organizationId: 4531
+      }
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+stOpenSea_pageList:
+
+  - caseid: 1077
+    run: YES
+    desc: 【海川/流量管理/公海流量】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stOpenSea/pageList?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      tabType: 0
+      gatherTimeStart: 1588694400000
+      gatherTimeEnd: 1591372799999
+      isAdult: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - canRobCount
+        - list
+
+stCollegeSea_pageList:
+
+  - caseid: 1078
+    run: YES
+    desc: 【海川/流量管理/院海流量】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/stCollegeSea/pageList
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      gatherType: 1
+      allocPersonStatus: 0
+      isInviteLesson: 0
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+record_pageList:
+
+  - caseid: 1079
+    run: YES
+    desc: 【海川/流量管理/通话记录】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/call/record/pageList
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: 1588694399999
+      endDate: 1591348294978
+      pageNow: 1
+      pageSize: 20
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+library_pageList:
+
+  - caseid: 1080
+    run: YES
+    desc: 【海川/流量管理/微信流量入库】查询列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/wechat/library/pageList?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 50
+      addFriendTimeStart: 1588694400000
+      addFriendTimeEnd: 1591372799999
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+businessEfficiency:
+
+  - caseid: 1081
+    run: YES
+    desc: 【海川/流量数据/概况】查询经营效率
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/businessEfficiency?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - issuedCost
+        - roi
+
+costAndAchievement:
+
+  - caseid: 1082
+    run: YES
+    desc: 【海川/流量数据/概况】查询成本-业绩
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/costAndAchievement?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - cashConsumption
+        - currentPerformanceContrast
+
+applyAndIssued:
+
+  - caseid: 1083
+    run: YES
+    desc: 【海川/流量数据/概况】查询申请-下发
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/applyAndIssued?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - applyFlow
+        - issuedFlowContrast
+
+investment_ranking:
+
+  - caseid: 1084
+    run: YES
+    desc: 【海川/流量数据/概况】查询排名
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/ranking?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+investment_funnel:
+
+  - caseid: 1085
+    run: YES
+    desc: 【海川/流量数据/概况】查询转化漏斗
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/funnel?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - applyFlow
+        - inClassApplyNum
+
+customerResourceAndEnterCost:
+
+  - caseid: 1086
+    run: YES
+    desc: 【海川/流量数据/概况】查询客资-成本 | 流量端
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/customerResourceAndEnterCost?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-04"
+      endDate: "2020-06-04"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - customerResource
+        - enterCost
+
+trend_baseData1:
+
+  - caseid: 1087
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询流量申请趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "req"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData2:
+
+  - caseid: 1088
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询流量下发趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "grant"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData3:
+
+  - caseid: 1089
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询好友数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "friend"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData4:
+
+  - caseid: 1090
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询邀课数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "invite"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData5:
+
+  - caseid: 1091
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询到课数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "toClass"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData6:
+
+  - caseid: 1092
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询课堂报名数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "inClassEnrol"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData7:
+
+  - caseid: 1093
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询报名数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "enrol"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData8:
+
+  - caseid: 1094
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询补余款趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "spare"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData9:
+
+  - caseid: 1095
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询退款数趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "refund"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trendTable_baseData:
+
+  - caseid: 1096
+    run: YES
+    desc: 【海川/流量数据/趋势分析/申请与下发】查询数据明细
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trendTable/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: null
+      secondType: "req"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - call
+        - name
+
+trend_baseDataRate1:
+
+  - caseid: 1097
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询下发流量占比趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "grant"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate2:
+
+  - caseid: 1098
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询外呼率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "tel"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate3:
+
+  - caseid: 1099
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询好友率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "friend"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate4:
+
+  - caseid: 10100
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询邀课率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "invite"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate5:
+
+  - caseid: 1101
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询到课率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "toClass"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate6:
+
+  - caseid: 1102
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询课堂报名率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "inClassEnrol"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate7:
+
+  - caseid: 1103
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询报名率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "enrol"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseDataRate8:
+
+  - caseid: 1104
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询退款率趋势
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "refund"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trendTable_baseDataRate:
+
+  - caseid: 1105
+    run: YES
+    desc: 【海川/流量数据/趋势分析/流量跟进】查询数据明细
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trendTable/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: null
+      secondType: "req"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - call
+        - name
+
+trend_baseData10:
+
+  - caseid: 1106
+    run: YES
+    desc: 【海川/流量数据/趋势分析/成本与业绩】查询现金消费趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "cashConsumption"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData11:
+
+  - caseid: 1107
+    run: YES
+    desc: 【海川/流量数据/趋势分析/成本与业绩】查询总业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "totalPerformance"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData12:
+
+  - caseid: 1108
+    run: YES
+    desc: 【海川/流量数据/趋势分析/成本与业绩】查询当期业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "currentPerformance"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData13:
+
+  - caseid: 1109
+    run: YES
+    desc: 【海川/流量数据/趋势分析/成本与业绩】查询退款业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "refundPerformance"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trendTable_costAndAchievement:
+
+  - caseid: 1110
+    run: YES
+    desc: 【海川/流量数据/趋势分析/成本与业绩】查询数据明细
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trendTable/costAndAchievement?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: null
+      secondType: "req"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - cashConsumption
+        - name
+
+trend_baseData14:
+
+  - caseid: 1111
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询当期ROI趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "currentRoi"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData15:
+
+  - caseid: 1112
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询当期RPL趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "currentRpl"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData16:
+
+  - caseid: 1113
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询客单价趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "ap"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData17:
+
+  - caseid: 1114
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询下发成本趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "cost"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData18:
+
+  - caseid: 1115
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询新报名成本趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "applyCost"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData19:
+
+  - caseid: 1116
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询ROI趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "roi"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trend_baseData20:
+
+  - caseid: 1117
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询RPL趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trend/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: 0
+      secondType: "rpl"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - code
+        - key
+
+trendTable_businessData:
+
+  - caseid: 1118
+    run: YES
+    desc: 【海川/流量数据/趋势分析/经营数据】查询数据明细
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/trendTable/businessData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      showBefore: null
+      secondType: "req"
+      firstType: "promotion"
+      startTime: "2020-05-29"
+      endTime: "2020-06-04"
+      connectQryType: null
+      promotionerDeptId: 4531
+      organizationName: "动漫院"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - ap
+        - name
+
+rankTable_baseData:
+
+  - caseid: 1119
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询明细表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rankTable/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      firstType: "promotion"
+      type: "req"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData1:
+
+  - caseid: 1120
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询流量申请趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "req"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData2:
+
+  - caseid: 1121
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询流量下发趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "grant"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData3:
+
+  - caseid: 1122
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询好友数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "friend"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData4:
+
+  - caseid: 1123
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询邀课数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "invite"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData5:
+
+  - caseid: 1124
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询到课数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "toClass"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData6:
+
+  - caseid: 1125
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询课堂报名数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "inClassEnrol"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData7:
+
+  - caseid: 1126
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询报名数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "enrol"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData8:
+
+  - caseid: 1127
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询补余款趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "spare"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData9:
+
+  - caseid: 1128
+    run: YES
+    desc: 【海川/流量数据/数据排名/申请与下发】查询退款数趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "refund"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rankTable_baseDataRate:
+
+  - caseid: 1129
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询明细表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rankTable/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      firstType: "promotion"
+      type: "grant"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate1:
+
+  - caseid: 1130
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询下发流量占比趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "grant"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate2:
+
+  - caseid: 1131
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询外呼率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "tel"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate3:
+
+  - caseid: 1132
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询好友率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "friend"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate4:
+
+  - caseid: 1133
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询邀课率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "invite"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate5:
+
+  - caseid: 1134
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询到课率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "toClass"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate6:
+
+  - caseid: 1135
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询课堂报名率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "inClassEnrol"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate7:
+
+  - caseid: 1136
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询报名率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "enrol"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseDataRate8:
+
+  - caseid: 1137
+    run: YES
+    desc: 【海川/流量数据/数据排名/流量跟进】查询退款率趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseDataRate?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "refund"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rankTable_costAndAchievement:
+
+  - caseid: 1138
+    run: YES
+    desc: 【海川/流量数据/数据排名/成本与业绩】查询明细表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rankTable/costAndAchievement?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      firstType: "promotion"
+      type: "cashConsumption"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData10:
+
+  - caseid: 1139
+    run: YES
+    desc: 【海川/流量数据/数据排名/成本与业绩】查询现金消费趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "cashConsumption"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData11:
+
+  - caseid: 1140
+    run: YES
+    desc: 【海川/流量数据/数据排名/成本与业绩】查询总业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "totalPerformance"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData12:
+
+  - caseid: 1141
+    run: YES
+    desc: 【海川/流量数据/数据排名/成本与业绩】查询当期业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "currentPerformance"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData13:
+
+  - caseid: 1142
+    run: YES
+    desc: 【海川/流量数据/数据排名/成本与业绩】查询退款业绩趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "refundPerformance"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rankTable_businessData:
+
+  - caseid: 1143
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询明细表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rankTable/businessData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      firstType: "promotion"
+      type: "currentRoi"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData14:
+
+  - caseid: 1144
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询当期ROI趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "currentRoi"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData15:
+
+  - caseid: 1145
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询当期RPL趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "currentRpl"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData16:
+
+  - caseid: 1146
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询客单价趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "ap"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData17:
+
+  - caseid: 1147
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询下发成本趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "cost"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData18:
+
+  - caseid: 1148
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询新报名成本趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "applyCost"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData19:
+
+  - caseid: 1149
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询ROI趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "roi"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+rank_baseData20:
+
+  - caseid: 1150
+    run: YES
+    desc: 【海川/流量数据/数据排名/经营数据】查询RPL趋势图
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/investment/rank/baseData?organizationId=4531
+    method: POST
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      startDate: "2020-06-07"
+      endDate: "2020-06-07"
+      promotionerDeptId: 4531
+      connectQryType: null
+      showBefore: 0
+      firstType: "promotion"
+      type: "rpl"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+budget_list:
+
+  - caseid: 1151
+    run: YES
+    desc: 【海川/预算管理/查看预算】查询预算列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/list
+    method: GET
+    header:
+      token: $<leader>
+      content-type: application/json
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+queryBudgetOverview:
+
+  - caseid: 1151
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览】查询录入概览
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/queryBudgetOverview?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      budgetTime: 1590940800000
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - locked
+        - total
+
+listDeptBudget:
+
+  - caseid: 1152
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览】查询录入部门表格数据
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/listDeptBudget
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      budgetTime: '2020-06-01'
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - budgetDept
+        - childrenDataList
+
+queryBudgetPerformanceTarget:
+
+  - caseid: 1153
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览】查询录入指标-业绩目标
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/queryBudgetPerformanceTarget?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      costType: null
+      deptId: 4531
+      budgetTime: 1590940800000
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - assessPerformance
+        - profitRate
+
+queryBudgetBusinessTarget:
+
+  - caseid: 1154
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览】查询录入指标-经营目标
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/queryBudgetBusinessTarget?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      costType: 1
+      deptId: 4531
+      budgetTime: $<timestamp>
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - apClassPrice
+        - totalApplyNum
+
+queryBudgetFluxTarget:
+
+  - caseid: 1156
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览】查询录入指标-名片目标
+    precondition:
+    parameterize:
+      timestamp: timestamp
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/queryBudgetFluxTarget?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      costType: 1
+      deptId: 4531
+      budgetTime: $<timestamp>
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - avgFluxPer
+
+listCustomSale:
+
+  - caseid: 1157
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览/查看预算表】预算表详情1
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/listCustomSale
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      budgetTime: '2020-06-01'
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+budget_detail:
+
+  - caseid: 1158
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览/查看预算表】预算表详情2
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/detail
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      deptId: 4531
+      budgetTime: '2020-06-01'
+      costType: 1
+      state: 3
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - budgetDeptId
+
+getActualBudgetCompareInfo:
+
+  - caseid: 1159
+    run: YES
+    desc: 【海川/预算管理/查看预算/预算概览/查看预算表】预算表详情3
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/getActualBudgetCompareInfo?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: "4531"
+      budgetTime: "2020-06-01"
+      costType: 1
+      state: 3
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - abilityPhoneSell
+
+costDay_list:
+
+  - caseid: 1160
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入每日成本】查询详情列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/costDay/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      organizationId: 4531
+      budgetDay: "2020-06-08"
+    shared:
+    check:
+      res: 100
+      msg: null
+
+monthList:
+
+  - caseid: 1161
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入每日成本】查询月历
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/dayCost/monthList
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      monthDate: "2020-06-01"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - date
+        - isEntryComplete
+
+input_list:
+
+  - caseid: 1162
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入预算】查询详情列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/input/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+inviteLesson_pageList:
+
+  - caseid: 1163
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入预算】查询详情列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/inviteLesson/pageList?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+inviteLesson_inviteList:
+
+  - caseid: 1164
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入预算】查看邀课详情
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/stat/budget/getSedumRubrotinctum
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      {
+        "deptId":4531,
+        "budgetTime":'1593532800000',
+        "state":null,
+        "organizationId":4531
+      }
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - afterSalesAmountIn
+
+getClassTimeByCourseId:
+
+  - caseid: 1165
+    run: YES
+    desc: 【海川/预算管理/录入预算/录入预算】通过课程ID查询上课时间
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/main/inviteLesson/getClassTimeByCourseId
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      courseId: 10622
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - endClassTime
+        - startClassTime
+
+templates_list:
+
+  - caseid: 1166
+    run: YES
+    desc: 【海川/短信管理/短信模板】查询模板列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/sms/templates/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+smsLeaderStatistics:
+
+  - caseid: 1167
+    run: YES
+    desc: 【海川/短信管理/短信统计】查询统计列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/sms/record/smsLeaderStatistics
+    method: GET
+    header:
+      token: $<partner>
+    data:
+      statOrganizationId: 4531
+      startSendDate: "2020-06-08"
+      endSendDate: "2020-06-08"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - cost
+        - list
+
+smsDetailPage:
+
+  - caseid: 1168
+    run: YES
+    desc: 【海川/短信管理/短信发送记录】查询发送记录列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/sms/record/smsDetailPage?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      startSendDate: "2020-06-08"
+      endSendDate: "2020-06-08"
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+getOperatorPage:
+
+  - caseid: 1169
+    run: YES
+    desc: 【海川/系统管理/用户管理】查询用户列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/getOperatorPage?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      state: 1
+      crmState: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+        - total
+
+role_list:
+
+  - caseid: 1170
+    run: YES
+    desc: 【海川/系统管理/用户管理】查询角色列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/role/list
+    method: GET
+    header:
+      token: $<partner>
+    data:
+    shared:
+    check:
+      res: 100
+      msg: null
+
+config_list:
+
+  - caseid: 1171
+    run: YES
+    desc: 【海川/系统管理/用户管理】查询权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/permission/config/list
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+    shared:
+    check:
+      res: 100
+      msg: null
+
+listChildren1:
+
+  - caseid: 1172
+    run: YES
+    desc: 【海川/系统管理/数据结构】查询列表明细数据1
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/department/permission/listChildren
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      onlyBusiness: 0
+      hasForbidden: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - deptIdChain
+        - organizationList
+
+listChildren2:
+
+  - caseid: 1173
+    run: YES
+    desc: 【海川/系统管理/数据结构】查询列表明细数据2
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/department/listChildren
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      id: 4531
+      state: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - deptIdChain
+        - organizationList
+
+listManageNotice:
+
+  - caseid: 1174
+    run: YES
+    desc: 【海川/系统管理/新建公告】查询公告列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/notice/listManageNotice?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 20
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - list
+        - total
+
+config_tree:
+
+  - caseid: 1175
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询部门权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/dept/permission/config/tree
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - organizationList
+        - typeId
+
+sms_accounts:
+
+  - caseid: 1176
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询短信权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/sms/accounts
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+privilege_tree:
+
+  - caseid: 1177
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询邀课权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/dept/invite/privilege/tree
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+
+call_permission_list:
+
+  - caseid: 1178
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询呼叫权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/call/permission/list
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - callPermissionConfigDTO
+        - organizationList
+
+flow_permission_list:
+
+  - caseid: 1179
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询部门科目列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/flow/permission/list
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - departmentSubjectConfigDTO
+        - organizationList
+
+dept_permission_list:
+
+  - caseid: 1180
+    run: YES
+    desc: 【海川/系统管理/部门权限】查询预算权限列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/dept/budget/tree
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      deptId: 4531
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - organizationList
+        - typeId
+
+moveFlowRecordPage:
+
+  - caseid: 1181
+    run: YES
+    desc: 【海川/系统管理/移动组织流量】查询移动流量记录
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/system/stuser/moveFlowRecordPage?organizationId=4531
+    method: POST
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      gatherType: "1"
+      pageNow: 1
+      pageSize: 20
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+wechat_list:
+
+  - caseid: 1182
+    run: YES
+    desc: 【海川/系统管理/微信号管理】查询微信号列表
+    precondition:
+    parameterize:
+    url: https://ocean-test.shiguangkey.com/api/main/wechat/list
+    method: GET
+    header:
+      token: $<partner>
+      content-type: application/json
+    data:
+      pageNow: 1
+      pageSize: 10
+      departmentId: 4531
+      accountType: 1
+      organizationId: 4531
+    shared:
+    check:
+      res: 100
+      msg: null
+      data:
+        - extraData
+        - list
+
+
